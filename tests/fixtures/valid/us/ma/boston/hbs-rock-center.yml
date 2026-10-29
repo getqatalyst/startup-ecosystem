@@ -1,0 +1,53 @@
+# Test fixture based on the v0.3 worked example. Not verified data.
+id: hbs-rock-center
+name: Arthur Rock Center for Entrepreneurship
+aliases: [Rock Center]
+url: https://www.hbs.edu/entrepreneurship/
+hosts: [www.hbs.edu/entrepreneurship]
+parent: harvard-business-school
+cats: [university]
+hq: { city: us-ma-boston }
+desc: Harvard Business School's center for entrepreneurship, for its students and alumni.
+last_verified: 2026-10
+programs:
+  - id: hbs-rock-venture-catalyst
+    name: Rock Venture Catalyst
+    aliases: [Rock Summer Fellows]
+    url: https://www.hbs.edu/entrepreneurship/mba/rock-venture-catalyst/
+    types: [fellowship, grant]
+    stages: [build]
+    audiences: [founders]
+    eligibility:
+      affiliation:
+        - org: harvard-business-school
+          role: student
+          degree: MBA
+          class: 2027
+          quote: only MBA students who graduate in 2027 are eligible
+    delivery: hybrid
+    where: [us-ma-boston]
+    founder_receives: [grant]
+    access: application
+    cadence: [annual]
+  - id: hbs-new-venture-competition
+    name: New Venture Competition
+    url: https://www.hbs.edu/newventurecompetition/
+    types: [competition]
+    stages: [validate, build]
+    audiences: [founders]
+    founder_receives: [prize]
+    cadence: [annual]
+  - id: hbs-nvc-social-enterprise
+    variant_of: hbs-new-venture-competition
+    name: New Venture Competition, Social Enterprise track
+    eligibility:
+      venture_type: [nonprofit, for-profit, hybrid]
+  - id: hbs-rock-100
+    name: Rock 100
+    url: https://www.hbs.edu/entrepreneurship/alumni/rock-100/
+    types: [community]
+    stages: [scale]
+    audiences: [founders]
+    eligibility:
+      affiliation: [{ org: harvard-business-school, role: alumni }]
+    access: invite

@@ -1,0 +1,51 @@
+# data/shared/stages.yml and data/shared/vocab.yml. Checked on every run so a broken shared
+# file (a comma inside { } splitting a field, a misspelled key) fails CI before it reaches a city.
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: shared.schema.yml
+title: Shared vocabularies
+$defs:
+  text: {type: string, minLength: 1}
+
+  stages:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required: [n, id, t, s, aka, desc, substages]
+      properties:
+        n: {type: integer, minimum: 1}
+        id: {type: string, pattern: '^[a-z]+$'}
+        t: {$ref: '#/$defs/text'}
+        s: {$ref: '#/$defs/text'}
+        aka: {type: array, minItems: 1, items: {$ref: '#/$defs/text'}}
+        desc: {$ref: '#/$defs/text'}
+        gate: {$ref: '#/$defs/text'}
+        substages:
+          type: array
+          minItems: 1
+          items:
+            type: object
+            additionalProperties: false
+            required: [id, t, desc]
+            properties:
+              id: {type: string, pattern: '^[0-9][a-z]$'}
+              t: {$ref: '#/$defs/text'}
+              desc: {$ref: '#/$defs/text'}
+
+  vocab:
+    type: object
+    # every list maps a key to its label, or to {label, label_ca} when Canada words it differently
+    additionalProperties:
+      type: object
+      minProperties: 1
+      propertyNames: {pattern: '^[a-z0-9]+(-[a-z0-9]+)*$'}
+      additionalProperties:
+        oneOf:
+          - $ref: '#/$defs/text'
+          - type: object
+            additionalProperties: false
+            required: [label]
+            properties:
+              label: {$ref: '#/$defs/text'}
+              label_ca: {$ref: '#/$defs/text'}

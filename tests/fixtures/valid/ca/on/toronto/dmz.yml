@@ -1,0 +1,65 @@
+# Test fixture based on the v0.3 worked example. Quotes marked TBD are unverified.
+id: dmz
+name: DMZ
+aliases: [Ryerson DMZ]
+url: https://dmz.torontomu.ca/
+hosts: [dmz.torontomu.ca, dmzlaunchpad.ca, launchpadforwomen.ca]
+parent: toronto-metropolitan-university
+cats: [incubator, vc, coworking]
+hq: { city: ca-on-toronto }
+desc: Toronto Metropolitan University's tech incubator, working with founders from validation to growth.
+last_verified: 2026-10
+programs:
+  - id: dmz-incubator
+    name: Incubator
+    url: https://dmz.torontomu.ca/incubator
+    types: [incubator]
+    stages: [build, operate]
+    stage_basis: seed stage with monthly recurring revenue
+    audiences: [founders]
+    eligibility:
+      venture:
+        - { gate: revenue, quote: TBD }
+        - { gate: sector, quote: TBD }
+    open_to: [global]
+    delivery: hybrid
+    where: [ca-on-toronto]
+    fee: free
+    equity: true
+    founder_receives: [none]
+    access: application
+    cadence: [rolling, cohort]
+    duration: 18 months
+  - id: dmz-launchpad
+    name: Launchpad
+    url: https://dmzlaunchpad.ca/
+    types: [course]
+    stages: [spark]
+    audiences: [aspiring, founders]
+    delivery: remote
+    fee: free
+    access: open
+    cadence: [ongoing]
+  - id: dmz-launchpad-women
+    variant_of: dmz-launchpad
+    name: Launchpad for Women
+    url: https://launchpadforwomen.ca/
+    eligibility:
+      who:
+        - {
+            group: women,
+            requirement: required,
+            quote: TBD,
+            source: https://launchpadforwomen.ca/,
+          }
+    review: [eligibility.who]
+  - id: dmz-backing-small-businesses
+    name: Backing Canadian Small Businesses
+    url: https://dmz.torontomu.ca/amexbackingsmall
+    partners: [{ org_name: American Express Canada, role: funds }]
+    types: [mentorship, grant]
+    stages: [build, operate]
+    audiences: [founders]
+    founder_receives: [grant]
+    eligibility:
+      place: { incorporation: [ca] }

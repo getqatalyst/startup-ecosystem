@@ -1,0 +1,327 @@
+# One organization and its programs: data/orgs/<country>/<subdivision>/<city>/<id>.yml
+# JSON Schema 2020-12, written in YAML.
+#
+# Allowed values for the $defs marked "from vocab" are filled in by scripts/validate.ts from
+# data/shared/vocab.yml and data/shared/stages.yml, so each list lives in one place.
+# Rules that span fields, files or other records (unique ids, references, file path matches
+# hq.city, variants) are checked in scripts/validate.ts.
+
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: org.schema.yml
+title: Organization
+type: object
+additionalProperties: false
+required: [id, name, url, hosts, cats, hq, desc, last_verified, programs]
+properties:
+  id:
+    description: Permanent id. Never changes, even when the org is renamed. Must match the file name.
+    $ref: "#/$defs/id"
+  name: { $ref: "#/$defs/text" }
+  aliases:
+    description: Former and other names people search for.
+    type: array
+    uniqueItems: true
+    items: { $ref: "#/$defs/text" }
+  url:
+    description: Official homepage. May be a path (https://www.hbs.edu/entrepreneurship/).
+    $ref: "#/$defs/url"
+  hosts:
+    description: >-
+      Exact hosts the org uses, lowercase, no https:// (dmz.torontomu.ca). A host may carry a
+      path when the org is a section of a bigger site (www.hbs.edu/entrepreneurship). Never a
+      shared parent domain the org doesn't own (torontomu.ca for DMZ).
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items: { $ref: "#/$defs/host" }
+  parent:
+    description: Id of the org this one belongs to (Rock Center → harvard-business-school).
+    $ref: "#/$defs/id"
+  cats:
+    description: One or more categories.
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items: { $ref: "#/$defs/cat" }
+  hq:
+    type: object
+    additionalProperties: false
+    required: [city]
+    properties:
+      city:
+        description: City id from data/regions/index.yml. The file lives under this city's folder.
+        $ref: "#/$defs/city_id"
+      address:
+        description: Street address, only if the org's own site lists it publicly.
+        $ref: "#/$defs/text"
+      lat: { type: number, minimum: -90, maximum: 90 }
+      lng: { type: number, minimum: -180, maximum: 180 }
+      approx:
+        description: true when the coordinates are a neighbourhood or city centre, not the door.
+        type: boolean
+    dependentRequired:
+      lat: [lng]
+      lng: [lat]
+  same_as:
+    description: Other official profiles (Wikidata, LinkedIn).
+    type: array
+    uniqueItems: true
+    items: { $ref: "#/$defs/url" }
+  desc:
+    description: 1–2 sentences on what the org is and who it is for. No dates, amounts or people's names.
+    $ref: "#/$defs/text"
+    type: string
+    maxLength: 300
+  status: { $ref: "#/$defs/status" }
+  status_since: { $ref: "#/$defs/month" }
+  replaced_by:
+    description: Org id that replaced this one. Required when status is merged.
+    $ref: "#/$defs/id"
+  claimed:
+    description: true once a verified owner manages this record. Who they are is kept private.
+    type: boolean
+  last_verified:
+    description: Month a person last checked this record against the org's own site.
+    $ref: "#/$defs/month"
+  review: { $ref: "#/$defs/review" }
+  programs:
+    description: >-
+      What founders apply to or join; a VC's is usually its investment. May be empty only when
+      other orgs list this one as their parent (Harvard University, whose programs sit in its schools).
+    type: array
+    items: { $ref: "#/$defs/program" }
+
+$defs:
+  id: { type: string, pattern: "^[a-z0-9]+(-[a-z0-9]+)*$" }
+  # prose fields: no HTML, it has no use here and is an XSS risk on the website
+  text: { type: string, minLength: 1, pattern: "^[^<>]*$" }
+  url: { type: string, pattern: '^https://[^\s"''<>\\]+$' }
+  host:
+    {
+      type: string,
+      pattern: '^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+(/[^\s"''<>\\]*)?$',
+    }
+  month: { type: string, pattern: '^\d{4}-(0[1-9]|1[0-2])$' }
+  # global | country (ca) | subdivision (ca-on) | city (ca-on-toronto)
+  place:
+    {
+      type: string,
+      pattern: "^(global|[a-z]{2}(-[a-z0-9]{1,3}(-[a-z0-9]+)*)?)$",
+    }
+  city_id:
+    { type: string, pattern: "^[a-z]{2}-[a-z0-9]{1,3}-[a-z0-9]+(-[a-z0-9]+)*$" }
+  quote:
+    description: Words copied from the source page that state the rule.
+    $ref: "#/$defs/text"
+  review:
+    description: Fields a moderator still has to confirm, as dotted paths (eligibility.who).
+    type: array
+    items: { type: string, pattern: '^[a-z_]+(\.[a-z_]+)*$' }
+  places:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items: { $ref: "#/$defs/place" }
+
+  # from vocab: the validator adds `enum` to each of these
+  cat: { type: string }
+  type: { type: string }
+  audience: { type: string }
+  identity_group: { type: string }
+  requirement: { type: string }
+  affiliation_role: { type: string }
+  venture_gate: { type: string }
+  venture_type: { type: string }
+  partner_role: { type: string }
+  access: { type: string }
+  delivery: { type: string }
+  fee: { type: string }
+  founder_receives: { type: string }
+  cadence: { type: string }
+  status: { type: string }
+  stage: { type: string }
+
+  program:
+    type: object
+    additionalProperties: false
+    # url, types, stages and audiences are required on a main program; a variant inherits
+    # them from the program it is a variant of (checked in scripts/validate.ts).
+    required: [id, name]
+    properties:
+      id:
+        description: Permanent id, unique across the whole dataset.
+        $ref: "#/$defs/id"
+      name: { $ref: "#/$defs/text" }
+      aliases: { type: array, uniqueItems: true, items: { $ref: "#/$defs/text" } }
+      url:
+        description: The program's own page. May be on another domain than the org.
+        $ref: "#/$defs/url"
+      variant_of:
+        description: >-
+          Id of a program in this same file. The variant inherits every field it doesn't set
+          (Launchpad for Women is a variant of Launchpad).
+        $ref: "#/$defs/id"
+      partners:
+        type: array
+        items:
+          type: object
+          additionalProperties: false
+          required: [role]
+          anyOf:
+            - required: [org]
+            - required: [org_name]
+          properties:
+            org:
+              description: Id of the partner when it is in the dataset.
+              $ref: "#/$defs/id"
+            org_name:
+              description: Name of the partner when it is not in the dataset (American Express Canada).
+              $ref: "#/$defs/text"
+            role: { $ref: "#/$defs/partner_role" }
+      types:
+        {
+          type: array,
+          minItems: 1,
+          uniqueItems: true,
+          items: { $ref: "#/$defs/type" },
+        }
+      stages:
+        {
+          type: array,
+          minItems: 1,
+          uniqueItems: true,
+          items: { $ref: "#/$defs/stage" },
+        }
+      stage_basis:
+        description: The stated criteria behind the stage tags (MVP plus pilots or LOIs).
+        $ref: "#/$defs/text"
+      audiences:
+        {
+          type: array,
+          minItems: 1,
+          uniqueItems: true,
+          items: { $ref: "#/$defs/audience" },
+        }
+      eligibility: { $ref: "#/$defs/eligibility" }
+      open_to:
+        description: Places whose founders can apply. Defaults to the org's hq city.
+        $ref: "#/$defs/places"
+      delivery: { $ref: "#/$defs/delivery" }
+      where:
+        description: Places where the in-person part happens.
+        $ref: "#/$defs/places"
+      fee: { $ref: "#/$defs/fee" }
+      equity:
+        description: true when the program takes equity. Terms stay on the program page.
+        type: boolean
+      founder_receives:
+        description: What the founder gets in cash or capital. Amounts stay on the program page.
+        type: array
+        minItems: 1
+        uniqueItems: true
+        items: { $ref: "#/$defs/founder_receives" }
+      access: { $ref: "#/$defs/access" }
+      cadence:
+        {
+          type: array,
+          minItems: 1,
+          uniqueItems: true,
+          items: { $ref: "#/$defs/cadence" },
+        }
+      duration:
+        description: Length of the program, e.g. "10 weeks", "18 months".
+        type: string
+        pattern: '^\d+(\.\d+)? (days|weeks|months|years)$'
+      status: { $ref: "#/$defs/status" }
+      status_since: { $ref: "#/$defs/month" }
+      replaced_by: { $ref: "#/$defs/id" }
+      languages:
+        description: ISO 639-1 codes when not only English (fr).
+        type: array
+        uniqueItems: true
+        items: { type: string, pattern: "^[a-z]{2}$" }
+      last_verified: { $ref: "#/$defs/month" }
+      review: { $ref: "#/$defs/review" }
+
+  eligibility:
+    type: object
+    additionalProperties: false
+    minProperties: 1
+    properties:
+      who:
+        description: Identity groups the program states it is for. Only what the page says.
+        type: array
+        minItems: 1
+        items:
+          type: object
+          additionalProperties: false
+          required: [group, requirement, quote, source]
+          properties:
+            group: { $ref: "#/$defs/identity_group" }
+            requirement: { $ref: "#/$defs/requirement" }
+            quote: { $ref: "#/$defs/quote" }
+            source: { $ref: "#/$defs/url" }
+      affiliation:
+        description: Membership of a school or employer the program requires.
+        type: array
+        minItems: 1
+        items:
+          type: object
+          additionalProperties: false
+          required: [role]
+          anyOf:
+            - required: [org]
+            - required: [org_name]
+          properties:
+            org:
+              description: Id of the school or employer when it is in the dataset.
+              $ref: "#/$defs/id"
+            org_name:
+              description: Name of the school or employer when it is not in the dataset.
+              $ref: "#/$defs/text"
+            role: { $ref: "#/$defs/affiliation_role" }
+            degree: { $ref: "#/$defs/text" }
+            class:
+              description: Graduation year when the program names one. Check it every year.
+              type: integer
+              minimum: 1900
+              maximum: 2100
+            quote: { $ref: "#/$defs/quote" }
+      place:
+        description: Where founders must hold citizenship, live, or incorporate. Only when stated.
+        type: object
+        additionalProperties: false
+        minProperties: 1
+        properties:
+          citizenship: { $ref: "#/$defs/places" }
+          residence: { $ref: "#/$defs/places" }
+          incorporation: { $ref: "#/$defs/places" }
+          quote: { $ref: "#/$defs/quote" }
+      venture:
+        description: Gates on the venture itself, each with the page's own words.
+        type: array
+        minItems: 1
+        items:
+          type: object
+          additionalProperties: false
+          required: [gate, quote]
+          properties:
+            gate: { $ref: "#/$defs/venture_gate" }
+            quote: { $ref: "#/$defs/quote" }
+      venture_type:
+        type: array
+        minItems: 1
+        uniqueItems: true
+        items: { $ref: "#/$defs/venture_type" }
+      age:
+        description: Age limits the page states, with its words. min ≤ max is checked by the validator.
+        type: object
+        additionalProperties: false
+        required: [quote]
+        anyOf:
+          - required: [min]
+          - required: [max]
+        properties:
+          min: { type: integer, minimum: 0, maximum: 120 }
+          max: { type: integer, minimum: 0, maximum: 120 }
+          quote: { $ref: "#/$defs/quote" }
