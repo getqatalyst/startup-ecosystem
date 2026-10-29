@@ -17,6 +17,7 @@ hq:
 desc: NVIDIA Research outpost led by Sanja Fidler; generative AI for graphics and simulation. At Portland Commons, 530 Front St W.
 review:
   - cats
+  - desc
 programs:
   - id: nvidia-toronto-ai-lab-program
     name: NVIDIA Toronto AI Lab

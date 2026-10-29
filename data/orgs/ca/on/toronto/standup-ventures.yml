@@ -15,6 +15,8 @@ hq:
   lat: 43.6599
   lng: -79.3881
 desc: Seed fund investing in women-led tech startups; based at MaRS (101 College St).
+review:
+  - desc
 programs:
   - id: standup-ventures-program
     name: StandUp Ventures

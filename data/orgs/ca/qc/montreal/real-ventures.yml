@@ -10,9 +10,10 @@ hosts:
 cats:
   - vc
 hq:
-  city: ca-on-toronto
-  area: Montreal-based
+  city: ca-qc-montreal
 desc: One of Canada's most active early-stage VCs. HQ in Montreal; active in Toronto but no public Toronto office.
+review:
+  - hq
 programs:
   - id: real-ventures-program
     name: Real Ventures
@@ -24,6 +25,8 @@ programs:
       - operate
     audiences:
       - founders
+    open_to:
+      - ca
     access: invite
     fee: free
     review:
@@ -31,3 +34,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

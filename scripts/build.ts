@@ -1,8 +1,11 @@
 // Builds dist/ecosystem.json, the one file sites and other consumers read. It hides the file
 // layout and resolves what the YAML leaves implicit:
-// - a variant comes out with every field of its main program it didn't set itself
+// - a variant comes out with every field of its main program it didn't set itself, except
+//   its identity, verification and status; `eligibility` merges key by key (a variant that
+//   adds `who` keeps the main program's `place` and `age`)
+// - a variant's `review` also lists the main program's flags on fields it inherited
 // - `open_to` defaults to the org's HQ city
-// - `last_verified` on a program defaults to its org's
+// - `last_verified` on a main program defaults to its org's
 // `review` lists are kept, so a site can hold back fields that are still first guesses.
 // Refuses to build when the data doesn't validate.
 //
@@ -16,8 +19,45 @@ import { validate } from "./validate";
 
 export const FORMAT = 1;
 
-// what a variant never inherits from its main program
-const OWN_FIELDS = new Set(["id", "name", "aliases", "variant_of", "review"]);
+// what a variant never inherits from its main program: who it is, whether someone checked
+// it, and whether it still runs are facts about the variant itself
+const OWN_FIELDS = new Set([
+	"id",
+	"name",
+	"aliases",
+	"variant_of",
+	"review",
+	"last_verified",
+	"status",
+	"status_since",
+	"replaced_by",
+]);
+
+function resolveVariant(p: any, base: any) {
+	const inherited = Object.fromEntries(
+		Object.entries(base).filter(
+			([k]) => !OWN_FIELDS.has(k) && p[k] === undefined,
+		),
+	);
+	const eligibility =
+		base.eligibility || p.eligibility
+			? { ...base.eligibility, ...p.eligibility }
+			: undefined;
+	// the main program's open questions still apply to whatever the variant inherited
+	const inheritedReview = (base.review ?? []).filter((f: string) => {
+		const top = f.split(".")[0];
+		if (top !== "eligibility")
+			return !OWN_FIELDS.has(top) && p[top] === undefined;
+		return p.eligibility?.[f.split(".")[1]] === undefined;
+	});
+	const review = [...new Set([...(p.review ?? []), ...inheritedReview])];
+	return {
+		...inherited,
+		...p,
+		...(eligibility ? { eligibility } : {}),
+		...(review.length ? { review } : {}),
+	};
+}
 
 export function build(result = validate()) {
 	if (result.errors.length) {
@@ -30,20 +70,21 @@ export function build(result = validate()) {
 		.map((org) => {
 			const byId = new Map(org.programs.map((p: any) => [p.id, p]));
 			const programs = org.programs.map((p: any) => {
-				const base: any = p.variant_of ? byId.get(p.variant_of) : {};
-				const inherited = Object.fromEntries(
-					Object.entries(base).filter(([k]) => !OWN_FIELDS.has(k)),
-				);
+				const resolved = p.variant_of
+					? resolveVariant(p, byId.get(p.variant_of))
+					: p;
 				return {
 					open_to: [org.hq.city],
-					...(org.last_verified ? { last_verified: org.last_verified } : {}),
-					...inherited,
-					...p,
+					...(!p.variant_of && org.last_verified
+						? { last_verified: org.last_verified }
+						: {}),
+					...resolved,
 				};
 			});
 			return { ...org, programs };
 		})
-		.sort((a, b) => a.id.localeCompare(b.id));
+		// plain comparison, so the order is the same on every machine
+		.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 
 	return {
 		format: FORMAT,

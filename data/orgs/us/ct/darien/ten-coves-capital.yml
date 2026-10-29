@@ -10,9 +10,10 @@ hosts:
 cats:
   - vc
 hq:
-  city: ca-on-toronto
-  area: US-based
+  city: us-ct-darien
 desc: Growth-stage fintech investor. HQ in Darien, CT with a NYC office; no Toronto office.
+review:
+  - hq
 programs:
   - id: ten-coves-capital-program
     name: Ten Coves Capital
@@ -24,6 +25,8 @@ programs:
       - operate
     audiences:
       - founders
+    open_to:
+      - ca-on-toronto
     access: invite
     fee: free
     review:
@@ -31,3 +34,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

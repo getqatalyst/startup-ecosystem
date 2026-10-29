@@ -17,6 +17,7 @@ hq:
 desc: 40,000-sq-ft wet-lab incubator and co-working for early-stage life-sciences companies, located in MaRS.
 review:
   - cats
+  - desc
 programs:
   - id: biolabs-toronto-program
     name: Biolabs Toronto

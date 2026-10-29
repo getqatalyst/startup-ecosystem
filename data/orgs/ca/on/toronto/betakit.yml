@@ -9,8 +9,9 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-  area: Online
 desc: Canada's startup news publication; a central convening force for the ecosystem.
+review:
+  - hq
 programs:
   - id: betakit-program
     name: BetaKit
@@ -23,6 +24,8 @@ programs:
     audiences:
       - aspiring
       - founders
+    open_to:
+      - ca
     access: open
     fee: free
     review:
@@ -30,3 +33,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

@@ -13,6 +13,8 @@ hq:
   lat: 43.6467
   lng: -79.3882
 desc: Regional FDI attraction agency for the Toronto Region; 225 King St W.
+review:
+  - desc
 programs:
   - id: toronto-global-program
     name: Toronto Global

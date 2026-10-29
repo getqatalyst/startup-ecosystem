@@ -16,6 +16,8 @@ hq:
   lng: -79.3956
   approx: true
 desc: Six-month accelerator for TRL3+ climate and water technology ventures, run jointly by Social Innovation Canada and Foresight Canada out of 192 Spadina.
+review:
+  - desc
 programs:
   - id: climate-ventures-program
     name: Climate Ventures (Earth Tech)

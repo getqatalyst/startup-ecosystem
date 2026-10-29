@@ -9,8 +9,10 @@ cats:
   - accelerator
 hq:
   city: ca-on-toronto
-  area: National
 desc: National non-profit offering startup financing and mentorship to entrepreneurs aged 18-39.
+review:
+  - desc
+  - hq
 programs:
   - id: futurpreneur-program
     name: Futurpreneur
@@ -22,6 +24,8 @@ programs:
       - build
     audiences:
       - founders
+    open_to:
+      - ca
     access: open
     fee: free
     review:
@@ -29,3 +33,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

@@ -13,6 +13,8 @@ hq:
   lat: 43.6434
   lng: -79.4064
 desc: 20,000-sq-ft King West coworking (786 King St W) with podcast studios and meeting rooms.
+review:
+  - desc
 programs:
   - id: startwell-program
     name: StartWell

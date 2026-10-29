@@ -15,6 +15,8 @@ hq:
   lat: 43.6885
   lng: -79.393
 desc: Series A B2B tech, foodtech, and medtech; 22 St Clair Ave E.
+review:
+  - desc
 programs:
   - id: whitecap-venture-partners-program
     name: Whitecap Venture Partners

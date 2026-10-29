@@ -154,7 +154,7 @@ $defs:
     required: [id, name]
     properties:
       id:
-        description: Permanent id, unique across the whole dataset.
+        description: Unique across the whole dataset; permanent once `name` is out of `review`.
         $ref: "#/$defs/id"
       name: { $ref: "#/$defs/text" }
       aliases: { type: array, uniqueItems: true, items: { $ref: "#/$defs/text" } }

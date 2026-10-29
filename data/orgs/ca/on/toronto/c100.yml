@@ -9,8 +9,9 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-  area: Pan-Canadian
 desc: Network of senior Canadian tech leaders investing time and capital in scaling Canadian tech.
+review:
+  - hq
 programs:
   - id: c100-program
     name: C100
@@ -23,6 +24,8 @@ programs:
     audiences:
       - aspiring
       - founders
+    open_to:
+      - ca
     access: invite
     fee: free
     review:
@@ -30,3 +33,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

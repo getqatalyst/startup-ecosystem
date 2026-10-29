@@ -7,6 +7,7 @@ aliases:
 url: https://www.utm.utoronto.ca/
 hosts:
   - www.utm.utoronto.ca
+parent: university-of-toronto
 cats:
   - university
 hq:
@@ -15,6 +16,8 @@ hq:
   lat: 43.5446
   lng: -79.6604
 desc: Western campus of U of T; home to the Innovation Complex, ICUBE, and SpinUp.
+review:
+  - parent
 programs:
   - id: u-of-t-mississauga-program
     name: U of T Mississauga

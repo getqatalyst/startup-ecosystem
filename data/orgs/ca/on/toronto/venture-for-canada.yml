@@ -11,8 +11,9 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-  area: National
 desc: National charity building entrepreneurial skills through fellowship and internship programs.
+review:
+  - hq
 programs:
   - id: venture-for-canada-program
     name: Venture for Canada
@@ -25,6 +26,8 @@ programs:
     audiences:
       - aspiring
       - founders
+    open_to:
+      - ca
     access: open
     fee: free
     review:
@@ -32,3 +35,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

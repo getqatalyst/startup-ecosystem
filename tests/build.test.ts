@@ -57,3 +57,105 @@ describe("build", () => {
 		expect(() => build(broken)).toThrow("data has 1 errors");
 	});
 });
+
+// one org built in isolation, with the fixtures' shared lists
+function buildOne(programs: any[], org: Record<string, unknown> = {}) {
+	const record = {
+		id: "a",
+		name: "A",
+		url: "https://a.example/",
+		hosts: ["a.example"],
+		cats: ["community"],
+		hq: { city: "ca-on-toronto" },
+		desc: "A.",
+		programs,
+		...org,
+	};
+	return build({ ...fixtures, orgs: [record] }).orgs[0].programs;
+}
+const main = {
+	id: "a-p",
+	name: "P",
+	url: "https://a.example/p",
+	types: ["course"],
+	stages: ["spark"],
+	audiences: ["founders"],
+};
+
+describe("variants", () => {
+	test("don't inherit verification or status from the main program", () => {
+		const [, v] = buildOne(
+			[
+				{
+					...main,
+					last_verified: "2026-09",
+					status: "ended",
+					status_since: "2026-09",
+					replaced_by: "x",
+				},
+				{ id: "a-v", name: "V", variant_of: "a-p" },
+			],
+			{ last_verified: "2026-10" },
+		);
+		expect(v.last_verified).toBeUndefined();
+		expect(v.status).toBeUndefined();
+		expect(v.status_since).toBeUndefined();
+		expect(v.replaced_by).toBeUndefined();
+	});
+
+	test("carry the main program's review flags for fields they inherit", () => {
+		const [, v, w] = buildOne([
+			{ ...main, review: ["name", "types", "stages"] },
+			{ id: "a-v", name: "V", variant_of: "a-p" },
+			{ id: "a-w", name: "W", variant_of: "a-p", types: ["mentorship"] },
+		]);
+		expect(v.review).toEqual(["types", "stages"]); // "name" is the variant's own
+		expect(w.review).toEqual(["stages"]); // it set its own types
+	});
+
+	test("merge eligibility key by key", () => {
+		const place = { incorporation: ["ca"] };
+		const who = [
+			{
+				group: "women",
+				requirement: "required",
+				quote: "Women only",
+				source: "https://a.example/w",
+			},
+		];
+		const [, v] = buildOne([
+			{ ...main, eligibility: { place } },
+			{ id: "a-v", name: "V", variant_of: "a-p", eligibility: { who } },
+		]);
+		expect(v.eligibility).toEqual({ place, who });
+	});
+});
+
+describe("defaults", () => {
+	test("last_verified stays out when nobody has checked the org", () => {
+		const [p] = buildOne([main]);
+		expect("last_verified" in p).toBe(false);
+	});
+
+	test("a program's own open_to and last_verified win over the defaults", () => {
+		const [p] = buildOne(
+			[{ ...main, open_to: ["ca"], last_verified: "2026-09" }],
+			{
+				last_verified: "2026-10",
+			},
+		);
+		expect(p.open_to).toEqual(["ca"]);
+		expect(p.last_verified).toBe("2026-09");
+	});
+});
+
+test("the repo's own data builds", () => {
+	const real = build(validate({ today }));
+	expect(real.orgs.length).toBeGreaterThan(0);
+});
+
+// A change here changes what sites read. If it's intended, update the snapshot
+// (bun test --update-snapshots) and bump FORMAT when a consumer would have to change.
+test("output shape (snapshot of the fixtures)", () => {
+	expect(data).toMatchSnapshot();
+});

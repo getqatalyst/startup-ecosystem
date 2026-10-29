@@ -11,8 +11,9 @@ cats:
   - accelerator
 hq:
   city: ca-on-toronto
-  area: National
 desc: Charity supporting young Canadian founders with programming and mentor access.
+review:
+  - hq
 programs:
   - id: league-of-innovators-program
     name: League of Innovators
@@ -24,6 +25,8 @@ programs:
       - build
     audiences:
       - founders
+    open_to:
+      - ca
     access: open
     fee: free
     review:
@@ -31,3 +34,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

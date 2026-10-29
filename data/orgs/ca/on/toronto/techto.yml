@@ -9,8 +9,9 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-  area: City-wide
 desc: Largest tech community event in Toronto; monthly gatherings drawing thousands.
+review:
+  - hq
 programs:
   - id: techto-program
     name: TechTO
@@ -30,3 +31,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

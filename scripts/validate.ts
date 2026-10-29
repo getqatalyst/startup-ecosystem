@@ -370,6 +370,28 @@ export function validate({
 				}
 			}
 		}
+		// a host under another org's host (dmz.torontomu.ca/black-innovation-programs under
+		// dmz.torontomu.ca) is fine for a sub-org; otherwise one of them is probably wrong
+		const ancestors = new Set<string>();
+		for (
+			let at = org.parent;
+			at && !ancestors.has(at);
+			at = orgById.get(at)?.parent
+		) {
+			ancestors.add(at);
+		}
+		for (const host of org.hosts) {
+			const parts = host.split("/");
+			for (let n = parts.length - 1; n >= 1; n--) {
+				const owner = hostOrg.get(parts.slice(0, n).join("/"));
+				if (owner && owner !== org.id && !ancestors.has(owner)) {
+					warn(
+						file,
+						`host ${host} sits under ${owner}'s host; if it's part of ${owner}, set parent`,
+					);
+				}
+			}
+		}
 		if (org.replaced_by && !orgFile.has(org.replaced_by)) {
 			err(file, `replaced_by ${org.replaced_by} is not in the dataset`);
 		}

@@ -15,6 +15,8 @@ hq:
   lat: 43.6474
   lng: -79.397
 desc: Independent coworking with studios and event space; 20 Camden St.
+review:
+  - desc
 programs:
   - id: project-spaces-program
     name: "Project: Spaces"

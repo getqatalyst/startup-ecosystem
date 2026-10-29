@@ -15,6 +15,8 @@ hq:
   lat: 43.6867
   lng: -79.3983
 desc: Toronto-based investment firm with venture, growth, and private equity programs; 95 St Clair Ave W.
+review:
+  - desc
 programs:
   - id: kensington-capital-partners-program
     name: Kensington Capital Partners

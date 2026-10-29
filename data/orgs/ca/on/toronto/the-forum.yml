@@ -9,8 +9,9 @@ cats:
   - accelerator
 hq:
   city: ca-on-toronto
-  area: National
 desc: National non-profit accelerating women, non-binary, and Two-Spirit entrepreneurs. Delivered across Canada.
+review:
+  - hq
 programs:
   - id: the-forum-program
     name: The Forum
@@ -22,6 +23,8 @@ programs:
       - build
     audiences:
       - founders
+    open_to:
+      - ca
     access: application
     fee: free
     review:
@@ -29,3 +32,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

@@ -15,6 +15,8 @@ hq:
   lat: 43.6513
   lng: -79.3822
 desc: Series A-B B2B software with AI/ML emphasis; 80 Richmond St W.
+review:
+  - desc
 programs:
   - id: framework-venture-partners-program
     name: Framework Venture Partners

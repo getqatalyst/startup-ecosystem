@@ -7,6 +7,7 @@ aliases:
 url: https://icubeutm.ca/
 hosts:
   - icubeutm.ca
+parent: u-of-t-mississauga
 cats:
   - accelerator
 hq:
@@ -16,6 +17,8 @@ hq:
   lng: -79.6604
   approx: true
 desc: Social-entrepreneurship and early-stage startup incubator at U of T Mississauga; programs, workshops, mentorship.
+review:
+  - parent
 programs:
   - id: icube-utm-program
     name: ICUBE UTM

@@ -9,8 +9,9 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-  area: City-wide
 desc: Annual innovation festival; one of Canada's largest tech conferences.
+review:
+  - hq
 programs:
   - id: elevate-program
     name: Elevate
@@ -30,3 +31,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

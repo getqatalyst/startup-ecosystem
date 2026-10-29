@@ -11,8 +11,9 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-  area: City-wide
 desc: Chapter of the global Women in AI network.
+review:
+  - hq
 programs:
   - id: women-in-ai-toronto-program
     name: Women in AI Toronto
@@ -32,3 +33,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

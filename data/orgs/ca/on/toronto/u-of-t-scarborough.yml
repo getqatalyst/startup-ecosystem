@@ -7,6 +7,7 @@ aliases:
 url: https://www.utsc.utoronto.ca/
 hosts:
   - www.utsc.utoronto.ca
+parent: university-of-toronto
 cats:
   - university
 hq:
@@ -15,6 +16,8 @@ hq:
   lat: 43.7844
   lng: -79.1869
 desc: Eastern campus of U of T; strong co-op programs and the Hub student incubator.
+review:
+  - parent
 programs:
   - id: u-of-t-scarborough-program
     name: U of T Scarborough

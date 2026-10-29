@@ -11,8 +11,10 @@ cats:
   - accelerator
 hq:
   city: ca-on-toronto
-  area: Virtual chapter
 desc: Global pre-seed accelerator chapter; structured 14-week program for idea-stage founders. Runs as a virtual Toronto chapter.
+review:
+  - desc
+  - hq
 programs:
   - id: founder-institute-toronto-program
     name: Founder Institute Toronto
@@ -31,3 +33,4 @@ programs:
       - types
       - stages
       - audiences
+      - open_to

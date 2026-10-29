@@ -464,3 +464,30 @@ describe("programs and variants", () => {
 		).toContain("variants go one level deep");
 	});
 });
+
+describe("host overlap", () => {
+	test("a host under another org's host warns unless that org is its parent", () => {
+		const under = org("a").replace(
+			"hosts: [a.example]",
+			"hosts: [dmz.torontomu.ca/a]",
+		);
+		const warned = validate({
+			orgsDir: tree({ "ca/on/toronto/a.yml": under }),
+			today,
+		});
+		expect(warned.warnings.map((w) => w.message).join()).toContain(
+			"host dmz.torontomu.ca/a sits under dmz's host",
+		);
+		const child = org("a", { extra: "parent: dmz\n" }).replace(
+			"hosts: [a.example]",
+			"hosts: [dmz.torontomu.ca/a]",
+		);
+		const ok = validate({
+			orgsDir: tree({ "ca/on/toronto/a.yml": child }),
+			today,
+		});
+		expect(ok.warnings.map((w) => w.message).join()).not.toContain(
+			"sits under",
+		);
+	});
+});

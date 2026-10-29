@@ -1,0 +1,782 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`output shape (snapshot of the fixtures) 1`] = `
+{
+  "attribution": "Startup Ecosystem Data, Qatalyst Labs and contributors",
+  "format": 1,
+  "license": "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/",
+  "orgs": [
+    {
+      "aliases": [
+        "Ryerson DMZ",
+      ],
+      "cats": [
+        "incubator",
+        "vc",
+        "coworking",
+      ],
+      "desc": "Toronto Metropolitan University's tech incubator, working with founders from validation to growth.",
+      "hosts": [
+        "dmz.torontomu.ca",
+        "dmzlaunchpad.ca",
+        "launchpadforwomen.ca",
+      ],
+      "hq": {
+        "city": "ca-on-toronto",
+      },
+      "id": "dmz",
+      "last_verified": "2026-10",
+      "name": "DMZ",
+      "parent": "toronto-metropolitan-university",
+      "programs": [
+        {
+          "access": "application",
+          "audiences": [
+            "founders",
+          ],
+          "cadence": [
+            "rolling",
+            "cohort",
+          ],
+          "delivery": "hybrid",
+          "duration": "18 months",
+          "eligibility": {
+            "venture": [
+              {
+                "gate": "revenue",
+                "quote": "TBD",
+              },
+              {
+                "gate": "sector",
+                "quote": "TBD",
+              },
+            ],
+          },
+          "equity": true,
+          "fee": "free",
+          "founder_receives": [
+            "none",
+          ],
+          "id": "dmz-incubator",
+          "last_verified": "2026-10",
+          "name": "Incubator",
+          "open_to": [
+            "global",
+          ],
+          "stage_basis": "seed stage with monthly recurring revenue",
+          "stages": [
+            "build",
+            "operate",
+          ],
+          "types": [
+            "incubator",
+          ],
+          "url": "https://dmz.torontomu.ca/incubator",
+          "where": [
+            "ca-on-toronto",
+          ],
+        },
+        {
+          "access": "open",
+          "audiences": [
+            "aspiring",
+            "founders",
+          ],
+          "cadence": [
+            "ongoing",
+          ],
+          "delivery": "remote",
+          "fee": "free",
+          "id": "dmz-launchpad",
+          "last_verified": "2026-10",
+          "name": "Launchpad",
+          "open_to": [
+            "ca-on-toronto",
+          ],
+          "stages": [
+            "spark",
+          ],
+          "types": [
+            "course",
+          ],
+          "url": "https://dmzlaunchpad.ca/",
+        },
+        {
+          "access": "open",
+          "audiences": [
+            "aspiring",
+            "founders",
+          ],
+          "cadence": [
+            "ongoing",
+          ],
+          "delivery": "remote",
+          "eligibility": {
+            "who": [
+              {
+                "group": "women",
+                "quote": "TBD",
+                "requirement": "required",
+                "source": "https://launchpadforwomen.ca/",
+              },
+            ],
+          },
+          "fee": "free",
+          "id": "dmz-launchpad-women",
+          "name": "Launchpad for Women",
+          "open_to": [
+            "ca-on-toronto",
+          ],
+          "review": [
+            "eligibility.who",
+          ],
+          "stages": [
+            "spark",
+          ],
+          "types": [
+            "course",
+          ],
+          "url": "https://launchpadforwomen.ca/",
+          "variant_of": "dmz-launchpad",
+        },
+        {
+          "audiences": [
+            "founders",
+          ],
+          "eligibility": {
+            "place": {
+              "incorporation": [
+                "ca",
+              ],
+            },
+          },
+          "founder_receives": [
+            "grant",
+          ],
+          "id": "dmz-backing-small-businesses",
+          "last_verified": "2026-10",
+          "name": "Backing Canadian Small Businesses",
+          "open_to": [
+            "ca-on-toronto",
+          ],
+          "partners": [
+            {
+              "org_name": "American Express Canada",
+              "role": "funds",
+            },
+          ],
+          "stages": [
+            "build",
+            "operate",
+          ],
+          "types": [
+            "mentorship",
+            "grant",
+          ],
+          "url": "https://dmz.torontomu.ca/amexbackingsmall",
+        },
+      ],
+      "url": "https://dmz.torontomu.ca/",
+    },
+    {
+      "aliases": [
+        "HBS",
+      ],
+      "cats": [
+        "university",
+      ],
+      "desc": "Harvard University's business school, on its Allston campus in Boston.",
+      "hosts": [
+        "www.hbs.edu",
+      ],
+      "hq": {
+        "city": "us-ma-boston",
+      },
+      "id": "harvard-business-school",
+      "last_verified": "2026-10",
+      "name": "Harvard Business School",
+      "parent": "harvard-university",
+      "programs": [],
+      "url": "https://www.hbs.edu/",
+    },
+    {
+      "cats": [
+        "university",
+      ],
+      "desc": "Private research university in Cambridge, Massachusetts.",
+      "hosts": [
+        "www.harvard.edu",
+      ],
+      "hq": {
+        "city": "us-ma-cambridge",
+      },
+      "id": "harvard-university",
+      "last_verified": "2026-10",
+      "name": "Harvard University",
+      "programs": [],
+      "url": "https://www.harvard.edu/",
+    },
+    {
+      "aliases": [
+        "Rock Center",
+      ],
+      "cats": [
+        "university",
+      ],
+      "desc": "Harvard Business School's center for entrepreneurship, for its students and alumni.",
+      "hosts": [
+        "www.hbs.edu/entrepreneurship",
+      ],
+      "hq": {
+        "city": "us-ma-boston",
+      },
+      "id": "hbs-rock-center",
+      "last_verified": "2026-10",
+      "name": "Arthur Rock Center for Entrepreneurship",
+      "parent": "harvard-business-school",
+      "programs": [
+        {
+          "access": "application",
+          "aliases": [
+            "Rock Summer Fellows",
+          ],
+          "audiences": [
+            "founders",
+          ],
+          "cadence": [
+            "annual",
+          ],
+          "delivery": "hybrid",
+          "eligibility": {
+            "affiliation": [
+              {
+                "class": 2027,
+                "degree": "MBA",
+                "org": "harvard-business-school",
+                "quote": "only MBA students who graduate in 2027 are eligible",
+                "role": "student",
+              },
+            ],
+          },
+          "founder_receives": [
+            "grant",
+          ],
+          "id": "hbs-rock-venture-catalyst",
+          "last_verified": "2026-10",
+          "name": "Rock Venture Catalyst",
+          "open_to": [
+            "us-ma-boston",
+          ],
+          "stages": [
+            "build",
+          ],
+          "types": [
+            "fellowship",
+            "grant",
+          ],
+          "url": "https://www.hbs.edu/entrepreneurship/mba/rock-venture-catalyst/",
+          "where": [
+            "us-ma-boston",
+          ],
+        },
+        {
+          "audiences": [
+            "founders",
+          ],
+          "cadence": [
+            "annual",
+          ],
+          "founder_receives": [
+            "prize",
+          ],
+          "id": "hbs-new-venture-competition",
+          "last_verified": "2026-10",
+          "name": "New Venture Competition",
+          "open_to": [
+            "us-ma-boston",
+          ],
+          "stages": [
+            "validate",
+            "build",
+          ],
+          "types": [
+            "competition",
+          ],
+          "url": "https://www.hbs.edu/newventurecompetition/",
+        },
+        {
+          "audiences": [
+            "founders",
+          ],
+          "cadence": [
+            "annual",
+          ],
+          "eligibility": {
+            "venture_type": [
+              "nonprofit",
+              "for-profit",
+              "hybrid",
+            ],
+          },
+          "founder_receives": [
+            "prize",
+          ],
+          "id": "hbs-nvc-social-enterprise",
+          "name": "New Venture Competition, Social Enterprise track",
+          "open_to": [
+            "us-ma-boston",
+          ],
+          "stages": [
+            "validate",
+            "build",
+          ],
+          "types": [
+            "competition",
+          ],
+          "url": "https://www.hbs.edu/newventurecompetition/",
+          "variant_of": "hbs-new-venture-competition",
+        },
+        {
+          "access": "invite",
+          "audiences": [
+            "founders",
+          ],
+          "eligibility": {
+            "affiliation": [
+              {
+                "org": "harvard-business-school",
+                "role": "alumni",
+              },
+            ],
+          },
+          "id": "hbs-rock-100",
+          "last_verified": "2026-10",
+          "name": "Rock 100",
+          "open_to": [
+            "us-ma-boston",
+          ],
+          "stages": [
+            "scale",
+          ],
+          "types": [
+            "community",
+          ],
+          "url": "https://www.hbs.edu/entrepreneurship/alumni/rock-100/",
+        },
+      ],
+      "url": "https://www.hbs.edu/entrepreneurship/",
+    },
+    {
+      "aliases": [
+        "Ryerson University",
+      ],
+      "cats": [
+        "university",
+      ],
+      "desc": "Public university in downtown Toronto.",
+      "hosts": [
+        "www.torontomu.ca",
+      ],
+      "hq": {
+        "city": "ca-on-toronto",
+      },
+      "id": "toronto-metropolitan-university",
+      "last_verified": "2026-10",
+      "name": "Toronto Metropolitan University",
+      "programs": [],
+      "url": "https://www.torontomu.ca/",
+    },
+  ],
+  "regions": {
+    "cities": {
+      "ca-on-toronto": {
+        "bounds": [
+          [
+            43.49,
+            -79.71,
+          ],
+          [
+            43.87,
+            -79.13,
+          ],
+        ],
+        "center": [
+          43.665,
+          -79.39,
+        ],
+        "moderators": [],
+        "name": "Toronto",
+        "status": "draft",
+        "zoom": 12,
+      },
+      "ca-qc-montreal": {
+        "bounds": [
+          [
+            45.35,
+            -73.75,
+          ],
+          [
+            45.7,
+            -73.45,
+          ],
+        ],
+        "center": [
+          45.5019,
+          -73.5674,
+        ],
+        "moderators": [],
+        "name": "Montreal",
+        "status": "draft",
+        "zoom": 12,
+      },
+      "us-ct-darien": {
+        "bounds": [
+          [
+            40.98,
+            -73.57,
+          ],
+          [
+            41.18,
+            -73.37,
+          ],
+        ],
+        "center": [
+          41.0787,
+          -73.4693,
+        ],
+        "moderators": [],
+        "name": "Darien",
+        "status": "draft",
+        "zoom": 13,
+      },
+      "us-ma-boston": {
+        "bounds": [
+          [
+            42.26,
+            -71.19,
+          ],
+          [
+            42.43,
+            -70.98,
+          ],
+        ],
+        "center": [
+          42.3595,
+          -71.076,
+        ],
+        "moderators": [],
+        "name": "Boston",
+        "status": "draft",
+        "zoom": 13,
+      },
+      "us-ma-cambridge": {
+        "bounds": [
+          [
+            42.3,
+            -71.2,
+          ],
+          [
+            42.44,
+            -71.02,
+          ],
+        ],
+        "center": [
+          42.3654,
+          -71.0936,
+        ],
+        "moderators": [],
+        "name": "Cambridge",
+        "status": "draft",
+        "zoom": 14,
+      },
+    },
+    "countries": {
+      "ca": {
+        "name": "Canada",
+      },
+      "us": {
+        "name": "United States",
+      },
+    },
+    "subdivisions": {
+      "ca-on": {
+        "name": "Ontario",
+      },
+      "ca-qc": {
+        "name": "Quebec",
+      },
+      "us-ct": {
+        "name": "Connecticut",
+      },
+      "us-ma": {
+        "name": "Massachusetts",
+      },
+    },
+  },
+  "stages": [
+    {
+      "aka": [
+        "idea stage",
+        "aspiring founder",
+      ],
+      "desc": "Curious about starting something, or exploring a problem space. No commitment yet.",
+      "gate": "A specific problem and a target customer, named.",
+      "id": "spark",
+      "n": 1,
+      "s": "Exploring",
+      "substages": [
+        {
+          "desc": "Learning about startups or AI and meeting people.",
+          "id": "1a",
+          "t": "Curious",
+        },
+        {
+          "desc": "Talking to people in a problem space.",
+          "id": "1b",
+          "t": "Exploring",
+        },
+        {
+          "desc": "One problem chosen to pursue.",
+          "id": "1c",
+          "t": "Idea picked",
+        },
+      ],
+      "t": "Spark",
+    },
+    {
+      "aka": [
+        "pre-seed",
+        "customer discovery",
+      ],
+      "desc": "Testing whether the problem is real and whether people will commit time or money to a solution.",
+      "gate": "Validated demand — real customers committing time or money.",
+      "id": "validate",
+      "n": 2,
+      "s": "Proving demand",
+      "substages": [
+        {
+          "desc": "Interviews show the pain is real.",
+          "id": "2a",
+          "t": "Problem confirmed",
+        },
+        {
+          "desc": "Prototype, landing page or a done-by-hand service.",
+          "id": "2b",
+          "t": "Solution tested",
+        },
+        {
+          "desc": "Waitlist, letters of intent, pre-sales or a paid pilot.",
+          "id": "2c",
+          "t": "Demand shown",
+        },
+      ],
+      "t": "Validate",
+    },
+    {
+      "aka": [
+        "pre-seed",
+        "MVP",
+        "early revenue",
+      ],
+      "desc": "Demand is validated. Building the product that real customers use and pay for.",
+      "gate": "Revenue that is predictable month to month.",
+      "id": "build",
+      "n": 3,
+      "s": "Delivering to real customers",
+      "substages": [
+        {
+          "desc": "Founder-led sales, often delivered by hand.",
+          "id": "3a",
+          "t": "First customers",
+        },
+        {
+          "desc": "Works without heroics.",
+          "id": "3b",
+          "t": "Repeatable product",
+        },
+        {
+          "desc": "Retention and growing revenue.",
+          "id": "3c",
+          "t": "Early traction",
+        },
+      ],
+      "t": "Build",
+    },
+    {
+      "aka": [
+        "seed",
+        "Series A",
+      ],
+      "desc": "Predictable income and a growing team, not yet scaling into new markets.",
+      "gate": "A proven channel and the capital to expand it.",
+      "id": "operate",
+      "n": 4,
+      "s": "Seed to Series A",
+      "substages": [
+        {
+          "desc": "Revenue is steady and not tied to one customer.",
+          "id": "4a",
+          "t": "Predictable revenue",
+        },
+        {
+          "desc": "First hires, first managers, real processes.",
+          "id": "4b",
+          "t": "Team and process",
+        },
+        {
+          "desc": "A repeatable sales channel and known unit economics.",
+          "id": "4c",
+          "t": "Ready to scale",
+        },
+      ],
+      "t": "Operate",
+    },
+    {
+      "aka": [
+        "Series B",
+        "growth stage",
+      ],
+      "desc": "Expanding into new markets or products with a leadership team.",
+      "id": "scale",
+      "n": 5,
+      "s": "Expanding",
+      "substages": [
+        {
+          "desc": "Expanding beyond the first market.",
+          "id": "5a",
+          "t": "New markets or products",
+        },
+        {
+          "desc": "Growth capital.",
+          "id": "5b",
+          "t": "Series B and beyond",
+        },
+        {
+          "desc": "Executives in place beyond the founders.",
+          "id": "5c",
+          "t": "Leadership team",
+        },
+      ],
+      "t": "Scale",
+    },
+  ],
+  "vocab": {
+    "access": {
+      "application": "Apply to join",
+      "institutional": "Through a school or employer",
+      "invite": "Invitation only",
+      "membership": "Paid or approved membership",
+      "open": "Open to anyone",
+    },
+    "affiliation_roles": {
+      "affiliate": "Affiliate (staff, faculty, researcher, fellow)",
+      "alumni": "Alumni",
+      "employee": "Employee",
+      "student": "Current student",
+    },
+    "audiences": {
+      "aspiring": "Aspiring founders and students",
+      "builders": "Ecosystem builders",
+      "founders": "Founders",
+      "investors": "Investors",
+      "partners": "Corporates and government",
+      "talent": "People looking to work at startups",
+    },
+    "cadence": {
+      "annual": "Once a year",
+      "cohort": "Cohorts",
+      "ongoing": "Ongoing",
+      "rolling": "Rolling applications",
+    },
+    "cats": {
+      "accelerator": "Accelerator",
+      "angel-network": "Angel network",
+      "community": "Community",
+      "corporate": "Corporate or corporate lab",
+      "coworking": "Coworking or workspace",
+      "funder": "Funder or foundation",
+      "government": "Government",
+      "incubator": "Incubator",
+      "lender": "Lender",
+      "research-institute": "Research institute",
+      "service-provider": "Service provider",
+      "university": "University or school",
+      "vc": "Venture capital",
+    },
+    "delivery": {
+      "hybrid": "In person and online",
+      "in-person": "In person",
+      "remote": "Online",
+    },
+    "fee": {
+      "fee": "Fee",
+      "free": "Free",
+    },
+    "founder_receives": {
+      "grant": "Grant",
+      "investment": "Investment",
+      "loan": "Loan",
+      "none": "Nothing in cash",
+      "prize": "Prize",
+      "stipend": "Stipend",
+    },
+    "identity_groups": {
+      "bipoc": "Black, Indigenous and people of colour",
+      "black": "Black",
+      "disability": "People with disabilities",
+      "indigenous": "Indigenous",
+      "lgbtq": {
+        "label": "LGBTQ+",
+        "label_ca": "2SLGBTQ+",
+      },
+      "newcomers": "Immigrants and newcomers",
+      "veterans": "Veterans",
+      "women": "Women",
+    },
+    "partner_roles": {
+      "co-runs": "Co-runs the program",
+      "funds": "Funds the program",
+    },
+    "requirement": {
+      "encouraged": "Encourages this group to apply",
+      "priority": "Prioritizes this group",
+      "required": "Only for this group",
+    },
+    "status": {
+      "active": "Active",
+      "ended": "Ended",
+      "merged": "Merged into another org or program",
+      "paused": "Paused",
+    },
+    "types": {
+      "accelerator": "Accelerator",
+      "community": "Community or membership",
+      "competition": "Competition or prize",
+      "course": "Course or curriculum",
+      "coworking": "Workspace",
+      "fellowship": "Fellowship",
+      "grant": "Grant",
+      "incubator": "Incubator",
+      "investment": "Investment",
+      "jobs": "Startup jobs",
+      "loan": "Loan",
+      "matching": "Matching (co-founders, mentors, investors)",
+      "mentorship": "Mentorship or advising",
+      "service": "Service",
+    },
+    "venture_gates": {
+      "business-age": "Age of the business",
+      "funding-raised": "Funding already raised",
+      "incorporated": "Incorporated company",
+      "revenue": "Revenue or customers",
+      "sector": "Sector or technology",
+      "team": "Team (size, full-time founders, technical lead)",
+    },
+    "venture_types": {
+      "for-profit": "For-profit",
+      "hybrid": "Hybrid or social enterprise",
+      "nonprofit": "Nonprofit",
+    },
+  },
+}
+`;

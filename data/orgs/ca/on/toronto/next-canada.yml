@@ -13,6 +13,8 @@ hq:
   lat: 43.6711
   lng: -79.3825
 desc: National accelerator running NextAI, Next 36, and Next Founders programs for ambitious early-stage Canadian founders.
+review:
+  - desc
 programs:
   - id: next-canada-program
     name: Next Canada

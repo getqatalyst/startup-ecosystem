@@ -13,6 +13,8 @@ hq:
   lat: 43.6498
   lng: -79.3711
 desc: Boutique Canadian coworking with several Toronto locations; 100 Front St E.
+review:
+  - desc
 programs:
   - id: workhaus-program
     name: Workhaus
