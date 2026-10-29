@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: inovia-capital
+name: Inovia Capital
+aliases:
+  - Inovia
+url: https://inovia.vc/
+hosts:
+  - inovia.vc
+cats:
+  - vc
+hq:
+  city: ca-on-toronto
+  area: Bloor West
+  lat: 43.6692
+  lng: -79.3928
+desc: Series A-B, $5M-$30M cheques into category-defining global Canadian tech. Toronto office at 130 Bloor St W.
+review:
+  - desc
+programs:
+  - id: inovia-capital-program
+    name: Inovia Capital
+    url: https://inovia.vc/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

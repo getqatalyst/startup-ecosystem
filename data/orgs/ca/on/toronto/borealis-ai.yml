@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: borealis-ai
+name: Borealis AI
+aliases:
+  - Borealis
+url: https://www.borealisai.com/
+hosts:
+  - www.borealisai.com
+cats:
+  - corporate
+hq:
+  city: ca-on-toronto
+  area: MaRS Centre
+  lat: 43.6592
+  lng: -79.3897
+desc: RBC's research institute focused on machine learning for finance and beyond. Located in the MaRS Centre.
+review:
+  - cats
+programs:
+  - id: borealis-ai-program
+    name: Borealis AI
+    url: https://www.borealisai.com/
+    types:
+      - service
+    stages:
+      - build
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

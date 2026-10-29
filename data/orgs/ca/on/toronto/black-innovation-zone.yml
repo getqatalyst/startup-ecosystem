@@ -1,0 +1,38 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: black-innovation-zone
+name: Black Innovation Zone
+aliases:
+  - BIZ
+url: https://dmz.torontomu.ca/black-innovation-programs/
+hosts:
+  - dmz.torontomu.ca/black-innovation-programs
+parent: dmz
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: TMU / DMZ
+  lat: 43.6562
+  lng: -79.3804
+desc: Incubator at DMZ for Black entrepreneurs across Canada.
+review:
+  - parent
+programs:
+  - id: black-innovation-zone-program
+    name: Black Innovation Zone
+    url: https://dmz.torontomu.ca/black-innovation-programs/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

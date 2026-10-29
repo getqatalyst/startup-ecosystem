@@ -1,0 +1,33 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: league-of-innovators
+name: League of Innovators
+aliases:
+  - LOI
+url: https://www.loi.ac/
+hosts:
+  - www.loi.ac
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: National
+desc: Charity supporting young Canadian founders with programming and mentor access.
+programs:
+  - id: league-of-innovators-program
+    name: League of Innovators
+    url: https://www.loi.ac/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

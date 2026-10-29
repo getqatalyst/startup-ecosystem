@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: humber-polytechnic
+name: Humber Polytechnic
+aliases:
+  - Humber
+url: https://humber.ca/
+hosts:
+  - humber.ca
+cats:
+  - university
+hq:
+  city: ca-on-toronto
+  area: Etobicoke
+  lat: 43.729
+  lng: -79.6065
+desc: Polytechnic with a strong Centre for Entrepreneurship and applied-research strengths.
+programs:
+  - id: humber-polytechnic-program
+    name: Humber Polytechnic
+    url: https://humber.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: institutional
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences

@@ -1,0 +1,35 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: georgian
+name: Georgian
+url: https://georgian.io/
+hosts:
+  - georgian.io
+cats:
+  - vc
+hq:
+  city: ca-on-toronto
+  area: St. Clair
+  lat: 43.6877
+  lng: -79.3953
+desc: $5.9B AUM; Series A-growth for B2B SaaS applying AI. Proprietary R&D team works with portfolio. HQ at 2 St Clair Ave W.
+review:
+  - desc
+programs:
+  - id: georgian-program
+    name: Georgian
+    url: https://georgian.io/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

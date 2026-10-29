@@ -1,0 +1,33 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: hxouse
+name: HXOUSE
+url: https://www.hxouse.com/
+hosts:
+  - www.hxouse.com
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Waterfront East
+  lat: 43.6447
+  lng: -79.3656
+desc: Founder accelerator and creative incubator co-founded by The Weeknd's team, focused on under-represented creators and entrepreneurs.
+programs:
+  - id: hxouse-program
+    name: HXOUSE
+    url: https://www.hxouse.com/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: university-of-toronto
+name: University of Toronto (St. George)
+aliases:
+  - U of T
+url: https://www.utoronto.ca/
+hosts:
+  - www.utoronto.ca
+cats:
+  - university
+hq:
+  city: ca-on-toronto
+  area: St. George
+  lat: 43.6629
+  lng: -79.3957
+desc: Canada's largest research university. Anchor of Toronto's AI, life-sciences, and quantum ecosystems.
+programs:
+  - id: university-of-toronto-program
+    name: University of Toronto (St. George)
+    url: https://www.utoronto.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: institutional
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences

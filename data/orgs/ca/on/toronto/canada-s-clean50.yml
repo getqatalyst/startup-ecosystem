@@ -1,0 +1,39 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: canada-s-clean50
+name: Canada's Clean50
+aliases:
+  - Clean50
+url: https://clean50.com/
+hosts:
+  - clean50.com
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+  area: Yorkville
+  lat: 43.6709
+  lng: -79.3897
+  approx: true
+desc: Annual awards program recognizing 50 Canadian sustainability leaders plus emerging and lifetime-achievement honorees, run by Delta Management Group. Running since 2011.
+review:
+  - desc
+programs:
+  - id: canada-s-clean50-program
+    name: Canada's Clean50
+    url: https://clean50.com/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

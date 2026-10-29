@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: ontario-institute-for-cancer-research
+name: Ontario Institute for Cancer Research
+aliases:
+  - OICR
+url: https://oicr.on.ca/
+hosts:
+  - oicr.on.ca
+cats:
+  - research-institute
+hq:
+  city: ca-on-toronto
+  area: MaRS Centre
+  lat: 43.6596
+  lng: -79.3886
+desc: Provincially-funded cancer research institute headquartered at MaRS.
+review:
+  - cats
+programs:
+  - id: ontario-institute-for-cancer-research-program
+    name: Ontario Institute for Cancer Research
+    url: https://oicr.on.ca/
+    types:
+      - service
+    stages:
+      - build
+    audiences:
+      - founders
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

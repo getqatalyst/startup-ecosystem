@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: social-innovation-canada
+name: Social Innovation Canada
+aliases:
+  - SI Canada
+url: https://sicanada.org/
+hosts:
+  - sicanada.org
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+  area: Yonge and St. Clair
+  lat: 43.6881
+  lng: -79.3936
+  approx: true
+desc: National convening network for cross-sector social innovation; runs a 'What Works Centre' and programs like Earth Tech. Toronto-based (Foundation House), remote-first team.
+programs:
+  - id: social-innovation-canada-program
+    name: Social Innovation Canada
+    url: https://sicanada.org/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: membership
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

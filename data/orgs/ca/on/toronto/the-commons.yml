@@ -1,0 +1,33 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: the-commons
+name: The Commons
+url: https://thecommons.com/
+hosts:
+  - thecommons.com
+cats:
+  - coworking
+hq:
+  city: ca-on-toronto
+  area: Queen West
+  lat: 43.6508
+  lng: -79.3966
+  approx: true
+desc: Community-driven shared workspace. Location pending confirmation.
+programs:
+  - id: the-commons-program
+    name: The Commons
+    url: https://thecommons.com/
+    types:
+      - coworking
+    stages:
+      - build
+    audiences:
+      - founders
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences

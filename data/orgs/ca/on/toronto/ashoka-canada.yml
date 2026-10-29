@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: ashoka-canada
+name: Ashoka Canada
+url: https://ashokacanada.org/
+hosts:
+  - ashokacanada.org
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+  area: Entertainment District
+  lat: 43.6473
+  lng: -79.3944
+desc: Canadian chapter of the global Ashoka Fellowship for leading social entrepreneurs. Roughly 50 Canadian Fellows elected since 2002; office at 366 Adelaide St W.
+review:
+  - desc
+programs:
+  - id: ashoka-canada-program
+    name: Ashoka Canada
+    url: https://ashokacanada.org/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

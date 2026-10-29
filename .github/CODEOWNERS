@@ -1,0 +1,10 @@
+# Who reviews what. Moderators per region join as the dataset opens up (phase 5).
+# Shared lists, schema, scripts and CI affect every city: core maintainers only.
+
+*                       @jorjani
+/data/shared/           @jorjani
+/schema/                @jorjani
+/scripts/               @jorjani
+/.github/               @jorjani
+/data/orgs/ca/on/       @jorjani
+/data/orgs/us/ma/       @jorjani

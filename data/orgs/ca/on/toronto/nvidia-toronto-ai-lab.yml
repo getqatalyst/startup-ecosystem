@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: nvidia-toronto-ai-lab
+name: NVIDIA Toronto AI Lab
+aliases:
+  - NVIDIA TO
+url: https://research.nvidia.com/labs/toronto-ai/
+hosts:
+  - research.nvidia.com
+cats:
+  - corporate
+hq:
+  city: ca-on-toronto
+  area: Front West
+  lat: 43.6418
+  lng: -79.3986
+desc: NVIDIA Research outpost led by Sanja Fidler; generative AI for graphics and simulation. At Portland Commons, 530 Front St W.
+review:
+  - cats
+programs:
+  - id: nvidia-toronto-ai-lab-program
+    name: NVIDIA Toronto AI Lab
+    url: https://research.nvidia.com/labs/toronto-ai/
+    types:
+      - service
+    stages:
+      - build
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

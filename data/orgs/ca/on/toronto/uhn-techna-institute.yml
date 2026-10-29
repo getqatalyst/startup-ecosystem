@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: uhn-techna-institute
+name: UHN / Techna Institute
+aliases:
+  - UHN Techna
+url: https://www.uhn.ca/research
+hosts:
+  - www.uhn.ca
+cats:
+  - research-institute
+hq:
+  city: ca-on-toronto
+  area: Discovery District
+  lat: 43.6596
+  lng: -79.3886
+desc: Research arm of University Health Network. Techna develops AI and medical-imaging technology.
+review:
+  - cats
+programs:
+  - id: uhn-techna-institute-program
+    name: UHN / Techna Institute
+    url: https://www.uhn.ca/research
+    types:
+      - service
+    stages:
+      - build
+    audiences:
+      - founders
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

@@ -1,0 +1,34 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: project-spaces
+name: "Project: Spaces"
+aliases:
+  - Project Spaces
+url: https://www.projectspaces.com/
+hosts:
+  - www.projectspaces.com
+cats:
+  - coworking
+hq:
+  city: ca-on-toronto
+  area: Queen West
+  lat: 43.6474
+  lng: -79.397
+desc: Independent coworking with studios and event space; 20 Camden St.
+programs:
+  - id: project-spaces-program
+    name: "Project: Spaces"
+    url: https://www.projectspaces.com/
+    types:
+      - coworking
+    stages:
+      - build
+    audiences:
+      - founders
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences

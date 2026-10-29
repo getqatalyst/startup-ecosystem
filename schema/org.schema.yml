@@ -11,7 +11,7 @@ $id: org.schema.yml
 title: Organization
 type: object
 additionalProperties: false
-required: [id, name, url, hosts, cats, hq, desc, last_verified, programs]
+required: [id, name, url, hosts, cats, hq, desc, programs]
 properties:
   id:
     description: Permanent id. Never changes, even when the org is renamed. Must match the file name.
@@ -54,6 +54,9 @@ properties:
       address:
         description: Street address, only if the org's own site lists it publicly.
         $ref: "#/$defs/text"
+      area:
+        description: Neighbourhood or campus label shown on the map (Discovery District, Rotman / U of T).
+        $ref: "#/$defs/text"
       lat: { type: number, minimum: -90, maximum: 90 }
       lng: { type: number, minimum: -180, maximum: 180 }
       approx:
@@ -81,7 +84,9 @@ properties:
     description: true once a verified owner manages this record. Who they are is kept private.
     type: boolean
   last_verified:
-    description: Month a person last checked this record against the org's own site.
+    description: >-
+      Month a person last checked this record against the org's own site. Leave it out until
+      someone has; never set it on a bulk edit.
     $ref: "#/$defs/month"
   review: { $ref: "#/$defs/review" }
   programs:

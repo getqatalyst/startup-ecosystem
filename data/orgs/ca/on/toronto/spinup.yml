@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: spinup
+name: SpinUp
+url: https://spinup.utm.utoronto.ca/
+hosts:
+  - spinup.utm.utoronto.ca
+cats:
+  - university
+hq:
+  city: ca-on-toronto
+  area: UTM Innovation Complex
+  lat: 43.5446
+  lng: -79.6604
+  approx: true
+desc: U of T's first wet-lab startup incubator; subsidized lab space and equipment for early-stage biotech. Based at UTM.
+review:
+  - cats
+programs:
+  - id: spinup-program
+    name: SpinUp
+    url: https://spinup.utm.utoronto.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: application
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences

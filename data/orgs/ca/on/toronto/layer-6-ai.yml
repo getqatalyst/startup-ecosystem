@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: layer-6-ai
+name: Layer 6 AI
+aliases:
+  - Layer 6
+url: https://layer6.ai/
+hosts:
+  - layer6.ai
+cats:
+  - corporate
+hq:
+  city: ca-on-toronto
+  area: MaRS Centre
+  lat: 43.6592
+  lng: -79.3897
+desc: TD Bank's AI research lab; recommender systems and personalization. Located in the MaRS Centre.
+review:
+  - cats
+programs:
+  - id: layer-6-ai-program
+    name: Layer 6 AI
+    url: https://layer6.ai/
+    types:
+      - service
+    stages:
+      - build
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

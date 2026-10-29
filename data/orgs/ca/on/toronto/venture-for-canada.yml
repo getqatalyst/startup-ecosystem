@@ -1,0 +1,34 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: venture-for-canada
+name: Venture for Canada
+aliases:
+  - VFC
+url: https://ventureforcanada.ca/
+hosts:
+  - ventureforcanada.ca
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+  area: National
+desc: National charity building entrepreneurial skills through fellowship and internship programs.
+programs:
+  - id: venture-for-canada-program
+    name: Venture for Canada
+    url: https://ventureforcanada.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

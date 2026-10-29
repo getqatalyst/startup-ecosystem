@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: community-forward-fund
+name: Community Forward Fund
+aliases:
+  - CFF
+url: https://communityforwardfund.ca/
+hosts:
+  - communityforwardfund.ca
+cats:
+  - funder
+hq:
+  city: ca-on-toronto
+  area: King West / Spadina
+  lat: 43.6471
+  lng: -79.3954
+desc: Non-profit lender providing bridge and term financing to Canadian charities, nonprofits, and non-profit social enterprises; a $12M fund based at 119 Spadina.
+review:
+  - desc
+programs:
+  - id: community-forward-fund-program
+    name: Community Forward Fund
+    url: https://communityforwardfund.ca/
+    types:
+      - grant
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: institutional
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences

@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: omers-ventures
+name: OMERS Ventures
+aliases:
+  - OMERS
+url: https://www.omersventures.com/
+hosts:
+  - www.omersventures.com
+cats:
+  - vc
+hq:
+  city: ca-on-toronto
+  area: Financial District
+  lat: 43.6496
+  lng: -79.3838
+desc: Pension-backed VC; $5M-$25M Series A-growth cheques into enterprise software. Refocused on Canada in 2025.
+review:
+  - desc
+programs:
+  - id: omers-ventures-program
+    name: OMERS Ventures
+    url: https://www.omersventures.com/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

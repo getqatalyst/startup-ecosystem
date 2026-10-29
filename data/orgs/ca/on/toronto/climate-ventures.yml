@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: climate-ventures
+name: Climate Ventures (Earth Tech)
+aliases:
+  - Earth Tech
+url: https://climateventures.org/earthtech/
+hosts:
+  - climateventures.org
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: King West / Spadina
+  lat: 43.6484
+  lng: -79.3956
+  approx: true
+desc: Six-month accelerator for TRL3+ climate and water technology ventures, run jointly by Social Innovation Canada and Foresight Canada out of 192 Spadina.
+programs:
+  - id: climate-ventures-program
+    name: Climate Ventures (Earth Tech)
+    url: https://climateventures.org/earthtech/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

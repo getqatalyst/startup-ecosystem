@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: toronto-foundation
+name: Toronto Foundation
+aliases:
+  - Toronto Fdn
+url: https://torontofoundation.ca/
+hosts:
+  - torontofoundation.ca
+cats:
+  - funder
+hq:
+  city: ca-on-toronto
+  area: Bloor-Yorkville
+  lat: 43.6703
+  lng: -79.3856
+desc: Toronto's community foundation, managing 500+ donor funds (~$400M+ AUM) and publishing the annual Vital Signs report on civic wellbeing. Founded 1981.
+review:
+  - desc
+programs:
+  - id: toronto-foundation-program
+    name: Toronto Foundation
+    url: https://torontofoundation.ca/
+    types:
+      - grant
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

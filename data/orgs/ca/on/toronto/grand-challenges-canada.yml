@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: grand-challenges-canada
+name: Grand Challenges Canada
+aliases:
+  - Grand Challenges
+url: https://www.grandchallenges.ca/
+hosts:
+  - www.grandchallenges.ca
+cats:
+  - government
+hq:
+  city: ca-on-toronto
+  area: Discovery District
+  lat: 43.6595
+  lng: -79.3894
+desc: Federally funded (Global Affairs Canada) foundation for global health and humanitarian innovation, based at MaRS Centre West Tower. Launched 2010; funded 1,600+ innovations in 100+ countries.
+review:
+  - desc
+programs:
+  - id: grand-challenges-canada-program
+    name: Grand Challenges Canada
+    url: https://www.grandchallenges.ca/
+    types:
+      - grant
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

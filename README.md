@@ -8,6 +8,18 @@ Every organization and program links to its own official page. Entries hold stab
 (who a program is for, what it offers, where it runs); dates, amounts and deadlines stay on
 the source page.
 
+## Layout
+
+| Path | What's there |
+| --- | --- |
+| `data/orgs/<country>/<province-or-state>/<city>/<id>.yml` | One org and its programs |
+| `data/shared/` | Stages and the allowed values for every list |
+| `data/regions/index.yml` | Countries, provinces or states, and cities with a page |
+| `schema/` | The rules each file follows |
+| `scripts/validate.ts`, `scripts/build.ts` | Checks, and the compiled `dist/ecosystem.json` |
+
+To add or fix an entry, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Licenses
 
 - Data under `data/`: CC BY 4.0. See [`data/LICENSE.md`](data/LICENSE.md) for attribution.

@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: black-founders-network
+name: Black Founders Network
+aliases:
+  - BFN
+url: https://entrepreneurs.utoronto.ca/accelerator/bfn-accelerate/
+hosts:
+  - entrepreneurs.utoronto.ca/accelerator/bfn-accelerate
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Schwartz Reisman Campus
+  lat: 43.6604
+  lng: -79.3893
+  approx: true
+desc: Community and cohort accelerator (BFN Accelerate) providing Black founders capital, capacity-building, and network.
+programs:
+  - id: black-founders-network-program
+    name: Black Founders Network
+    url: https://entrepreneurs.utoronto.ca/accelerator/bfn-accelerate/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

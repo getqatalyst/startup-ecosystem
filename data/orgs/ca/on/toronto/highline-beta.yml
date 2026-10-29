@@ -1,0 +1,35 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: highline-beta
+name: Highline Beta
+aliases:
+  - Highline
+url: https://highlinebeta.com/
+hosts:
+  - highlinebeta.com
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Financial District
+  lat: 43.651
+  lng: -79.3815
+desc: Venture studio building startups with corporate partners.
+programs:
+  - id: highline-beta-program
+    name: Highline Beta
+    url: https://highlinebeta.com/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

@@ -1,0 +1,33 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: utest
+name: UTEST
+url: https://utest.to/
+hosts:
+  - utest.to
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Schwartz Reisman Campus
+  lat: 43.6604
+  lng: -79.3893
+desc: "U of T Early-Stage Technology: pre-seed program for research-based deep-tech startups from U of T faculty and students."
+programs:
+  - id: utest-program
+    name: UTEST
+    url: https://utest.to/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

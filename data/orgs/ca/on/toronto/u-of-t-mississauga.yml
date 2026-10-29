@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: u-of-t-mississauga
+name: U of T Mississauga
+aliases:
+  - UTM
+url: https://www.utm.utoronto.ca/
+hosts:
+  - www.utm.utoronto.ca
+cats:
+  - university
+hq:
+  city: ca-on-toronto
+  area: Mississauga
+  lat: 43.5446
+  lng: -79.6604
+desc: Western campus of U of T; home to the Innovation Complex, ICUBE, and SpinUp.
+programs:
+  - id: u-of-t-mississauga-program
+    name: U of T Mississauga
+    url: https://www.utm.utoronto.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: institutional
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences

@@ -1,0 +1,32 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: techto
+name: TechTO
+url: https://techto.org/
+hosts:
+  - techto.org
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+  area: City-wide
+desc: Largest tech community event in Toronto; monthly gatherings drawing thousands.
+programs:
+  - id: techto-program
+    name: TechTO
+    url: https://techto.org/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: open
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences

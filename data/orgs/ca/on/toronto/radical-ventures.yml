@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: radical-ventures
+name: Radical Ventures
+aliases:
+  - Radical
+url: https://radical.vc/
+hosts:
+  - radical.vc
+cats:
+  - vc
+hq:
+  city: ca-on-toronto
+  area: Yorkville
+  lat: 43.6699
+  lng: -79.3836
+desc: AI-focused seed-Series B. Closed $650M USD Fund 4 in Oct 2025. Backed Cohere, Waabi. Office at 59 Hayden St.
+review:
+  - desc
+programs:
+  - id: radical-ventures-program
+    name: Radical Ventures
+    url: https://radical.vc/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

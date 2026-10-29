@@ -20,4 +20,6 @@ jobs:
       - name: Validate data/
         run: bun run validate
       - run: bun test
+      - name: Build dist/ecosystem.json
+        run: bun run build
       - run: bun run lint

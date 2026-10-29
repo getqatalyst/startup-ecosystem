@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: acceleration-consortium
+name: Acceleration Consortium
+aliases:
+  - AC
+url: https://acceleration.utoronto.ca/
+hosts:
+  - acceleration.utoronto.ca
+cats:
+  - research-institute
+hq:
+  city: ca-on-toronto
+  area: U of T
+  lat: 43.6615
+  lng: -79.398
+desc: Self-driving labs and AI-for-materials at U of T; funded by the Canada First Research Excellence Fund.
+review:
+  - cats
+programs:
+  - id: acceleration-consortium-program
+    name: Acceleration Consortium
+    url: https://acceleration.utoronto.ca/
+    types:
+      - service
+    stages:
+      - build
+    audiences:
+      - founders
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

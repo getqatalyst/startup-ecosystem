@@ -4,6 +4,7 @@
 	"type": "module",
 	"scripts": {
 		"validate": "bun scripts/validate.ts",
+		"build": "bun scripts/build.ts",
 		"test": "bun test",
 		"lint": "biome check ."
 	},

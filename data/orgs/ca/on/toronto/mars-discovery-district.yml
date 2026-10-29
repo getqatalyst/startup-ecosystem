@@ -1,0 +1,35 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: mars-discovery-district
+name: MaRS Discovery District
+aliases:
+  - MaRS
+url: https://www.marsdd.com/
+hosts:
+  - www.marsdd.com
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Discovery District
+  lat: 43.6596
+  lng: -79.3886
+desc: Canada's largest urban innovation hub. Advisory, market intel, and capital access for ventures in health, cleantech, fintech, and enterprise.
+programs:
+  - id: mars-discovery-district-program
+    name: MaRS Discovery District
+    url: https://www.marsdd.com/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences

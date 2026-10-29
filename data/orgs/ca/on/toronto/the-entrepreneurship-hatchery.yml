@@ -1,0 +1,35 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: the-entrepreneurship-hatchery
+name: The Entrepreneurship Hatchery
+aliases:
+  - Hatchery
+url: https://hatchery.engineering.utoronto.ca/
+hosts:
+  - hatchery.engineering.utoronto.ca
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Myhal / U of T Eng
+  lat: 43.6608
+  lng: -79.3965
+desc: U of T Engineering's student startup accelerator. Cohort programs (NEST/Praxis) culminating in a Demo Day pitch.
+programs:
+  - id: the-entrepreneurship-hatchery-program
+    name: The Entrepreneurship Hatchery
+    url: https://hatchery.engineering.utoronto.ca/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences

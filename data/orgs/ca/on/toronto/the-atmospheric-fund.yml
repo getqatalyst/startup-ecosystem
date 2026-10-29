@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: the-atmospheric-fund
+name: The Atmospheric Fund (TAF)
+aliases:
+  - TAF
+url: https://taf.ca/
+hosts:
+  - taf.ca
+cats:
+  - government
+hq:
+  city: ca-on-toronto
+  area: Entertainment District
+  lat: 43.6464
+  lng: -79.3891
+desc: City-created climate finance nonprofit investing a $23M City (1991) + $17M Ontario (2016) + $40M federal (2019) endowment in GTHA low-carbon solutions.
+review:
+  - desc
+programs:
+  - id: the-atmospheric-fund-program
+    name: The Atmospheric Fund (TAF)
+    url: https://taf.ca/
+    types:
+      - grant
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
