@@ -1,0 +1,12 @@
+# Test fixture: middle of a three-level parent chain. Not verified data.
+id: harvard-business-school
+name: Harvard Business School
+aliases: [HBS]
+url: https://www.hbs.edu/
+hosts: [www.hbs.edu]
+parent: harvard-university
+cats: [university]
+hq: { city: us-ma-boston }
+desc: Harvard University's business school, on its Allston campus in Boston.
+last_verified: 2026-10
+programs: []

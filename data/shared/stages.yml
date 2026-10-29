@@ -1,0 +1,95 @@
+# Founder stages, shared by every city. v0.3.
+# Programs are tagged with stage ids only. Substages stay here for the next-step intake;
+# no program page states a substage, so moderators can't verify one.
+# `aka` = the words people search for; the website uses them in headings and URLs.
+# `gate` = what must be true to move to the next stage.
+# Block style on purpose: inside { }, a comma in a description would split the field.
+
+- n: 1
+  id: spark
+  t: Spark
+  s: Exploring
+  aka: [idea stage, aspiring founder]
+  desc: Curious about starting something, or exploring a problem space. No commitment yet.
+  substages:
+    - id: 1a
+      t: Curious
+      desc: Learning about startups or AI and meeting people.
+    - id: 1b
+      t: Exploring
+      desc: Talking to people in a problem space.
+    - id: 1c
+      t: Idea picked
+      desc: One problem chosen to pursue.
+  gate: A specific problem and a target customer, named.
+
+- n: 2
+  id: validate
+  t: Validate
+  s: Proving demand
+  aka: [pre-seed, customer discovery]
+  desc: Testing whether the problem is real and whether people will commit time or money to a solution.
+  substages:
+    - id: 2a
+      t: Problem confirmed
+      desc: Interviews show the pain is real.
+    - id: 2b
+      t: Solution tested
+      desc: Prototype, landing page or a done-by-hand service.
+    - id: 2c
+      t: Demand shown
+      desc: Waitlist, letters of intent, pre-sales or a paid pilot.
+  gate: Validated demand — real customers committing time or money.
+
+- n: 3
+  id: build
+  t: Build
+  s: Delivering to real customers
+  aka: [pre-seed, MVP, early revenue]
+  desc: Demand is validated. Building the product that real customers use and pay for.
+  substages:
+    - id: 3a
+      t: First customers
+      desc: Founder-led sales, often delivered by hand.
+    - id: 3b
+      t: Repeatable product
+      desc: Works without heroics.
+    - id: 3c
+      t: Early traction
+      desc: Retention and growing revenue.
+  gate: Revenue that is predictable month to month.
+
+- n: 4
+  id: operate
+  t: Operate
+  s: Seed to Series A
+  aka: [seed, Series A]
+  desc: Predictable income and a growing team, not yet scaling into new markets.
+  substages:
+    - id: 4a
+      t: Predictable revenue
+      desc: Revenue is steady and not tied to one customer.
+    - id: 4b
+      t: Team and process
+      desc: First hires, first managers, real processes.
+    - id: 4c
+      t: Ready to scale
+      desc: A repeatable sales channel and known unit economics.
+  gate: A proven channel and the capital to expand it.
+
+- n: 5
+  id: scale
+  t: Scale
+  s: Expanding
+  aka: [Series B, growth stage]
+  desc: Expanding into new markets or products with a leadership team.
+  substages:
+    - id: 5a
+      t: New markets or products
+      desc: Expanding beyond the first market.
+    - id: 5b
+      t: Series B and beyond
+      desc: Growth capital.
+    - id: 5c
+      t: Leadership team
+      desc: Executives in place beyond the founders.

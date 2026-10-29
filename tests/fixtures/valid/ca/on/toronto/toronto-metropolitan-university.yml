@@ -1,0 +1,11 @@
+# Test fixture: exercises a parent org with no programs of its own. Not verified data.
+id: toronto-metropolitan-university
+name: Toronto Metropolitan University
+aliases: [Ryerson University]
+url: https://www.torontomu.ca/
+hosts: [www.torontomu.ca]
+cats: [university]
+hq: { city: ca-on-toronto }
+desc: Public university in downtown Toronto.
+last_verified: 2026-10
+programs: []

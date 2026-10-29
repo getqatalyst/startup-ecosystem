@@ -1,0 +1,40 @@
+# Places with a page. Ids: ISO 3166-1 country, then ISO 3166-2 subdivision, then a city slug,
+# lowercase and joined by "-". An org's `hq.city` must be a city listed here.
+# `bounds` is a typo guard for coordinates ([[south, west], [north, east]]), not a border.
+# `moderators`: GitHub teams or handles who review this city's PRs (filled in phase 5).
+
+countries:
+  ca: { name: Canada }
+  us: { name: United States }
+
+subdivisions:
+  ca-on: { name: Ontario }
+  us-ma: { name: Massachusetts }
+
+cities:
+  ca-on-toronto:
+    name: Toronto
+    # centre and zoom from getqatalyst.com/toronto-startup-ecosystem;
+    # bounds = extent of its 86 pinned orgs (Toronto and the GTA) plus 0.05°
+    center: [43.665, -79.39]
+    zoom: 12
+    bounds: [[43.49, -79.71], [43.87, -79.13]]
+    status: draft
+    moderators: []
+  us-ma-boston:
+    name: Boston
+    # centre and zoom from the Mass AI Atlas "Boston area" view;
+    # bounds = extent of its 80 Boston orgs plus 0.05°
+    center: [42.3595, -71.0760]
+    zoom: 13
+    bounds: [[42.26, -71.19], [42.43, -70.98]]
+    status: draft
+    moderators: []
+  us-ma-cambridge:
+    name: Cambridge
+    # centre = mean of its 74 orgs in the Mass AI Atlas; bounds = their extent plus 0.05°
+    center: [42.3654, -71.0936]
+    zoom: 14
+    bounds: [[42.30, -71.20], [42.44, -71.02]]
+    status: draft
+    moderators: []

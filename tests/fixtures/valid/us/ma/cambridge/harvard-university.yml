@@ -1,0 +1,10 @@
+# Test fixture: top of a three-level parent chain. Not verified data.
+id: harvard-university
+name: Harvard University
+url: https://www.harvard.edu/
+hosts: [www.harvard.edu]
+cats: [university]
+hq: { city: us-ma-cambridge }
+desc: Private research university in Cambridge, Massachusetts.
+last_verified: 2026-10
+programs: []

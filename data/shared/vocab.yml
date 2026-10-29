@@ -1,0 +1,125 @@
+# Controlled lists shared by every city. v0.3.
+# The validator builds the schema's allowed values from the keys below, so a new value is
+# added here once. Changing this file affects every city: core maintainers review it.
+
+# Organization categories (`cats`). An org can have several.
+cats:
+  accelerator: Accelerator
+  incubator: Incubator
+  vc: Venture capital
+  angel-network: Angel network
+  university: University or school
+  government: Government
+  funder: Funder or foundation
+  lender: Lender
+  coworking: Coworking or workspace
+  community: Community
+  corporate: Corporate or corporate lab
+  service-provider: Service provider
+
+# Program types (`types`). A program can have several (YC = accelerator + investment).
+types:
+  accelerator: Accelerator
+  incubator: Incubator
+  fellowship: Fellowship
+  competition: Competition or prize
+  grant: Grant
+  loan: Loan
+  investment: Investment
+  coworking: Workspace
+  mentorship: Mentorship or advising
+  course: Course or curriculum
+  community: Community or membership
+  matching: Matching (co-founders, mentors, investors)
+  jobs: Startup jobs
+  service: Service
+
+# Who a program is for, by role (`audiences`).
+audiences:
+  founders: Founders
+  aspiring: Aspiring founders and students
+  investors: Investors
+  talent: People looking to work at startups
+  builders: Ecosystem builders
+  partners: Corporates and government
+
+# Identity groups a program states it is for (`eligibility.who[].group`).
+# Record a group only when the program's own page states it, with a quote.
+# A value is the label; `label_ca` is the wording used on Canadian pages when it differs.
+identity_groups:
+  women: Women
+  black: Black
+  indigenous: Indigenous
+  bipoc: Black, Indigenous and people of colour
+  lgbtq:
+    label: LGBTQ+
+    label_ca: 2SLGBTQ+
+  newcomers: Immigrants and newcomers
+  disability: People with disabilities
+  veterans: Veterans
+
+# How strongly a program states an identity criterion.
+requirement:
+  required: Only for this group
+  priority: Prioritizes this group
+  encouraged: Encourages this group to apply
+
+affiliation_roles:
+  student: Current student
+  alumni: Alumni
+  affiliate: Affiliate (staff, faculty, researcher, fellow)
+  employee: Employee
+
+# Gates on the venture itself (`eligibility.venture[].gate`); each carries a quote.
+venture_gates:
+  incorporated: Incorporated company
+  revenue: Revenue or customers
+  business-age: Age of the business
+  team: Team (size, full-time founders, technical lead)
+  sector: Sector or technology
+  funding-raised: Funding already raised
+
+venture_types:
+  for-profit: For-profit
+  nonprofit: Nonprofit
+  hybrid: Hybrid or social enterprise
+
+partner_roles:
+  co-runs: Co-runs the program
+  funds: Funds the program
+
+access:
+  open: Open to anyone
+  application: Apply to join
+  invite: Invitation only
+  institutional: Through a school or employer
+  membership: Paid or approved membership
+
+delivery:
+  in-person: In person
+  remote: Online
+  hybrid: In person and online
+
+fee:
+  free: Free
+  fee: Fee
+
+founder_receives:
+  none: Nothing in cash
+  grant: Grant
+  loan: Loan
+  investment: Investment
+  prize: Prize
+  stipend: Stipend
+
+cadence:
+  rolling: Rolling applications
+  cohort: Cohorts
+  annual: Once a year
+  ongoing: Ongoing
+
+status:
+  active: Active
+  paused: Paused
+  ended: Ended
+  merged: Merged into another org or program
