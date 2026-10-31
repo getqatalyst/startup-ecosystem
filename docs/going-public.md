@@ -126,7 +126,9 @@ Workflow token default is already read-only and Actions can't approve PRs; keep 
 5. `williamntlam` has read access today. After going public read access means nothing;
    decide whether they get a role.
 
-## 5. Flip visibility
+## 5. Flip visibility: done 2026-10-31
+
+The repository is public.
 
 ```bash
 gh repo edit "$REPO" --visibility public --accept-visibility-change-consequences
