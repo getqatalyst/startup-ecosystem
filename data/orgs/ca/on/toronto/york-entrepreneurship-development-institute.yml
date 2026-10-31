@@ -45,6 +45,8 @@ programs:
     where:
       - ca-on-toronto
     fee: free
+    founder_receives:
+      - grant
     access: application
     cadence:
       - cohort
@@ -63,6 +65,8 @@ programs:
         quote: "The program is offered to Canadian citizens or permanent residents."
       venture_type:
         - nonprofit
+    review:
+      - founder_receives
   - id: york-entrepreneurship-development-institute-innovation-bridge
     name: Innovation Bridge
     url: https://yedi.ca/programs/certificate-programs/innovation-bridge/
@@ -84,6 +88,12 @@ programs:
         quote: "Ages 18-35"
     delivery: hybrid
     access: application
+    cadence:
+      - cohort
+    duration: 7 weeks
+    review:
+      - open_to
+      - where
   - id: york-entrepreneurship-development-institute-youth
     name: Youth
     url: https://yedi.ca/programs/certificate-programs/youth/
@@ -103,7 +113,11 @@ programs:
         min: 15
         max: 29
         quote: "Ages 15-29"
+    open_to:
+      - ca-on-toronto
     delivery: hybrid
+    where:
+      - ca-on-toronto
     fee: free
     founder_receives:
       - grant
@@ -157,8 +171,11 @@ programs:
     open_to:
       - ca
     delivery: in-person
+    where:
+      - ca-on-toronto
     fee: fee
     access: application
+    duration: 5 years
     review:
       - stages
   - id: york-entrepreneurship-development-institute-vc-fund
@@ -184,3 +201,5 @@ programs:
     founder_receives:
       - investment
     access: application
+    review:
+      - open_to

@@ -28,8 +28,8 @@ programs:
       venture:
         - gate: team
           quote: "Candidates should work on their idea full-time or be prepared to work on their idea full-time upon election as an Ashoka Fellow."
+    open_to:
+      - ca
     founder_receives:
       - stipend
     access: application
-    review:
-      - open_to

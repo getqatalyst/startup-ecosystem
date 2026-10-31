@@ -41,8 +41,12 @@ programs:
         - for-profit
     open_to:
       - ca
+    founder_receives:
+      - grant
+    access: invite
     review:
       - stages
+      - founder_receives
   - id: nrc-irap-clean-technology
     name: NRC IRAP support for clean technology
     url: https://nrc.canada.ca/en/support-technology-innovation/nrc-irap-support-clean-technology
@@ -86,5 +90,8 @@ programs:
         - for-profit
     open_to:
       - ca
+    founder_receives:
+      - grant
+    access: application
     review:
       - stages

@@ -37,6 +37,7 @@ programs:
           quote: "Note that your start up will need to be incorporated to receive any funding"
     open_to:
       - ca
+    fee: fee
     founder_receives:
       - stipend
     access: application
@@ -59,6 +60,7 @@ programs:
         - nonprofit
     open_to:
       - ca
+    fee: fee
     access: application
     review:
       - stages
@@ -79,6 +81,8 @@ programs:
         - nonprofit
     open_to:
       - ca
+    fee: fee
     access: application
+    duration: 4 months
     review:
       - stages

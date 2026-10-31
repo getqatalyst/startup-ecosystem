@@ -95,6 +95,7 @@ programs:
       - founders
     open_to:
       - ca
+    delivery: in-person
     where:
       - ca-on-toronto
     fee: free

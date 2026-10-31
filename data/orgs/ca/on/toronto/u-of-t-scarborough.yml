@@ -34,6 +34,12 @@ programs:
     audiences:
       - founders
       - aspiring
+    open_to:
+      - ca-on-toronto
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    fee: free
     access: application
     cadence:
       - cohort

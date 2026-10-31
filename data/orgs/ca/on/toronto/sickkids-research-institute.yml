@@ -34,6 +34,8 @@ programs:
         - org: sickkids-research-institute
           role: affiliate
           quote: "We help researchers at SickKids navigate commercialization pathways through tailored advice, contract negotiation, intellectual property protection, and more."
+    open_to:
+      - ca-on-toronto
     access: institutional
   - id: sickkids-research-institute-proof-of-principle
     name: Proof of Principle Grant Competition
@@ -57,11 +59,14 @@ programs:
       venture:
         - gate: funding-raised
           quote: "The proposed project must not already be supported by other PoP-type or industry funding."
+    open_to:
+      - ca-on-toronto
     founder_receives:
       - grant
     access: application
     cadence:
       - annual
+    duration: 12 months
   - id: sickkids-research-institute-tap
     name: Technology Advancement Program
     aliases:
@@ -80,6 +85,12 @@ programs:
         - org: sickkids-research-institute
           role: affiliate
           quote: "Internal Funding Opportunity"
+    open_to:
+      - ca-on-toronto
     founder_receives:
       - grant
     access: application
+    cadence:
+      - annual
+      - cohort
+    duration: 12 months

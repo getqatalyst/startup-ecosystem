@@ -32,5 +32,8 @@ programs:
       - ca-on-toronto
     fee: fee
     access: membership
+    cadence:
+      - ongoing
     review:
       - stages
+      - open_to

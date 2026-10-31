@@ -38,9 +38,12 @@ programs:
         - org: university-of-toronto
           role: affiliate
           quote: "Summer bootcamp for the broader U of T community."
+    open_to:
+      - ca-on-toronto
     access: application
     cadence:
       - annual
+    duration: 4 months
   - id: the-entrepreneurship-hatchery-launch-lab
     name: Launch Lab
     url: https://hatchery.engineering.utoronto.ca/application-programs/?program=launchlab&step=1
@@ -63,6 +66,8 @@ programs:
         - org: university-of-toronto
           role: affiliate
           quote: "For graduate-level and faculty research driven startups."
+    open_to:
+      - ca-on-toronto
     access: application
   - id: the-entrepreneurship-hatchery-utias
     name: UTIAS
@@ -101,6 +106,8 @@ programs:
           role: alumni
           degree: Applied Science and Engineering
           quote: "For U of T Applied Science and Engineering alumni who return later in their careers to leverage their expertise and launch a startup in partnership with current students."
+    open_to:
+      - ca-on-toronto
     access: application
   - id: the-entrepreneurship-hatchery-seed-funding
     name: Seed Funding
@@ -117,6 +124,8 @@ programs:
         - org: university-of-toronto
           role: student
           quote: "Subject to approval, non-dilutive seed funding gives eligible student founders the time and runway to execute the defined plan."
+    open_to:
+      - ca-on-toronto
     equity: false
     founder_receives:
       - grant

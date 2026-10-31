@@ -28,8 +28,13 @@ programs:
     stage_basis: "Startup2Scaleup connects entrepreneurs with experienced operators and subject-matter experts to accelerate commercialization, sharpen strategy, and unlock sustainable growth."
     audiences:
       - founders
+    delivery: in-person
     where:
       - ca-on-toronto
+    cadence:
+      - ongoing
+    review:
+      - open_to
   - id: schwartz-reisman-innovation-campus-solutions-lab
     name: Solutions Lab
     url: https://sric.utoronto.ca/ecosystem/ecosystem-programs/
@@ -41,8 +46,13 @@ programs:
     stage_basis: "High-energy hackathons, innovation challenges, and pitch competitions that drive rapid ideation, prototype development, and industry-ready solutions."
     audiences:
       - founders
+    delivery: in-person
     where:
       - ca-on-toronto
+    cadence:
+      - ongoing
+    review:
+      - open_to
   - id: schwartz-reisman-innovation-campus-space
     name: Community member space
     url: https://sric.utoronto.ca/our-community-members/
@@ -58,6 +68,9 @@ programs:
       venture:
         - gate: sector
           quote: "We provide space for entrepreneurial, research-based AI and technology scale-up companies that are Canadian-based and globally focused."
+    open_to:
+      - ca
+    delivery: in-person
     where:
       - ca-on-toronto
     fee: fee

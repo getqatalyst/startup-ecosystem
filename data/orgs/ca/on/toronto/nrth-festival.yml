@@ -26,6 +26,8 @@ programs:
     stage_basis: "Early to growth-stage startups seeking investors, partners, and actionable insights to accelerate their next stage of success."
     audiences:
       - founders
+    open_to:
+      - ca
     delivery: in-person
     where:
       - ca-on-toronto
@@ -33,3 +35,4 @@ programs:
     access: open
     cadence:
       - annual
+    duration: 3 days

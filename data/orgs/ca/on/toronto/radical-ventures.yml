@@ -36,6 +36,8 @@ programs:
     founder_receives:
       - investment
     access: application
+    review:
+      - open_to
   - id: radical-ventures-ai-founders-masterclass
     name: Radical AI Founders Masterclass
     url: https://radical.vc/masterclass/
@@ -49,9 +51,13 @@ programs:
     audiences:
       - aspiring
       - founders
+    open_to:
+      - global
     delivery: remote
     fee: free
     access: application
+    review:
+      - open_to
     cadence:
       - annual
     duration: 4 weeks
@@ -67,6 +73,11 @@ programs:
     stage_basis: "The Compute Cohort is designed for early-stage technical founders with a clear, immediate need for compute."
     audiences:
       - founders
+    open_to:
+      - global
     access: application
     cadence:
       - annual
+    review:
+      - delivery
+      - open_to

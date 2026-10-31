@@ -58,6 +58,9 @@ programs:
     open_to:
       - ca
     delivery: hybrid
+    where:
+      - ca-on-toronto
+      - us
     fee: free
     equity: false
     access: application

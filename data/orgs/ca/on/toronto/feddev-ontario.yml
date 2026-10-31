@@ -39,6 +39,7 @@ programs:
         - for-profit
     open_to:
       - ca-on
+    fee: free
     founder_receives:
       - loan
     access: application
@@ -73,6 +74,7 @@ programs:
         - for-profit
     open_to:
       - ca-on
+    fee: free
     founder_receives:
       - loan
     access: application

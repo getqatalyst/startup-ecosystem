@@ -35,9 +35,12 @@ programs:
     partners:
       - org: university-of-toronto
         role: co-runs
+    open_to:
+      - ca-on-toronto
     delivery: in-person
     where:
       - ca-on-toronto
+    fee: fee
     access: membership
   - id: mars-coworking-incubator
     name: MaRS Incubator
@@ -54,7 +57,10 @@ programs:
       venture:
         - gate: sector
           quote: "provides early-stage life sciences ventures a high-tech environment to develop their solutions"
+    open_to:
+      - ca-on-toronto
     delivery: in-person
     where:
       - ca-on-toronto
+    fee: fee
     access: membership

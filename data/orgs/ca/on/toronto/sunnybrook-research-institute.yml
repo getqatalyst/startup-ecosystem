@@ -61,3 +61,4 @@ programs:
     founder_receives:
       - grant
     access: application
+    duration: 12 months

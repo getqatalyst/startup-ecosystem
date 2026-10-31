@@ -109,6 +109,8 @@ programs:
     open_to:
       - ca-on
     access: application
+    review:
+      - founder_receives
   - id: ontario-vehicle-innovation-network
     name: Ontario Vehicle Innovation Network (OVIN)
     aliases:

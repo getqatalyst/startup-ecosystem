@@ -41,10 +41,12 @@ programs:
         quote: "You must be between 18 and 39 years old when you submit your application."
     open_to:
       - ca
+    fee: fee
     equity: false
     founder_receives:
       - loan
     access: application
+    duration: 2 years
   - id: futurpreneur-under-30-startup
     name: Under 30 Startup Program
     url: https://futurpreneur.ca/en/under-30/
@@ -109,7 +111,9 @@ programs:
         quote: "You are between the ages of 18-39"
     open_to:
       - ca
+    fee: fee
     equity: false
     founder_receives:
       - loan
     access: application
+    duration: 2 years

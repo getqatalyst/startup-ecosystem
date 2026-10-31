@@ -81,6 +81,8 @@ programs:
     fee: free
     equity: false
     access: application
+    cadence:
+      - rolling
     duration: 6 months
   - id: venturelab-investment-readiness
     name: Investment Readiness
@@ -101,6 +103,9 @@ programs:
     fee: free
     equity: false
     access: application
+    cadence:
+      - cohort
+    duration: 3 months
   - id: venturelab-hardtech-investor-network
     name: HardTech Investor Network
     url: https://www.venturelab.ca/hardtech-investor-network
@@ -146,6 +151,8 @@ programs:
     delivery: hybrid
     fee: fee
     access: application
+    cadence:
+      - rolling
     duration: 3 months
   - id: venturelab-start-up-visa
     name: Start-up Visa Program

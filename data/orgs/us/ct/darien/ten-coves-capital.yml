@@ -32,3 +32,5 @@ programs:
     founder_receives:
       - investment
     access: invite
+    review:
+      - open_to

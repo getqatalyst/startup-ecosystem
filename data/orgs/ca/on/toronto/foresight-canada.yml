@@ -37,6 +37,7 @@ programs:
           quote: "Cleantech ventures gain tailored support, mentorship, and industry connections to scale globally competitive and commercially viable technologies."
     open_to:
       - global
+    delivery: remote
     fee: fee
     equity: false
     access: application
@@ -86,6 +87,7 @@ programs:
           quote: "Companies across all cleantech sectors"
     open_to:
       - ca
+    delivery: in-person
     access: application
     cadence:
       - annual

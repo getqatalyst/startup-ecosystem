@@ -32,3 +32,5 @@ programs:
       - investment
     equity: true
     access: invite
+    review:
+      - open_to

@@ -32,6 +32,8 @@ programs:
           quote: "These grants support organizations with annual revenue under $500,000 that are community-led and bottom-up, especially by equity-deserving and Indigenous communities."
       venture_type:
         - nonprofit
+    open_to:
+      - ca-on-toronto
     founder_receives:
       - grant
     access: application
@@ -55,3 +57,5 @@ programs:
       - investment
       - loan
     access: application
+    review:
+      - open_to

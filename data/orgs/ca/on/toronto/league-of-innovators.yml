@@ -133,6 +133,8 @@ programs:
     delivery: remote
     fee: free
     access: membership
+    cadence:
+      - cohort
     duration: 2 weeks
   - id: league-of-innovators-community
     name: LOI community
@@ -154,6 +156,11 @@ programs:
         quote: "You’re 30 or younger"
     open_to:
       - ca
+    delivery: hybrid
+    where:
+      - ca
     fee: free
     equity: false
     access: membership
+    cadence:
+      - ongoing

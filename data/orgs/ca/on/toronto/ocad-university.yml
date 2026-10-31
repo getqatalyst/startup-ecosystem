@@ -56,6 +56,11 @@ programs:
       venture:
         - gate: funding-raised
           quote: "Your business has not yet received more than $10,000 in funding or revenue at the time of application"
+    open_to:
+      - ca-on-toronto
+    delivery: hybrid
+    where:
+      - ca-on-toronto
     founder_receives:
       - prize
     access: application
@@ -82,4 +87,8 @@ programs:
         - org: ocad-university
           role: alumni
           quote: "If you are an entrepreneurial-minded student or recent alumni, we’re here to help you explore possibilities, develop business skills, or grow your business."
+    open_to:
+      - ca-on-toronto
     access: institutional
+    review:
+      - delivery

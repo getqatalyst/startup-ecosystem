@@ -35,5 +35,7 @@ programs:
           role: student
           degree: UTIAS graduate program
           quote: "Start@UTIAS encourages UTIAS graduate students to utilize the knowledge and skills they have gained through their education to create business startups."
+    open_to:
+      - ca-on-toronto
     review:
       - eligibility.affiliation

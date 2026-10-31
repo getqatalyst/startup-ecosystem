@@ -28,11 +28,15 @@ programs:
       - operate
     audiences:
       - founders
+    open_to:
+      - ca-on-toronto
     delivery: in-person
     where:
       - ca-on-toronto
     fee: fee
     access: membership
+    cadence:
+      - ongoing
     review:
       - stages
   - id: centre-for-social-innovation-community-membership
@@ -47,7 +51,14 @@ programs:
     audiences:
       - founders
       - aspiring
+    open_to:
+      - ca-on-toronto
+    delivery: in-person
+    where:
+      - ca-on-toronto
     fee: fee
     access: membership
+    cadence:
+      - ongoing
     review:
       - stages

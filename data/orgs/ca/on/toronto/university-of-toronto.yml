@@ -41,11 +41,18 @@ programs:
           quote: "Late-stage startups must have received between $50,000 and $500,000 in cumulative funding or investment, and less than $200,000 in cumulative revenue as of Nov. 18, 2026."
         - gate: revenue
           quote: "Late-stage startups must have received between $50,000 and $500,000 in cumulative funding or investment, and less than $200,000 in cumulative revenue as of Nov. 18, 2026."
+    open_to:
+      - ca-on-toronto
+    delivery: in-person
+    where:
+      - ca-on-toronto
     founder_receives:
       - prize
     access: application
     cadence:
       - annual
+    review:
+      - where
   - id: university-of-toronto-startup-travel-award
     name: U of T Startup Travel Award
     url: https://entrepreneurs.utoronto.ca/uoft-startup-travel-award/
@@ -73,6 +80,8 @@ programs:
         incorporation:
           - ca
         quote: "Be incorporated in Canada, or in the process of incorporation."
+    open_to:
+      - ca-on-toronto
     founder_receives:
       - grant
     access: application
@@ -96,6 +105,8 @@ programs:
         - org: university-of-toronto
           role: alumni
           quote: "U of T startup is led by current U of T students or recent U of T alumni (up to 5 years post-graduation);"
+    open_to:
+      - ca-on-toronto
     access: application
   - id: university-of-toronto-ip-education
     name: Intellectual Property Education Program
