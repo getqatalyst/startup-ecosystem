@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: university-of-toronto
 name: University of Toronto (St. George)
 aliases:
@@ -14,26 +12,108 @@ hq:
   area: St. George
   lat: 43.6629
   lng: -79.3957
-desc: Canada's largest research university. Anchor of Toronto's AI, life-sciences, and quantum ecosystems.
+desc: Research university whose U of T Entrepreneurship office connects students, alumni and researchers across its campuses to a network of accelerators, plus university-wide pitch prizes, travel awards and IP education.
+last_verified: 2026-10
 programs:
-  - id: university-of-toronto-program
-    name: University of Toronto (St. George)
-    url: https://www.utoronto.ca/
+  - id: university-of-toronto-desjardins-startup-prize
+    name: Desjardins Startup Prize
+    url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/desjardins-startup-prize/
     types:
-      - community
+      - competition
+    stages:
+      - spark
+      - validate
+      - build
+    stage_basis: "Are you a startup founder or have a great idea you want to turn into a business?"
+    audiences:
+      - founders
+      - aspiring
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "At least one founder is a current full-time U of T student or a recent alum from a full-time program (i.e. graduated no earlier than June 2024)."
+        - org: university-of-toronto
+          role: alumni
+          quote: "At least one founder is a current full-time U of T student or a recent alum from a full-time program (i.e. graduated no earlier than June 2024)."
+      venture:
+        - gate: funding-raised
+          quote: "Late-stage startups must have received between $50,000 and $500,000 in cumulative funding or investment, and less than $200,000 in cumulative revenue as of Nov. 18, 2026."
+        - gate: revenue
+          quote: "Late-stage startups must have received between $50,000 and $500,000 in cumulative funding or investment, and less than $200,000 in cumulative revenue as of Nov. 18, 2026."
+    founder_receives:
+      - prize
+    access: application
+    cadence:
+      - annual
+  - id: university-of-toronto-startup-travel-award
+    name: U of T Startup Travel Award
+    url: https://entrepreneurs.utoronto.ca/uoft-startup-travel-award/
+    types:
+      - grant
+    stages:
+      - validate
+      - build
+      - operate
+    stage_basis: "This funding is intended to accelerate venture growth and facilitate commercialization, customer acquisition, fundraising, or market expansion."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "At least one founder must be a current, full-time U of T student, post doc or recent alum from a full-time program (i.e. graduated no earlier than June 2024)."
+        - org: university-of-toronto
+          role: affiliate
+          quote: "At least one founder must be a current, full-time U of T student, post doc or recent alum from a full-time program (i.e. graduated no earlier than June 2024)."
+        - org: university-of-toronto
+          role: alumni
+          quote: "At least one founder must be a current, full-time U of T student, post doc or recent alum from a full-time program (i.e. graduated no earlier than June 2024)."
+      place:
+        incorporation:
+          - ca
+        quote: "Be incorporated in Canada, or in the process of incorporation."
+    founder_receives:
+      - grant
+    access: application
+    cadence:
+      - rolling
+  - id: university-of-toronto-buy-blue
+    name: Buy Blue Program
+    url: https://entrepreneurs.utoronto.ca/resource/buy-blue-program/
+    types:
+      - service
+    stages:
+      - build
+    stage_basis: "enables U of T academic and service entities to be the first buyer of products or services from new U of T startups at a discounted price"
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "U of T startup is led by current U of T students or recent U of T alumni (up to 5 years post-graduation);"
+        - org: university-of-toronto
+          role: alumni
+          quote: "U of T startup is led by current U of T students or recent U of T alumni (up to 5 years post-graduation);"
+    access: application
+  - id: university-of-toronto-ip-education
+    name: Intellectual Property Education Program
+    aliases:
+      - IP Education Program
+    url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/ip-education/
+    types:
+      - course
     stages:
       - spark
       - validate
     audiences:
       - aspiring
       - founders
-    access: institutional
-    fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    open_to:
+      - global
+    delivery: remote
+    fee: free
+    access: open
+    cadence:
+      - rolling
