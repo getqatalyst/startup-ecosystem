@@ -4,6 +4,10 @@ Each organization is one file: `data/orgs/<country>/<province-or-state>/<city>/<
 filed under the city where the org is based, with its programs inside. To add or fix one,
 edit that file and open a pull request. CI checks it; a moderator reviews it.
 
+No Git? [Open an issue](https://github.com/getqatalyst/startup-ecosystem/issues/new/choose)
+to suggest an org, suggest a program or flag a correction; a moderator turns it into a pull
+request.
+
 ## Rules for an entry
 
 CI enforces the rules marked **(CI)**. A moderator checks the rest in review.

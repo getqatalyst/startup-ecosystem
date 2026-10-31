@@ -1,0 +1,52 @@
+name: Flag a correction
+description: An org or program that is wrong, out of date, ended, or whose link no longer works
+title: "Fix: "
+labels: [correction]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A moderator checks the org's own site and fixes the record in a pull request. A link
+        that shows the right information helps most.
+  - type: input
+    id: record
+    attributes:
+      label: Which org or program?
+      description: Its id (the file name, like `dmz`), its name, or the file path.
+      placeholder: dmz
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What's wrong?
+      multiple: true
+      options:
+        - The link is dead or shows an error
+        - The site belongs to someone else now, is for sale, or shows spam
+        - It was renamed or moved to a new site
+        - It ended, paused, or merged into another org or program
+        - Who it's for (eligibility) is wrong
+        - Another fact is wrong (category, stage, type, location)
+        - It's a duplicate of another record
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What it says now, and what it should say.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Link that shows the right information
+      placeholder: https://
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Check
+      options:
+        - label: I work for or represent this organization (that's fine; say so).
