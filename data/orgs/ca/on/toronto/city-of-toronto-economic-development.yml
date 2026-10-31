@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: city-of-toronto-economic-development
 name: City of Toronto Economic Development
 aliases:
@@ -14,25 +12,111 @@ hq:
   area: City Hall
   lat: 43.6534
   lng: -79.3841
-desc: Municipal economic development office and Toronto Business Development Centre.
+desc: The City of Toronto's business and startup services, including the Toronto Small Business Enterprise Centre, which gives entrepreneurs free advice, mentoring and provincially funded grants to start and grow a business in Toronto.
+last_verified: 2026-10
 programs:
-  - id: city-of-toronto-economic-development-program
-    name: City of Toronto Economic Development
-    url: https://www.toronto.ca/business-economy/
+  - id: city-of-toronto-economic-development-sbec
+    name: Toronto Small Business Enterprise Centre
+    url: https://www.toronto.ca/business-economy/new-businesses-startups/small-business-support/
     types:
-      - grant
+      - service
+      - mentorship
     stages:
+      - spark
+      - validate
       - build
-      - operate
     audiences:
       - founders
-    access: open
+      - aspiring
+    partners:
+      - org_name: Government of Ontario
+        role: funds
+    delivery: hybrid
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: open
+    cadence:
+      - ongoing
+  - id: city-of-toronto-economic-development-entrepreneur-mentoring
+    name: Entrepreneur Mentoring Program
+    url: https://www.toronto.ca/business-economy/new-businesses-startups/small-business-support/
+    types:
+      - mentorship
+      - matching
+    stages:
+      - build
+    stage_basis: "Have a registered business; have a completed business plan and cash flow projection."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: incorporated
+          quote: "Have a registered business"
+    access: application
+  - id: city-of-toronto-economic-development-starter-company-plus
+    name: Starter Company Plus
+    url: https://www.toronto.ca/business-economy/business-operation-growth/business-incentives/starter-company-plus-grant/
+    types:
+      - grant
+      - course
+      - mentorship
+    stages:
+      - build
+    stage_basis: "In operation for minimum six months and up to five years, with consistent revenues month over month."
+    audiences:
+      - founders
+    eligibility:
+      venture_type:
+        - for-profit
+      venture:
+        - gate: incorporated
+          quote: "Must be a registered business at the time of application (Sole Proprietor, Partnership or Corporation)"
+        - gate: business-age
+          quote: "Must have been in operation for minimum six months and up to five years and be able to demonstrate financial activity statements for this period"
+        - gate: revenue
+          quote: "Businesses that operate year-round, i.e. not seasonal businesses, with consistent revenues month over month"
+      place:
+        citizenship:
+          - ca
+        quote: "Be a Canadian citizen or permanent resident"
+      age:
+        min: 18
+        quote: "Be 18 years of age or older"
+    partners:
+      - org_name: Government of Ontario
+        role: funds
+    delivery: hybrid
+    founder_receives:
+      - grant
+    access: application
+  - id: city-of-toronto-economic-development-summer-company
+    name: Summer Company
+    url: https://www.toronto.ca/business-economy/business-operation-growth/business-incentives/summer-company-grant/
+    types:
+      - grant
+      - course
+      - mentorship
+    stages:
+      - spark
+    stage_basis: "Starting a new business (i.e. not growing an existing business)."
+    audiences:
+      - aspiring
+    eligibility:
+      venture:
+        - gate: business-age
+          quote: "Starting a new business (i.e. not growing an existing business)"
+      place:
+        citizenship:
+          - ca
+        quote: "Be a Canadian citizen or permanent resident"
+      age:
+        min: 15
+        max: 29
+        quote: "Be 15 to 29 years old"
+    partners:
+      - org_name: Government of Ontario
+        role: funds
+    founder_receives:
+      - grant
+    access: application
+    cadence:
+      - annual

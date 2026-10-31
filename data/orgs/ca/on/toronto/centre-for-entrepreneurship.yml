@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: centre-for-entrepreneurship
 name: Centre for Entrepreneurship (Arts & Science)
 aliases:
@@ -7,32 +5,74 @@ aliases:
 url: https://www.entrepreneurship.artsci.utoronto.ca/
 hosts:
   - www.entrepreneurship.artsci.utoronto.ca
+parent: university-of-toronto
 cats:
-  - accelerator
+  - university
+  - coworking
 hq:
   city: ca-on-toronto
   area: Schwartz Reisman Campus
   lat: 43.6604
   lng: -79.3893
-desc: "U of T Arts & Science entrepreneurship hub: education, co-curricular programs, and venture acceleration. Successor to the Impact Centre."
+desc: The University of Toronto Faculty of Arts & Science's entrepreneurship centre, offering courses, mentorship, prizes, makerspaces and co-working for its students, alumni, faculty and staff.
+last_verified: 2026-10
 programs:
-  - id: centre-for-entrepreneurship-program
-    name: Centre for Entrepreneurship (Arts & Science)
-    url: https://www.entrepreneurship.artsci.utoronto.ca/
+  - id: centre-for-entrepreneurship-vms
+    name: Venture Mentoring Service (VMS)
+    url: https://www.entrepreneurship.artsci.utoronto.ca/creation/creation-programs/venture-mentoring-service-vms
     types:
-      - accelerator
+      - mentorship
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "The VMS program is available to all U of T Arts & Science students, alumni, faculty, and staff who can attend meetings on the St. George campus."
+        - org: university-of-toronto
+          role: alumni
+        - org: university-of-toronto
+          role: affiliate
+        - org: university-of-toronto
+          role: employee
+    delivery: in-person
+    fee: free
+    access: application
+    cadence:
+      - annual
+  - id: centre-for-entrepreneurship-runway
+    name: CfE Runway Program
+    url: https://www.entrepreneurship.artsci.utoronto.ca/creation/creation-programs/cfe-runway-program
+    types:
+      - mentorship
+    stages:
+      - validate
+    stage_basis: "Designed to help early-stage entrepreneurs validate their product and business model through structured mentorship and support."
+    audiences:
+      - founders
+    access: application
+  - id: centre-for-entrepreneurship-coworking
+    name: Co-Working Space Membership
+    url: https://www.entrepreneurship.artsci.utoronto.ca/co-working-space
+    types:
+      - coworking
     stages:
       - validate
       - build
     audiences:
       - founders
-    access: open
-    fee: free
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "Our co-working space is available 24/7 to Arts & Science students and alumni through a membership program."
+        - org: university-of-toronto
+          role: alumni
+    delivery: in-person
+    access: membership
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
-      - open_to

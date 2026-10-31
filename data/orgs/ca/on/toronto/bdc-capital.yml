@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: bdc-capital
 name: BDC Capital
 aliases:
@@ -14,25 +12,108 @@ hq:
   area: Financial District
   lat: 43.6479
   lng: -79.3837
-desc: Canada's development bank investment arm; funds across all stages and themes.
+desc: The investment arm of BDC, Canada's business development bank. It offers venture capital, growth equity and non-dilutive growth financing to Canadian technology companies and entrepreneurs.
+last_verified: 2026-10
+review:
+  - hq
 programs:
-  - id: bdc-capital-program
-    name: BDC Capital
-    url: https://www.bdc.ca/en/bdc-capital
+  - id: bdc-capital-venture-capital
+    name: Venture Capital
+    url: https://www.bdc.ca/en/bdc-capital/venture-capital
     types:
       - investment
     stages:
       - build
       - operate
+      - scale
     audiences:
       - founders
-    access: membership
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "Our equity investment approach, expert advice and vast network help Canadian technology innovators build world-class companies."
+    open_to:
+      - ca
+    equity: true
+    founder_receives:
+      - investment
+    access: application
+  - id: bdc-capital-seed-venture-fund
+    name: Seed Venture Fund
+    variant_of: bdc-capital-venture-capital
+    last_verified: 2026-10
+    url: https://www.bdc.ca/en/bdc-capital/venture-capital/funds/seed-fund
+    stages:
+      - build
+      - operate
+    stage_basis: "Seed-stage companies; early-stage capital to get ideas off the ground."
+  - id: bdc-capital-black-entrepreneurs-fund
+    name: Black Entrepreneurs Fund
+    variant_of: bdc-capital-venture-capital
+    last_verified: 2026-10
+    url: https://www.bdc.ca/en/bdc-capital/venture-capital/funds/black-entrepreneurs-fund
+    stages:
+      - build
+      - operate
+      - scale
+    stage_basis: "Early-stage venture capital for companies with demonstrated market traction or breakthrough technology; minority growth investments in profitable businesses."
+    eligibility:
+      who:
+        - group: black
+          requirement: required
+          quote: "Through our Fund, we aim to invest in Black-led businesses with strong growth potential"
+          source: https://www.bdc.ca/en/bdc-capital/venture-capital/funds/black-entrepreneurs-fund
+  - id: bdc-capital-thrive-venture-fund
+    name: Thrive Venture Fund
+    variant_of: bdc-capital-venture-capital
+    last_verified: 2026-10
+    url: https://www.bdc.ca/en/bdc-capital/venture-capital/funds/thrive-platform/thrive-venture-fund
+    stages:
+      - validate
+      - build
+      - operate
+      - scale
+    stage_basis: "Pre-seed to Series B."
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "Pre-seed to Series B women-led Canadian technology companies seeking equity investments"
+          source: https://www.bdc.ca/en/bdc-capital/venture-capital/funds/thrive-platform/thrive-venture-fund
+  - id: bdc-capital-growth-transition-capital
+    name: Growth & Transition Capital
+    url: https://www.bdc.ca/en/bdc-capital/growth-transition-capital
+    types:
+      - loan
+    stages:
+      - operate
+      - scale
+    stage_basis: "Established or high-growth companies looking to finance a new project or business transition."
+    audiences:
+      - founders
+    open_to:
+      - ca
+    equity: false
+    founder_receives:
+      - loan
+    access: application
+  - id: bdc-capital-growth-equity-partners
+    name: Growth Equity Partners
+    url: https://www.bdc.ca/en/bdc-capital/growth-equity
+    types:
+      - investment
+    stages:
+      - scale
+    stage_basis: "Established, profitable mid-market companies with a proven business model."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: revenue
+          quote: "a history of stable positive cash flows"
+    open_to:
+      - ca
+    equity: true
+    founder_receives:
+      - investment
+    access: application

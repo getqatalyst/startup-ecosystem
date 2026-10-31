@@ -14,7 +14,7 @@ hq:
   area: Scarborough
   lat: 43.7854
   lng: -79.2266
-desc: Toronto's first community college; programs in aerospace, transportation, and health sciences.
+desc: Public college with campuses in the eastern Greater Toronto Area. Its Centennial Innovates department runs applied research, innovation and entrepreneurship work with students, faculty and industry.
 programs:
   - id: centennial-college-program
     name: Centennial College
