@@ -20,7 +20,12 @@ the source page.
 
 To add or fix an entry, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-**Using the data:** read `dist/ecosystem.json` (`bun run build`). Fields listed under a record's
+**Using the data:** download
+[`ecosystem.json`](https://github.com/getqatalyst/startup-ecosystem/releases/latest/download/ecosystem.json)
+or the flat
+[`ecosystem.csv`](https://github.com/getqatalyst/startup-ecosystem/releases/latest/download/ecosystem.csv)
+(one row per program) from the latest release, rebuilt on every merge to `main`; or build
+`dist/ecosystem.json` yourself (`bun run build`). Fields listed under a record's
 `review` are unconfirmed first guesses. Program ids ending in `-program` are placeholders from
 the Toronto import and will change when the program is confirmed; don't key on them.
 
