@@ -33,8 +33,8 @@ organizations rename, domains get resold.
 - **Contributions.** Issue forms (suggest an org or program, flag a correction) and regional
   moderators through CODEOWNERS.
 
-Merged on `main`: the data model, validator, CI and the Toronto import. In open pull requests,
-under review: the Toronto verification, the Massachusetts import, link health, issue forms,
+Merged on `main`: the data model, validator, CI, the Toronto import and the Massachusetts import. In open pull requests,
+under review: the Toronto verification, link health, issue forms,
 releases, and offices and chapters.
 
 ## Why others can build on it
@@ -45,14 +45,24 @@ getqatalyst.com/ecosystem/ca/on/toronto renders the Toronto map and a page per o
 the dataset, with schema.org markup. It shows a program's facts only once verified and keeps
 unverified pages out of search.
 
+## Demo scenario
+
+A founder building in Toronto is moving to Boston. On the Toronto map they found DMZ's Validator,
+a verified program for Black founders, in the program page's own words. Now they open the
+Massachusetts map: 141 organizations from the Mass AI Atlas across Boston, Cambridge and beyond,
+in the same format. Its tray shows the Toronto programs still open to them, such as DMZ and
+Creative Destruction Lab. Both maps come from the same open files.
+
 ## What's next
 
 1. Organizations claim and manage their own record, verified on their own website; owner identity
    stays private.
-2. More cities, and Massachusetts on the site.
+2. Verify the Massachusetts programs one by one, as Toronto's were; then more cities.
 3. A short "find my next step" intake that matches a founder to programs.
 
 ## Links
 
 - Repo: https://github.com/getqatalyst/startup-ecosystem
-- Live map: https://getqatalyst.com/ecosystem/ca/on/toronto
+- Both regions: https://getqatalyst.com/ecosystem/
+- Toronto map: https://getqatalyst.com/ecosystem/ca/on/toronto/
+- Massachusetts map: https://getqatalyst.com/ecosystem/us/ma/
