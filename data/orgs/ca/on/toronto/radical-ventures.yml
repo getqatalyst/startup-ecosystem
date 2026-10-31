@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: radical-ventures
 name: Radical Ventures
 aliases:
@@ -14,27 +12,61 @@ hq:
   area: Yorkville
   lat: 43.6699
   lng: -79.3836
-desc: AI-focused seed-Series B. Closed $650M USD Fund 4 in Oct 2025. Backed Cohere, Waabi. Office at 59 Hayden St.
-review:
-  - desc
+desc: Venture capital firm backing AI companies from day-zero incubation to growth stage, with offices in Toronto, San Francisco and London.
+last_verified: 2026-10
 programs:
-  - id: radical-ventures-program
-    name: Radical Ventures
+  - id: radical-ventures-investment
+    name: Investment
     url: https://radical.vc/
     types:
       - investment
     stages:
+      - validate
       - build
       - operate
+      - scale
+    stage_basis: "We back AI visionaries who will define the future of progress — from day-zero incubations to growth and pre-IPO scaling."
     audiences:
       - founders
-    access: invite
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "We back AI visionaries who will define the future of progress"
+    equity: true
+    founder_receives:
+      - investment
+    access: application
+  - id: radical-ventures-ai-founders-masterclass
+    name: Radical AI Founders Masterclass
+    url: https://radical.vc/masterclass/
+    types:
+      - course
+      - community
+    stages:
+      - spark
+      - validate
+    stage_basis: "You don’t need to have incorporated or be a company founder to participate."
+    audiences:
+      - aspiring
+      - founders
+    delivery: remote
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: application
+    cadence:
+      - annual
+    duration: 4 weeks
+  - id: radical-ventures-compute-cohort
+    name: Compute Cohort
+    url: https://radical.vc/radical-founders-faqs/
+    types:
+      - service
+      - mentorship
+    stages:
+      - validate
+      - build
+    stage_basis: "The Compute Cohort is designed for early-stage technical founders with a clear, immediate need for compute."
+    audiences:
+      - founders
+    access: application
+    cadence:
+      - annual

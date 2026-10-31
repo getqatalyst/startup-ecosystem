@@ -1,9 +1,9 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: nrth-festival
-name: Nrth Festival
+name: Nrth
 aliases:
   - Elevate
+  - Nrth Festival
+  - Elevate Festival
 url: https://nrth.ca/
 hosts:
   - nrth.ca
@@ -11,29 +11,25 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-desc: Annual innovation festival; one of Canada's largest tech conferences.
-review:
-  - desc
-  - hq
+desc: Canadian non-profit, formerly Elevate, that runs the annual Nrth Festival and year-round programs connecting founders and business leaders with customers, investors and insight on emerging technology.
+last_verified: 2026-10
 programs:
-  - id: nrth-festival-program
-    name: Nrth Festival
-    url: https://nrth.ca/
+  - id: nrth-festival-startup-pass
+    name: Startup Pass
+    url: https://nrth.ca/startup-experience-app/
     types:
       - community
+      - matching
     stages:
-      - spark
-      - validate
+      - build
+      - operate
+    stage_basis: "Early to growth-stage startups seeking investors, partners, and actionable insights to accelerate their next stage of success."
     audiences:
-      - aspiring
       - founders
-    access: membership
+    delivery: in-person
+    where:
+      - ca-on-toronto
     fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: open
+    cadence:
+      - annual

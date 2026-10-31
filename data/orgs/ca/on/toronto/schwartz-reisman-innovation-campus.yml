@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: schwartz-reisman-innovation-campus
 name: Schwartz Reisman Innovation Campus
 aliases:
@@ -7,6 +5,7 @@ aliases:
 url: https://sric.utoronto.ca/
 hosts:
   - sric.utoronto.ca
+parent: university-of-toronto
 cats:
   - university
 hq:
@@ -14,28 +13,53 @@ hq:
   area: 108 College St
   lat: 43.6604
   lng: -79.3893
-desc: U of T's flagship innovation campus (West tower opened 2023/24). Home to Vector, UTEST, the Centre for Entrepreneurship, ONRamp, and more.
-review:
-  - desc
+desc: University of Toronto's innovation campus for AI and health sciences, housing research-based startups, scale-ups, accelerators and institutes, with workshops, talent and challenge programming for founders.
+last_verified: 2026-10
 programs:
-  - id: schwartz-reisman-innovation-campus-program
-    name: Schwartz Reisman Innovation Campus
-    url: https://sric.utoronto.ca/
+  - id: schwartz-reisman-innovation-campus-startup2scaleup
+    name: Startup2Scaleup
+    url: https://sric.utoronto.ca/ecosystem/ecosystem-programs/
     types:
-      - community
+      - course
+      - mentorship
+    stages:
+      - build
+      - operate
+    stage_basis: "Startup2Scaleup connects entrepreneurs with experienced operators and subject-matter experts to accelerate commercialization, sharpen strategy, and unlock sustainable growth."
+    audiences:
+      - founders
+    where:
+      - ca-on-toronto
+  - id: schwartz-reisman-innovation-campus-solutions-lab
+    name: Solutions Lab
+    url: https://sric.utoronto.ca/ecosystem/ecosystem-programs/
+    types:
+      - competition
     stages:
       - spark
       - validate
+    stage_basis: "High-energy hackathons, innovation challenges, and pitch competitions that drive rapid ideation, prototype development, and industry-ready solutions."
     audiences:
-      - aspiring
       - founders
-    access: institutional
-    fee: free
+    where:
+      - ca-on-toronto
+  - id: schwartz-reisman-innovation-campus-space
+    name: Community member space
+    url: https://sric.utoronto.ca/our-community-members/
+    types:
+      - coworking
+    stages:
+      - operate
+      - scale
+    stage_basis: "U of T-led startups require physical space to bring their products to market once they move beyond the incubation stage."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "We provide space for entrepreneurial, research-based AI and technology scale-up companies that are Canadian-based and globally focused."
+    where:
+      - ca-on-toronto
+    fee: fee
     review:
       - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to

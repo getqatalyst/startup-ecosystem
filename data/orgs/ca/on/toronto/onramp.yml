@@ -1,10 +1,9 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: onramp
 name: ONRamp
-url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/onramp-membership/
+url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/onramp/
 hosts:
-  - entrepreneurs.utoronto.ca/for-entrepreneurs/onramp-membership
+  - entrepreneurs.utoronto.ca/for-entrepreneurs/onramp
+parent: university-of-toronto
 cats:
   - coworking
 hq:
@@ -12,24 +11,26 @@ hq:
   area: Schwartz Reisman Campus
   lat: 43.6604
   lng: -79.3893
-desc: Central co-working space for the U of T Entrepreneurship community, now at the Schwartz Reisman Innovation Campus.
+desc: University of Toronto Entrepreneurship's co-working and collaboration space at the Schwartz Reisman Innovation Campus, for U of T founders, members of affiliated accelerators and ecosystem partners.
+last_verified: 2026-10
 programs:
-  - id: onramp-program
-    name: ONRamp
-    url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/onramp-membership/
+  - id: onramp-membership
+    name: ONRamp Membership
+    url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/onramp/
     types:
       - coworking
+      - community
     stages:
+      - validate
       - build
     audiences:
       - founders
+    delivery: in-person
+    where:
+      - ca-on-toronto
+    fee: fee
     access: membership
-    fee: free
+    cadence:
+      - rolling
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
-      - open_to

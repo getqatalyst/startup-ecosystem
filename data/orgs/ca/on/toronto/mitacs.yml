@@ -1,36 +1,86 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: mitacs
 name: Mitacs
 url: https://www.mitacs.ca/
 hosts:
   - www.mitacs.ca
 cats:
-  - government
+  - funder
 hq:
   city: ca-on-toronto
   area: MaRS Centre
   lat: 43.6596
   lng: -79.3886
-desc: National research-internship organization connecting students with companies and academia.
+desc: National not-for-profit that co-funds research internships, matching post-secondary students and postdoctoral fellows with companies and other organizations on innovation projects.
+last_verified: 2026-10
+review:
+  - hq
 programs:
-  - id: mitacs-program
-    name: Mitacs
-    url: https://www.mitacs.ca/
+  - id: mitacs-accelerate-entrepreneur
+    name: Accelerate Entrepreneur
+    url: https://www.mitacs.ca/our-programs/accelerate-entrepreneur/
+    types:
+      - grant
+    stages:
+      - validate
+      - build
+    stage_basis: "Piloting and testing a new product, service or technology; iterating and improving on an existing product, service, or technology."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Mitacs partner college or university in Canada
+          role: student
+          quote: "Students and post-doctoral fellows at Mitacs partner colleges and universities in Canada are eligible."
+        - org_name: Mitacs-approved incubator
+          role: affiliate
+          quote: "You need to be actively housed at an approved incubator facility for the duration of the proposed project."
+      venture:
+        - gate: incorporated
+          quote: "Note that your start up will need to be incorporated to receive any funding"
+    open_to:
+      - ca
+    founder_receives:
+      - stipend
+    access: application
+    cadence:
+      - rolling
+  - id: mitacs-accelerate
+    name: Accelerate
+    url: https://www.mitacs.ca/our-programs/accelerate/
     types:
       - grant
     stages:
       - build
       - operate
+      - scale
     audiences:
       - founders
-    access: membership
-    fee: free
+    eligibility:
+      venture_type:
+        - for-profit
+        - nonprofit
+    open_to:
+      - ca
+    access: application
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+  - id: mitacs-business-strategy-internship
+    name: Business Strategy Internship
+    url: https://www.mitacs.ca/our-programs/business-strategy-internship/
+    types:
+      - grant
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    eligibility:
+      venture_type:
+        - for-profit
+        - nonprofit
+    open_to:
+      - ca
+    access: application
+    review:
+      - stages

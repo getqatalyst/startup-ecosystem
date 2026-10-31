@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: omers-ventures
 name: OMERS Ventures
 aliases:
@@ -14,11 +12,10 @@ hq:
   area: Financial District
   lat: 43.6496
   lng: -79.3838
-desc: Pension-backed VC; $5M-$25M Series A-growth cheques into enterprise software. Refocused on Canada in 2025.
-review:
-  - desc
+desc: The venture capital arm of OMERS, the Ontario municipal pension plan, investing in early-stage technology founders with a Canada-first focus.
+last_verified: 2026-10
 programs:
-  - id: omers-ventures-program
+  - id: omers-ventures-investment
     name: OMERS Ventures
     url: https://www.omersventures.com/
     types:
@@ -26,15 +23,11 @@ programs:
     stages:
       - build
       - operate
+    stage_basis: "We invest in early stage technology founders building solutions for a better tomorrow."
     audiences:
       - founders
-    access: invite
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    open_to:
+      - global
+    founder_receives:
+      - investment
+    access: application
