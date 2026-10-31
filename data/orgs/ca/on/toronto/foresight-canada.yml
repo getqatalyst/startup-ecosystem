@@ -48,6 +48,7 @@ programs:
     name: Ideation
     url: https://foresightcac.com/innovators#ideation
     variant_of: foresight-canada-acceleration
+    last_verified: 2026-10
     stages:
       - spark
       - validate
@@ -56,6 +57,7 @@ programs:
     name: Commercialization
     url: https://foresightcac.com/innovators#commercialization
     variant_of: foresight-canada-acceleration
+    last_verified: 2026-10
     stages:
       - build
       - operate
@@ -64,6 +66,7 @@ programs:
     name: Scale
     url: https://foresightcac.com/innovators#scale
     variant_of: foresight-canada-acceleration
+    last_verified: 2026-10
     stages:
       - operate
       - scale

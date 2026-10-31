@@ -44,6 +44,7 @@ programs:
     name: Artificial Intelligence Stream
     url: https://creativedestructionlab.com/streams/ai/
     variant_of: creative-destruction-lab-toronto
+    last_verified: 2026-10
     eligibility:
       venture:
         - gate: sector
@@ -52,6 +53,7 @@ programs:
     name: CDL Quantum Stream
     url: https://creativedestructionlab.com/streams/quantum/
     variant_of: creative-destruction-lab-toronto
+    last_verified: 2026-10
     eligibility:
       venture:
         - gate: sector
@@ -61,6 +63,7 @@ programs:
     name: CDL Space
     url: https://creativedestructionlab.com/streams/space/
     variant_of: creative-destruction-lab-toronto
+    last_verified: 2026-10
     eligibility:
       venture:
         - gate: sector
@@ -70,6 +73,7 @@ programs:
     name: CDL Cancer
     url: https://creativedestructionlab.com/streams/health/cancer/
     variant_of: creative-destruction-lab-toronto
+    last_verified: 2026-10
     eligibility:
       venture:
         - gate: sector
@@ -79,6 +83,7 @@ programs:
     name: Neuro Stream
     url: https://creativedestructionlab.com/streams/health/neuro/
     variant_of: creative-destruction-lab-toronto
+    last_verified: 2026-10
     eligibility:
       venture:
         - gate: sector

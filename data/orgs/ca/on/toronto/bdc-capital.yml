@@ -41,6 +41,7 @@ programs:
   - id: bdc-capital-seed-venture-fund
     name: Seed Venture Fund
     variant_of: bdc-capital-venture-capital
+    last_verified: 2026-10
     url: https://www.bdc.ca/en/bdc-capital/venture-capital/funds/seed-fund
     stages:
       - build
@@ -49,6 +50,7 @@ programs:
   - id: bdc-capital-black-entrepreneurs-fund
     name: Black Entrepreneurs Fund
     variant_of: bdc-capital-venture-capital
+    last_verified: 2026-10
     url: https://www.bdc.ca/en/bdc-capital/venture-capital/funds/black-entrepreneurs-fund
     stages:
       - build
@@ -64,6 +66,7 @@ programs:
   - id: bdc-capital-thrive-venture-fund
     name: Thrive Venture Fund
     variant_of: bdc-capital-venture-capital
+    last_verified: 2026-10
     url: https://www.bdc.ca/en/bdc-capital/venture-capital/funds/thrive-platform/thrive-venture-fund
     stages:
       - validate

@@ -51,6 +51,7 @@ programs:
     name: Under 30 Startup Program
     url: https://futurpreneur.ca/en/under-30/
     variant_of: futurpreneur-startup-program
+    last_verified: 2026-10
     partners:
       - org_name: RBC
         role: funds
@@ -65,6 +66,7 @@ programs:
     name: Black Entrepreneur Startup Program
     url: https://futurpreneur.ca/en/offering/black-entrepreneur-startup/
     variant_of: futurpreneur-startup-program
+    last_verified: 2026-10
     eligibility:
       who:
         - group: black
@@ -75,6 +77,7 @@ programs:
     name: Indigenous Entrepreneur Startup Program
     url: https://futurpreneur.ca/en/offering/indigenous-entrepreneur-startup/
     variant_of: futurpreneur-startup-program
+    last_verified: 2026-10
     partners:
       - org_name: RBC Origins
         role: funds
