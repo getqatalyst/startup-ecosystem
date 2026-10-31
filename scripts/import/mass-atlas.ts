@@ -59,6 +59,9 @@ const slug = (name: string) =>
 const SKIPPED_CATS: Record<string, string> = {
 	startup:
 		"AI companies, not organizations that support founders; vocab v0.3 has no category for them",
+	// the link check also found aimlconference.com (MIT Sloan AI & ML Conference) parked for sale
+	event:
+		"conferences, festivals and hackathons; this import covers permanent orgs and their programs",
 };
 
 // Atlas category → org category
@@ -71,12 +74,11 @@ const CATEGORY: Record<string, string> = {
 	space: "coworking",
 	community: "community",
 	student: "community",
-	event: "community",
 	gov: "government",
 };
 // Atlas categories that mix kinds our vocab tells apart (accelerators with incubators and
-// university centres, labs with coworking, clubs, events), so the category is a guess
-const MIXED_CATS = new Set(["accel", "space", "student", "event"]);
+// university centres, labs with coworking, clubs), so the category is a guess
+const MIXED_CATS = new Set(["accel", "space", "student"]);
 // entries whose Atlas category doesn't describe them; flagged too
 const CAT_OVERRIDE: Record<string, string> = {
 	mghpcc: "research-institute", // a computing centre shared by universities, not an agency
@@ -163,7 +165,6 @@ const ACCESS: Record<string, string> = {
 	space: "membership",
 	community: "open",
 	student: "institutional",
-	event: "open",
 	gov: "application",
 };
 const PAID = new Set(["space"]);
@@ -173,7 +174,6 @@ const PAID = new Set(["space"]);
 const ID: Record<string, string> = {
 	"idea-neu": "idea-northeastern",
 	foundry: "the-foundry-cambridge",
-	odsc: "odsc-east",
 	mghpcc: "mghpcc",
 	nerd: "microsoft-new-england",
 	"mitre-bedford": "mitre",
@@ -246,10 +246,6 @@ const MOVED: Record<string, { city: string; why: string }> = {
 		city: "us-ma-newton",
 		why: "its website terms give Newton; the Atlas pins central Boston",
 	},
-	odsc: {
-		city: "us-ma-cambridge",
-		why: "odsc.ai gives One Broadway, Cambridge; the Atlas pins the conference venue",
-	},
 };
 // several offices and none called HQ on the org's own site (or none stated), so the Atlas's
 // Massachusetts office stands in for the HQ until someone confirms it
@@ -261,7 +257,6 @@ const HQ_UNCLEAR = new Set([
 	"matrix",
 	"bessemer", // legal address in Larchmont, NY
 	"ibm-ventures",
-	"techweek", // run by a16z
 ]);
 
 // parents the Atlas implies in names, URLs and descriptions; inferred, so flagged for review.
@@ -293,10 +288,6 @@ const CORRECTIONS: Record<
 
 // Left out, with the reason. Entries of SKIPPED_CATS are left out too.
 const DROPPED: Record<string, string> = {
-	"sloan-conf":
-		"aimlconference.com is parked for sale; the conference is run by the MIT Sloan AI & ML Club, which is imported",
-	"deltav-demo":
-		"delta v's demo day: same URL as MIT delta v, which is imported",
 	google:
 		"an employer's office: the URL is Google's office list, and it runs no program founders apply to",
 	"meta-cam":
@@ -356,8 +347,6 @@ const DESC: Record<string, string> = {
 		"Nonprofit incubator and coworking space in downtown Worcester, with shared and dedicated desks, private offices and a prototyping lab. Co-runs the free StartUp Worcester program with the Worcester Regional Chamber of Commerce.",
 	build617:
 		"Founder-led community for early-stage tech founders in Boston and Cambridge, with founder dinners, tactical sessions, a podcast and a free workspace in Downtown Crossing.",
-	aiweek:
-		"Statewide AI festival built from independently hosted events — talks, workshops, demo nights and hackathons — with Boston's Seaport as the hub neighborhood. Free to attend, and most individual events are free.",
 	"mass-ai-coalition":
 		"Private-sector coalition of Massachusetts AI founders, operators, investors and students. Runs a free founder coworking space, a resource pack of compute credits and warm intros, a customer-pilot program and a year-round event calendar.",
 	masstech:
