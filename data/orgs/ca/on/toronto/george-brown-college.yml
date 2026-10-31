@@ -1,9 +1,9 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: george-brown-college
-name: George Brown College
+name: George Brown Polytechnic
 aliases:
+  - George Brown College
   - George Brown
+  - GBP
 url: https://www.georgebrown.ca/
 hosts:
   - www.georgebrown.ca
@@ -14,26 +14,88 @@ hq:
   area: Waterfront
   lat: 43.6447
   lng: -79.3597
-desc: Applied-skills college with a strong Waterfront campus and the Brookfield Sustainability Institute.
+desc: Toronto public polytechnic whose startGBC entrepreneurship hub supports students, alumni and community members developing business ideas with mentorship, workshops and pitch competitions.
+last_verified: 2026-10
 programs:
-  - id: george-brown-college-program
-    name: George Brown College
-    url: https://www.georgebrown.ca/
+  - id: george-brown-college-startgbc
+    name: startGBC
+    url: https://www.georgebrown.ca/startgbc
+    partners:
+      - org_name: Desjardins
+        role: funds
     types:
       - community
+      - mentorship
+      - coworking
     stages:
       - spark
       - validate
+      - build
+    stage_basis: "Help you develop entrepreneurial skills and grow from ideation to commercialization."
     audiences:
       - aspiring
       - founders
-    access: institutional
-    fee: fee
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+  - id: george-brown-college-entrepreneurship-bootcamp
+    name: Entrepreneurship Fundamentals Bootcamp
+    aliases:
+      - startGBC Entrepreneur Bootcamp
+    url: https://www.georgebrown.ca/startgbc/programs-workshops/entrepreneurship-fundamentals-bootcamp
+    types:
+      - course
+    stages:
+      - spark
+      - validate
+    stage_basis: "Are you considering entrepreneurship as an alternative career path? Or are you already an early-stage budding entrepreneur?"
+    audiences:
+      - aspiring
+      - founders
+    delivery: in-person
+    where:
+      - ca-on-toronto
+    cadence:
+      - cohort
+    duration: 6 weeks
+  - id: george-brown-college-pitch-it
+    name: Pitch It GBP!
+    url: https://www.georgebrown.ca/startgbc/programs-workshops/pitch-it
+    types:
+      - competition
+    stages:
+      - spark
+      - validate
+      - build
+    stage_basis: "Stream 1: Currently operational business and Stream 2: Ideation stage business."
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org: george-brown-college
+          role: student
+          quote: "Open to any GBP students and recent grads from 2025/2026 programs with an active georgebrown.ca email address."
+        - org: george-brown-college
+          role: alumni
+          quote: "Open to any GBP students and recent grads from 2025/2026 programs with an active georgebrown.ca email address."
+    founder_receives:
+      - prize
+    access: application
+  - id: george-brown-college-ip-commercialization
+    name: Commercialization & IP Mobilization
+    url: https://www.georgebrown.ca/research-innovation/work-with-us/commercialization-ip-mobilization
+    partners:
+      - org_name: Intellectual Property Ontario (IPON)
+        role: funds
+    types:
+      - service
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    access: application
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
-      - open_to

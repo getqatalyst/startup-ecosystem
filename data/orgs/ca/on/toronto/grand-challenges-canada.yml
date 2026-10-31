@@ -1,40 +1,62 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: grand-challenges-canada
 name: Grand Challenges Canada
 aliases:
   - Grand Challenges
+  - GCC
 url: https://www.grandchallenges.ca/
 hosts:
   - www.grandchallenges.ca
 cats:
-  - government
+  - funder
 hq:
   city: ca-on-toronto
   area: Discovery District
   lat: 43.6595
   lng: -79.3894
-desc: Federally funded (Global Affairs Canada) foundation for global health and humanitarian innovation, based at MaRS Centre West Tower. Launched 2010; funded 1,600+ innovations in 100+ countries.
-review:
-  - desc
+desc: Non-profit impact investor, anchor-funded by the Government of Canada, that funds and supports innovations improving health and resilience in underserved communities, especially in low- and middle-income countries.
+last_verified: 2026-10
 programs:
-  - id: grand-challenges-canada-program
-    name: Grand Challenges Canada
-    url: https://www.grandchallenges.ca/
+  - id: grand-challenges-canada-seed-funding
+    name: Seed funding
+    aliases:
+      - Proof of Concept
+    url: https://www.grandchallenges.ca/what-we-do/how-we-fund/
+    partners:
+      - org_name: Global Affairs Canada
+        role: funds
     types:
       - grant
     stages:
-      - build
-      - operate
+      - validate
+    stage_basis: "To test early-stage ideas and generate proof of concept."
     audiences:
       - founders
+    open_to:
+      - global
+    founder_receives:
+      - grant
     access: application
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+  - id: grand-challenges-canada-transition-to-scale
+    name: Transition to Scale
+    aliases:
+      - TTS
+    url: https://www.grandchallenges.ca/our-investment-approach/
+    partners:
+      - org_name: Global Affairs Canada
+        role: funds
+    types:
+      - grant
+      - investment
+      - loan
+    stages:
+      - build
+      - operate
+    stage_basis: "To grow and strengthen proven innovations with funding, tailored support, and blended finance."
+    audiences:
+      - founders
+    open_to:
+      - global
+    founder_receives:
+      - grant
+      - investment
+      - loan

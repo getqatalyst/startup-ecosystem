@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: icube-utm
 name: ICUBE UTM
 aliases:
@@ -9,34 +7,182 @@ hosts:
   - icubeutm.ca
 parent: u-of-t-mississauga
 cats:
-  - accelerator
+  - incubator
 hq:
   city: ca-on-toronto
   area: UTM Innovation Complex
   lat: 43.5446
   lng: -79.6604
   approx: true
-desc: Social-entrepreneurship and early-stage startup incubator at U of T Mississauga; programs, workshops, mentorship.
+desc: U of T Mississauga's incubator for social entrepreneurs and early-stage startups, offering programs, mentorship, co-working and pitch competitions to the U of T community and founders across Canada.
+last_verified: 2026-10
 review:
-  - parent
+  - hq
 programs:
-  - id: icube-utm-program
-    name: ICUBE UTM
-    url: https://icubeutm.ca/
+  - id: icube-utm-ideation-lab
+    name: Ideation Lab
+    url: https://icubeutm.ca/ideation-lab/
+    types:
+      - incubator
+      - course
+      - mentorship
+    stages:
+      - spark
+      - validate
+    stage_basis: "You have identified a business idea and are in the ideation or early startup phase"
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - ca
+    delivery: hybrid
+    equity: false
+    access: application
+    cadence:
+      - cohort
+    duration: 4 months
+  - id: icube-utm-venture-forward
+    name: Venture Forward
+    url: https://icubeutm.ca/venture-forward/
     types:
       - accelerator
+      - mentorship
+      - coworking
+    stages:
+      - build
+    stage_basis: "Must have a launched initiative or MVP with demonstrated market fit and some traction"
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: revenue
+          quote: "Must have a launched initiative or MVP with demonstrated market fit and some traction"
+    open_to:
+      - ca
+    equity: false
+    access: application
+    cadence:
+      - rolling
+    duration: 12 months
+  - id: icube-utm-indigenous-entrepreneurship
+    name: Indigenous Entrepreneurship Program
+    url: https://icubeutm.ca/indigenous/
+    partners:
+      - org_name: Redbird Circle Inc.
+        role: co-runs
+      - org_name: UofT Libraries
+        role: co-runs
+      - org: the-bridge
+        role: co-runs
+    types:
+      - course
+      - mentorship
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      who:
+        - group: indigenous
+          requirement: required
+          quote: "Self-identified Indigenous Person"
+          source: https://icubeutm.ca/indigenous/
+      age:
+        min: 16
+        quote: "Minimum age of 16 years old"
+    delivery: remote
+    access: application
+    duration: 14 weeks
+  - id: icube-utm-pride-pitch
+    name: Pride Pitch
+    url: https://icubeutm.ca/pride-pitch/
+    partners:
+      - org: schwartz-reisman-innovation-campus
+        role: co-runs
+      - org_name: City of Mississauga
+        role: co-runs
+      - org_name: UofT Entrepreneurship
+        role: co-runs
+      - org_name: QueerTech
+        role: co-runs
+    types:
+      - competition
     stages:
       - validate
       - build
+    stage_basis: "Applicants must have less than $150,000 cumulative funding or investment, and less than $50,000 cumulative revenue as of the application date."
     audiences:
       - founders
-    access: open
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    eligibility:
+      who:
+        - group: lgbtq
+          requirement: required
+          quote: "At least one of the team members identify themselves as 2SLGBTQ+"
+          source: https://icubeutm.ca/pride-pitch/
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "Students, alumni, staff and faculty from all U of T three campuses are welcome to apply. Start-ups members of one or any of the U of T Accelerators, OnRamp members, members of IDEA Mississauga, and QueerTech Community members are also welcome to apply."
+        - org: university-of-toronto
+          role: alumni
+        - org: university-of-toronto
+          role: affiliate
+        - org: onramp
+          role: affiliate
+        - org_name: IDEA Mississauga
+          role: affiliate
+        - org_name: QueerTech
+          role: affiliate
+      venture:
+        - gate: funding-raised
+          quote: "Applicants must have less than $150,000 cumulative funding or investment, and less than $50,000 cumulative revenue as of the application date."
+        - gate: revenue
+          quote: "Applicants must have less than $150,000 cumulative funding or investment, and less than $50,000 cumulative revenue as of the application date."
+    delivery: in-person
+    where:
+      - ca-on-toronto
+    founder_receives:
+      - prize
+    access: application
+    cadence:
+      - annual
+  - id: icube-utm-pitch-with-a-twist
+    name: Pitch with a Twist
+    url: https://icubeutm.ca/twist/
+    types:
+      - competition
+    stages:
+      - spark
+      - validate
+    stage_basis: "Product or service idea must not be in the market (pre-launch)"
+    audiences:
+      - founders
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "Must have a self-identified woman founder or co-founder."
+          source: https://icubeutm.ca/twist/
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "Registrants must be a student or alumni of the University of Toronto; OR participants of any of the U of T CLA/Incubator programs"
+        - org: university-of-toronto
+          role: alumni
+      place:
+        incorporation:
+          - ca
+        quote: "Must be incorporated in Canada"
+      venture:
+        - gate: incorporated
+          quote: "Must be incorporated in Canada"
+        - gate: funding-raised
+          quote: "Less than $25k in investments (Angels, VCs, grants) as of February 17th, 2026"
+        - gate: revenue
+          quote: "Less than $50k in revenue earned as of February 17th, 2026"
+    founder_receives:
+      - prize
+    access: application
+    cadence:
+      - annual
