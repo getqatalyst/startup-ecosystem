@@ -1,39 +1,36 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: ten-coves-capital
 name: Ten Coves Capital
 aliases:
   - Ten Coves
-url: https://tencoves.com/
+url: https://www.tencoves.com/
 hosts:
   - tencoves.com
+  - www.tencoves.com
 cats:
   - vc
 hq:
   city: us-ct-darien
-desc: Growth-stage fintech investor. HQ in Darien, CT with a NYC office; no Toronto office.
-review:
-  - hq
+desc: Growth equity firm with offices in Darien, Connecticut and New York, backing high-growth fintech companies in payments, banking, lending, insurance and capital markets.
+last_verified: 2026-10
 programs:
-  - id: ten-coves-capital-program
-    name: Ten Coves Capital
-    url: https://tencoves.com/
+  - id: ten-coves-capital-growth-equity
+    name: Growth Equity
+    url: https://www.tencoves.com/
     types:
       - investment
     stages:
-      - build
       - operate
+      - scale
+    stage_basis: "High growth companies at the intersection of technology and financial services"
     audiences:
       - founders
-    open_to:
-      - ca-on-toronto
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "High growth companies at the intersection of technology and financial services"
+    equity: true
+    founder_receives:
+      - investment
     access: invite
-    fee: free
     review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
       - open_to

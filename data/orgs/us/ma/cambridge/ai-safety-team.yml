@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: ai-safety-team
+name: AI Safety Team
+aliases:
+  - Harvard AI Safety Student Team (AISST)
+url: https://aisafetyteam.org/
+hosts:
+  - aisafetyteam.org
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.377
+  lng: -71.1167
+  approx: true
+desc: Harvard's AI safety student research community.
+review:
+  - cats
+  - desc
+programs:
+  - id: ai-safety-team-program
+    name: AI Safety Team
+    url: https://aisafetyteam.org/
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

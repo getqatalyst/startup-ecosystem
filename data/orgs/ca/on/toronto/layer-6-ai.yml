@@ -14,9 +14,7 @@ hq:
   area: MaRS Centre
   lat: 43.6592
   lng: -79.3897
-desc: TD Bank's AI research lab; recommender systems and personalization. Located in the MaRS Centre.
-review:
-  - cats
+desc: TD Bank Group's AI centre of excellence, doing applied machine learning research in areas such as deep learning, generative AI, trustworthy AI, time series and natural language processing.
 programs:
   - id: layer-6-ai-program
     name: Layer 6 AI

@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: flagship-pioneering
+name: Flagship Pioneering
+url: https://www.flagshippioneering.com
+hosts:
+  - www.flagshippioneering.com
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  lat: 42.3654
+  lng: -71.0762
+desc: Venture creation engine (Moderna's maker) now founding AI-for-science companies like Generate and Lila.
+review:
+  - desc
+programs:
+  - id: flagship-pioneering-program
+    name: Flagship Pioneering
+    url: https://www.flagshippioneering.com
+    types:
+      - investment
+      - mentorship
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

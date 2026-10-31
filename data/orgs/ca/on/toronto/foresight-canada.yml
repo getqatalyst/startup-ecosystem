@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: foresight-canada
 name: Foresight Canada (Toronto office)
 aliases:
@@ -15,28 +13,113 @@ hq:
   lat: 43.6484
   lng: -79.3956
   approx: true
-desc: Canada's cleantech innovation and adoption accelerator. HQ in Vancouver (founded 2013); Toronto office at 192 Spadina, same building as CSI.
-review:
-  - desc
-  - hq
+desc: Canada's cleantech innovation and adoption accelerator, with programs from ideation to scale and investor connections for cleantech ventures. This record is its Toronto office.
+last_verified: 2026-10
 programs:
-  - id: foresight-canada-program
-    name: Foresight Canada (Toronto office)
-    url: https://foresightcac.com/
+  - id: foresight-canada-acceleration
+    name: Cleantech Acceleration Programs
+    url: https://foresightcac.com/innovators
     types:
       - accelerator
+      - mentorship
     stages:
+      - spark
       - validate
       - build
+      - operate
+      - scale
+    stage_basis: "Ideation, Commercialization and Scale streams, from initial concept to established ventures."
     audiences:
       - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "Cleantech ventures gain tailored support, mentorship, and industry connections to scale globally competitive and commercially viable technologies."
+    open_to:
+      - global
+    delivery: remote
+    fee: fee
+    equity: false
     access: application
+    cadence:
+      - rolling
+  - id: foresight-canada-ideation
+    name: Ideation
+    url: https://foresightcac.com/innovators#ideation
+    variant_of: foresight-canada-acceleration
+    last_verified: 2026-10
+    stages:
+      - spark
+      - validate
+    stage_basis: "From initial concept to market validation and funding readiness."
+  - id: foresight-canada-commercialization
+    name: Commercialization
+    url: https://foresightcac.com/innovators#commercialization
+    variant_of: foresight-canada-acceleration
+    last_verified: 2026-10
+    stages:
+      - build
+      - operate
+    stage_basis: "Growth-stage founders with a validated cleantech solution; from MVP development to early customer acquisition."
+  - id: foresight-canada-scale
+    name: Scale
+    url: https://foresightcac.com/innovators#scale
+    variant_of: foresight-canada-acceleration
+    last_verified: 2026-10
+    stages:
+      - operate
+      - scale
+    stage_basis: "Established ventures with a proven cleantech solution."
+  - id: foresight-canada-foresight-50
+    name: Foresight 50
+    url: https://foresightcac.com/foresight-50
+    types:
+      - competition
+    stages:
+      - operate
+      - scale
+    stage_basis: "Ventures at any funding stage, from seed to post-Series B."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "Companies across all cleantech sectors"
+    open_to:
+      - ca
+    delivery: in-person
+    access: application
+    cadence:
+      - annual
+  - id: foresight-canada-earth-tech
+    name: Earth Tech 2050 and Adapt
+    aliases:
+      - Earth Tech
+      - "Earth Tech: 2050"
+      - "Earth Tech: Adapt"
+    url: https://foresightcac.com/earth-tech
+    partners:
+      - org: social-innovation-canada
+        role: co-runs
+    types:
+      - accelerator
+      - mentorship
+    stages:
+      - build
+      - operate
+    stage_basis: "Startups and scale-ups; Canadian-incorporated businesses at TRL 6+, with a pathway to scaling impact."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: incorporated
+          quote: "Canadian-incorporated businesses at Technology Readiness Level (TRL) 6+ , with a clear pathway to scaling their solution."
+        - gate: sector
+          quote: "Foresight Canada and Social Innovation Canada's Earth Tech programs support cleantech ventures tackling the world’s most pressing climate challenges."
+    open_to:
+      - ca
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: application
+    cadence:
+      - annual
+    duration: 9 months

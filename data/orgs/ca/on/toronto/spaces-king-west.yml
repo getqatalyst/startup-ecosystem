@@ -1,10 +1,8 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: spaces-king-west
 name: Spaces King West
 aliases:
   - Spaces KW
-url: https://www.spacesworks.com/toronto/
+url: https://www.spacesworks.com/en/ca/toronto
 hosts:
   - www.spacesworks.com
 cats:
@@ -15,26 +13,27 @@ hq:
   lat: 43.6441
   lng: -79.4018
   approx: true
-desc: European-style coworking on King West; desks roughly $350-$750/month.
+desc: Spaces coworking in Toronto, offering hot desks, dedicated desks, private offices and meeting rooms to individuals and teams, with community events and workshops.
+last_verified: 2026-10
 review:
-  - desc
+  - name
 programs:
-  - id: spaces-king-west-program
-    name: Spaces King West
-    url: https://www.spacesworks.com/toronto/
+  - id: spaces-king-west-coworking
+    name: Spaces coworking
+    url: https://www.spacesworks.com/en/ca/toronto/coworking
     types:
       - coworking
     stages:
       - build
     audiences:
       - founders
-    access: membership
+    delivery: in-person
+    where:
+      - ca-on-toronto
     fee: fee
+    access: membership
+    cadence:
+      - ongoing
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
       - open_to

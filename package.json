@@ -9,7 +9,8 @@
 		"lint": "biome check .",
 		"linkcheck": "bun scripts/linkcheck.ts",
 		"freshness": "bun scripts/freshness.ts",
-		"health": "bun scripts/health.ts"
+		"health": "bun scripts/health.ts",
+		"labels": "bun scripts/labels.ts"
 	},
 	"dependencies": {
 		"ajv": "8.20.0",

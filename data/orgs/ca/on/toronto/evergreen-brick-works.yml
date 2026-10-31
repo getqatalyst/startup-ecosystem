@@ -1,41 +1,40 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: evergreen-brick-works
 name: Evergreen Brick Works
 aliases:
   - Evergreen
 url: https://www.evergreen.ca/evergreen-brick-works/
 hosts:
-  - www.evergreen.ca
+  - www.evergreen.ca/evergreen-brick-works
 cats:
   - community
+  - coworking
 hq:
   city: ca-on-toronto
   area: Don Valley
   lat: 43.6843
   lng: -79.3647
-desc: Reclaimed 1889 brick factory turned public environmental centre and city-building innovation hub. Opened 2010 by Evergreen, a national charity founded 1990.
-review:
-  - desc
+desc: Evergreen's public site in Toronto's Don Valley ravines, a climate-ready community hub with markets, programs, event spaces, and office and co-working space.
+last_verified: 2026-10
 programs:
-  - id: evergreen-brick-works-program
-    name: Evergreen Brick Works
-    url: https://www.evergreen.ca/evergreen-brick-works/
+  - id: evergreen-brick-works-coworking
+    name: Toronto office and co-working space
+    url: https://www.evergreen.ca/evergreen-brick-works/toronto-office-co-working-space/
     types:
-      - community
+      - coworking
     stages:
-      - spark
       - validate
+      - build
+      - operate
     audiences:
-      - aspiring
       - founders
-    access: open
-    fee: free
+    open_to:
+      - ca-on-toronto
+    delivery: in-person
+    where:
+      - ca-on-toronto
+    fee: fee
+    access: membership
+    cadence:
+      - ongoing
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
-      - open_to

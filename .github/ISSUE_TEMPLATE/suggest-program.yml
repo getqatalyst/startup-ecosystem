@@ -1,0 +1,185 @@
+# Field ids match schema/org.schema.yml (`who` is eligibility.who[].group). Dropdown options
+# are the labels in data/shared/vocab.yml and data/shared/stages.yml; tests/forms.test.ts
+# fails when they drift apart.
+name: Suggest a program
+description: Something founders apply to or join, run by an org in the dataset or one you're suggesting
+title: "Add program: "
+labels: [suggest-program]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A moderator checks every suggestion against the program's own page, then adds it in a
+        pull request. Only what that page states; dates, amounts and deadlines stay there.
+  - type: input
+    id: org
+    attributes:
+      label: Organization that runs it
+      description: Its id if it's already in the dataset (the file name, like `dmz`), otherwise its name.
+      placeholder: dmz
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Program name
+      placeholder: Incubator
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: The program's own page
+      description: Starts with https://
+      placeholder: https://dmz.torontomu.ca/incubator
+    validations:
+      required: true
+  - type: dropdown
+    id: types
+    attributes:
+      label: What is it?
+      multiple: true
+      options:
+        - Accelerator
+        - Incubator
+        - Fellowship
+        - Competition or prize
+        - Grant
+        - Loan
+        - Investment
+        - Workspace
+        - Mentorship or advising
+        - Course or curriculum
+        - Community or membership
+        - Matching (co-founders, mentors, investors)
+        - Startup jobs
+        - Service
+    validations:
+      required: true
+  - type: dropdown
+    id: stages
+    attributes:
+      label: Which founder stages does it take?
+      description: Stage definitions are in data/shared/stages.yml.
+      multiple: true
+      options:
+        - Spark — Exploring
+        - Validate — Proving demand
+        - Build — Delivering to real customers
+        - Operate — Seed to Series A
+        - Scale — Expanding
+    validations:
+      required: true
+  - type: input
+    id: stage_basis
+    attributes:
+      label: What the page says about stage
+      description: The stated criteria, in a few words.
+      placeholder: seed stage with monthly recurring revenue
+  - type: dropdown
+    id: audiences
+    attributes:
+      label: Who is it for, by role?
+      multiple: true
+      options:
+        - Founders
+        - Aspiring founders and students
+        - Investors
+        - People looking to work at startups
+        - Ecosystem builders
+        - Corporates and government
+    validations:
+      required: true
+  - type: input
+    id: open_to
+    attributes:
+      label: Whose founders can apply?
+      description: Cities, provinces or states, or countries. Leave blank if only the org's own city.
+      placeholder: All of Canada
+  - type: dropdown
+    id: delivery
+    attributes:
+      label: In person or online?
+      options:
+        - In person
+        - Online
+        - In person and online
+  - type: dropdown
+    id: fee
+    attributes:
+      label: Does it charge a fee?
+      options:
+        - Free
+        - Fee
+  - type: dropdown
+    id: equity
+    attributes:
+      label: Does it take equity?
+      options:
+        - "Yes"
+        - "No"
+        - The page doesn't say
+  - type: dropdown
+    id: founder_receives
+    attributes:
+      label: What does the founder get in cash or capital?
+      description: Amounts stay on the program's page.
+      multiple: true
+      options:
+        - Nothing in cash
+        - Grant
+        - Loan
+        - Investment
+        - Prize
+        - Stipend
+  - type: dropdown
+    id: access
+    attributes:
+      label: How do founders get in?
+      options:
+        - Open to anyone
+        - Apply to join
+        - Invitation only
+        - Through a school or employer
+        - Paid or approved membership
+  - type: dropdown
+    id: cadence
+    attributes:
+      label: When does it take people?
+      multiple: true
+      options:
+        - Rolling applications
+        - Cohorts
+        - Once a year
+        - Ongoing
+  - type: dropdown
+    id: who
+    attributes:
+      label: Does the page say it's for a specific group?
+      description: Only groups the program's own page names. Leave blank if it names none.
+      multiple: true
+      options:
+        - Women
+        - Black
+        - Indigenous
+        - Black, Indigenous and people of colour
+        - LGBTQ+
+        - Immigrants and newcomers
+        - People with disabilities
+        - Veterans
+  - type: textarea
+    id: eligibility
+    attributes:
+      label: The page's own words on who can apply
+      description: >-
+        Copy the sentences that state who it's for, and the link they're on. Say whether the
+        group is required, prioritized or encouraged. Also any school, location, incorporation,
+        revenue or age rules the page states.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Check
+      options:
+        - label: Everything above comes from the program's own page.
+          required: true
+        - label: I work for or represent the organization that runs it (that's fine; say so).

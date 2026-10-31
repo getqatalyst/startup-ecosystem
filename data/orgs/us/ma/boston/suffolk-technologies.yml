@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: suffolk-technologies
+name: Suffolk Technologies
+url: https://suffolktech.com
+hosts:
+  - suffolktech.com
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  lat: 42.3281
+  lng: -71.0697
+desc: Venture platform of Suffolk Construction investing pre-seed through growth in built-environment technology — ConTech, PropTech and infrastructure, with a strong AI tilt; runs the BOOST accelerator.
+programs:
+  - id: suffolk-technologies-program
+    name: Suffolk Technologies
+    url: https://suffolktech.com
+    types:
+      - investment
+      - service
+      - mentorship
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

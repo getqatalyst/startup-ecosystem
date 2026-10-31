@@ -1,0 +1,37 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: city-of-boston-office-of-emerging-technology
+name: City of Boston Office of Emerging Technology
+url: https://www.boston.gov/departments/emerging-technology
+hosts:
+  - www.boston.gov/departments/emerging-technology
+cats:
+  - government
+hq:
+  city: us-ma-boston
+  lat: 42.3604
+  lng: -71.058
+desc: The city's front door for AI — leads Boston's AI project portfolio and generative-AI policy, and partners with startups on pilots in AI, climate and transportation.
+programs:
+  - id: city-of-boston-office-of-emerging-technology-program
+    name: City of Boston Office of Emerging Technology
+    url: https://www.boston.gov/departments/emerging-technology
+    types:
+      - grant
+      - service
+    stages:
+      - validate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

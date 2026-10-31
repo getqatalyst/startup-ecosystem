@@ -1,0 +1,38 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: harvard-data-science-initiative
+name: Harvard Data Science Initiative
+url: https://datascience.harvard.edu
+hosts:
+  - datascience.harvard.edu
+cats:
+  - university
+hq:
+  city: us-ma-boston
+  area: Allston
+  lat: 42.3632
+  lng: -71.1244
+desc: University-wide hub connecting Harvard's data science and AI research across schools.
+programs:
+  - id: harvard-data-science-initiative-program
+    name: Harvard Data Science Initiative
+    url: https://datascience.harvard.edu
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

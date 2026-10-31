@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: venture-for-canada
 name: Venture for Canada
 aliases:
@@ -11,30 +9,117 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-desc: National charity building entrepreneurial skills through fellowship and internship programs.
-review:
-  - hq
+desc: National charity that builds the entrepreneurial skills of young Canadians through internships, project work and training, funds student talent for startups and small businesses, and runs courses on starting or buying a business.
+last_verified: 2026-10
 programs:
-  - id: venture-for-canada-program
-    name: Venture for Canada
-    url: https://ventureforcanada.ca/
+  - id: venture-for-canada-internship
+    name: Internship Program
+    url: https://ventureforcanada.ca/employers/interns
     types:
-      - community
+      - jobs
+      - grant
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+      - talent
+    eligibility:
+      venture:
+        - gate: team
+          quote: "Employ fewer than 500 people"
+      place:
+        incorporation:
+          - ca
+        quote: "Registered in any Canadian province or territory"
+    open_to:
+      - ca
+    partners:
+      - org_name: Employment and Social Development Canada
+        role: funds
+    founder_receives:
+      - grant
+    access: application
+    cadence:
+      - rolling
+  - id: venture-for-canada-intrapreneurship
+    name: Intrapreneurship Program
+    url: https://ventureforcanada.ca/employers/intrapreneurship
+    types:
+      - service
+      - jobs
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+      - talent
+    eligibility:
+      venture:
+        - gate: team
+          quote: "Have fewer than 500 staff members"
+    open_to:
+      - ca
+    delivery: remote
+    fee: free
+    access: application
+    cadence:
+      - cohort
+    duration: 7 weeks
+  - id: venture-for-canada-solopreneurship
+    name: Fellowship Academy - Solopreneurship
+    url: https://ventureforcanada.ca/programs/solopreneurship
+    types:
+      - course
     stages:
       - spark
       - validate
+    stage_basis: "Canadians who have a skill, service, or business idea they want to turn into a sustainable solo business."
     audiences:
       - aspiring
-      - founders
     open_to:
       - ca
-    access: open
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    fee: fee
+    access: application
+    cadence:
+      - cohort
+    duration: 6 weeks
+  - id: venture-for-canada-eta-bootcamp
+    name: ETA Bootcamp
+    url: https://ventureforcanada.ca/programs/eta-bootcamp-toronto
+    types:
+      - course
+    stages:
+      - spark
+    audiences:
+      - aspiring
+    open_to:
+      - ca
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    fee: fee
+    access: application
+    cadence:
+      - cohort
+    duration: 5 weeks
+  - id: venture-for-canada-eta-academy-101
+    name: ETA Academy 101
+    url: https://ventureforcanada.ca/programs/eta-virtual
+    types:
+      - course
+    stages:
+      - spark
+    audiences:
+      - aspiring
+    open_to:
+      - ca
+    delivery: remote
+    fee: fee
+    access: application
+    cadence:
+      - cohort
+    duration: 5 weeks

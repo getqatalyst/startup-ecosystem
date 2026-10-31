@@ -15,9 +15,7 @@ hq:
   lat: 43.6709
   lng: -79.3897
   approx: true
-desc: Annual awards program recognizing 50 Canadian sustainability leaders plus emerging and lifetime-achievement honorees, run by Delta Management Group. Running since 2011.
-review:
-  - desc
+desc: Awards program that recognizes Canadian sustainability leaders, emerging leaders, lifetime contributors and top projects advancing climate action, with a summit in Toronto for honourees. Founded and run by Delta Management Group, a sustainability search firm.
 programs:
   - id: clean50-program
     name: Canada's Clean50

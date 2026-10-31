@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: kensington-capital-partners
 name: Kensington Capital Partners
 aliases:
@@ -14,27 +12,40 @@ hq:
   area: St. Clair
   lat: 43.6867
   lng: -79.3983
-desc: Toronto-based investment firm with venture, growth, and private equity programs; 95 St Clair Ave W.
-review:
-  - desc
+desc: Alternative investment firm with offices in Toronto and Vancouver, investing in venture capital, growth equity and mid-market buyouts across Canada and the United States.
+last_verified: 2026-10
 programs:
-  - id: kensington-capital-partners-program
-    name: Kensington Capital Partners
-    url: https://kcpl.ca/
+  - id: kensington-capital-partners-venture-capital
+    name: Venture Capital
+    url: https://kcpl.ca/venture-capital/
     types:
       - investment
     stages:
-      - build
       - operate
+      - scale
+    stage_basis: "We invest across all stages from early-stage Seed and Series A through later stage technology growth companies."
     audiences:
       - founders
-    access: invite
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    open_to:
+      - ca
+      - us
+    founder_receives:
+      - investment
+    access: application
+  - id: kensington-capital-partners-growth-equity
+    name: Growth Equity
+    url: https://kcpl.ca/growth-equity/
+    types:
+      - investment
+    stages:
+      - scale
+    stage_basis: "Companies that have ‘graduated’ from venture stage and are scaling rapidly at the time of investment."
+    audiences:
+      - founders
+    open_to:
+      - ca
+      - us
+    equity: true
+    founder_receives:
+      - investment
+    access: application

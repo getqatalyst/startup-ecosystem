@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: tufts-institute-for-artificial-intelligence
+name: Tufts Institute for Artificial Intelligence
+url: https://ai.tufts.edu/
+hosts:
+  - ai.tufts.edu
+cats:
+  - university
+hq:
+  city: us-ma-medford
+  lat: 42.4079
+  lng: -71.1164
+  approx: true
+desc: Tufts' university-wide AI hub, run by the School of Engineering, with centers for data foundations in AI and for human-AI interaction.
+review:
+  - desc
+programs:
+  - id: tufts-institute-for-artificial-intelligence-program
+    name: Tufts Institute for Artificial Intelligence
+    url: https://ai.tufts.edu/
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

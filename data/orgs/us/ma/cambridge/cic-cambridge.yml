@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: cic-cambridge
+name: CIC Cambridge
+url: https://cic.com
+hosts:
+  - cic.com
+cats:
+  - coworking
+hq:
+  city: us-ma-cambridge
+  area: Kendall Square
+  lat: 42.3629
+  lng: -71.0838
+desc: The original innovation campus — flexible offices and labs that have housed thousands of startups since 1999.
+review:
+  - cats
+  - desc
+programs:
+  - id: cic-cambridge-program
+    name: CIC Cambridge
+    url: https://cic.com
+    types:
+      - coworking
+      - community
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: rai-institute
+name: RAI Institute
+url: https://rai-inst.com
+hosts:
+  - rai-inst.com
+cats:
+  - corporate
+hq:
+  city: us-ma-cambridge
+  area: Kendall Square
+  lat: 42.365
+  lng: -71.0851
+desc: The Robotics and AI Institute, founded by Boston Dynamics founder Marc Raibert, doing frontier robot-learning research from Kendall Square and Zurich.
+review:
+  - desc
+programs:
+  - id: rai-institute-program
+    name: RAI Institute
+    url: https://rai-inst.com
+    types:
+      - service
+    stages:
+      - spark
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

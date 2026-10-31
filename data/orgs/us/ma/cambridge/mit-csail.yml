@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: mit-csail
+name: MIT CSAIL
+url: https://www.csail.mit.edu
+hosts:
+  - www.csail.mit.edu
+cats:
+  - university
+hq:
+  city: us-ma-cambridge
+  lat: 42.3617
+  lng: -71.0906
+desc: MIT's Computer Science & Artificial Intelligence Laboratory — the largest research lab at MIT and one of the most influential AI labs on Earth.
+programs:
+  - id: mit-csail-program
+    name: MIT CSAIL
+    url: https://www.csail.mit.edu
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

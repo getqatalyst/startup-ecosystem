@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: tufts-cs-and-hri-lab
+name: Tufts CS & HRI Lab
+url: https://engineering.tufts.edu/cs/
+hosts:
+  - engineering.tufts.edu/cs
+cats:
+  - university
+hq:
+  city: us-ma-medford
+  lat: 42.4075
+  lng: -71.119
+  approx: true
+desc: Tufts computer science, home to the Human-Robot Interaction Lab and — since 2025 — the university-wide Tufts Institute for AI and a new MS in AI.
+review:
+  - desc
+programs:
+  - id: tufts-cs-and-hri-lab-program
+    name: Tufts CS & HRI Lab
+    url: https://engineering.tufts.edu/cs/
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

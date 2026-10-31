@@ -1,38 +1,132 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: the-entrepreneurship-hatchery
 name: The Entrepreneurship Hatchery
 aliases:
   - Hatchery
+  - University of Toronto Entrepreneurship Hatchery
 url: https://hatchery.engineering.utoronto.ca/
 hosts:
   - hatchery.engineering.utoronto.ca
+parent: university-of-toronto
 cats:
-  - accelerator
+  - incubator
 hq:
   city: ca-on-toronto
   area: Myhal / U of T Eng
   lat: 43.6608
   lng: -79.3965
-desc: U of T Engineering's student startup accelerator. Cohort programs (NEST/Praxis) culminating in a Demo Day pitch.
+desc: U of T Engineering's university venture studio, which forms founding teams from U of T students, faculty and alumni, defines the business with them and gives qualified student founders equity-free seed funding.
+last_verified: 2026-10
 programs:
-  - id: the-entrepreneurship-hatchery-program
-    name: The Entrepreneurship Hatchery
-    url: https://hatchery.engineering.utoronto.ca/
+  - id: the-entrepreneurship-hatchery-nest
+    name: NEST
+    url: https://hatchery.engineering.utoronto.ca/application-programs/?program=nest&step=1
     types:
-      - accelerator
+      - incubator
+      - mentorship
     stages:
+      - spark
       - validate
-      - build
+    stage_basis: "Ventures are not expected to begin with a proprietary dataset, model, or prototype already developed."
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "Summer bootcamp for the broader U of T community."
+        - org: university-of-toronto
+          role: affiliate
+          quote: "Summer bootcamp for the broader U of T community."
+    open_to:
+      - ca-on-toronto
+    access: application
+    cadence:
+      - annual
+    duration: 4 months
+  - id: the-entrepreneurship-hatchery-launch-lab
+    name: Launch Lab
+    url: https://hatchery.engineering.utoronto.ca/application-programs/?program=launchlab&step=1
+    types:
+      - incubator
+      - mentorship
+    stages:
+      - spark
+      - validate
+    stage_basis: "For graduate-level and faculty research driven startups. Translate graduate research into an investible business."
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          degree: graduate
+          quote: "For graduate-level and faculty research driven startups."
+        - org: university-of-toronto
+          role: affiliate
+          quote: "For graduate-level and faculty research driven startups."
+    open_to:
+      - ca-on-toronto
+    access: application
+  - id: the-entrepreneurship-hatchery-utias
+    name: UTIAS
+    variant_of: the-entrepreneurship-hatchery-launch-lab
+    last_verified: 2026-10
+    url: https://hatchery.engineering.utoronto.ca/application-programs/?program=utias&step=1
+    partners:
+      - org_name: Start@UTIAS
+        role: co-runs
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          degree: graduate
+          quote: "For aerospace-focused graduate-level and faculty research driven startups."
+        - org: university-of-toronto
+          role: affiliate
+          quote: "For aerospace-focused graduate-level and faculty research driven startups."
+      venture:
+        - gate: sector
+          quote: "For aerospace-focused graduate-level and faculty research driven startups."
+  - id: the-entrepreneurship-hatchery-alumni
+    name: Alumni
+    url: https://hatchery.engineering.utoronto.ca/application-programs/?program=alumni&step=1
+    types:
+      - incubator
+      - mentorship
+    stages:
+      - spark
+      - validate
     audiences:
       - founders
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: alumni
+          degree: Applied Science and Engineering
+          quote: "For U of T Applied Science and Engineering alumni who return later in their careers to leverage their expertise and launch a startup in partnership with current students."
+    open_to:
+      - ca-on-toronto
     access: application
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+  - id: the-entrepreneurship-hatchery-seed-funding
+    name: Seed Funding
+    url: https://hatchery.engineering.utoronto.ca/about-us/
+    types:
+      - grant
+    stages:
+      - build
+    stage_basis: "High-potential ventures may be invited to the Go-To-Market stage following rigorous review. Completion of a Hatchery program does not automatically trigger funding."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "Subject to approval, non-dilutive seed funding gives eligible student founders the time and runway to execute the defined plan."
+    open_to:
+      - ca-on-toronto
+    equity: false
+    founder_receives:
+      - grant
+    access: invite

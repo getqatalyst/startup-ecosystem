@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: women-in-ai-toronto
 name: Women in AI Toronto
 aliases:
@@ -11,29 +9,33 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-desc: Chapter of the global Women in AI network.
-review:
-  - desc
-  - hq
+desc: Toronto city team of Women in AI Canada, which has city teams across Canada and is part of the global Women in AI network, offering community, events and mentorship for women building careers or startups in AI.
+last_verified: 2026-10
 programs:
-  - id: women-in-ai-toronto-program
-    name: Women in AI Toronto
-    url: https://www.womeninai.co/
+  - id: wai-mentorship-canada
+    name: WaiMentorship Canada
+    url: https://www.womeninai.co/mentorship-canada
     types:
-      - community
+      - mentorship
     stages:
       - spark
       - validate
+    stage_basis: "Entrepreneurship category mentees: Interested or recently started a company that is artificial intelligence related."
     audiences:
       - aspiring
       - founders
-    access: open
-    fee: free
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "The purpose of the mentorship program is to create a community of two categories of women."
+          source: https://www.womeninai.co/mentorship-canada
+      venture:
+        - gate: sector
+          quote: "Interested or recently started a company that is artificial intelligence related."
+    open_to:
+      - ca
+    access: application
+    duration: 3 months
     review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
       - open_to

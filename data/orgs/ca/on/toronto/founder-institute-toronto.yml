@@ -1,38 +1,36 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: founder-institute-toronto
 name: Founder Institute Toronto
 aliases:
   - FI Toronto
-url: https://fi.co/
+url: https://fi.co/toronto
 hosts:
-  - fi.co
+  - fi.co/toronto
 cats:
   - accelerator
 hq:
   city: ca-on-toronto
-desc: Global pre-seed accelerator chapter; structured 14-week program for idea-stage founders. Runs as a virtual Toronto chapter.
-review:
-  - desc
-  - hq
+desc: Toronto chapter of the Founder Institute, a pre-seed accelerator that runs chapters in cities around the world and takes idea-stage founders through a structured, mentor-rated program toward a fundable company.
+last_verified: 2026-10
 programs:
-  - id: founder-institute-toronto-program
-    name: Founder Institute Toronto
-    url: https://fi.co/
+  - id: founder-institute-toronto-accelerator
+    name: FI Agentic Program
+    url: https://fi.co/toronto
     types:
       - accelerator
+      - mentorship
     stages:
+      - spark
       - validate
-      - build
+    stage_basis: "If you have an idea and want to build a company, apply to the FI Agentic Program."
     audiences:
+      - aspiring
       - founders
-    access: membership
+    delivery: remote
     fee: fee
+    equity: true
+    access: application
+    cadence:
+      - cohort
     review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
+      - status
       - open_to

@@ -491,3 +491,36 @@ describe("host overlap", () => {
 		);
 	});
 });
+
+describe("offices (locations)", () => {
+	const withOffice = (office: string) =>
+		org("a", { city: "us-ma-boston", extra: `locations:\n  - ${office}\n` });
+
+	test("an office in another listed city, inside its bounds", () => {
+		const text = withOffice(
+			"{city: ca-on-toronto, area: King West, lat: 43.6441, lng: -79.4018}",
+		);
+		expect(errorsFor({ "us/ma/boston/a.yml": text })).toBe("");
+	});
+
+	test("an office in a city that isn't listed", () => {
+		const text = withOffice("{city: ca-on-ottawa}");
+		expect(errorsFor({ "us/ma/boston/a.yml": text })).toContain(
+			"locations[0].city ca-on-ottawa is not in data/regions/index.yml",
+		);
+	});
+
+	test("an office whose coordinates fall outside its city", () => {
+		const text = withOffice("{city: ca-on-toronto, lat: 42.36, lng: -71.06}");
+		expect(errorsFor({ "us/ma/boston/a.yml": text })).toContain(
+			"locations[0] lat/lng (42.36, -71.06) is outside Toronto's bounds",
+		);
+	});
+
+	test("an empty locations list", () => {
+		const text = org("a", { extra: "locations: []\n" });
+		expect(errorsFor({ "ca/on/toronto/a.yml": text })).toContain(
+			"/locations must NOT have fewer than 1 items",
+		);
+	});
+});

@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: ai-collective-boston
+name: The AI Collective (Boston)
+url: https://www.aicollective.com/chapters/boston
+hosts:
+  - www.aicollective.com/chapters/boston
+cats:
+  - community
+hq:
+  city: us-ma-boston
+  lat: 42.36
+  lng: -71.062
+  approx: true
+desc: Boston chapter of the national founder/investor GenAI community.
+review:
+  - hq
+programs:
+  - id: ai-collective-boston-program
+    name: The AI Collective (Boston)
+    url: https://www.aicollective.com/chapters/boston
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

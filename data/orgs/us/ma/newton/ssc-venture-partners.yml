@@ -1,0 +1,45 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: ssc-venture-partners
+name: SSC Venture Partners
+url: https://sscventurepartners.com/
+hosts:
+  - sscventurepartners.com
+cats:
+  - accelerator
+hq:
+  city: us-ma-newton
+  area: Chestnut Hill
+  lat: 42.3355
+  lng: -71.1685
+desc: Accelerator + fund for the Boston College founder community.
+review:
+  - cats
+programs:
+  - id: ssc-venture-partners-program
+    name: SSC Venture Partners
+    url: https://sscventurepartners.com/
+    types:
+      - accelerator
+      - investment
+      - mentorship
+      - grant
+      - community
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: mit-alumni-angels-of-boston
+name: MIT Alumni Angels of Boston
+url: https://www.mitalumniangels.com/
+hosts:
+  - www.mitalumniangels.com
+cats:
+  - angel-network
+hq:
+  city: us-ma-cambridge
+  lat: 42.362
+  lng: -71.087
+  approx: true
+desc: Angel network of MIT alumni backing MIT-connected founders.
+programs:
+  - id: mit-alumni-angels-of-boston-program
+    name: MIT Alumni Angels of Boston
+    url: https://www.mitalumniangels.com/
+    types:
+      - investment
+      - community
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

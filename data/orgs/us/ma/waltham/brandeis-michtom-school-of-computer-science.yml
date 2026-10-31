@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: brandeis-michtom-school-of-computer-science
+name: Brandeis Michtom School of Computer Science
+url: https://www.brandeis.edu/computer-science/
+hosts:
+  - www.brandeis.edu/computer-science
+cats:
+  - university
+hq:
+  city: us-ma-waltham
+  lat: 42.3657
+  lng: -71.2626
+  approx: true
+desc: Brandeis's computer science department in Waltham, with an MS in Computational Linguistics that hosts NLP industry receptions. Its labs work on multilingual NLP, meaning representation and data-centric machine learning.
+review:
+  - desc
+programs:
+  - id: brandeis-michtom-school-of-computer-science-program
+    name: Brandeis Michtom School of Computer Science
+    url: https://www.brandeis.edu/computer-science/
+    types:
+      - community
+    stages:
+      - validate
+      - build
+      - operate
+      - scale
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,45 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: mit-delta-v
+name: MIT delta v
+url: https://entrepreneurship.mit.edu/accelerator/
+hosts:
+  - entrepreneurship.mit.edu/accelerator
+parent: martin-trust-center-for-mit-entrepreneurship
+cats:
+  - accelerator
+hq:
+  city: us-ma-cambridge
+  lat: 42.3601
+  lng: -71.0852
+desc: "MIT's summer venture accelerator: up to $20K equity-free plus living stipends, ending in a famous September Demo Day."
+review:
+  - parent
+  - cats
+  - desc
+programs:
+  - id: mit-delta-v-program
+    name: MIT delta v
+    url: https://entrepreneurship.mit.edu/accelerator/
+    types:
+      - accelerator
+      - grant
+      - mentorship
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

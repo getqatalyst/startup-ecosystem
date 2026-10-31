@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: vector-institute
 name: Vector Institute
 aliases:
@@ -14,27 +12,103 @@ hq:
   area: Schwartz Reisman Campus
   lat: 43.6604
   lng: -79.3893
-desc: Founded 2017 by Geoffrey Hinton, Brendan Frey, Raquel Urtasun. AI research, talent development, and industry partnerships.
-review:
-  - cats
-  - desc
+desc: Independent not-for-profit AI research institute that develops AI talent and helps Canadian organizations, including startups and scaleups, adopt AI through engineering support, training and collaborative programs.
+last_verified: 2026-10
 programs:
-  - id: vector-institute-program
-    name: Vector Institute
-    url: https://vectorinstitute.ai/
+  - id: vector-institute-fastlane
+    name: FastLane
+    url: https://vectorinstitute.ai/ai-adoption/startups/fastlane/
     types:
       - service
+      - course
     stages:
       - build
+      - operate
+      - scale
+    stage_basis: "Have a functional minimum viable product. Some of the ventures admitted to FastLane are pre-revenue."
     audiences:
       - founders
+    eligibility:
+      venture:
+        - gate: incorporated
+          quote: "Be incorporated and operating within Canada with a technical team"
+        - gate: team
+          quote: "Have between 1 – 500 employees; meeting the definition of Small and Medium-sized Enterprise (SME) according to Innovation, Science and Economic Development Canada (ISED)"
+      place:
+        incorporation:
+          - ca
+        quote: "Yes, your company must be headquartered in Canada. Your business must be incorporated within Canada."
+    open_to:
+      - ca
+    delivery: hybrid
+    founder_receives:
+      - none
     access: application
-    fee: free
+    cadence:
+      - ongoing
     review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+      - where
+  - id: vector-institute-darmod
+    name: DaRMoD
+    aliases:
+      - Data Readiness, Model Development, and Model Deployment
+    url: https://vectorinstitute.ai/ai-adoption/startups/darmod/
+    types:
+      - course
+      - mentorship
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: incorporated
+          quote: "Startup or small business (1–499 employees), incorporated and operating in Canada."
+        - gate: team
+          quote: "At least one technical team member who can actively participate in hands-on sessions and apply learnings to the prototype."
+      place:
+        incorporation:
+          - ca
+        quote: "Startup or small business (1–499 employees), incorporated and operating in Canada."
+    open_to:
+      - ca
+    partners:
+      - org: feddev-ontario
+        role: funds
+    delivery: remote
+    fee: free
+    access: application
+    cadence:
+      - cohort
+    duration: 4 months
+  - id: vector-institute-healthspark
+    name: HealthSpark
+    url: https://vectorinstitute.ai/ai-adoption/startups/healthspark/
+    types:
+      - service
+      - mentorship
+    stages:
+      - operate
+      - scale
+    stage_basis: "Preference is given to companies at a stable growth stage that have an active and functional product or service that they aim to enhance with AI, or a well-defined plan for developing a new AI-driven product or service"
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: incorporated
+          quote: "Must be an incorporated company in Canada and based in Southern Ontario"
+        - gate: team
+          quote: "Must have at least 10 full-time employees and no more than 500 full-time equivalent employees"
+        - gate: sector
+          quote: "The proposal must be focused on developing and commercializing a technology that utilizes AI/ML, and that has a fundamental impact on the health sector"
+      place:
+        incorporation:
+          - ca
+        quote: "Must be an incorporated company in Canada and based in Southern Ontario"
+    open_to:
+      - ca-on
+    access: application
+    cadence:
+      - cohort
+    duration: 4 months

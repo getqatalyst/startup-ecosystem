@@ -6,12 +6,15 @@
 countries:
   ca: { name: Canada }
   us: { name: United States }
+  de: { name: Germany }
 
 subdivisions:
   ca-on: { name: Ontario }
   us-ma: { name: Massachusetts }
   ca-qc: { name: Quebec }
   us-ct: { name: Connecticut }
+  us-ca: { name: California }
+  de-bw: { name: Baden-Württemberg }
 
 cities:
   ca-on-toronto:
@@ -40,6 +43,92 @@ cities:
     bounds: [[42.30, -71.20], [42.44, -71.02]]
     status: draft
     moderators: []
+  # Other Massachusetts cities with orgs from the Mass AI Atlas. centre = mean of the city's
+  # pinned orgs (an org's own pin where there is one); bounds = their extent plus 0.05°
+  us-ma-amherst:
+    name: Amherst
+    center: [42.3914, -72.5272]
+    zoom: 13
+    bounds: [[42.33, -72.58], [42.45, -72.47]]
+    status: draft
+    moderators: []
+  us-ma-worcester:
+    name: Worcester
+    center: [42.2651, -71.8028]
+    zoom: 13
+    bounds: [[42.21, -71.86], [42.32, -71.75]]
+    status: draft
+    moderators: []
+  us-ma-medford:
+    name: Medford
+    center: [42.4089, -71.1192]
+    zoom: 13
+    bounds: [[42.36, -71.17], [42.46, -71.07]]
+    status: draft
+    moderators: []
+  us-ma-waltham:
+    name: Waltham
+    center: [42.3731, -71.2569]
+    zoom: 13
+    bounds: [[42.32, -71.31], [42.43, -71.20]]
+    status: draft
+    moderators: []
+  us-ma-newton:
+    name: Newton
+    center: [42.3358, -71.1897]
+    zoom: 13
+    bounds: [[42.29, -71.26], [42.39, -71.12]]
+    status: draft
+    moderators: []
+  us-ma-wellesley:
+    name: Wellesley
+    center: [42.3102, -71.2593]
+    zoom: 13
+    bounds: [[42.24, -71.31], [42.38, -71.20]]
+    status: draft
+    moderators: []
+  us-ma-westborough:
+    name: Westborough
+    center: [42.2872, -71.6289]
+    zoom: 13
+    bounds: [[42.24, -71.68], [42.34, -71.58]]
+    status: draft
+    moderators: []
+  us-ma-bedford:
+    name: Bedford
+    center: [42.505, -71.2366]
+    zoom: 13
+    bounds: [[42.46, -71.29], [42.56, -71.19]]
+    status: draft
+    moderators: []
+  us-ma-wilmington:
+    name: Wilmington
+    center: [42.5307, -71.1459]
+    zoom: 13
+    bounds: [[42.48, -71.20], [42.58, -71.10]]
+    status: draft
+    moderators: []
+  us-ma-somerville:
+    name: Somerville
+    center: [42.3818, -71.1057]
+    zoom: 13
+    bounds: [[42.33, -71.16], [42.43, -71.06]]
+    status: draft
+    moderators: []
+  us-ma-fall-river:
+    name: Fall River
+    center: [41.6838, -71.1274]
+    zoom: 13
+    bounds: [[41.63, -71.18], [41.73, -71.08]]
+    status: draft
+    moderators: []
+  us-ma-holyoke:
+    name: Holyoke
+    center: [42.2025, -72.6079]
+    zoom: 13
+    bounds: [[42.15, -72.66], [42.25, -72.56]]
+    status: draft
+    moderators: []
   # Cities with no page yet: HQs of orgs that serve founders in a city that has one.
   # centre = the city centre; bounds = a typo guard of about 0.15 degrees around it
   ca-qc-montreal:
@@ -54,5 +143,19 @@ cities:
     center: [41.0787, -73.4693]
     zoom: 13
     bounds: [[40.98, -73.57], [41.18, -73.37]]
+    status: draft
+    moderators: []
+  us-ca-mountain-view:
+    name: Mountain View
+    center: [37.3861, -122.0839]
+    zoom: 13
+    bounds: [[37.29, -122.18], [37.48, -121.98]]
+    status: draft
+    moderators: []
+  de-bw-stuttgart:
+    name: Stuttgart
+    center: [48.7758, 9.1829]
+    zoom: 12
+    bounds: [[48.68, 9.04], [48.87, 9.32]]
     status: draft
     moderators: []

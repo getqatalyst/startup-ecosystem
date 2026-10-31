@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: venturelab
 name: ventureLAB
 url: https://www.venturelab.ca/
@@ -12,25 +10,170 @@ hq:
   area: Markham
   lat: 43.8183
   lng: -79.334
-desc: Hardware and deep-tech innovation hub in York Region; programs in semiconductors, IoT, and capital readiness.
+desc: Markham-based innovation hub for hardtech and deeptech founders, helping Canadian ventures raise capital, commercialize technology and IP, hire talent and win customers, with prototyping and testing labs and coworking space.
+last_verified: 2026-10
 programs:
-  - id: venturelab-program
-    name: ventureLAB
-    url: https://www.venturelab.ca/
+  - id: venturelab-hardware-catalyst-initiative
+    name: Hardware Catalyst Initiative
+    url: https://www.venturelab.ca/programs/hardware-catalyst-initiative
+    types:
+      - incubator
+      - service
+    stages:
+      - build
+      - operate
+    stage_basis: "We work with innovative growth and scale-stage hardware or enterprise software companies with some market traction."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: business-age
+          quote: "Company was founded within 5 years immediately preceding the application"
+        - gate: revenue
+          quote: "Company earned less than $5M in revenue in last 12 months"
+        - gate: sector
+          quote: "Directly involved in the development of a novel electronic product involving advanced elements such as a custom semiconductor, sensor, silicon-based IP, or embedded system hardware"
+        - gate: revenue
+          quote: "Has customer engagement that validates the need and demonstrates that the team can attract and work with customers"
+        - gate: incorporated
+          quote: "Company is incorporated in Canada"
+        - gate: team
+          quote: "Has 99 or fewer employees"
+        - gate: team
+          quote: "Has a co-founding team (of at least 2 or more) capable of product development, customer acquisition, and investment acquisition"
+      place:
+        incorporation:
+          - ca
+        quote: "Company is incorporated in Canada"
+    open_to:
+      - ca
+    fee: free
+    equity: false
+    access: application
+    cadence:
+      - cohort
+    duration: 24 months
+  - id: venturelab-accelerate-ai
+    name: Accelerate AI
+    url: https://www.venturelab.ca/programs/accelerate-ai
     types:
       - accelerator
     stages:
       - validate
       - build
+    stage_basis: "Venture must be at the validation stage, have developed a minimum viable product (MVP) or at the efficiency stage, experiencing initial traction in a receptive-enough market to build a business in"
     audiences:
       - founders
-    access: membership
+    eligibility:
+      venture:
+        - gate: incorporated
+          quote: "The Venture must be incorporated, based and operating in Canada"
+        - gate: sector
+          quote: "Focused on applied AI and intelligent value chain products and/or services"
+        - gate: team
+          quote: "Employing fewer than 500 globally (including its affiliates)"
+      place:
+        incorporation:
+          - ca
+        quote: "The Venture must be incorporated, based and operating in Canada"
+    open_to:
+      - ca
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    equity: false
+    access: application
+    cadence:
+      - rolling
+    duration: 6 months
+  - id: venturelab-investment-readiness
+    name: Investment Readiness
+    aliases:
+      - Capital Investment Program
+    url: https://www.venturelab.ca/investment-readiness
+    types:
+      - course
+      - mentorship
+    stages:
+      - build
+      - operate
+    stage_basis: "Startups with a working prototype, early traction, or strong technical validation"
+    audiences:
+      - founders
+    open_to:
+      - ca
+    fee: free
+    equity: false
+    access: application
+    cadence:
+      - cohort
+    duration: 3 months
+  - id: venturelab-hardtech-investor-network
+    name: HardTech Investor Network
+    url: https://www.venturelab.ca/hardtech-investor-network
+    types:
+      - investment
+      - matching
+    stages:
+      - validate
+      - build
+      - operate
+    stage_basis: "Pre-Seed to Series A stage"
+    audiences:
+      - founders
+      - investors
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "Hardware and/or deep-tech startup"
+    open_to:
+      - ca
+    founder_receives:
+      - investment
+    access: application
+  - id: venturelab-soft-landing
+    name: Soft Landing Program
+    url: https://www.venturelab.ca/canada-catalyst
+    types:
+      - service
+    stages:
+      - operate
+      - scale
+    stage_basis: "A working product with paying clients to showcase market traction in the home country"
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "An innovate scaling technology company developing hardware or enterprise software solutions with a focus on DeepTech"
+        - gate: revenue
+          quote: "Earned at least $150K CAD in revenue in the last 12 months"
+    open_to:
+      - global
+    delivery: hybrid
+    fee: fee
+    access: application
+    cadence:
+      - rolling
+    duration: 3 months
+  - id: venturelab-start-up-visa
+    name: Start-up Visa Program
+    url: https://www.venturelab.ca/canada-catalyst
+    types:
+      - service
+    stages:
+      - build
+      - operate
+    stage_basis: "Have a Minimum Viable Product (MVP) and proof of concept with product/ service tested in the home market"
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "An innovative technology company developing hardware or enterprise software solutions with a focus on DeepTech"
+        - gate: revenue
+          quote: "Earned at least $100K CAD in revenue in the last 12 months"
+    open_to:
+      - global
+    fee: fee
+    access: application
+    duration: 12 months
+    status: paused

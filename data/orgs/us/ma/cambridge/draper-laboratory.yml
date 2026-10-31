@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: draper-laboratory
+name: Draper Laboratory
+url: https://www.draper.com/
+hosts:
+  - www.draper.com
+cats:
+  - corporate
+hq:
+  city: us-ma-cambridge
+  lat: 42.3646
+  lng: -71.0906
+desc: Independent nonprofit R&D lab spun out of MIT, with autonomy, perception and machine learning as core capabilities for defense and space. Runs DraperSPARX, which pairs defense startups with its engineers, secure labs and government customers.
+review:
+  - desc
+programs:
+  - id: draper-laboratory-program
+    name: Draper Laboratory
+    url: https://www.draper.com/
+    types:
+      - service
+      - mentorship
+    stages:
+      - validate
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

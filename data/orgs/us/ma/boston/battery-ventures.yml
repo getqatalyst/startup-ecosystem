@@ -1,0 +1,38 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: battery-ventures
+name: Battery Ventures
+url: https://www.battery.com
+hosts:
+  - www.battery.com
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  area: Seaport
+  lat: 42.3535
+  lng: -71.044
+desc: Global multi-stage firm headquartered on Fan Pier with active AI/infra practice.
+programs:
+  - id: battery-ventures-program
+    name: Battery Ventures
+    url: https://www.battery.com
+    types:
+      - investment
+    stages:
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

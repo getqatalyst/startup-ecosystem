@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: microsoft-research-new-england
+name: Microsoft Research New England
+url: https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/
+hosts:
+  - www.microsoft.com/en-us/research/lab/microsoft-research-new-england
+cats:
+  - corporate
+hq:
+  city: us-ma-cambridge
+  lat: 42.3614
+  lng: -71.0813
+desc: Microsoft's basic-research lab in the NERD building in Cambridge, working on biomedical ML, economics and computation, and ML and statistics.
+review:
+  - desc
+programs:
+  - id: microsoft-research-new-england-program
+    name: Microsoft Research New England
+    url: https://www.microsoft.com/en-us/research/lab/microsoft-research-new-england/
+    types:
+      - service
+      - community
+    stages:
+      - spark
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to
