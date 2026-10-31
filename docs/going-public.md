@@ -1,12 +1,13 @@
 # Going public: checklist
 
 **Bottom line:** the history has no secrets and no personal data beyond the commit author
-email you already chose to keep. `main` protection is already on (step 3). Before flipping
-visibility, do steps 1, 2 and 4 (merge the open PRs, decide on 40 descriptions that break the
-content rules, create the labels) and the merge settings in step 3. Flip in step 5, then do
-step 6 the same day. Organizations can't claim records until the gap in step 8 is closed.
+email you already chose to keep. Done 2026-10-31: `main` protection (step 3), the visibility
+flip (step 5) and the security settings in step 6 (items 1–3). Still to do: steps 1, 2 and 4
+(merge the open PRs, decide on the descriptions that break the content rules, create the
+labels), the merge settings in step 3 once the stacked PRs are in, and step 6 items 4–6.
+Organizations can't claim records until the gap in step 8 is closed.
 
-Except the protection already on (step 3), everything here is a proposal: each command changes a repo or org setting, so you run it.
+Except the steps marked done, everything here is a proposal: each command changes a repo or org setting, so you run it.
 Commands assume `gh` logged in as an org owner and `REPO=getqatalyst/startup-ecosystem`.
 
 ```bash
@@ -140,15 +141,17 @@ comments, Actions run logs, and releases. Local-only branches stay private; neve
 
 ## 6. The same day
 
-1. Secret scanning and push protection (free on public repos):
+Items 1–3 are done: applied at David's request and read back 2026-10-31.
+
+1. Secret scanning and push protection (free on public repos): done.
 
    ```bash
    gh repo edit "$REPO" --enable-secret-scanning --enable-secret-scanning-push-protection
    ```
 
-2. Private vulnerability reporting: `gh api -X PUT "repos/$REPO/private-vulnerability-reporting"`.
+2. Private vulnerability reporting: done. `gh api -X PUT "repos/$REPO/private-vulnerability-reporting"`.
 3. Make every outside contributor's first workflow run wait for approval (can't be set while
-   private):
+   private): done, `approval_policy` is `all_external_contributors`.
 
    ```bash
    gh api -X PUT "repos/$REPO/actions/permissions/fork-pr-contributor-approval" \
