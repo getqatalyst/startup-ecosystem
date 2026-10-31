@@ -4,9 +4,9 @@ id: relay-ventures
 name: Relay Ventures
 aliases:
   - Relay
-url: https://relayventures.com/
+url: https://relay.vc/
 hosts:
-  - relayventures.com
+  - relay.vc
 cats:
   - vc
 hq:
@@ -20,7 +20,7 @@ review:
 programs:
   - id: relay-ventures-program
     name: Relay Ventures
-    url: https://relayventures.com/
+    url: https://relay.vc/
     types:
       - investment
     stages:

@@ -2,7 +2,7 @@
 # under `review:` are first guesses; confirm them against the org's own site, then remove them.
 id: analog-devices
 name: Analog Devices
-url: https://www.analog.com/
+url: https://www.analog.com/en/index.html
 hosts:
   - www.analog.com
 cats:
@@ -17,7 +17,7 @@ review:
 programs:
   - id: analog-devices-program
     name: Analog Devices
-    url: https://www.analog.com/
+    url: https://www.analog.com/en/index.html
     types:
       - service
       - investment

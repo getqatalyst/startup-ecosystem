@@ -14,7 +14,7 @@
 import { validate } from "./validate";
 
 export type Kind =
-	| "dead" // DNS, TLS, connection, timeout, 404, 410, 5xx: fix the record
+	| "dead" // DNS, TLS, connection, 404, 410, 5xx: fix the record
 	| "parked" // for sale or parked: the org lost the domain
 	| "hijacked" // spam on the org's domain
 	| "moved" // redirects to a host the org doesn't list
@@ -186,6 +186,12 @@ export function classify(
 	target: Target,
 	page: Fetched,
 ): Omit<Finding, keyof Target> {
+	// A timeout alone does not show that a link is broken: both Relay Ventures and Analog
+	// Devices timed out from one Actions runner while remaining live in browsers/search.
+	// Keep it in the human-check queue; DNS/TLS/connection errors are stronger failures.
+	if (page.error === "timeout") {
+		return { kind: "blocked", note: "timeout; open it in a browser" };
+	}
 	if (page.error) return { kind: "dead", note: page.error };
 	const status = page.status ?? 0;
 	const html = page.html ?? "";
