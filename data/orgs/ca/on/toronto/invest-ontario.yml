@@ -14,9 +14,7 @@ hq:
   area: Downtown
   lat: 43.6544
   lng: -79.3806
-desc: Provincial agency attracting and supporting business investment in Ontario; 250 Yonge St.
-review:
-  - desc
+desc: Ontario's provincial investment attraction agency, helping companies locate and expand in Ontario in sectors such as advanced manufacturing, life sciences and technology. It refers start-ups to other support providers.
 programs:
   - id: invest-ontario-program
     name: Invest Ontario

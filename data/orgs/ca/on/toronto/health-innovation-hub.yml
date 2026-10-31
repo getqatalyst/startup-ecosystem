@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: health-innovation-hub
 name: Health Innovation Hub (H2i)
 aliases:
@@ -7,6 +5,7 @@ aliases:
 url: https://h2i.utoronto.ca/
 hosts:
   - h2i.utoronto.ca
+parent: university-of-toronto
 cats:
   - accelerator
 hq:
@@ -15,27 +14,48 @@ hq:
   lat: 43.6614
   lng: -79.3935
   approx: true
-desc: U of T's health-focused accelerator at Temerty Faculty of Medicine; supports health-science ventures since 2014.
-review:
-  - desc
+desc: U of T's health-focused accelerator at the Temerty Faculty of Medicine, giving aspiring and early-stage entrepreneurs building medical devices, software and therapeutics ongoing mentorship and programming.
+last_verified: 2026-10
 programs:
-  - id: health-innovation-hub-program
-    name: Health Innovation Hub (H2i)
-    url: https://h2i.utoronto.ca/
+  - id: health-innovation-hub-venture-support
+    name: H2i Venture Support
+    url: https://h2i.utoronto.ca/join/
     types:
       - accelerator
+      - mentorship
     stages:
       - validate
       - build
     audiences:
       - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "H2i supports early-stage entrepreneurs working on innovative health and medical solutions – spanning medical devices, software and therapeutic interventions."
     access: application
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    cadence:
+      - rolling
+  - id: health-innovation-hub-build
+    name: H2i BUILD
+    variant_of: health-innovation-hub-venture-support
+    last_verified: 2026-10
+    stages:
+      - validate
+    stage_basis: "Often while in BUILD, teams are working on needs validation, customer discovery, prototyping and understanding principles of commercialization as they build go-to-market strategies in later stages."
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "Temerty Medicine, TAHSN & U of T eligible to apply – competitive process."
+        - org: university-of-toronto
+          role: affiliate
+        - org_name: Toronto Academic Health Science Network (TAHSN) hospital
+          role: affiliate
+          quote: "*No unaffiliated entry."
+  - id: health-innovation-hub-grow
+    name: H2i GROW
+    variant_of: health-innovation-hub-venture-support
+    last_verified: 2026-10
+    stages:
+      - build
+    stage_basis: "Often while in GROW, teams are taking their product into market, completing pilots, building partnerships, obtaining clients, and raising investment, typically at a pre-seed stage."

@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: green-economy-canada
 name: Green Economy Canada
 aliases:
@@ -14,28 +12,37 @@ hq:
   area: Financial District
   lat: 43.6494
   lng: -79.3771
-desc: National network of local business-sustainability hubs helping companies cut emissions and track ESG progress. Toronto-headquartered; founded 2014.
-review:
-  - desc
+desc: National non-profit that helps Canadian businesses of all sectors and sizes measure and cut their carbon emissions, through a network of regional Green Economy Hubs and a National Hub.
+last_verified: 2026-10
 programs:
-  - id: green-economy-canada-program
-    name: Green Economy Canada
-    url: https://greeneconomy.ca/
+  - id: green-economy-canada-national-hub
+    name: National Hub
+    url: https://greeneconomy.ca/nationalhub/
     types:
       - community
+      - service
     stages:
-      - spark
-      - validate
+      - build
+      - operate
+      - scale
+    stage_basis: "Organizations of all sectors and sizes."
     audiences:
-      - aspiring
       - founders
-    access: membership
+    open_to:
+      - ca
     fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: membership
+  - id: green-economy-canada-climate-action-boot-camp
+    name: Climate Action Boot Camp
+    url: https://greeneconomy.ca/climatebootcamp-2/
+    types:
+      - course
+    stages:
+      - build
+      - operate
+    stage_basis: "Especially designed for small and medium-sized enterprises (SMEs)."
+    audiences:
+      - founders
+    delivery: remote
+    fee: free
+    access: open

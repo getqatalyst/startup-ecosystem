@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: league-of-innovators
 name: League of Innovators
 aliases:
@@ -9,31 +7,155 @@ hosts:
   - www.loi.ac
 cats:
   - accelerator
+  - community
 hq:
   city: ca-on-toronto
-desc: Charity supporting young Canadian founders with programming and mentor access.
+desc: A charity running free, equity-free online accelerator programs and a national community for young founders across Canada.
+last_verified: 2026-10
 review:
   - hq
 programs:
-  - id: league-of-innovators-program
-    name: League of Innovators
-    url: https://www.loi.ac/
+  - id: league-of-innovators-labs
+    name: Labs
+    url: https://www.loi.ac/programs/labs
     types:
       - accelerator
     stages:
-      - validate
       - build
+    stage_basis: "Founders aged 15–30 with an MVP and early traction."
     audiences:
       - founders
+    eligibility:
+      venture:
+        - gate: revenue
+          quote: "Founders aged 15–30 with an MVP and early traction"
+      age:
+        min: 15
+        max: 30
+        quote: "Labs is open to founders aged 15 to 30 anywhere in Canada."
     open_to:
       - ca
-    access: open
+    delivery: remote
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    equity: false
+    access: application
+    cadence:
+      - cohort
+    duration: 10 weeks
+  - id: league-of-innovators-labs-byegs
+    name: Black Youth Entrepreneurship Growth Stream (BYEGS)
+    aliases:
+      - BYEGS
+    variant_of: league-of-innovators-labs
+    last_verified: 2026-10
+    eligibility:
+      who:
+        - group: black
+          requirement: required
+          quote: "BYEGS is a dedicated stream within LOI’s Labs program, designed to support and empower Black youth founders across Canada."
+          source: https://www.loi.ac/programs/labs
+    partners:
+      - org_name: Black Entrepreneurs and Businesses Society of Canada
+        role: co-runs
+  - id: league-of-innovators-boost
+    name: Boost
+    url: https://www.loi.ac/programs/boost
+    types:
+      - accelerator
+    stages:
+      - operate
+    stage_basis: "Founders aged 15–30 with demonstrated traction and product–market fit."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: revenue
+          quote: "Founders aged 15–30 with demonstrated traction and product–market fit"
+      age:
+        min: 15
+        max: 30
+        quote: "Founders aged 15–30 with demonstrated traction and product–market fit"
+    open_to:
+      - ca
+    delivery: remote
+    fee: free
+    equity: false
+    access: application
+    cadence:
+      - cohort
+      - annual
+    duration: 6 months
+  - id: league-of-innovators-launch-it
+    name: Launch It
+    url: https://www.loi.ac/programs/launch-it
+    status: paused
+    types:
+      - course
+    stages:
+      - spark
+      - validate
+    stage_basis: "Self-paced program designed to help young entrepreneurs move from idea to validation."
+    audiences:
+      - founders
+      - aspiring
+    eligibility:
+      age:
+        min: 15
+        max: 30
+        quote: "Founders aged 15–30 across Canada"
+    open_to:
+      - ca
+    delivery: remote
+    fee: free
+    equity: false
+  - id: league-of-innovators-edge
+    name: Edge
+    url: https://www.loi.ac/programs/edge
+    types:
+      - course
+    stages:
+      - spark
+      - validate
+      - build
+      - operate
+      - scale
+    stage_basis: "Edge provides support at every stage of entrepreneurial development."
+    audiences:
+      - founders
+    eligibility:
+      age:
+        min: 15
+        max: 30
+        quote: "LOI community members and select program partners, aged 15–30"
+    partners:
+      - org_name: GreenShield
+        role: co-runs
+    open_to:
+      - ca
+    delivery: remote
+    fee: free
+    access: membership
+    duration: 2 weeks
+  - id: league-of-innovators-community
+    name: LOI community
+    url: https://www.loi.ac/community
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+      - build
+      - operate
+      - scale
+    stage_basis: "You’re actively building something: any stage, any sector."
+    audiences:
+      - founders
+    eligibility:
+      age:
+        max: 30
+        quote: "You’re 30 or younger"
+    open_to:
+      - ca
+    fee: free
+    equity: false
+    access: membership
