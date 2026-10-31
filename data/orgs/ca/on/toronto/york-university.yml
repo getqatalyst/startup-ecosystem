@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: york-university
 name: York University
 aliases:
@@ -14,26 +12,150 @@ hq:
   area: Keele / North York
   lat: 43.7735
   lng: -79.5019
-desc: Third-largest university in Canada; Schulich School of Business and Lassonde engineering.
+desc: Toronto university whose YSpace entrepreneurship hub runs accelerator, incubator and grant programs for students, researchers and community founders.
+last_verified: 2026-10
 programs:
-  - id: york-university-program
-    name: York University
-    url: https://www.yorku.ca/
+  - id: york-university-yspace-technology-accelerator
+    name: YSpace Technology Accelerator
+    url: https://www.yorku.ca/yspace/programs-streams/technology-accelerator/
     types:
-      - community
+      - accelerator
+    stages:
+      - build
+    stage_basis: "Companies need to have an MVP launched in the market already with at least some early traction (while we typically define early traction by revenue, exceptions can be made for highly innovative deep tech products)"
+    audiences:
+      - founders
+    delivery: hybrid
+    fee: free
+    equity: false
+    founder_receives:
+      - prize
+    access: application
+    cadence:
+      - cohort
+    duration: 4 months
+  - id: york-university-yspace-tech-incubator
+    name: YSpace Tech Incubator
+    url: https://www.yorku.ca/yspace/programs-streams/technology-tech-incubator/
+    types:
+      - incubator
+    stages:
+      - build
+    stage_basis: "Companies need to have a minimum viable product ready for commercialization/further growth"
+    audiences:
+      - founders
+    fee: fee
+    equity: false
+    access: application
+    cadence:
+      - rolling
+  - id: york-university-yspace-venture-catalyst
+    name: Venture Catalyst
+    url: https://www.yorku.ca/yspace/programs-streams/technology-venture-catalyst/
+    partners:
+      - org_name: Black Entrepreneurship Alliance
+        role: co-runs
+    types:
+      - accelerator
     stages:
       - spark
       - validate
+    stage_basis: "The Venture Catalyst serves early stage founders going through the ideation process and validating the feasibility of the concept."
     audiences:
-      - aspiring
       - founders
-    access: institutional
-    fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+      - aspiring
+    fee: free
+    equity: false
+    access: application
+    cadence:
+      - cohort
+    duration: 2 months
+  - id: york-university-yspace-food-beverage-accelerator
+    name: Food & Beverage Accelerator
+    url: https://www.yorku.ca/yspace/programs-streams/food-bev-accelerator/
+    types:
+      - accelerator
+    stages:
+      - operate
+    stage_basis: "Venture active for over a year with Monthly Recurring Revenue of $5,000+ over the last 6 months or an Annual Recurring Revenue of $100,000+"
+    audiences:
+      - founders
+    eligibility:
+      place:
+        residence:
+          - ca
+        quote: "Full-time founder(s) in Canada who can commit to 5-months YSpace programming"
+      venture:
+        - gate: sector
+          quote: "Our Food Accelerator program helps high growth food and beverage ventures"
+        - gate: revenue
+          quote: "Product launched in market (minimum 10 points of sale)"
+        - gate: team
+          quote: "Full-time founder(s) in Canada who can commit to 5-months YSpace programming"
+    open_to:
+      - ca
+    delivery: hybrid
+    access: application
+    cadence:
+      - cohort
+    duration: 5 months
+  - id: york-university-yspace-ella-ascend
+    name: ELLA Ascend
+    url: https://www.yorku.ca/yspace/programs-streams/ella/ella-ascend/
+    partners:
+      - org_name: Desjardins
+        role: funds
+    types:
+      - accelerator
+    stages:
+      - build
+      - operate
+    stage_basis: "A 4-month program for women-led ventures with paying customers and annual revenues of over $100,000."
+    audiences:
+      - founders
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "Woman entrepreneur with at least 50% ownership of a registered business, nonprofit, or social enterprise"
+          source: https://www.yorku.ca/yspace/programs-streams/ella/ella-ascend/
+      venture:
+        - gate: team
+          quote: "Working fulltime on your venture"
+    open_to:
+      - ca
+    access: application
+    cadence:
+      - cohort
+    duration: 4 months
+  - id: york-university-yspace-visa-grant-program
+    name: The Visa Grant Program
+    url: https://www.yorku.ca/yspace/visagrantprogram/
+    partners:
+      - org_name: Visa
+        role: funds
+    types:
+      - grant
+      - mentorship
+    stages:
+      - build
+    stage_basis: "You have a minimum annual revenue of $50,000"
+    audiences:
+      - founders
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "You are a woman entrepreneur with at least 50% ownership of a registered business, non-profit or social enterprise, and you are working full-time on your venture"
+          source: https://www.yorku.ca/yspace/visagrantprogram/
+      venture:
+        - gate: revenue
+          quote: "You have a minimum annual revenue of $50,000"
+    open_to:
+      - ca
+    founder_receives:
+      - grant
+    access: application
+    cadence:
+      - annual
+    duration: 4 months

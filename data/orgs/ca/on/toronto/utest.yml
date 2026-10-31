@@ -1,10 +1,11 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: utest
 name: UTEST
+aliases:
+  - University of Toronto Early Stage Technology
 url: https://utest.to/
 hosts:
   - utest.to
+parent: university-of-toronto
 cats:
   - accelerator
 hq:
@@ -12,25 +13,45 @@ hq:
   area: Schwartz Reisman Campus
   lat: 43.6604
   lng: -79.3893
-desc: "U of T Early-Stage Technology: pre-seed program for research-based deep-tech startups from U of T faculty and students."
+desc: University of Toronto program that helps research-based deep-tech startups founded by U of T students, faculty and recent graduates go from lab to market, with education, mentoring, incubation space and investment.
+last_verified: 2026-10
 programs:
-  - id: utest-program
-    name: UTEST
-    url: https://utest.to/
+  - id: utest-accelerator
+    name: UTEST Program
+    url: https://utest.to/apply/
     types:
       - accelerator
+      - investment
     stages:
       - validate
       - build
     audiences:
       - founders
+    eligibility:
+      affiliation:
+        - org: university-of-toronto
+          role: student
+          quote: "Applications are open to companies with one or more founders affiliated with the University of Toronto, who are: Current University of Toronto students"
+        - org: university-of-toronto
+          role: affiliate
+          quote: "Current University of Toronto faculty members"
+        - org: university-of-toronto
+          role: alumni
+          quote: "Recent University of Toronto graduates (within two years)"
+    partners:
+      - org_name: Toronto Innovation Acceleration Partners (TIAP)
+        role: co-runs
+      - org_name: Connaught Fund
+        role: funds
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    founder_receives:
+      - investment
     access: application
-    fee: free
+    cadence:
+      - cohort
+      - annual
+    duration: 12 months
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
-      - open_to
