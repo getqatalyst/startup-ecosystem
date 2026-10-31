@@ -1,0 +1,39 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: women-in-ai-toronto
+name: Women in AI Toronto
+aliases:
+  - WAI Toronto
+url: https://www.womeninai.co/
+hosts:
+  - www.womeninai.co
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+desc: Chapter of the global Women in AI network.
+review:
+  - desc
+  - hq
+programs:
+  - id: women-in-ai-toronto-program
+    name: Women in AI Toronto
+    url: https://www.womeninai.co/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

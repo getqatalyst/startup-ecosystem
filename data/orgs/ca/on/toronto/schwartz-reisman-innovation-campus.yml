@@ -1,0 +1,41 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: schwartz-reisman-innovation-campus
+name: Schwartz Reisman Innovation Campus
+aliases:
+  - SRIC
+url: https://sric.utoronto.ca/
+hosts:
+  - sric.utoronto.ca
+cats:
+  - university
+hq:
+  city: ca-on-toronto
+  area: 108 College St
+  lat: 43.6604
+  lng: -79.3893
+desc: U of T's flagship innovation campus (West tower opened 2023/24). Home to Vector, UTEST, the Centre for Entrepreneurship, ONRamp, and more.
+review:
+  - desc
+programs:
+  - id: schwartz-reisman-innovation-campus-program
+    name: Schwartz Reisman Innovation Campus
+    url: https://sric.utoronto.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

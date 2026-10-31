@@ -1,0 +1,41 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: evergreen-brick-works
+name: Evergreen Brick Works
+aliases:
+  - Evergreen
+url: https://www.evergreen.ca/evergreen-brick-works/
+hosts:
+  - www.evergreen.ca
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+  area: Don Valley
+  lat: 43.6843
+  lng: -79.3647
+desc: Reclaimed 1889 brick factory turned public environmental centre and city-building innovation hub. Opened 2010 by Evergreen, a national charity founded 1990.
+review:
+  - desc
+programs:
+  - id: evergreen-brick-works-program
+    name: Evergreen Brick Works
+    url: https://www.evergreen.ca/evergreen-brick-works/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

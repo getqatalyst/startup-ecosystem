@@ -1,0 +1,38 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: betakit
+name: BetaKit
+url: https://betakit.com/
+hosts:
+  - betakit.com
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+desc: Canada's startup news publication; a central convening force for the ecosystem.
+review:
+  - hq
+programs:
+  - id: betakit-program
+    name: BetaKit
+    url: https://betakit.com/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - ca
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

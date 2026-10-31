@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: venturelab
+name: ventureLAB
+url: https://www.venturelab.ca/
+hosts:
+  - www.venturelab.ca
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Markham
+  lat: 43.8183
+  lng: -79.334
+desc: Hardware and deep-tech innovation hub in York Region; programs in semiconductors, IoT, and capital readiness.
+programs:
+  - id: venturelab-program
+    name: ventureLAB
+    url: https://www.venturelab.ca/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: membership
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

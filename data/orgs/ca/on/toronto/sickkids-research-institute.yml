@@ -1,0 +1,39 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: sickkids-research-institute
+name: SickKids Research Institute
+aliases:
+  - SickKids RI
+url: https://www.sickkids.ca/en/research/about-research-institute/
+hosts:
+  - www.sickkids.ca/en/research
+cats:
+  - research-institute
+hq:
+  city: ca-on-toronto
+  area: Discovery District
+  lat: 43.6573
+  lng: -79.3829
+desc: Hospital-affiliated pediatric research institute; one of the largest in North America.
+review:
+  - cats
+programs:
+  - id: sickkids-research-institute-program
+    name: SickKids Research Institute
+    url: https://www.sickkids.ca/en/research/about-research-institute/
+    types:
+      - service
+    stages:
+      - build
+    audiences:
+      - founders
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

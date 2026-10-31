@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: workhaus
+name: Workhaus
+url: https://workhausco.com/
+hosts:
+  - workhausco.com
+cats:
+  - coworking
+hq:
+  city: ca-on-toronto
+  area: Old Town
+  lat: 43.6498
+  lng: -79.3711
+desc: Boutique Canadian coworking with several Toronto locations; 100 Front St E.
+review:
+  - desc
+programs:
+  - id: workhaus-program
+    name: Workhaus
+    url: https://workhausco.com/
+    types:
+      - coworking
+    stages:
+      - build
+    audiences:
+      - founders
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

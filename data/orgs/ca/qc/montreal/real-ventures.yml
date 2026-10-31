@@ -1,0 +1,39 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: real-ventures
+name: Real Ventures
+aliases:
+  - Real
+url: https://realventures.com/
+hosts:
+  - realventures.com
+cats:
+  - vc
+hq:
+  city: ca-qc-montreal
+desc: One of Canada's most active early-stage VCs. HQ in Montreal; active in Toronto but no public Toronto office.
+review:
+  - hq
+programs:
+  - id: real-ventures-program
+    name: Real Ventures
+    url: https://realventures.com/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - ca
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

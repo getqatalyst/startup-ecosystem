@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: startwell
+name: StartWell
+url: https://startwell.co/
+hosts:
+  - startwell.co
+cats:
+  - coworking
+hq:
+  city: ca-on-toronto
+  area: King West
+  lat: 43.6434
+  lng: -79.4064
+desc: 20,000-sq-ft King West coworking (786 King St W) with podcast studios and meeting rooms.
+review:
+  - desc
+programs:
+  - id: startwell-program
+    name: StartWell
+    url: https://startwell.co/
+    types:
+      - coworking
+    stages:
+      - build
+    audiences:
+      - founders
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

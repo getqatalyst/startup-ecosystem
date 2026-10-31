@@ -1,0 +1,40 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: biolabs-toronto
+name: Biolabs Toronto
+aliases:
+  - Biolabs
+url: https://www.biolabs.io/toronto-canada
+hosts:
+  - www.biolabs.io
+cats:
+  - coworking
+hq:
+  city: ca-on-toronto
+  area: MaRS Centre
+  lat: 43.6595
+  lng: -79.3899
+desc: 40,000-sq-ft wet-lab incubator and co-working for early-stage life-sciences companies, located in MaRS.
+review:
+  - cats
+  - desc
+programs:
+  - id: biolabs-toronto-program
+    name: Biolabs Toronto
+    url: https://www.biolabs.io/toronto-canada
+    types:
+      - coworking
+    stages:
+      - build
+    audiences:
+      - founders
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

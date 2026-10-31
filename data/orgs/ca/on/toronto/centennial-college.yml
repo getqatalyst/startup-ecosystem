@@ -1,0 +1,39 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: centennial-college
+name: Centennial College
+aliases:
+  - Centennial
+url: https://www.centennialcollege.ca/
+hosts:
+  - www.centennialcollege.ca
+cats:
+  - university
+hq:
+  city: ca-on-toronto
+  area: Scarborough
+  lat: 43.7854
+  lng: -79.2266
+desc: Toronto's first community college; programs in aerospace, transportation, and health sciences.
+programs:
+  - id: centennial-college-program
+    name: Centennial College
+    url: https://www.centennialcollege.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: institutional
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

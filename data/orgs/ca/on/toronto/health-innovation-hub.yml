@@ -1,0 +1,41 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: health-innovation-hub
+name: Health Innovation Hub (H2i)
+aliases:
+  - H2i
+url: https://h2i.utoronto.ca/
+hosts:
+  - h2i.utoronto.ca
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: U of T Medicine
+  lat: 43.6614
+  lng: -79.3935
+  approx: true
+desc: U of T's health-focused accelerator at Temerty Faculty of Medicine; supports health-science ventures since 2014.
+review:
+  - desc
+programs:
+  - id: health-innovation-hub-program
+    name: Health Innovation Hub (H2i)
+    url: https://h2i.utoronto.ca/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

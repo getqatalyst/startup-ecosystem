@@ -1,0 +1,40 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: kensington-capital-partners
+name: Kensington Capital Partners
+aliases:
+  - Kensington
+url: https://kcpl.ca/
+hosts:
+  - kcpl.ca
+cats:
+  - vc
+hq:
+  city: ca-on-toronto
+  area: St. Clair
+  lat: 43.6867
+  lng: -79.3983
+desc: Toronto-based investment firm with venture, growth, and private equity programs; 95 St Clair Ave W.
+review:
+  - desc
+programs:
+  - id: kensington-capital-partners-program
+    name: Kensington Capital Partners
+    url: https://kcpl.ca/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

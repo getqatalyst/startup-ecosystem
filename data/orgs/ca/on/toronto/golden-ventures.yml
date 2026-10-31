@@ -1,0 +1,40 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: golden-ventures
+name: Golden Ventures
+aliases:
+  - Golden
+url: https://golden.ventures/
+hosts:
+  - golden.ventures
+cats:
+  - vc
+hq:
+  city: ca-on-toronto
+  area: Queen West
+  lat: 43.6465
+  lng: -79.4
+desc: Seed fund; $500K-$3M cheques. Backed SkipTheDishes, Inkbox, Hopper, Wealthsimple. Office at 20 Maud St.
+review:
+  - desc
+programs:
+  - id: golden-ventures-program
+    name: Golden Ventures
+    url: https://golden.ventures/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: start-utias
+name: Start@UTIAS
+url: https://entrepreneurs.utoronto.ca/accelerator/startutias/
+hosts:
+  - entrepreneurs.utoronto.ca/accelerator/startutias
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: North York / UTIAS
+  lat: 43.7825
+  lng: -79.4664
+desc: Encourages U of T Institute for Aerospace Studies grad students to launch startups; mentorship, funding, workshops.
+programs:
+  - id: start-utias-program
+    name: Start@UTIAS
+    url: https://entrepreneurs.utoronto.ca/accelerator/startutias/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

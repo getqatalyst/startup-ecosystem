@@ -1,0 +1,38 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: bdc-capital
+name: BDC Capital
+aliases:
+  - BDC
+url: https://www.bdc.ca/en/bdc-capital
+hosts:
+  - www.bdc.ca
+cats:
+  - vc
+hq:
+  city: ca-on-toronto
+  area: Financial District
+  lat: 43.6479
+  lng: -79.3837
+desc: Canada's development bank investment arm; funds across all stages and themes.
+programs:
+  - id: bdc-capital-program
+    name: BDC Capital
+    url: https://www.bdc.ca/en/bdc-capital
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: membership
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

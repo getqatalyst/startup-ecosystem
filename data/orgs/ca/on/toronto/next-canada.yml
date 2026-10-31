@@ -1,0 +1,38 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: next-canada
+name: Next Canada
+url: https://www.nextcanada.com/
+hosts:
+  - www.nextcanada.com
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Bloor / Yorkville
+  lat: 43.6711
+  lng: -79.3825
+desc: National accelerator running NextAI, Next 36, and Next Founders programs for ambitious early-stage Canadian founders.
+review:
+  - desc
+programs:
+  - id: next-canada-program
+    name: Next Canada
+    url: https://www.nextcanada.com/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -16,6 +16,7 @@ cats:
   community: Community
   corporate: Corporate or corporate lab
   service-provider: Service provider
+  research-institute: Research institute
 
 # Program types (`types`). A program can have several (YC = accelerator + investment).
 types:

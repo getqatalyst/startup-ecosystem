@@ -1,0 +1,41 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: green-economy-canada
+name: Green Economy Canada
+aliases:
+  - Green Economy
+url: https://greeneconomy.ca/
+hosts:
+  - greeneconomy.ca
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+  area: Financial District
+  lat: 43.6494
+  lng: -79.3771
+desc: National network of local business-sustainability hubs helping companies cut emissions and track ESG progress. Toronto-headquartered; founded 2014.
+review:
+  - desc
+programs:
+  - id: green-economy-canada-program
+    name: Green Economy Canada
+    url: https://greeneconomy.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

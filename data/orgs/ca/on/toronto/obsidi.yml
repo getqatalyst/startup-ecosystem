@@ -1,0 +1,42 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: obsidi
+name: Obsidi
+aliases:
+  - BPTN (Black Professionals in Tech)
+  - BPTN
+url: https://obsidi.com/
+hosts:
+  - obsidi.com
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+  area: Queen West
+  lat: 43.6508
+  lng: -79.3966
+desc: Largest Black-tech-professional community in North America; HQ in Toronto (215 Spadina Ave).
+review:
+  - desc
+programs:
+  - id: obsidi-program
+    name: Obsidi
+    url: https://obsidi.com/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: membership
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,39 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: george-brown-college
+name: George Brown College
+aliases:
+  - George Brown
+url: https://www.georgebrown.ca/
+hosts:
+  - www.georgebrown.ca
+cats:
+  - university
+hq:
+  city: ca-on-toronto
+  area: Waterfront
+  lat: 43.6447
+  lng: -79.3597
+desc: Applied-skills college with a strong Waterfront campus and the Brookfield Sustainability Institute.
+programs:
+  - id: george-brown-college-program
+    name: George Brown College
+    url: https://www.georgebrown.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: institutional
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

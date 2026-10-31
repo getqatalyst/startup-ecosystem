@@ -1,0 +1,40 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: creative-destruction-lab
+name: Creative Destruction Lab (CDL)
+aliases:
+  - CDL
+url: https://creativedestructionlab.com/locations/toronto/
+hosts:
+  - creativedestructionlab.com
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Rotman / U of T
+  lat: 43.6677
+  lng: -79.3997
+desc: Equity-free, mentor-driven seed program for science- and tech-based ventures. Streams in AI, Climate, Health, Space, Quantum. Founded 2012 at Rotman (U of T).
+review:
+  - desc
+programs:
+  - id: creative-destruction-lab-program
+    name: Creative Destruction Lab (CDL)
+    url: https://creativedestructionlab.com/locations/toronto/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,40 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: invest-ontario
+name: Invest Ontario
+aliases:
+  - Invest ON
+url: https://www.investontario.ca/
+hosts:
+  - www.investontario.ca
+cats:
+  - government
+hq:
+  city: ca-on-toronto
+  area: Downtown
+  lat: 43.6544
+  lng: -79.3806
+desc: Provincial agency attracting and supporting business investment in Ontario; 250 Yonge St.
+review:
+  - desc
+programs:
+  - id: invest-ontario-program
+    name: Invest Ontario
+    url: https://www.investontario.ca/
+    types:
+      - grant
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,38 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: centre-for-entrepreneurship
+name: Centre for Entrepreneurship (Arts & Science)
+aliases:
+  - CfE
+url: https://www.entrepreneurship.artsci.utoronto.ca/
+hosts:
+  - www.entrepreneurship.artsci.utoronto.ca
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Schwartz Reisman Campus
+  lat: 43.6604
+  lng: -79.3893
+desc: "U of T Arts & Science entrepreneurship hub: education, co-curricular programs, and venture acceleration. Successor to the Impact Centre."
+programs:
+  - id: centre-for-entrepreneurship-program
+    name: Centre for Entrepreneurship (Arts & Science)
+    url: https://www.entrepreneurship.artsci.utoronto.ca/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

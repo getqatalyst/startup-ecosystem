@@ -1,0 +1,36 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: dmz
+name: DMZ
+url: https://dmz.torontomu.ca/
+hosts:
+  - dmz.torontomu.ca
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: TMU Downtown
+  lat: 43.6562
+  lng: -79.3804
+desc: Toronto Metropolitan University's startup incubator, repeatedly ranked among the top university-affiliated incubators globally.
+programs:
+  - id: dmz-program
+    name: DMZ
+    url: https://dmz.torontomu.ca/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

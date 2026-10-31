@@ -1,0 +1,42 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: foresight-canada
+name: Foresight Canada (Toronto office)
+aliases:
+  - Foresight
+url: https://foresightcac.com/
+hosts:
+  - foresightcac.com
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: King West / Spadina
+  lat: 43.6484
+  lng: -79.3956
+  approx: true
+desc: Canada's cleantech innovation and adoption accelerator. HQ in Vancouver (founded 2013); Toronto office at 192 Spadina, same building as CSI.
+review:
+  - desc
+  - hq
+programs:
+  - id: foresight-canada-program
+    name: Foresight Canada (Toronto office)
+    url: https://foresightcac.com/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

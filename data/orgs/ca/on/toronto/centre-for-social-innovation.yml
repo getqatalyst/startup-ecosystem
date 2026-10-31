@@ -1,0 +1,40 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: centre-for-social-innovation
+name: Centre for Social Innovation (CSI)
+aliases:
+  - CSI
+url: https://socialinnovation.org/
+hosts:
+  - socialinnovation.org
+cats:
+  - coworking
+hq:
+  city: ca-on-toronto
+  area: King West / Spadina
+  lat: 43.6484
+  lng: -79.3956
+  approx: true
+desc: Coworking hub and community for social entrepreneurs and nonprofits, based at 192 Spadina Ave. Founded 2004 by Tonya Surman; long-running anchor of Toronto's social-innovation sector.
+review:
+  - desc
+programs:
+  - id: centre-for-social-innovation-program
+    name: Centre for Social Innovation (CSI)
+    url: https://socialinnovation.org/
+    types:
+      - coworking
+    stages:
+      - build
+    audiences:
+      - founders
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

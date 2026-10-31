@@ -1,0 +1,42 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: icube-utm
+name: ICUBE UTM
+aliases:
+  - ICUBE
+url: https://icubeutm.ca/
+hosts:
+  - icubeutm.ca
+parent: u-of-t-mississauga
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: UTM Innovation Complex
+  lat: 43.5446
+  lng: -79.6604
+  approx: true
+desc: Social-entrepreneurship and early-stage startup incubator at U of T Mississauga; programs, workshops, mentorship.
+review:
+  - parent
+programs:
+  - id: icube-utm-program
+    name: ICUBE UTM
+    url: https://icubeutm.ca/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: mars-coworking
+name: MaRS Coworking
+aliases:
+  - MaRS Cowork
+url: https://hubs.marsdd.com/workspaces/
+hosts:
+  - hubs.marsdd.com
+cats:
+  - coworking
+hq:
+  city: ca-on-toronto
+  area: MaRS Centre
+  lat: 43.6596
+  lng: -79.3886
+desc: Coworking inside Canada's largest innovation hub.
+programs:
+  - id: mars-coworking-program
+    name: MaRS Coworking
+    url: https://hubs.marsdd.com/workspaces/
+    types:
+      - coworking
+    stages:
+      - build
+    audiences:
+      - founders
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

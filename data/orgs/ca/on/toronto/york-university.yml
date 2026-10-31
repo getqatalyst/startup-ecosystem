@@ -1,0 +1,39 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: york-university
+name: York University
+aliases:
+  - York U
+url: https://www.yorku.ca/
+hosts:
+  - www.yorku.ca
+cats:
+  - university
+hq:
+  city: ca-on-toronto
+  area: Keele / North York
+  lat: 43.7735
+  lng: -79.5019
+desc: Third-largest university in Canada; Schulich School of Business and Lassonde engineering.
+programs:
+  - id: york-university-program
+    name: York University
+    url: https://www.yorku.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: institutional
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

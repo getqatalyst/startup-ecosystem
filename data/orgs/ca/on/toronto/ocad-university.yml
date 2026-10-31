@@ -1,0 +1,39 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: ocad-university
+name: OCAD University
+aliases:
+  - OCAD U
+url: https://www.ocadu.ca/
+hosts:
+  - www.ocadu.ca
+cats:
+  - university
+hq:
+  city: ca-on-toronto
+  area: Grange
+  lat: 43.653
+  lng: -79.3912
+desc: Canada's largest art and design university; strong industrial design and inclusive-tech programs.
+programs:
+  - id: ocad-university-program
+    name: OCAD University
+    url: https://www.ocadu.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: institutional
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

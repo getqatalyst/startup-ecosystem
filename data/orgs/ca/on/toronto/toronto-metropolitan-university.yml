@@ -1,0 +1,39 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: toronto-metropolitan-university
+name: Toronto Metropolitan University (TMU)
+aliases:
+  - TMU
+url: https://www.torontomu.ca/
+hosts:
+  - www.torontomu.ca
+cats:
+  - university
+hq:
+  city: ca-on-toronto
+  area: Downtown
+  lat: 43.6577
+  lng: -79.3788
+desc: Formerly Ryerson. Major hub for design, media, business, and entrepreneurship (DMZ, Zone Learning network).
+programs:
+  - id: toronto-metropolitan-university-program
+    name: Toronto Metropolitan University (TMU)
+    url: https://www.torontomu.ca/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    access: institutional
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

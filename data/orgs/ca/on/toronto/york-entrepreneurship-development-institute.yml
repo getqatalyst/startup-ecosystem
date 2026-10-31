@@ -1,0 +1,39 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: york-entrepreneurship-development-institute
+name: York Entrepreneurship Development Institute
+aliases:
+  - YEDI
+url: https://www.yedi.ca/
+hosts:
+  - www.yedi.ca
+cats:
+  - accelerator
+hq:
+  city: ca-on-toronto
+  area: Keele / York U
+  lat: 43.7735
+  lng: -79.5019
+  approx: true
+desc: York University-affiliated accelerator; intensive programs and seed funding for early-stage founders.
+programs:
+  - id: york-entrepreneurship-development-institute-program
+    name: York Entrepreneurship Development Institute
+    url: https://www.yedi.ca/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

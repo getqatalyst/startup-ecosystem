@@ -1,0 +1,40 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: vector-institute
+name: Vector Institute
+aliases:
+  - Vector
+url: https://vectorinstitute.ai/
+hosts:
+  - vectorinstitute.ai
+cats:
+  - research-institute
+hq:
+  city: ca-on-toronto
+  area: Schwartz Reisman Campus
+  lat: 43.6604
+  lng: -79.3893
+desc: Founded 2017 by Geoffrey Hinton, Brendan Frey, Raquel Urtasun. AI research, talent development, and industry partnerships.
+review:
+  - cats
+  - desc
+programs:
+  - id: vector-institute-program
+    name: Vector Institute
+    url: https://vectorinstitute.ai/
+    types:
+      - service
+    stages:
+      - build
+    audiences:
+      - founders
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,37 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: workplace-one
+name: Workplace One
+aliases:
+  - WP1
+url: https://www.workplaceone.com/
+hosts:
+  - www.workplaceone.com
+cats:
+  - coworking
+hq:
+  city: ca-on-toronto
+  area: Liberty Village
+  lat: 43.638
+  lng: -79.42
+desc: Independent Toronto coworking operator with five locations.
+programs:
+  - id: workplace-one-program
+    name: Workplace One
+    url: https://www.workplaceone.com/
+    types:
+      - coworking
+    stages:
+      - build
+    audiences:
+      - founders
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

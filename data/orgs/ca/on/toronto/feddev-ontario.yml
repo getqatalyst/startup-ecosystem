@@ -1,0 +1,40 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: feddev-ontario
+name: FedDev Ontario
+aliases:
+  - FedDev
+url: https://feddev-ontario.canada.ca/
+hosts:
+  - feddev-ontario.canada.ca
+cats:
+  - government
+hq:
+  city: ca-on-toronto
+  area: Downtown
+  lat: 43.6515
+  lng: -79.3785
+desc: Federal regional development agency for Southern Ontario; grants and scale-up funding. 151 Yonge St.
+review:
+  - desc
+programs:
+  - id: feddev-ontario-program
+    name: FedDev Ontario
+    url: https://feddev-ontario.canada.ca/
+    types:
+      - grant
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: membership
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

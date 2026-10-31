@@ -1,0 +1,38 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: c100
+name: C100
+url: https://thec100.org/
+hosts:
+  - thec100.org
+cats:
+  - community
+hq:
+  city: ca-on-toronto
+desc: Network of senior Canadian tech leaders investing time and capital in scaling Canadian tech.
+review:
+  - hq
+programs:
+  - id: c100-program
+    name: C100
+    url: https://thec100.org/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - ca
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,38 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: city-of-toronto-economic-development
+name: City of Toronto Economic Development
+aliases:
+  - CTED
+url: https://www.toronto.ca/business-economy/
+hosts:
+  - www.toronto.ca
+cats:
+  - government
+hq:
+  city: ca-on-toronto
+  area: City Hall
+  lat: 43.6534
+  lng: -79.3841
+desc: Municipal economic development office and Toronto Business Development Centre.
+programs:
+  - id: city-of-toronto-economic-development-program
+    name: City of Toronto Economic Development
+    url: https://www.toronto.ca/business-economy/
+    types:
+      - grant
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,40 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: whitecap-venture-partners
+name: Whitecap Venture Partners
+aliases:
+  - Whitecap
+url: https://www.whitecapvp.com/
+hosts:
+  - www.whitecapvp.com
+cats:
+  - vc
+hq:
+  city: ca-on-toronto
+  area: St. Clair
+  lat: 43.6885
+  lng: -79.393
+desc: Series A B2B tech, foodtech, and medtech; 22 St Clair Ave E.
+review:
+  - desc
+programs:
+  - id: whitecap-venture-partners-program
+    name: Whitecap Venture Partners
+    url: https://www.whitecapvp.com/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

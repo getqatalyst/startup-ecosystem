@@ -1,0 +1,38 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: nrc-irap
+name: NRC-IRAP
+aliases:
+  - IRAP
+url: https://nrc.canada.ca/en/support-technology-innovation
+hosts:
+  - nrc.canada.ca
+cats:
+  - government
+hq:
+  city: ca-on-toronto
+  area: St. Clair
+  lat: 43.6882
+  lng: -79.3921
+desc: National Research Council's Industrial Research Assistance Program; non-dilutive funding for SMEs.
+programs:
+  - id: nrc-irap-program
+    name: NRC-IRAP
+    url: https://nrc.canada.ca/en/support-technology-innovation
+    types:
+      - grant
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: membership
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

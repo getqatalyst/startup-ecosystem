@@ -1,0 +1,38 @@
+# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
+# first guesses; confirm them against the org's own site, then remove them from the list.
+id: ontario-centre-of-innovation
+name: Ontario Centre of Innovation (OCI)
+aliases:
+  - OCI
+url: https://www.oc-innovation.ca/
+hosts:
+  - www.oc-innovation.ca
+cats:
+  - government
+hq:
+  city: ca-on-toronto
+  area: MaRS Centre
+  lat: 43.6596
+  lng: -79.3886
+desc: Provincial agency funding R&D commercialization and industry-academic collaboration.
+programs:
+  - id: ontario-centre-of-innovation-program
+    name: Ontario Centre of Innovation (OCI)
+    url: https://www.oc-innovation.ca/
+    types:
+      - grant
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    access: membership
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to
