@@ -159,3 +159,24 @@ test("the repo's own data builds", () => {
 test("output shape (snapshot of the fixtures)", () => {
 	expect(data).toMatchSnapshot();
 });
+
+test("offices pass through to the build", () => {
+	const office = { city: "ca-on-toronto", area: "King West" };
+	const built = build({
+		...fixtures,
+		orgs: [
+			{
+				id: "a",
+				name: "A",
+				url: "https://a.example/",
+				hosts: ["a.example"],
+				cats: ["community"],
+				hq: { city: "us-ma-boston" },
+				locations: [office],
+				desc: "A.",
+				programs: [main],
+			},
+		],
+	});
+	expect(built.orgs[0].locations).toEqual([office]);
+});

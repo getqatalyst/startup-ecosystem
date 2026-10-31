@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: round13-capital
 name: Round13 Capital
 aliases:
@@ -14,27 +12,22 @@ hq:
   area: Financial District
   lat: 43.6504
   lng: -79.3839
-desc: Growth fund and digital-asset fund out of Toronto; 111 Richmond St W.
-review:
-  - desc
+desc: Toronto venture capital firm investing mainly in growth-stage Canadian technology companies and later-stage tech-enabled services, with selective seed investments.
+last_verified: 2026-10
 programs:
-  - id: round13-capital-program
+  - id: round13-capital-investment
     name: Round13 Capital
-    url: https://round13.com/
+    url: https://round13.com/portfolio/
     types:
       - investment
     stages:
-      - build
       - operate
+      - scale
+    stage_basis: "R13 principally focuses on growth-stage venture capital and later-stage tech-enabled services, while selectively evaluating seed stage opportunities."
     audiences:
       - founders
+    open_to:
+      - ca
+    founder_receives:
+      - investment
     access: invite
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to

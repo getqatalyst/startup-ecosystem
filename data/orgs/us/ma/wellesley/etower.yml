@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: etower
+name: eTower (Babson)
+url: https://www.etower.org
+hosts:
+  - www.etower.org
+cats:
+  - community
+hq:
+  city: us-ma-wellesley
+  lat: 42.2949
+  lng: -71.2649
+  approx: true
+desc: Babson's live-in entrepreneurship community — 21 residents and 250+ alumni whose startups have raised $50M+, with an open Wednesday-night speaker series.
+review:
+  - cats
+  - desc
+programs:
+  - id: etower-program
+    name: eTower (Babson)
+    url: https://www.etower.org
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: massachusetts-life-sciences-center
+name: Massachusetts Life Sciences Center
+url: https://www.masslifesciences.com
+hosts:
+  - www.masslifesciences.com
+cats:
+  - government
+hq:
+  city: us-ma-waltham
+  lat: 42.3768
+  lng: -71.2541
+desc: Quasi-public agency funding life-sciences innovation. Its data and AI funding now runs through the ARC Awards (~$750K, absorbing the retired Bits to Bytes program), alongside internship wage subsidies and job-creation tax incentives.
+review:
+  - desc
+programs:
+  - id: massachusetts-life-sciences-center-program
+    name: Massachusetts Life Sciences Center
+    url: https://www.masslifesciences.com
+    types:
+      - grant
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

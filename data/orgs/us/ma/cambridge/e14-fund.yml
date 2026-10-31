@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: e14-fund
+name: E14 Fund
+url: https://www.e14.vc/
+hosts:
+  - www.e14.vc
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  area: Kendall Square
+  lat: 42.3608
+  lng: -71.0868
+  approx: true
+desc: The MIT Media Lab-affiliated fund backing MIT-connected founders at the earliest stages.
+programs:
+  - id: e14-fund-program
+    name: E14 Fund
+    url: https://www.e14.vc/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: sundai-club
+name: Sundai Club
+url: https://www.sundai.club
+hosts:
+  - www.sundai.club
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.3601
+  lng: -71.087
+  approx: true
+desc: MIT-born club that ships a new AI project every Sunday — students and professionals hacking side by side.
+programs:
+  - id: sundai-club-program
+    name: Sundai Club
+    url: https://www.sundai.club
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,47 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: ai-biohub
+name: AI BioHub (LabCentral × C10 Labs)
+url: https://www.labcentral.org/startup-support/ai-biohub
+hosts:
+  - www.labcentral.org/startup-support/ai-biohub
+parent: labcentral
+cats:
+  - accelerator
+hq:
+  city: us-ma-cambridge
+  lat: 42.3626
+  lng: -71.0951
+desc: Accelerator for pre-seed and seed startups applying AI to therapeutics, diagnostics, devices and life-science platforms. Co-led by LabCentral and AI venture studio C10 Labs, and housed in LabCentral's Kendall Square wet lab.
+review:
+  - parent
+  - cats
+  - desc
+  - status
+programs:
+  - id: ai-biohub-program
+    name: AI BioHub (LabCentral × C10 Labs)
+    url: https://www.labcentral.org/startup-support/ai-biohub
+    types:
+      - accelerator
+      - coworking
+      - mentorship
+      - community
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

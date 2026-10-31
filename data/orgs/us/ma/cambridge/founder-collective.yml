@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: founder-collective
+name: Founder Collective
+url: https://www.foundercollective.com
+hosts:
+  - www.foundercollective.com
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  area: Harvard Square
+  lat: 42.3744
+  lng: -71.12
+  approx: true
+desc: Seed fund built by founders, famously aligned with keeping founders in control.
+programs:
+  - id: founder-collective-program
+    name: Founder Collective
+    url: https://www.foundercollective.com
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

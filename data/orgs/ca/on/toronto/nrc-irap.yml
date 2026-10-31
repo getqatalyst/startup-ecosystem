@@ -1,9 +1,9 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: nrc-irap
-name: NRC-IRAP
+name: NRC IRAP
 aliases:
   - IRAP
+  - NRC-IRAP
+  - Industrial Research Assistance Program
 url: https://nrc.canada.ca/en/support-technology-innovation
 hosts:
   - nrc.canada.ca
@@ -14,25 +14,84 @@ hq:
   area: St. Clair
   lat: 43.6882
   lng: -79.3921
-desc: National Research Council's Industrial Research Assistance Program; non-dilutive funding for SMEs.
+desc: The National Research Council of Canada's program giving Canadian small and medium-sized businesses advice, connections and funding to build innovation capacity and take ideas to market.
+last_verified: 2026-10
 programs:
-  - id: nrc-irap-program
-    name: NRC-IRAP
-    url: https://nrc.canada.ca/en/support-technology-innovation
+  - id: nrc-irap-funding
+    name: Financial support for technology innovation
+    url: https://nrc.canada.ca/en/support-technology-innovation/financial-support-technology-innovation
+    types:
+      - grant
+      - mentorship
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: incorporated
+          quote: "be incorporated, for-profit, and operating in Canada"
+        - gate: team
+          quote: "employ up to 500 people (full-time equivalent)"
+        - gate: sector
+          quote: "develop and commercialize innovative, technology-driven products or services"
+      venture_type:
+        - for-profit
+    open_to:
+      - ca
+    founder_receives:
+      - grant
+    access: invite
+    review:
+      - stages
+      - founder_receives
+  - id: nrc-irap-clean-technology
+    name: NRC IRAP support for clean technology
+    url: https://nrc.canada.ca/en/support-technology-innovation/nrc-irap-support-clean-technology
+    variant_of: nrc-irap-funding
+    last_verified: 2026-10
+    stages:
+      - build
+      - operate
+      - scale
+    stage_basis: "An innovative technology with a validated proof of concept."
+    eligibility:
+      place:
+        incorporation:
+          - ca
+        quote: "For-profit business incorporated in Canada"
+      venture:
+        - gate: incorporated
+          quote: "For-profit business incorporated in Canada"
+        - gate: team
+          quote: "Paid full-time employees, other than the founders, that include both technical and business employees"
+        - gate: sector
+          quote: "Developing new clean technologies for commercialization"
+  - id: nrc-irap-youth-employment
+    name: Youth Employment Program
+    url: https://nrc.canada.ca/en/support-technology-innovation/nrc-irap-funding-hire-young-graduates
     types:
       - grant
     stages:
       - build
       - operate
+      - scale
     audiences:
       - founders
-    access: membership
-    fee: free
+    eligibility:
+      venture:
+        - gate: team
+          quote: "a small or medium-sized business (500 or fewer full-time equivalents)"
+        - gate: incorporated
+          quote: "incorporated and for-profit"
+      venture_type:
+        - for-profit
+    open_to:
+      - ca
+    founder_receives:
+      - grant
+    access: application
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
-      - open_to

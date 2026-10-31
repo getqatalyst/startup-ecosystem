@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: j2-ventures
+name: J2 Ventures
+url: https://j2vp.com
+hosts:
+  - j2vp.com
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  area: Downtown
+  lat: 42.3597
+  lng: -71.0566
+  approx: true
+desc: Boston early-stage firm investing in dual-use technologies — advanced computing, cybersecurity, AI and biomedical tools serving both national-security and commercial markets; closed the $250M Brookhaven Fund in 2024.
+review:
+  - desc
+programs:
+  - id: j2-ventures-program
+    name: J2 Ventures
+    url: https://j2vp.com
+    types:
+      - investment
+      - service
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

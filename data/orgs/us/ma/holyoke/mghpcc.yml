@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: mghpcc
+name: MGHPCC / AICR Compute
+url: https://mghpcc.org
+hosts:
+  - mghpcc.org
+cats:
+  - research-institute
+hq:
+  city: us-ma-holyoke
+  lat: 42.2025
+  lng: -72.6079
+desc: Nonprofit high-performance computing center in Holyoke shared by research universities. Home to the state-funded AI Compute Resource, used by universities, startups and research organizations across Massachusetts.
+review:
+  - cats
+  - desc
+programs:
+  - id: mghpcc-program
+    name: MGHPCC / AICR Compute
+    url: https://mghpcc.org
+    types:
+      - service
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

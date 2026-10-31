@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: umass-dartmouth-center-for-innovation-and-entrepreneurship
+name: UMass Dartmouth Center for Innovation & Entrepreneurship
+url: https://www.umassd.edu/innovate/
+hosts:
+  - www.umassd.edu/innovate
+cats:
+  - coworking
+hq:
+  city: us-ma-fall-river
+  lat: 41.6838
+  lng: -71.1274
+desc: UMass Dartmouth's technology innovation center in Fall River. Its Technology Venture Center incubator offers offices, a biomanufacturing lab, prototyping, interns and faculty access, on site or virtually.
+review:
+  - cats
+  - desc
+programs:
+  - id: umass-dartmouth-center-for-innovation-and-entrepreneurship-program
+    name: UMass Dartmouth Center for Innovation & Entrepreneurship
+    url: https://www.umassd.edu/innovate/
+    types:
+      - coworking
+      - mentorship
+      - community
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

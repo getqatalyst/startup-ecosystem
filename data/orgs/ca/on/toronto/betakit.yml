@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: betakit
 name: BetaKit
 url: https://betakit.com/
@@ -9,30 +7,21 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-desc: Canada's startup news publication; a central convening force for the ecosystem.
-review:
-  - hq
+desc: Canadian tech and startup news publication covering the companies, funding and trends in Canada's digital economy, with a weekly newsletter and podcast. Founders can pitch their company news.
+last_verified: 2026-10
 programs:
-  - id: betakit-program
-    name: BetaKit
-    url: https://betakit.com/
+  - id: betakit-pitch
+    name: Pitch your story to BetaKit
+    url: https://betakit.com/contact-us/
     types:
-      - community
+      - service
     stages:
-      - spark
-      - validate
+      - build
+      - operate
+      - scale
+    stage_basis: "BetaKit prioritizes stories of companies that have found traction."
     audiences:
-      - aspiring
       - founders
     open_to:
       - ca
     access: open
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to

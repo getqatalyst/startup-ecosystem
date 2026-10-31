@@ -1,38 +1,56 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: lumira-ventures
 name: Lumira Ventures
 aliases:
   - Lumira
-url: https://lumiraventures.com/
+url: https://www.lumiraventures.com/
 hosts:
+  - www.lumiraventures.com
   - lumiraventures.com
 cats:
   - vc
 hq:
   city: ca-on-toronto
-  area: MaRS Centre
-  lat: 43.6596
-  lng: -79.3886
-desc: Life-sciences VC backing therapeutics and digital health.
+  area: Financial District
+  lat: 43.6493
+  lng: -79.3846
+  approx: true
+desc: A multi-stage life sciences venture capital firm investing in biotechnology and medical device companies across Canada and North America.
+last_verified: 2026-10
 programs:
-  - id: lumira-ventures-program
+  - id: lumira-ventures-investment
     name: Lumira Ventures
-    url: https://lumiraventures.com/
+    url: https://www.lumiraventures.com/about/
     types:
       - investment
     stages:
       - build
       - operate
+      - scale
+    stage_basis: "Stage: Across the development continuum for therapeutics and late clinical to revenue generating for medical device"
     audiences:
       - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "Modality: Therapeutic products and medical devices"
+    open_to:
+      - ca
+      - us
+    equity: true
+    founder_receives:
+      - investment
     access: invite
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+  - id: lumira-ventures-cancer-breakthrough-fund
+    name: Cancer Breakthrough Fund
+    variant_of: lumira-ventures-investment
+    last_verified: 2026-10
+    url: https://www.lumiraventures.com/cancer-breakthrough-fund/
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "The Cancer Breakthrough Fund is an oncology-focused, mission-driven, investment fund supporting companies developing transformative cancer therapies."
+    partners:
+      - org_name: Terry Fox Foundation
+        role: funds
+      - org_name: Canadian Cancer Society
+        role: funds

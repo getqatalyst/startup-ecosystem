@@ -1,0 +1,44 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: harvard-st-commons
+name: Harvard St. Commons
+url: https://harvardst.co
+hosts:
+  - harvardst.co
+cats:
+  - coworking
+hq:
+  city: us-ma-cambridge
+  area: Harvard Square
+  lat: 42.3735
+  lng: -71.1189
+  approx: true
+desc: Boston's flagship hacker house — co-living and build space for founders in AI, biotech and fintech next to Harvard, with demo nights and VC-sponsored dinners; 150+ founders through.
+review:
+  - cats
+  - desc
+programs:
+  - id: harvard-st-commons-program
+    name: Harvard St. Commons
+    url: https://harvardst.co
+    types:
+      - coworking
+      - community
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

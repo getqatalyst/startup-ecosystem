@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: c100
 name: C100
 url: https://thec100.org/
@@ -9,30 +7,62 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-desc: Network of senior Canadian tech leaders investing time and capital in scaling Canadian tech.
-review:
-  - hq
+desc: Member-driven nonprofit of Canadian tech veterans that runs mentoring programs for early-stage and scaling Canadian-based tech founders, with access to a Silicon Valley network.
+last_verified: 2026-10
 programs:
-  - id: c100-program
-    name: C100
-    url: https://thec100.org/
+  - id: c100-fellows
+    name: C100 Fellows | 48Hrs
+    aliases:
+      - 48Hrs in the Valley
+    url: https://thec100.org/fellows/
     types:
-      - community
+      - fellowship
+      - mentorship
     stages:
-      - spark
-      - validate
+      - operate
+    stage_basis: "Early-stage Canadian founders, seed to Series A, showing early traction and product market fit."
     audiences:
-      - aspiring
       - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "While the C100 Fellows Program is primarily aimed at technology and tech-enabled companies, we are industry-agnostic within that scope."
     open_to:
       - ca
-    access: invite
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+      - us
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    equity: false
+    access: application
+    cadence:
+      - annual
+      - cohort
+  - id: c100-growth
+    name: C100 Growth
+    url: https://thec100.org/growth/
+    types:
+      - mentorship
+      - community
+    stages:
+      - operate
+      - scale
+    stage_basis: "Fast-growing scale-stage companies, often having raised a Series A."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "We welcome fast-growing tech and tech-enabled companies from any field."
+    open_to:
+      - ca
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+      - us
+    fee: free
+    equity: false
+    access: application
+    cadence:
+      - cohort

@@ -1,0 +1,46 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: masschallenge
+name: MassChallenge
+url: https://masschallenge.org
+hosts:
+  - masschallenge.org
+cats:
+  - accelerator
+hq:
+  city: us-ma-boston
+  area: Seaport
+  lat: 42.3496
+  lng: -71.044
+  approx: true
+desc: Zero-equity global accelerator headquartered in Boston, awarding up to $1M in non-dilutive prizes per cohort.
+review:
+  - cats
+  - desc
+programs:
+  - id: masschallenge-program
+    name: MassChallenge
+    url: https://masschallenge.org
+    types:
+      - accelerator
+      - grant
+      - mentorship
+      - community
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,39 +1,205 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: york-entrepreneurship-development-institute
 name: York Entrepreneurship Development Institute
 aliases:
   - YEDI
-url: https://www.yedi.ca/
+url: https://yedi.ca/
 hosts:
+  - yedi.ca
   - www.yedi.ca
 cats:
   - accelerator
+  - incubator
+  - vc
+  - coworking
 hq:
   city: ca-on-toronto
-  area: Keele / York U
+  area: North York
   lat: 43.7735
   lng: -79.5019
   approx: true
-desc: York University-affiliated accelerator; intensive programs and seed funding for early-stage founders.
+desc: Toronto charity running tuition-free incubator and certificate programs for Canadian founders, plus business acceleration campuses and a venture fund for its graduates.
+last_verified: 2026-10
 programs:
-  - id: york-entrepreneurship-development-institute-program
-    name: York Entrepreneurship Development Institute
-    url: https://www.yedi.ca/
+  - id: york-entrepreneurship-development-institute-incubator
+    name: YEDI Incubator
+    url: https://yedi.ca/programs/certificate-programs/incubator/
     types:
-      - accelerator
+      - incubator
+      - course
+    stages:
+      - spark
+      - validate
+      - build
+    stage_basis: "A unique and innovative idea that is in raw, seed, early, or growth stage"
+    audiences:
+      - founders
+      - aspiring
+    eligibility:
+      place:
+        citizenship:
+          - ca
+        quote: "Applicant(s) is a Canadian citizen or permanent resident"
+    open_to:
+      - ca
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    fee: free
+    founder_receives:
+      - grant
+    access: application
+    cadence:
+      - cohort
+    duration: 16 weeks
+  - id: york-entrepreneurship-development-institute-not-for-profit
+    name: Not-For-Profit
+    variant_of: york-entrepreneurship-development-institute-incubator
+    last_verified: 2026-10
+    url: https://yedi.ca/programs/certificate-programs/not-for-profit/
+    audiences:
+      - founders
+    eligibility:
+      place:
+        citizenship:
+          - ca
+        quote: "The program is offered to Canadian citizens or permanent residents."
+      venture_type:
+        - nonprofit
+    review:
+      - founder_receives
+  - id: york-entrepreneurship-development-institute-innovation-bridge
+    name: Innovation Bridge
+    url: https://yedi.ca/programs/certificate-programs/innovation-bridge/
+    types:
+      - course
+      - mentorship
+    stages:
+      - spark
+      - validate
+      - build
+    stage_basis: "A unique and innovative idea that is in raw, seed, early, or growth stage"
+    audiences:
+      - founders
+      - aspiring
+    eligibility:
+      age:
+        min: 18
+        max: 35
+        quote: "Ages 18-35"
+    delivery: hybrid
+    access: application
+    cadence:
+      - cohort
+    duration: 7 weeks
+    review:
+      - open_to
+      - where
+  - id: york-entrepreneurship-development-institute-youth
+    name: Youth
+    url: https://yedi.ca/programs/certificate-programs/youth/
+    types:
+      - course
+      - grant
+    stages:
+      - spark
+      - validate
+      - build
+    stage_basis: "A unique and innovative idea that is in raw, seed, early, or growth stage"
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      age:
+        min: 15
+        max: 29
+        quote: "Ages 15-29"
+    open_to:
+      - ca-on-toronto
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    fee: free
+    founder_receives:
+      - grant
+    access: application
+    cadence:
+      - cohort
+    duration: 4 months
+  - id: york-entrepreneurship-development-institute-international
+    name: International
+    url: https://yedi.ca/programs/certificate-programs/international/
+    types:
+      - course
+    stages:
+      - spark
+      - validate
+      - build
+    stage_basis: "A unique and innovative idea that is in raw, seed, early, or growth stage"
+    audiences:
+      - founders
+      - aspiring
+    eligibility:
+      venture_type:
+        - for-profit
+    open_to:
+      - global
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    fee: fee
+    access: application
+    cadence:
+      - cohort
+    duration: 2 weeks
+  - id: york-entrepreneurship-development-institute-business-acceleration-program
+    name: Business Acceleration Program
+    url: https://yedi.ca/programs/ventures-in-residence/business-acceleration-program/
+    types:
+      - coworking
+      - incubator
     stages:
       - validate
       - build
+      - operate
     audiences:
       - founders
+    eligibility:
+      place:
+        residence:
+          - ca
+        quote: "Applicants must be Canadian residents who have graduated from YEDI program(s) or innovative ventures who are looking for space and guidance."
+    open_to:
+      - ca
+    delivery: in-person
+    where:
+      - ca-on-toronto
+    fee: fee
     access: application
-    fee: free
+    duration: 5 years
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
+  - id: york-entrepreneurship-development-institute-vc-fund
+    name: YEDI VC Fund
+    url: https://yedi.ca/vc-fund/
+    types:
+      - investment
+    stages:
+      - validate
+      - build
+    stage_basis: "The Fund acts as an intermediary step between the development/commercialization process and later stage investment."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: york-entrepreneurship-development-institute
+          role: alumni
+          quote: "Graduates of the YEDI Incubator, International Program, Diploma programs and/or residents of YEDI’s Business Acceleration Campuses"
+      venture:
+        - gate: funding-raised
+          quote: "Letter of intent from a follow-on investor or proof of ability to buy YEDI VC shares back within 3 years"
+    equity: true
+    founder_receives:
+      - investment
+    access: application
+    review:
       - open_to

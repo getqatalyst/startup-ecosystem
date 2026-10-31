@@ -1,11 +1,10 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: standup-ventures
 name: StandUp Ventures
 aliases:
   - StandUp
-url: https://standupvc.com/
+url: https://www.standupvc.com/
 hosts:
+  - www.standupvc.com
   - standupvc.com
 cats:
   - vc
@@ -14,27 +13,31 @@ hq:
   area: MaRS Centre
   lat: 43.6599
   lng: -79.3881
-desc: Seed fund investing in women-led tech startups; based at MaRS (101 College St).
-review:
-  - desc
+desc: Toronto seed-stage venture capital fund investing in for-profit technology companies that have at least one woman in a C-level leadership role with an equitable share of ownership.
+last_verified: 2026-10
 programs:
-  - id: standup-ventures-program
+  - id: standup-ventures-investment
     name: StandUp Ventures
-    url: https://standupvc.com/
+    url: https://www.standupvc.com/connect
     types:
       - investment
     stages:
       - build
       - operate
+    stage_basis: "We usually invest in the seed stage – for us, that's after friends and family funding and before your Series A. We recommend reaching out when you have an investor pitch formed and your MVP in market."
     audiences:
       - founders
-    access: invite
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "We invest in seed-stage, for-profit technology companies with at least one woman in a C-level leadership position within the company who has an equitable amount of ownership."
+          source: https://www.standupvc.com/
+      venture_type:
+        - for-profit
+    open_to:
+      - ca
+      - us
+    founder_receives:
+      - investment
+    access: application

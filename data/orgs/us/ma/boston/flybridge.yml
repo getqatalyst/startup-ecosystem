@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: flybridge
+name: Flybridge
+url: https://www.flybridge.com
+hosts:
+  - www.flybridge.com
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  area: Back Bay
+  lat: 42.351
+  lng: -71.072
+  approx: true
+desc: Seed firm with an explicit AI-first thesis and long Boston history.
+programs:
+  - id: flybridge-program
+    name: Flybridge
+    url: https://www.flybridge.com
+    types:
+      - investment
+      - community
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -15,7 +15,7 @@ hq:
   lat: 43.6881
   lng: -79.3936
   approx: true
-desc: National convening network for cross-sector social innovation; runs a 'What Works Centre' and programs like Earth Tech. Toronto-based (Foundation House), remote-first team.
+desc: National charity that connects governments, nonprofits, funders and communities to develop and scale social innovation, running labs, collaborations and a What Works Centre of social innovation resources.
 programs:
   - id: social-innovation-canada-program
     name: Social Innovation Canada

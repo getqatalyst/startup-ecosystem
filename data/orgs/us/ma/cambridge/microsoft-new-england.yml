@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: microsoft-new-england
+name: Microsoft New England R&D (NERD)
+url: https://microsoftnewengland.com/
+hosts:
+  - microsoftnewengland.com
+cats:
+  - corporate
+hq:
+  city: us-ma-cambridge
+  lat: 42.3614
+  lng: -71.0813
+desc: Microsoft's Cambridge R&D center — and one of the most generous event venues in the ecosystem.
+programs:
+  - id: microsoft-new-england-program
+    name: Microsoft New England R&D (NERD)
+    url: https://microsoftnewengland.com/
+    types:
+      - service
+      - community
+    stages:
+      - spark
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

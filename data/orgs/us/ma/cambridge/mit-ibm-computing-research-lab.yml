@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: mit-ibm-computing-research-lab
+name: MIT-IBM Computing Research Lab
+url: https://mitibm.mit.edu/
+hosts:
+  - mitibm.mit.edu
+cats:
+  - corporate
+hq:
+  city: us-ma-cambridge
+  area: Kendall Square
+  lat: 42.3622
+  lng: -71.0857
+desc: IBM's $240M joint AI research lab with MIT — a flagship model of corporate-academic AI collaboration.
+review:
+  - desc
+programs:
+  - id: mit-ibm-computing-research-lab-program
+    name: MIT-IBM Computing Research Lab
+    url: https://mitibm.mit.edu/
+    types:
+      - service
+    stages:
+      - spark
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

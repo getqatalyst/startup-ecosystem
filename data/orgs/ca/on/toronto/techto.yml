@@ -1,7 +1,7 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: techto
 name: TechTO
+aliases:
+  - Tech Toronto
 url: https://techto.org/
 hosts:
   - techto.org
@@ -9,28 +9,49 @@ cats:
   - community
 hq:
   city: ca-on-toronto
-desc: Largest tech community event in Toronto; monthly gatherings drawing thousands.
-review:
-  - hq
+desc: Toronto tech community that runs talks, socials and showcase events for founders, tech professionals and investors, with a paid membership, a newsletter, podcasts and a job board.
+last_verified: 2026-10
 programs:
-  - id: techto-program
-    name: TechTO
-    url: https://techto.org/
+  - id: techto-membership
+    name: TechTO Membership
+    url: https://www.techto.org/memberships
     types:
       - community
     stages:
       - spark
       - validate
+      - build
     audiences:
-      - aspiring
       - founders
-    access: open
+      - aspiring
+      - talent
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+      - ca-qc-montreal
     fee: fee
+    access: membership
+    cadence:
+      - ongoing
     review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
       - open_to
+  - id: techto-peerscale
+    name: Peerscale
+    url: https://www.peerscale.com/
+    types:
+      - community
+    stages:
+      - operate
+      - scale
+    stage_basis: "Join an exclusive community for CEOs, CTOs and COOs driving $2M+ in revenue or funding"
+    audiences:
+      - founders
+    open_to:
+      - ca
+    delivery: in-person
+    fee: fee
+    access: application
+    cadence:
+      - ongoing
+    review:
+      - where

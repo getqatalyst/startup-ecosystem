@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: link-ventures
+name: Link Ventures
+url: https://www.linkventures.com
+hosts:
+  - www.linkventures.com
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  lat: 42.3667
+  lng: -71.0908
+desc: Kendall Square fund backing technical AI founders from MIT, Harvard and beyond — leads pre-seed through Series A and incubates companies in its 40,000 sq ft Link Studio.
+review:
+  - desc
+programs:
+  - id: link-ventures-program
+    name: Link Ventures
+    url: https://www.linkventures.com
+    types:
+      - investment
+      - service
+      - coworking
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

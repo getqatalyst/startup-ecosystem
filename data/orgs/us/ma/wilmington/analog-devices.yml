@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: analog-devices
+name: Analog Devices
+url: https://www.analog.com/
+hosts:
+  - www.analog.com
+cats:
+  - corporate
+hq:
+  city: us-ma-wilmington
+  lat: 42.5307
+  lng: -71.1459
+desc: Wilmington-headquartered semiconductor company making sensing, signal-processing and edge-AI chips. Runs ADVentures, a corporate venture fund for seed and Series A startups, and Analog Garage, its corporate incubator.
+review:
+  - desc
+programs:
+  - id: analog-devices-program
+    name: Analog Devices
+    url: https://www.analog.com/
+    types:
+      - service
+      - investment
+      - mentorship
+    stages:
+      - validate
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

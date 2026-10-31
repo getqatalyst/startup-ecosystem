@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: massventures
+name: MassVentures
+url: https://www.mass-ventures.com
+hosts:
+  - www.mass-ventures.com
+cats:
+  - vc
+hq:
+  city: us-ma-waltham
+  lat: 42.3768
+  lng: -71.2541
+desc: The Commonwealth's own venture arm — START grants and early capital for MA deep-tech startups.
+programs:
+  - id: massventures-program
+    name: MassVentures
+    url: https://www.mass-ventures.com
+    types:
+      - investment
+      - grant
+      - mentorship
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

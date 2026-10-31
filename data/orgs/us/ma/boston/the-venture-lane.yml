@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: the-venture-lane
+name: The Venture Lane
+url: https://theventurelane.com
+hosts:
+  - theventurelane.com
+cats:
+  - coworking
+hq:
+  city: us-ma-boston
+  area: Downtown
+  lat: 42.3585
+  lng: -71.059
+  approx: true
+desc: Curated startup hub & community downtown for early-stage B2B tech.
+review:
+  - cats
+  - desc
+programs:
+  - id: the-venture-lane-program
+    name: The Venture Lane
+    url: https://theventurelane.com
+    types:
+      - coworking
+      - community
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,12 +1,12 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: mars-coworking
 name: MaRS Coworking
 aliases:
   - MaRS Cowork
+  - MaRS Innovation Hubs
 url: https://hubs.marsdd.com/workspaces/
 hosts:
   - hubs.marsdd.com
+parent: mars-discovery-district
 cats:
   - coworking
 hq:
@@ -14,24 +14,53 @@ hq:
   area: MaRS Centre
   lat: 43.6596
   lng: -79.3886
-desc: Coworking inside Canada's largest innovation hub.
+desc: The workspace side of MaRS, offering coworking desks and private offices at MaRS Waterfront and wet lab space for early-stage life sciences ventures at the MaRS Centre.
+last_verified: 2026-10
 programs:
-  - id: mars-coworking-program
-    name: MaRS Coworking
-    url: https://hubs.marsdd.com/workspaces/
+  - id: mars-coworking-waterfront
+    name: Co-working at MaRS Waterfront
+    aliases:
+      - The Nucleus
+    url: https://hubs.marsdd.com/workspaces/coworking-at-mars-waterfront/
     types:
       - coworking
     stages:
+      - validate
       - build
+      - operate
+      - scale
+    stage_basis: "Whether you’re a budding entrepreneur, at an inflection point or achieving scale, the Nucleus offers flexible workspace arrangements to support your growth."
     audiences:
       - founders
-    access: membership
+    partners:
+      - org: university-of-toronto
+        role: co-runs
+    open_to:
+      - ca-on-toronto
+    delivery: in-person
+    where:
+      - ca-on-toronto
     fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: membership
+  - id: mars-coworking-incubator
+    name: MaRS Incubator
+    url: https://hubs.marsdd.com/workspaces/incubator/
+    types:
+      - coworking
+    stages:
+      - validate
+      - build
+    stage_basis: "Early-stage life sciences ventures."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "provides early-stage life sciences ventures a high-tech environment to develop their solutions"
+    open_to:
+      - ca-on-toronto
+    delivery: in-person
+    where:
+      - ca-on-toronto
+    fee: fee
+    access: membership

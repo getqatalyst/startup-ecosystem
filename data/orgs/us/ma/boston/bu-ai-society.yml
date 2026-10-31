@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: bu-ai-society
+name: BU AI Society
+url: https://www.buaisociety.com
+hosts:
+  - www.buaisociety.com
+cats:
+  - community
+hq:
+  city: us-ma-boston
+  area: Boston University
+  lat: 42.3505
+  lng: -71.1054
+  approx: true
+desc: Boston University's largest student-run AI community — hands-on project groups in robotics, drug discovery and local intelligence, plus deep-learning workshops.
+review:
+  - cats
+programs:
+  - id: bu-ai-society-program
+    name: BU AI Society
+    url: https://www.buaisociety.com
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

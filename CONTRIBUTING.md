@@ -4,6 +4,10 @@ Each organization is one file: `data/orgs/<country>/<province-or-state>/<city>/<
 filed under the city where the org is based, with its programs inside. To add or fix one,
 edit that file and open a pull request. CI checks it; a moderator reviews it.
 
+No Git? [Open an issue](https://github.com/getqatalyst/startup-ecosystem/issues/new/choose)
+to suggest an org, suggest a program or flag a correction; a moderator turns it into a pull
+request.
+
 ## Rules for an entry
 
 CI enforces the rules marked **(CI)**. A moderator checks the rest in review.
@@ -30,6 +34,21 @@ CI enforces the rules marked **(CI)**. A moderator checks the rest in review.
    `name` is out of `review`; the placeholder programs from the Toronto import can be
    renamed or replaced until then.
 
+## Chapters and offices
+
+One question decides it: **does the local unit run its own programs or have its own local lead?**
+
+- **Yes: it's a chapter.** Give it its own org file under its own city, with `parent` set to the
+  network (Founder Institute Toronto → `founder-institute`; each Creative Destruction Lab site →
+  `creative-destruction-lab`). It has its own programs, its own moderator review, and later its
+  own claim by the chapter lead. If it lives on the network's website, its host is the
+  network's host plus its path (`fi.co/toronto`); the validator allows that because of `parent`.
+  The network's own file sits under the city where the network is based.
+- **No: it's an office.** Add it to `locations` on the org itself: the same team and programs,
+  another address (Foresight Canada, based in Vancouver, with a Toronto office). City pages
+  list the org in each office's city and pin it at the office. No second file, nothing to keep
+  in sync.
+
 The full field reference is the schema, `schema/org.schema.yml`; every field has a description.
 Allowed values for categories, program types, audiences and the rest are in
 `data/shared/vocab.yml`; stages are in `data/shared/stages.yml`. Cities, provinces or
@@ -42,7 +61,12 @@ bun install
 bun run validate   # schema and cross-file rules
 bun test
 bun run build      # writes dist/ecosystem.json
+bun run linkcheck  # dead, parked, hijacked and redirected links (fetches every URL)
+bun run freshness  # records not verified in the last 12 months
 ```
+
+On the 1st of each month a workflow runs both and keeps one issue per province or state
+(label `health`) listing the links to fix and that month's verification queue.
 
 ## How the data reaches a site
 

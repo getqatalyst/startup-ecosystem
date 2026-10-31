@@ -7,7 +7,11 @@
 		"build": "bun scripts/build.ts",
 		"test": "bun test",
 		"lint": "biome check .",
-		"export": "bun scripts/export.ts"
+		"export": "bun scripts/export.ts",
+		"linkcheck": "bun scripts/linkcheck.ts",
+		"freshness": "bun scripts/freshness.ts",
+		"health": "bun scripts/health.ts",
+		"labels": "bun scripts/labels.ts"
 	},
 	"dependencies": {
 		"ajv": "8.20.0",

@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: kempner-institute
+name: Kempner Institute (Harvard)
+url: https://kempnerinstitute.harvard.edu
+hosts:
+  - kempnerinstitute.harvard.edu
+cats:
+  - university
+hq:
+  city: us-ma-boston
+  area: Allston
+  lat: 42.3635
+  lng: -71.1283
+desc: Harvard's institute for the study of natural and artificial intelligence, backed by a $500M Chan-Zuckerberg gift.
+review:
+  - desc
+programs:
+  - id: kempner-institute-program
+    name: Kempner Institute (Harvard)
+    url: https://kempnerinstitute.harvard.edu
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

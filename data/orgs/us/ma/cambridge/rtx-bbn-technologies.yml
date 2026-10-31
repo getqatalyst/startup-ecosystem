@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: rtx-bbn-technologies
+name: RTX BBN Technologies
+url: https://www.rtx.com/what-we-do/bbn-technologies
+hosts:
+  - www.rtx.com/what-we-do/bbn-technologies
+cats:
+  - corporate
+hq:
+  city: us-ma-cambridge
+  lat: 42.3897
+  lng: -71.1475
+desc: RTX's Cambridge research subsidiary, formerly Bolt Beranek and Newman. Runs government-funded R&D in AI and machine learning, speech and language processing, cyber and networking.
+review:
+  - desc
+programs:
+  - id: rtx-bbn-technologies-program
+    name: RTX BBN Technologies
+    url: https://www.rtx.com/what-we-do/bbn-technologies
+    types:
+      - service
+    stages:
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: invite
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

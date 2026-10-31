@@ -14,9 +14,7 @@ hq:
   area: MaRS Centre
   lat: 43.6596
   lng: -79.3886
-desc: Provincially-funded cancer research institute headquartered at MaRS.
-review:
-  - cats
+desc: Collaborative research institute that conducts and enables translational cancer research in Ontario, working with its strategic partner FACIT to commercialize its innovations.
 programs:
   - id: ontario-institute-for-cancer-research-program
     name: Ontario Institute for Cancer Research

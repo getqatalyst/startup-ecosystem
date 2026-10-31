@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: boston-generative-ai-meetup
+name: Boston Generative AI Meetup
+url: https://www.meetup.com/boston-generative-ai-meetup/
+hosts:
+  - www.meetup.com/boston-generative-ai-meetup
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.3616
+  lng: -71.0816
+  approx: true
+desc: Meets about every six weeks for evening talks, panels and demos on frontier and open-weight models, AI agents and putting AI into production. More than 6,000 members; paid admission, about $22. Usually at Microsoft NERD in Cambridge, but venues move around Greater Boston, so check each listing.
+review:
+  - desc
+programs:
+  - id: boston-generative-ai-meetup-program
+    name: Boston Generative AI Meetup
+    url: https://www.meetup.com/boston-generative-ai-meetup/
+    types:
+      - community
+      - service
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

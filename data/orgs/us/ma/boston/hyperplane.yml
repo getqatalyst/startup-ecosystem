@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: hyperplane
+name: Hyperplane
+url: https://www.hyperplane.vc
+hosts:
+  - www.hyperplane.vc
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  area: Fort Point
+  lat: 42.35
+  lng: -71.047
+  approx: true
+desc: Seed fund backing machine-intelligence companies since before it was cool.
+programs:
+  - id: hyperplane-program
+    name: Hyperplane
+    url: https://www.hyperplane.vc
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

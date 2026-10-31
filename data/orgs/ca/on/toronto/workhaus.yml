@@ -1,10 +1,8 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: workhaus
 name: Workhaus
-url: https://workhausco.com/
+url: https://workhaus.ca/
 hosts:
-  - workhausco.com
+  - workhaus.ca
 cats:
   - coworking
 hq:
@@ -12,26 +10,27 @@ hq:
   area: Old Town
   lat: 43.6498
   lng: -79.3711
-desc: Boutique Canadian coworking with several Toronto locations; 100 Front St E.
-review:
-  - desc
+desc: Canadian-owned coworking operator with flexible workspaces in Toronto, Kitchener-Waterloo and Calgary, offering hot desks, dedicated desks, private offices and virtual offices for freelancers, startups and growing teams.
+last_verified: 2026-10
 programs:
-  - id: workhaus-program
-    name: Workhaus
-    url: https://workhausco.com/
+  - id: workhaus-coworking
+    name: Coworking memberships
+    url: https://workhaus.ca/solutions/
     types:
       - coworking
     stages:
+      - validate
       - build
+      - operate
+    stage_basis: "Hot desks for freelancers, remote workers, early stage startups; dedicated desks and private offices for growing startups."
     audiences:
       - founders
-    access: membership
+    open_to:
+      - ca-on-toronto
+    delivery: in-person
+    where:
+      - ca-on-toronto
     fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: membership
+    cadence:
+      - ongoing

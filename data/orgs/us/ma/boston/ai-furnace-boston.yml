@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: ai-furnace-boston
+name: The AI Furnace (Boston)
+url: https://luma.com/ai-furnace-boston
+hosts:
+  - luma.com/ai-furnace-boston
+cats:
+  - community
+hq:
+  city: us-ma-boston
+  lat: 42.355
+  lng: -71.06
+  approx: true
+desc: High-energy AI founder community known for demo nights and investor mixers.
+review:
+  - hq
+programs:
+  - id: ai-furnace-boston-program
+    name: The AI Furnace (Boston)
+    url: https://luma.com/ai-furnace-boston
+    types:
+      - community
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

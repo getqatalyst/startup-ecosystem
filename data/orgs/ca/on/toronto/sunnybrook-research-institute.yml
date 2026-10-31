@@ -1,12 +1,12 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: sunnybrook-research-institute
 name: Sunnybrook Research Institute
 aliases:
   - SRI Sunnybrook
-url: https://sunnybrook.ca/research/
+url: https://research.sunnybrook.ca/
 hosts:
-  - sunnybrook.ca
+  - research.sunnybrook.ca
+  - medventions.ca
+  - inovait.ca
 cats:
   - research-institute
 hq:
@@ -14,26 +14,51 @@ hq:
   area: Bayview / North Toronto
   lat: 43.7227
   lng: -79.3756
-desc: Research arm of Sunnybrook hospital; strengths in trauma, imaging, and brain sciences.
-review:
-  - cats
+desc: Sunnybrook Health Sciences Centre's research institute, known for medical imaging. Medtech trainees can apply to its Medventions fellowship, and companies to its INOVAIT network's funding for image-guided therapy and AI projects.
+last_verified: 2026-10
 programs:
-  - id: sunnybrook-research-institute-program
-    name: Sunnybrook Research Institute
-    url: https://sunnybrook.ca/research/
+  - id: sunnybrook-research-institute-medventions
+    name: Medventions Toronto Fellowship
+    aliases:
+      - Medventions
+    url: https://medventions.ca/medventions-toronto/
     types:
-      - service
+      - fellowship
     stages:
+      - spark
+    audiences:
+      - aspiring
+    open_to:
+      - ca
+    delivery: in-person
+    where:
+      - ca-on-toronto
+    founder_receives:
+      - stipend
+    access: application
+    cadence:
+      - cohort
+    duration: 4 months
+  - id: sunnybrook-research-institute-inovait-pilot-fund
+    name: INOVAIT Pilot Fund
+    url: https://inovait.ca/funding/
+    partners:
+      - org_name: Government of Canada
+        role: funds
+    types:
+      - grant
+    stages:
+      - validate
       - build
     audiences:
       - founders
-    access: institutional
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "INOVAIT provides Canada’s image-guided therapy (IGT) industry and academic institutions with targeted non-dilutive funding for commercialization-focused R&D projects involving the integration of artificial intelligence (AI) into IGT technologies."
+    open_to:
+      - ca
+    founder_receives:
+      - grant
+    access: application
+    duration: 12 months

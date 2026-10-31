@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: two-lanterns-venture-partners
+name: Two Lanterns Venture Partners
+url: https://www.2l.vc
+hosts:
+  - www.2l.vc
+cats:
+  - vc
+hq:
+  city: us-ma-newton
+  area: Newton Centre
+  lat: 42.335
+  lng: -71.1915
+  approx: true
+desc: Pre-seed and seed fund backing AI-native and AI-empowered startups across the US and Israel, founded by MassChallenge founder John Harthorne.
+review:
+  - desc
+programs:
+  - id: two-lanterns-venture-partners-program
+    name: Two Lanterns Venture Partners
+    url: https://www.2l.vc
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

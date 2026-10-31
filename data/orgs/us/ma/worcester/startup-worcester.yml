@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: startup-worcester
+name: StartUp Worcester
+url: https://www.worcesterchamber.org/startup-worcester/
+hosts:
+  - www.worcesterchamber.org/startup-worcester
+cats:
+  - accelerator
+hq:
+  city: us-ma-worcester
+  lat: 42.2598
+  lng: -71.8019
+desc: Free pre-accelerator run by the Worcester Regional Chamber of Commerce with the WorcLab incubator. Each cohort of early-stage companies gets Chamber and WorcLab memberships, downtown coworking, mentoring, and networking and fundraising opportunities.
+review:
+  - cats
+  - desc
+programs:
+  - id: startup-worcester-program
+    name: StartUp Worcester
+    url: https://www.worcesterchamber.org/startup-worcester/
+    types:
+      - accelerator
+      - coworking
+      - mentorship
+      - community
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to
