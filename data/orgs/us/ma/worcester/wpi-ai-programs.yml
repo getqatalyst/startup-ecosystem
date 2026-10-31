@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: wpi-ai-programs
+name: WPI AI Programs
+url: https://www.wpi.edu/about/ai
+hosts:
+  - www.wpi.edu/about/ai
+cats:
+  - university
+hq:
+  city: us-ma-worcester
+  lat: 42.2746
+  lng: -71.8063
+desc: Worcester Polytechnic Institute — project-based engineering school with a BS, an MS and a graduate certificate in AI, plus a Robotics Engineering department granting BS, MS and PhD degrees. About 45 miles west of Boston.
+review:
+  - desc
+programs:
+  - id: wpi-ai-programs-program
+    name: WPI AI Programs
+    url: https://www.wpi.edu/about/ai
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

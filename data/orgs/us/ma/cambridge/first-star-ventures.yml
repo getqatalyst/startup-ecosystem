@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: first-star-ventures
+name: First Star Ventures
+url: https://firststar.vc
+hosts:
+  - firststar.vc
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  lat: 42.3625
+  lng: -71.0847
+desc: Cambridge pre-seed fund writing $100K–$1M first checks into AI, robotics and frontier-computing companies; both partners are technical ex-founders.
+review:
+  - desc
+programs:
+  - id: first-star-ventures-program
+    name: First Star Ventures
+    url: https://firststar.vc
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

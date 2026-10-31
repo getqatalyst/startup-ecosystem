@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: harvard-undergraduate-machine-intelligence-community
+name: Harvard Undergraduate Machine Intelligence Community
+url: https://www.humic.ai
+hosts:
+  - www.humic.ai
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.3741
+  lng: -71.1167
+  approx: true
+desc: Harvard's flagship undergraduate AI/ML club — runs the Future of Intelligence Fellowship, an AI project incubator, tech talks and workshops.
+review:
+  - cats
+programs:
+  - id: harvard-undergraduate-machine-intelligence-community-program
+    name: Harvard Undergraduate Machine Intelligence Community
+    url: https://www.humic.ai
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

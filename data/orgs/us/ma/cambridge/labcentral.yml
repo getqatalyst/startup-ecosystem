@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: labcentral
+name: LabCentral
+url: https://www.labcentral.org
+hosts:
+  - www.labcentral.org
+cats:
+  - coworking
+hq:
+  city: us-ma-cambridge
+  lat: 42.3626
+  lng: -71.0951
+desc: Shared wet-lab and office facility for early-stage life-science startups in Kendall Square, and the physical home of the AI BioHub accelerator run with C10 Labs.
+review:
+  - cats
+  - desc
+programs:
+  - id: labcentral-program
+    name: LabCentral
+    url: https://www.labcentral.org
+    types:
+      - coworking
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

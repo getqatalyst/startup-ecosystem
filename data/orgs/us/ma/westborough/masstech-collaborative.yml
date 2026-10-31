@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: masstech-collaborative
+name: MassTech Collaborative
+url: https://masstech.org
+hosts:
+  - masstech.org
+cats:
+  - government
+hq:
+  city: us-ma-westborough
+  lat: 42.2872
+  lng: -71.6289
+desc: Quasi-public state agency for the Commonwealth's technology and innovation economy, formally the Massachusetts Technology Collaborative. Runs the Massachusetts AI Hub, the Innovation Institute, MeHI and other divisions.
+review:
+  - desc
+programs:
+  - id: masstech-collaborative-program
+    name: MassTech Collaborative
+    url: https://masstech.org
+    types:
+      - grant
+      - service
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

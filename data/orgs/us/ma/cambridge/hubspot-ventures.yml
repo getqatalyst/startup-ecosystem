@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: hubspot-ventures
+name: HubSpot Ventures
+url: https://www.hubspot.com/ventures
+hosts:
+  - www.hubspot.com/ventures
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  lat: 42.3701
+  lng: -71.0763
+desc: HubSpot's strategic venture arm — $500K–$5M checks from seed through Series B, focused on AI & agent development and intelligent apps for SMBs; investments include Lovable and ElevenLabs.
+review:
+  - desc
+programs:
+  - id: hubspot-ventures-program
+    name: HubSpot Ventures
+    url: https://www.hubspot.com/ventures
+    types:
+      - investment
+      - service
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

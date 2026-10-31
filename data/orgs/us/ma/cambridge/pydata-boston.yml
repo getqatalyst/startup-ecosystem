@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: pydata-boston
+name: PyData Boston
+url: https://www.meetup.com/pydata-boston-cambridge/
+hosts:
+  - www.meetup.com/pydata-boston-cambridge
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.362
+  lng: -71.0855
+  approx: true
+desc: Long-running technical meetup for the Python data/ML stack.
+review:
+  - hq
+programs:
+  - id: pydata-boston-program
+    name: PyData Boston
+    url: https://www.meetup.com/pydata-boston-cambridge/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

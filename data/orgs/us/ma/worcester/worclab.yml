@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: worclab
+name: WorcLab
+url: https://worclab.org
+hosts:
+  - worclab.org
+cats:
+  - coworking
+hq:
+  city: us-ma-worcester
+  lat: 42.2598
+  lng: -71.8019
+desc: Nonprofit incubator and coworking space in downtown Worcester, with shared and dedicated desks, private offices and a prototyping lab. Co-runs the free StartUp Worcester program with the Worcester Regional Chamber of Commerce.
+review:
+  - cats
+  - desc
+programs:
+  - id: worclab-program
+    name: WorcLab
+    url: https://worclab.org
+    types:
+      - coworking
+      - community
+      - mentorship
+      - service
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

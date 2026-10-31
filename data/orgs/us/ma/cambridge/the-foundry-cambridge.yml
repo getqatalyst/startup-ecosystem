@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: the-foundry-cambridge
+name: The Foundry (Cambridge)
+url: https://www.cambridgefoundry.org/
+hosts:
+  - www.cambridgefoundry.org
+cats:
+  - coworking
+hq:
+  city: us-ma-cambridge
+  lat: 42.369
+  lng: -71.079
+desc: City-backed community space for art, tech and education events in East Cambridge.
+review:
+  - cats
+programs:
+  - id: the-foundry-cambridge-program
+    name: The Foundry (Cambridge)
+    url: https://www.cambridgefoundry.org/
+    types:
+      - coworking
+      - community
+    stages:
+      - spark
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

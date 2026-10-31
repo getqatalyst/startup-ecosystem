@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: epipelagic-ventures
+name: Epipelagic Ventures
+url: https://www.epipelagic.vc
+hosts:
+  - www.epipelagic.vc
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  lat: 42.3626
+  lng: -71.0843
+desc: A founder-first venture studio in Kendall Square that surrounds early-stage startups with capital, mentorship and hands-on operational support to reach their next milestone.
+programs:
+  - id: epipelagic-ventures-program
+    name: Epipelagic Ventures
+    url: https://www.epipelagic.vc
+    types:
+      - investment
+      - mentorship
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,44 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: the-engine
+name: The Engine
+url: https://engine.xyz
+hosts:
+  - engine.xyz
+cats:
+  - accelerator
+hq:
+  city: us-ma-cambridge
+  lat: 42.3636
+  lng: -71.0973
+desc: Tough-tech hub created by MIT and now an independent nonprofit, with managed wet lab, engineering and office space. Runs Blueprint, a free, mostly virtual program for researchers turning lab work into a company.
+review:
+  - cats
+  - desc
+programs:
+  - id: the-engine-program
+    name: The Engine
+    url: https://engine.xyz
+    types:
+      - accelerator
+      - coworking
+      - mentorship
+      - community
+      - grant
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: umass-amherst-manning-cics
+name: UMass Amherst Manning CICS
+url: https://www.cics.umass.edu
+hosts:
+  - www.cics.umass.edu
+cats:
+  - university
+hq:
+  city: us-ma-amherst
+  lat: 42.3952
+  lng: -72.5311
+desc: UMass Amherst's Manning College of Information and Computer Sciences, about 90 miles west of Boston. Research areas include artificial intelligence, machine learning and human language technologies, and a UMass AI safety initiative works on alignment, robustness, interpretability and governance.
+review:
+  - desc
+programs:
+  - id: umass-amherst-manning-cics-program
+    name: UMass Amherst Manning CICS
+    url: https://www.cics.umass.edu
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

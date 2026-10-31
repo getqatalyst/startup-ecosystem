@@ -1,0 +1,44 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: massachusetts-ai-hub
+name: Massachusetts AI Hub
+url: https://aihub.masstech.org
+hosts:
+  - aihub.masstech.org
+parent: masstech-collaborative
+cats:
+  - government
+hq:
+  city: us-ma-boston
+  lat: 42.3597
+  lng: -71.0602
+desc: State AI office inside the MassTech Collaborative. Runs the Applied AI Models Innovation Challenge, the Data Commons Collaborative and the AI Compute Resources cluster at MGHPCC, and co-sponsors The Open Accelerator.
+review:
+  - parent
+  - desc
+programs:
+  - id: massachusetts-ai-hub-program
+    name: Massachusetts AI Hub
+    url: https://aihub.masstech.org
+    types:
+      - grant
+      - service
+    stages:
+      - spark
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

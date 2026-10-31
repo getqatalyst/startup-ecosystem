@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: harvard-undergraduate-society-for-ai
+name: Harvard Undergraduate Society for AI
+url: https://ai.hcs.harvard.edu
+hosts:
+  - ai.hcs.harvard.edu
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.3741
+  lng: -71.1167
+  approx: true
+desc: Harvard undergrad AI community running speaker dinners, an AI bootcamp, fellowships and industry mixers.
+review:
+  - cats
+programs:
+  - id: harvard-undergraduate-society-for-ai-program
+    name: Harvard Undergraduate Society for AI
+    url: https://ai.hcs.harvard.edu
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

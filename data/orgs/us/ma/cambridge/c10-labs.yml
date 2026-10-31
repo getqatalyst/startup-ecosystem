@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: c10-labs
+name: C10 Labs
+url: https://www.c10labs.com
+hosts:
+  - www.c10labs.com
+cats:
+  - accelerator
+hq:
+  city: us-ma-cambridge
+  lat: 42.3626
+  lng: -71.0842
+  approx: true
+desc: AI-native venture studio and fund at CIC in Kendall Square — invests pre-seed to Series A and co-builds applied-AI companies; runs the AI BioHub with LabCentral and a Dimensional AI Hub with CIC.
+review:
+  - cats
+programs:
+  - id: c10-labs-program
+    name: C10 Labs
+    url: https://www.c10labs.com
+    types:
+      - accelerator
+      - investment
+      - mentorship
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

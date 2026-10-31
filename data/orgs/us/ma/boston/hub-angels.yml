@@ -1,0 +1,38 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: hub-angels
+name: Hub Angels
+url: https://www.hubangels.com
+hosts:
+  - www.hubangels.com
+cats:
+  - angel-network
+hq:
+  city: us-ma-boston
+  lat: 42.3545
+  lng: -71.06
+  approx: true
+desc: Long-running Boston angel fund investing in early-stage tech.
+programs:
+  - id: hub-angels-program
+    name: Hub Angels
+    url: https://www.hubangels.com
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to
