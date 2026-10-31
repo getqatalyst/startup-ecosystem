@@ -4,9 +4,9 @@ id: sickkids-research-institute
 name: SickKids Research Institute
 aliases:
   - SickKids RI
-url: https://www.sickkids.ca/en/research/
+url: https://www.sickkids.ca/en/research/about-research-institute/
 hosts:
-  - www.sickkids.ca
+  - www.sickkids.ca/en/research
 cats:
   - research-institute
 hq:
@@ -20,7 +20,7 @@ review:
 programs:
   - id: sickkids-research-institute-program
     name: SickKids Research Institute
-    url: https://www.sickkids.ca/en/research/
+    url: https://www.sickkids.ca/en/research/about-research-institute/
     types:
       - service
     stages:
@@ -34,3 +34,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

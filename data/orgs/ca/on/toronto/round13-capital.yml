@@ -4,9 +4,9 @@ id: round13-capital
 name: Round13 Capital
 aliases:
   - Round13
-url: https://www.round13capital.com/
+url: https://round13.com/
 hosts:
-  - www.round13capital.com
+  - round13.com
 cats:
   - vc
 hq:
@@ -20,7 +20,7 @@ review:
 programs:
   - id: round13-capital-program
     name: Round13 Capital
-    url: https://www.round13capital.com/
+    url: https://round13.com/
     types:
       - investment
     stages:
@@ -35,3 +35,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

@@ -18,6 +18,7 @@ hq:
 desc: Canada's cleantech innovation and adoption accelerator. HQ in Vancouver (founded 2013); Toronto office at 192 Spadina, same building as CSI.
 review:
   - desc
+  - hq
 programs:
   - id: foresight-canada-program
     name: Foresight Canada (Toronto office)
@@ -36,3 +37,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

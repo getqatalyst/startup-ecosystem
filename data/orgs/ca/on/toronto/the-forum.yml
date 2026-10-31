@@ -11,6 +11,7 @@ hq:
   city: ca-on-toronto
 desc: National non-profit accelerating women, non-binary, and Two-Spirit entrepreneurs. Delivered across Canada.
 review:
+  - desc
   - hq
 programs:
   - id: the-forum-program
@@ -32,4 +33,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
       - open_to

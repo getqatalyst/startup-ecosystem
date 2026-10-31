@@ -1,31 +1,31 @@
 # Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
 # first guesses; confirm them against the org's own site, then remove them from the list.
-id: project-spaces
-name: "Project: Spaces"
+id: nrth-festival
+name: Nrth Festival
 aliases:
-  - Project Spaces
-url: https://www.projectspaces.com/
+  - Elevate
+url: https://nrth.ca/
 hosts:
-  - www.projectspaces.com
+  - nrth.ca
 cats:
-  - coworking
+  - community
 hq:
   city: ca-on-toronto
-  area: Queen West
-  lat: 43.6474
-  lng: -79.397
-desc: Independent coworking with studios and event space; 20 Camden St.
+desc: Annual innovation festival; one of Canada's largest tech conferences.
 review:
   - desc
+  - hq
 programs:
-  - id: project-spaces-program
-    name: "Project: Spaces"
-    url: https://www.projectspaces.com/
+  - id: nrth-festival-program
+    name: Nrth Festival
+    url: https://nrth.ca/
     types:
-      - coworking
+      - community
     stages:
-      - build
+      - spark
+      - validate
     audiences:
+      - aspiring
       - founders
     access: membership
     fee: fee
@@ -34,3 +34,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

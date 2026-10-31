@@ -157,10 +157,59 @@ const PARENT: Record<string, string> = {
 	"U of T Scarborough": "university-of-toronto",
 	SpinUp: "u-of-t-mississauga",
 	"ICUBE UTM": "u-of-t-mississauga",
+	"MaRS Investment Accelerator Fund (IAF)": "mars-discovery-district",
 };
 
 // descriptions that name people (the digit check below catches dates, amounts and addresses)
-const NAMES_PEOPLE = new Set(["NVIDIA Toronto AI Lab"]);
+const NAMES_PEOPLE = new Set(["NVIDIA Toronto AI Lab", "HXOUSE"]);
+
+// identity wording in a description is a claim about who a program is for; it needs a quote
+const IDENTITY_WORDS =
+	/\b(black|women|woman|female|indigenous|non-binary|two-spirit|under-?represented|lgbtq|bipoc|newcomers?|immigrants?|youth|aged? \d)/i;
+
+// Link check of all 98 rows, 2026-10-31: these sites were renamed or moved. Each new URL was
+// opened and confirmed; renamed orgs keep the old name as an alias, and their descriptions
+// are flagged since they describe the old name. `host` is set where the org is a section of a
+// bigger site it doesn't own.
+const CORRECTIONS: Record<
+	string,
+	{ name?: string; url: string; host?: string }
+> = {
+	"Ashoka Canada": {
+		url: "https://www.ashoka.org/en-ca/country/canada",
+		host: "www.ashoka.org/en-ca/country/canada", // ashokacanada.org now serves gambling spam
+	},
+	"ScaleUp Ventures": { url: "https://www.scaleupvc.com/" }, // scaleupventures.com is someone else
+	"BPTN (Black Professionals in Tech)": {
+		name: "Obsidi",
+		url: "https://obsidi.com/",
+	},
+	Elevate: { name: "Nrth Festival", url: "https://nrth.ca/" },
+	"Borealis AI": { name: "RBC Borealis", url: "https://rbcborealis.com/" },
+	"Evergreen Brick Works": {
+		url: "https://www.evergreen.ca/evergreen-brick-works/",
+	},
+	"MaRS Investment Accelerator Fund (IAF)": { url: "https://marsiaf.com/" },
+	"SickKids Research Institute": {
+		url: "https://www.sickkids.ca/en/research/about-research-institute/",
+		host: "www.sickkids.ca/en/research",
+	},
+	"Round13 Capital": { url: "https://round13.com/" },
+	"Information Venture Partners": { url: "https://informationvp.com/" },
+};
+
+// Left out until someone confirms the org still runs: no working official site on 2026-10-31.
+const DROPPED: Record<string, string> = {
+	"Project: Spaces": "projectspaces.com is for sale",
+	"Framework Venture Partners": "frameworkvp.com doesn't resolve",
+	"The Commons":
+		"thecommons.com shows 'site not found'; its location was never confirmed",
+	"Black Innovation Zone":
+		"its DMZ page is gone; DMZ now lists other Black founder programs",
+};
+
+// based elsewhere, with a Toronto office the row pins; filed here until there's an office model
+const OFFICES = new Set(["Foresight Canada (Toronto office)", "MakeWay"]);
 
 // CSV access → vocab access ("selective" was folded into "application" in v0.3)
 const ACCESS: Record<string, string> = {
@@ -183,13 +232,21 @@ if (!csvPath) {
 	process.exit(1);
 }
 
-const rows = parseCsv(readFileSync(csvPath, "utf8"));
-const urls = rows.map((r) => new URL(r.url));
+const allRows = parseCsv(readFileSync(csvPath, "utf8"));
+const rows = allRows.filter((r) => !DROPPED[r.name]);
+for (const [name, why] of Object.entries(DROPPED)) {
+	if (!allRows.some((r) => r.name === name))
+		throw new Error(`DROPPED names a missing row: ${name}`);
+	console.log(`left out ${name}: ${why}`);
+}
+const urlOf = (r: Row) => CORRECTIONS[r.name]?.url ?? r.url;
+const urls = rows.map((r) => new URL(urlOf(r)));
 const isRoot = (u: URL) => u.pathname === "/" || u.pathname === "";
 const hostCount = new Map<string, number>();
 for (const u of urls)
 	hostCount.set(u.hostname, (hostCount.get(u.hostname) ?? 0) + 1);
-const idOf = (name: string) => ID[name] ?? slug(name);
+const idOf = (name: string) =>
+	ID[name] ?? slug(CORRECTIONS[name]?.name ?? name);
 const ids = rows.map((r) => idOf(r.name));
 const repeated = ids.filter((id, i) => ids.indexOf(id) !== i);
 if (repeated.length)
@@ -207,14 +264,26 @@ rows.forEach((r, i) => {
 	const url = urls[i];
 	const id = ids[i];
 	const review: string[] = [];
-	const programReview = ["name", "types", "stages", "audiences"];
+	const fix = CORRECTIONS[r.name];
+	const name = fix?.name ?? r.name;
+	// access, cost and reach come from the old map's coarse columns or defaults: guesses too
+	const programReview = [
+		"name",
+		"types",
+		"stages",
+		"audiences",
+		"access",
+		"fee",
+		"open_to",
+	];
 
 	// one host belongs to one org: a shared host gets the row's path appended
 	const shared = (hostCount.get(url.hostname) ?? 0) > 1;
 	const host =
-		shared && !isRoot(url)
+		fix?.host ??
+		(shared && !isRoot(url)
 			? `${url.hostname}${url.pathname.replace(/\/$/, "")}`
-			: url.hostname;
+			: url.hostname);
 	const parent =
 		PARENT[r.name] ??
 		(shared && !isRoot(url) ? rootOrg.get(url.hostname) : undefined);
@@ -225,7 +294,14 @@ rows.forEach((r, i) => {
 		throw new Error(`${r.name}: no category mapping for "${r.category}"`);
 	if (r.category === "lab") review.push("cats");
 	// digits catch dates, amounts, sizes and street addresses, all of which go stale
-	if (/\d|\$/.test(r.desc) || NAMES_PEOPLE.has(r.name)) review.push("desc");
+	if (
+		/\d|\$/.test(r.desc) ||
+		NAMES_PEOPLE.has(r.name) ||
+		IDENTITY_WORDS.test(r.desc) ||
+		fix?.name
+	)
+		review.push("desc");
+	if (OFFICES.has(r.name)) review.push("hq");
 
 	// where the org is (hq) is a different fact from whom it serves (open_to)
 	const elsewhere = ELSEWHERE[r.name];
@@ -239,17 +315,22 @@ rows.forEach((r, i) => {
 	} else {
 		// no pin: the CSV's `hood` here says "National", "City-wide" and the like, not a place
 		review.push("hq");
-		programReview.push("open_to");
 	}
 	const openTo =
 		elsewhere?.open_to ?? (NATIONWIDE.has(r.hood) ? ["ca"] : undefined);
 
 	const guess = PROGRAM[cat];
+	const aliases = [
+		...new Set([
+			...(fix?.name ? [r.name] : []),
+			...(r.short && r.short !== name ? [r.short] : []),
+		]),
+	];
 	const org = {
 		id,
-		name: r.name,
-		...(r.short && r.short !== r.name ? { aliases: [r.short] } : {}),
-		url: r.url,
+		name,
+		...(aliases.length ? { aliases } : {}),
+		url: urlOf(r),
 		hosts: [host],
 		...(parent ? { parent } : {}),
 		cats: [cat],
@@ -259,8 +340,8 @@ rows.forEach((r, i) => {
 		programs: [
 			{
 				id: `${id}-program`,
-				name: r.name,
-				url: r.url,
+				name,
+				url: urlOf(r),
 				types: guess.types,
 				stages: guess.stages,
 				audiences: guess.audiences,

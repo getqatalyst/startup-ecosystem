@@ -4,9 +4,9 @@ id: mars-investment-accelerator-fund
 name: MaRS Investment Accelerator Fund (IAF)
 aliases:
   - MaRS IAF
-url: https://www.marsdd.com/iaf/
+url: https://marsiaf.com/
 hosts:
-  - www.marsdd.com/iaf
+  - marsiaf.com
 parent: mars-discovery-district
 cats:
   - vc
@@ -22,7 +22,7 @@ review:
 programs:
   - id: mars-investment-accelerator-fund-program
     name: MaRS Investment Accelerator Fund (IAF)
-    url: https://www.marsdd.com/iaf/
+    url: https://marsiaf.com/
     types:
       - investment
     stages:
@@ -37,3 +37,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

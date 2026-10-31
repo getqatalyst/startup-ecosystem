@@ -13,6 +13,8 @@ hq:
   lat: 43.6447
   lng: -79.3656
 desc: Founder accelerator and creative incubator co-founded by The Weeknd's team, focused on under-represented creators and entrepreneurs.
+review:
+  - desc
 programs:
   - id: hxouse-program
     name: HXOUSE
@@ -31,3 +33,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

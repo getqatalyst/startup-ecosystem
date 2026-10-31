@@ -4,9 +4,9 @@ id: scaleup-ventures
 name: ScaleUp Ventures
 aliases:
   - ScaleUp
-url: https://www.scaleupventures.com/
+url: https://www.scaleupvc.com/
 hosts:
-  - www.scaleupventures.com
+  - www.scaleupvc.com
 cats:
   - vc
 hq:
@@ -20,7 +20,7 @@ review:
 programs:
   - id: scaleup-ventures-program
     name: ScaleUp Ventures
-    url: https://www.scaleupventures.com/
+    url: https://www.scaleupvc.com/
     types:
       - investment
     stages:
@@ -35,3 +35,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

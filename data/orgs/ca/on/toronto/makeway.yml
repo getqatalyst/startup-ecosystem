@@ -16,6 +16,7 @@ hq:
 desc: National public foundation (formerly Tides Canada, founded 2000, renamed 2020) funding environmental and social-justice projects. HQ Vancouver; Toronto office at 28 Bathurst St.
 review:
   - desc
+  - hq
 programs:
   - id: makeway-program
     name: MakeWay
@@ -34,3 +35,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

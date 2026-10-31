@@ -1,7 +1,7 @@
 # Startup Ecosystem Data
 
 Open data on the organizations that help founders, and the programs they run, filed by
-country, province or state, and city. Seeded with Toronto and Massachusetts. Maintained by
+country, province or state, and city. Starts with Toronto; Massachusetts is next. Maintained by
 regional moderators; run by [Qatalyst Labs](https://getqatalyst.com).
 
 Every organization and program links to its own official page. Entries hold stable facts
@@ -19,6 +19,10 @@ the source page.
 | `scripts/validate.ts`, `scripts/build.ts` | Checks, and the compiled `dist/ecosystem.json` |
 
 To add or fix an entry, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+**Using the data:** read `dist/ecosystem.json` (`bun run build`). Fields listed under a record's
+`review` are unconfirmed first guesses. Program ids ending in `-program` are placeholders from
+the Toronto import and will change when the program is confirmed; don't key on them.
 
 ## Licenses
 

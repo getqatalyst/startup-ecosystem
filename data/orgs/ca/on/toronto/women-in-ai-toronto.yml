@@ -13,6 +13,7 @@ hq:
   city: ca-on-toronto
 desc: Chapter of the global Women in AI network.
 review:
+  - desc
   - hq
 programs:
   - id: women-in-ai-toronto-program
@@ -33,4 +34,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
       - open_to

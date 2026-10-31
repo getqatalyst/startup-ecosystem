@@ -4,7 +4,7 @@ id: evergreen-brick-works
 name: Evergreen Brick Works
 aliases:
   - Evergreen
-url: https://www.evergreen.ca/evergreen-brick-work/
+url: https://www.evergreen.ca/evergreen-brick-works/
 hosts:
   - www.evergreen.ca
 cats:
@@ -20,7 +20,7 @@ review:
 programs:
   - id: evergreen-brick-works-program
     name: Evergreen Brick Works
-    url: https://www.evergreen.ca/evergreen-brick-work/
+    url: https://www.evergreen.ca/evergreen-brick-works/
     types:
       - community
     stages:
@@ -36,3 +36,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

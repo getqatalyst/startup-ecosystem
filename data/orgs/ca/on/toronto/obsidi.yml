@@ -1,21 +1,27 @@
 # Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
 # first guesses; confirm them against the org's own site, then remove them from the list.
-id: elevate
-name: Elevate
-url: https://elevatefestival.ca/
+id: obsidi
+name: Obsidi
+aliases:
+  - BPTN (Black Professionals in Tech)
+  - BPTN
+url: https://obsidi.com/
 hosts:
-  - elevatefestival.ca
+  - obsidi.com
 cats:
   - community
 hq:
   city: ca-on-toronto
-desc: Annual innovation festival; one of Canada's largest tech conferences.
+  area: Queen West
+  lat: 43.6508
+  lng: -79.3966
+desc: Largest Black-tech-professional community in North America; HQ in Toronto (215 Spadina Ave).
 review:
-  - hq
+  - desc
 programs:
-  - id: elevate-program
-    name: Elevate
-    url: https://elevatefestival.ca/
+  - id: obsidi-program
+    name: Obsidi
+    url: https://obsidi.com/
     types:
       - community
     stages:
@@ -25,10 +31,12 @@ programs:
       - aspiring
       - founders
     access: membership
-    fee: fee
+    fee: free
     review:
       - name
       - types
       - stages
       - audiences
+      - access
+      - fee
       - open_to

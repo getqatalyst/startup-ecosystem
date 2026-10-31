@@ -2,9 +2,9 @@
 # first guesses; confirm them against the org's own site, then remove them from the list.
 id: ashoka-canada
 name: Ashoka Canada
-url: https://ashokacanada.org/
+url: https://www.ashoka.org/en-ca/country/canada
 hosts:
-  - ashokacanada.org
+  - www.ashoka.org/en-ca/country/canada
 cats:
   - community
 hq:
@@ -18,7 +18,7 @@ review:
 programs:
   - id: ashoka-canada-program
     name: Ashoka Canada
-    url: https://ashokacanada.org/
+    url: https://www.ashoka.org/en-ca/country/canada
     types:
       - community
     stages:
@@ -34,3 +34,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

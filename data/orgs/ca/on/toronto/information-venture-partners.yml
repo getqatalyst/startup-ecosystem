@@ -4,9 +4,9 @@ id: information-venture-partners
 name: Information Venture Partners
 aliases:
   - IVP
-url: https://www.informationvp.com/
+url: https://informationvp.com/
 hosts:
-  - www.informationvp.com
+  - informationvp.com
 cats:
   - vc
 hq:
@@ -20,7 +20,7 @@ review:
 programs:
   - id: information-venture-partners-program
     name: Information Venture Partners
-    url: https://www.informationvp.com/
+    url: https://informationvp.com/
     types:
       - investment
     stages:
@@ -35,3 +35,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

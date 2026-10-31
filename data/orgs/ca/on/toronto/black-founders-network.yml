@@ -16,6 +16,8 @@ hq:
   lng: -79.3893
   approx: true
 desc: Community and cohort accelerator (BFN Accelerate) providing Black founders capital, capacity-building, and network.
+review:
+  - desc
 programs:
   - id: black-founders-network-program
     name: Black Founders Network
@@ -34,3 +36,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to

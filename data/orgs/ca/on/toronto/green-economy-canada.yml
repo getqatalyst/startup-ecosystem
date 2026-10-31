@@ -36,3 +36,6 @@ programs:
       - types
       - stages
       - audiences
+      - access
+      - fee
+      - open_to
