@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: ontario-nonprofit-network
 name: Ontario Nonprofit Network (ONN)
 aliases:
@@ -15,28 +13,25 @@ hq:
   lat: 43.6881
   lng: -79.3936
   approx: true
-desc: Independent policy and advocacy network for Ontario's 64,000 nonprofits. Mobilized 2007, incorporated 2014; based at Foundation House.
-review:
-  - desc
+desc: Independent policy and advocacy network for Ontario's nonprofit organizations, offering members resources, tools and connections to sustain and grow their organizations.
+last_verified: 2026-10
 programs:
-  - id: ontario-nonprofit-network-program
-    name: Ontario Nonprofit Network (ONN)
-    url: https://theonn.ca/
+  - id: ontario-nonprofit-network-membership
+    name: ONN membership
+    url: https://theonn.ca/join/become-a-member/
     types:
       - community
+      - service
     stages:
-      - spark
-      - validate
+      - build
+      - operate
+      - scale
     audiences:
-      - aspiring
       - founders
-    access: membership
+    eligibility:
+      venture_type:
+        - nonprofit
+    open_to:
+      - ca-on
     fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: membership

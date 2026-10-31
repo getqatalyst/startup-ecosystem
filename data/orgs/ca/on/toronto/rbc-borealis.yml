@@ -10,15 +10,15 @@ hosts:
   - rbcborealis.com
 cats:
   - corporate
+  - research-institute
 hq:
   city: ca-on-toronto
   area: MaRS Centre
   lat: 43.6592
   lng: -79.3897
-desc: RBC's research institute focused on machine learning for finance and beyond. Located in the MaRS Centre.
+desc: RBC's AI research institute, combining AI research and data engineering to build solutions for the bank and the financial industry.
 review:
-  - cats
-  - desc
+  - hq
 programs:
   - id: rbc-borealis-program
     name: RBC Borealis

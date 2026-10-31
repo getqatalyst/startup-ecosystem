@@ -1,7 +1,7 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: next-canada
-name: Next Canada
+name: NEXT Canada
+aliases:
+  - Next Canada
 url: https://www.nextcanada.com/
 hosts:
   - www.nextcanada.com
@@ -12,27 +12,97 @@ hq:
   area: Bloor / Yorkville
   lat: 43.6711
   lng: -79.3825
-desc: National accelerator running NextAI, Next 36, and Next Founders programs for ambitious early-stage Canadian founders.
-review:
-  - desc
+desc: National non-profit charity running accelerator programs that give Canadian entrepreneurs, from students and recent grads to growth-stage founders, education, mentorship and access to investors.
+last_verified: 2026-10
 programs:
-  - id: next-canada-program
-    name: Next Canada
-    url: https://www.nextcanada.com/
+  - id: next-canada-next-36
+    name: NEXT 36
+    url: https://www.nextcanada.com/next-36/
     types:
       - accelerator
+      - mentorship
+      - coworking
     stages:
+      - spark
+      - validate
+    stage_basis: "Whether you have an early stage venture, or you're looking to start something brand new."
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - ca
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    fee: free
+    equity: false
+    access: application
+    cadence:
+      - cohort
+      - annual
+    duration: 8 months
+  - id: next-canada-next-ai
+    name: NEXT AI
+    url: https://www.nextcanada.com/next-ai/
+    partners:
+      - org_name: HEC Montréal
+        role: co-runs
+    types:
+      - accelerator
+      - mentorship
+      - coworking
+    stages:
+      - spark
       - validate
       - build
+    stage_basis: "Early-stage/pre-seed ventures with problem-solution fit, a prototype and early traction (a pilot, early revenue or funding); idea-stage projects with strong technology differentiation also welcome."
     audiences:
       - founders
-    access: application
+    eligibility:
+      place:
+        incorporation:
+          - ca
+        quote: "NEXT AI is currently only available to Canadian companies, owned in majority by Canadian citizens and permanent residents."
+      venture:
+        - gate: team
+          quote: "Each team must have at least one technical stream founder with a basic understanding of AI-related technologies, including machine learning and data analysis."
+    open_to:
+      - ca
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+      - ca-qc-montreal
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    equity: false
+    founder_receives:
+      - none
+    access: application
+    cadence:
+      - cohort
+      - annual
+  - id: next-canada-next-founders
+    name: NEXT Founders
+    url: https://www.nextcanada.com/next-founders/
+    types:
+      - accelerator
+      - course
+      - mentorship
+    stages:
+      - operate
+      - scale
+    stage_basis: "Seed and growth stage founders who are looking to accelerate their business."
+    audiences:
+      - founders
+    open_to:
+      - ca
+    where:
+      - ca-on-toronto
+    fee: free
+    equity: false
+    founder_receives:
+      - none
+    access: application
+    cadence:
+      - cohort
+      - annual
+    duration: 6 months

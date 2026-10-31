@@ -1,9 +1,8 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: scaleup-ventures
 name: ScaleUp Ventures
 aliases:
   - ScaleUp
+  - Scale Up Ventures
 url: https://www.scaleupvc.com/
 hosts:
   - www.scaleupvc.com
@@ -14,12 +13,13 @@ hq:
   area: St. Lawrence
   lat: 43.6498
   lng: -79.3643
-desc: Seed-stage Canadian tech; operator-led. Office at 250 The Esplanade.
+desc: Venture capital firm investing in companies that deliver value for citizens and society, focused on dual-use (commercial and government) technology in fintech, developer tools, infrastructure automation and the future of work.
+last_verified: 2026-10
 review:
-  - desc
+  - hq
 programs:
-  - id: scaleup-ventures-program
-    name: ScaleUp Ventures
+  - id: scaleup-ventures-investment
+    name: Scale Up Ventures
     url: https://www.scaleupvc.com/
     types:
       - investment
@@ -28,13 +28,9 @@ programs:
       - operate
     audiences:
       - founders
+    founder_receives:
+      - investment
     access: invite
-    fee: free
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
       - open_to
