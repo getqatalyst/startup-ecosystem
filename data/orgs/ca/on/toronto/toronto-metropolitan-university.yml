@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: toronto-metropolitan-university
 name: Toronto Metropolitan University (TMU)
 aliases:
@@ -14,26 +12,36 @@ hq:
   area: Downtown
   lat: 43.6577
   lng: -79.3788
-desc: Formerly Ryerson. Major hub for design, media, business, and entrepreneurship (DMZ, Zone Learning network).
+desc: Downtown Toronto university whose Zone Learning network of industry-focused incubators, including the DMZ, supports students and community founders from first idea to growing ventures.
+last_verified: 2026-10
 programs:
-  - id: toronto-metropolitan-university-program
-    name: Toronto Metropolitan University (TMU)
-    url: https://www.torontomu.ca/
+  - id: toronto-metropolitan-university-zone-learning
+    name: Zone Learning
+    url: https://www.torontomu.ca/zone-learning/zones/
     types:
-      - community
+      - incubator
+      - mentorship
+      - coworking
     stages:
       - spark
       - validate
+      - build
+    stage_basis: "an accessible first step for early-stage startups and entrepreneurs, as well as support for the growth of their ventures"
+    audiences:
+      - founders
+      - aspiring
+    access: application
+  - id: toronto-metropolitan-university-startup-school
+    name: Startup School
+    url: https://www.torontomu.ca/zone-learning/startup-school/
+    types:
+      - course
+    stages:
+      - spark
+      - validate
+    stage_basis: "fundamental entrepreneurial education to aspiring and emerging entrepreneurs alike"
     audiences:
       - aspiring
       - founders
-    access: institutional
-    fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    fee: free
+    access: open

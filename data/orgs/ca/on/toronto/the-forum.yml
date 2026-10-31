@@ -1,38 +1,177 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: the-forum
 name: The Forum
-url: https://theforum.ca/
+url: https://www.theforum.ca/
 hosts:
   - theforum.ca
+  - www.theforum.ca
+  - www.theforumpitch.ca
 cats:
-  - accelerator
+  - community
 hq:
   city: ca-on-toronto
-desc: National non-profit accelerating women, non-binary, and Two-Spirit entrepreneurs. Delivered across Canada.
+desc: National charity offering mentorship, education programs, a pitch program and a peer community to self-identifying women, non-binary and trans-femme entrepreneurs across Canada.
+last_verified: 2026-10
 review:
-  - desc
   - hq
 programs:
-  - id: the-forum-program
-    name: The Forum
-    url: https://theforum.ca/
+  - id: the-forum-mentor-program
+    name: The Forum Mentor Program
+    url: https://www.theforum.ca/mentor-program
     types:
-      - accelerator
+      - mentorship
     stages:
       - validate
       - build
+      - operate
+      - scale
+    stage_basis: "The program is designed for entrepreneurs who are beyond the idea stage of their business and are dedicating their time towards launching, growthing, scaling, or exiting their business."
     audiences:
       - founders
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "You are eligible to register if you are a self-identifying women, non-binary, or trans-femme majority or equal stakeholder, (co)-founder, or (co)-owner actively leading a business operating in Canada; or an employee in line to lead the business who is currently a key decision maker."
+          source: https://www.theforum.ca/mentor-program
+      place:
+        residence:
+          - ca
+        quote: "You must also be a legal resident of Canada."
+    open_to:
+      - ca
+    delivery: hybrid
+    fee: fee
+    access: application
+    cadence:
+      - rolling
+    duration: 12 months
+    languages:
+      - en
+      - fr
+  - id: the-forum-pitch
+    name: The Odlum Brown Forum Pitch
+    aliases:
+      - The Forum Pitch
+    url: https://www.theforumpitch.ca/
+    types:
+      - competition
+      - mentorship
+    stages:
+      - build
+      - operate
+    stage_basis: "Ready to raise capital in the next 12 months."
+    audiences:
+      - founders
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "You're a Canadian self-identifying woman entrepreneur in any industry who is ready to raise capital in the next 12 months"
+          source: https://www.theforum.ca/programs
+    open_to:
+      - ca
+    founder_receives:
+      - prize
+    access: application
+    languages:
+      - en
+      - fr
+  - id: the-forum-e-series-growth
+    name: The Forum E-Series Growth
+    url: https://www.theforum.ca/eseries-growth
+    types:
+      - course
+      - mentorship
+    stages:
+      - operate
+    stage_basis: "E-Series Growth is designed for founders who are generating consistent revenue beyond $250K annually and are committed to continuing their growth beyond $1M in revenue."
+    audiences:
+      - founders
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "You are a self-identifying woman, non-binary or trans-femme majority or equal stakeholder, (co)-founder, or (co)-owner actively leading any industry-agnostic business operating in Canada, or an employee in line to lead the business who is currently a key decision maker."
+          source: https://www.theforum.ca/eseries-growth
+    open_to:
+      - ca
+    delivery: hybrid
+    fee: fee
+    access: application
+    cadence:
+      - cohort
+    duration: 12 weeks
+  - id: the-forum-200
+    name: Forum 200
+    url: https://www.theforum.ca/forum-200
+    types:
+      - community
+      - mentorship
+    stages:
+      - operate
+      - scale
+    stage_basis: "Generate $250K–$10M in annual revenue and lead a team of 2–50 employees or contractors"
+    audiences:
+      - founders
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "Forum 200 is for women entrepreneurs who have moved beyond early traction and are building the systems, team, and strategy to scale with intention."
+          source: https://www.theforum.ca/forum-200
     open_to:
       - ca
     access: application
+  - id: the-forum-business-finance-essentials
+    name: The Forum Business Finance Essentials
+    url: https://www.theforum.ca/business-finance-essentials
+    partners:
+      - org_name: TD Bank Group
+        role: funds
+      - org_name: The Finance Cafe
+        role: co-runs
+    types:
+      - course
+      - mentorship
+    stages:
+      - build
+      - operate
+    stage_basis: "Best suited to entrepreneurs whose businesses have been operating for at least one year."
+    audiences:
+      - founders
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "A self-identifying woman, non-binary, or trans-femme majority or equal stakeholder, (co-)founder, or (co-)owner actively leading a business operating in Canada;"
+          source: https://www.theforum.ca/business-finance-essentials
+    open_to:
+      - ca
+    delivery: remote
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: application
+    cadence:
+      - cohort
+  - id: the-forum-financial-fundamentals
+    name: Financial Fundamentals
+    url: https://www.theforum.ca/financial-fundamentals
+    types:
+      - course
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      who:
+        - group: women
+          requirement: required
+          quote: "This course is for self identified women entrepreneurs from anywhere in Canada, with any level of experience with business finances."
+          source: https://www.theforum.ca/financial-fundamentals
+    open_to:
+      - ca
+    delivery: remote
+    fee: free
+    access: open

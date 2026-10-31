@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: u-of-t-mississauga
 name: U of T Mississauga
 aliases:
@@ -15,28 +13,8 @@ hq:
   area: Mississauga
   lat: 43.5446
   lng: -79.6604
-desc: Western campus of U of T; home to the Innovation Complex, ICUBE, and SpinUp.
+desc: University of Toronto's Mississauga campus, home to the ICUBE incubator for social and early-stage ventures and the SpinUp wet-lab incubator for life-science startups.
 review:
-  - parent
-programs:
-  - id: u-of-t-mississauga-program
-    name: U of T Mississauga
-    url: https://www.utm.utoronto.ca/
-    types:
-      - community
-    stages:
-      - spark
-      - validate
-    audiences:
-      - aspiring
-      - founders
-    access: institutional
-    fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+  - hq
+last_verified: 2026-10
+programs: []

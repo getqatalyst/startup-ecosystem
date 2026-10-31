@@ -12,9 +12,7 @@ hq:
   area: Financial District
   lat: 43.6467
   lng: -79.3882
-desc: Regional FDI attraction agency for the Toronto Region; 225 King St W.
-review:
-  - desc
+desc: Investment-attraction agency that gives international companies complimentary advice and introductions to set up or expand their business in the Toronto Region.
 programs:
   - id: toronto-global-program
     name: Toronto Global

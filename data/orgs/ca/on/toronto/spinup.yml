@@ -1,42 +1,46 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: spinup
 name: SpinUp
+aliases:
+  - UT SpinUp Lab
 url: https://spinup.utm.utoronto.ca/
 hosts:
   - spinup.utm.utoronto.ca
-parent: u-of-t-mississauga
+parent: university-of-toronto
 cats:
-  - university
+  - incubator
+  - coworking
 hq:
   city: ca-on-toronto
   area: UTM Innovation Complex
   lat: 43.5446
   lng: -79.6604
   approx: true
-desc: U of T's first wet-lab startup incubator; subsidized lab space and equipment for early-stage biotech. Based at UTM.
-review:
-  - parent
-  - cats
+desc: University of Toronto's first wet lab incubator, giving early-stage life science startups subsidized wet lab and office space, shared equipment and entrepreneurship programming at U of T Mississauga.
+last_verified: 2026-10
 programs:
-  - id: spinup-program
-    name: SpinUp
-    url: https://spinup.utm.utoronto.ca/
+  - id: spinup-membership
+    name: SpinUp Membership
+    url: https://spinup.utm.utoronto.ca/become-a-member/
     types:
-      - community
+      - incubator
+      - coworking
     stages:
-      - spark
       - validate
+      - build
+      - operate
+    stage_basis: "are incorporated and are early-stage – up to and including seed-funded ventures"
     audiences:
-      - aspiring
       - founders
-    access: application
+    eligibility:
+      venture:
+        - gate: incorporated
+          quote: "are incorporated and are early-stage – up to and including seed-funded ventures"
+        - gate: sector
+          quote: "have demonstrated need of subsidized wet lab space"
+    delivery: in-person
     fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    equity: false
+    access: application
+    cadence:
+      - rolling
+    duration: 2 years

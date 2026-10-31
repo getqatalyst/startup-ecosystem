@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: sickkids-research-institute
 name: SickKids Research Institute
 aliases:
@@ -7,6 +5,7 @@ aliases:
 url: https://www.sickkids.ca/en/research/about-research-institute/
 hosts:
   - www.sickkids.ca/en/research
+  - ipc.sickkids.ca
 cats:
   - research-institute
 hq:
@@ -14,26 +13,73 @@ hq:
   area: Discovery District
   lat: 43.6573
   lng: -79.3829
-desc: Hospital-affiliated pediatric research institute; one of the largest in North America.
-review:
-  - cats
+desc: The research institute of The Hospital for Sick Children (SickKids), whose Industry Partnerships and Commercialization office helps SickKids researchers protect, fund and commercialize their health innovations, including through start-ups.
+last_verified: 2026-10
 programs:
-  - id: sickkids-research-institute-program
-    name: SickKids Research Institute
-    url: https://www.sickkids.ca/en/research/about-research-institute/
+  - id: sickkids-research-institute-ipc
+    name: Industry Partnerships & Commercialization (IP&C)
+    aliases:
+      - IP&C
+    url: https://ipc.sickkids.ca/innovators/working-with-ipc/
     types:
       - service
+      - mentorship
     stages:
-      - build
+      - spark
+      - validate
     audiences:
-      - founders
+      - aspiring
+    eligibility:
+      affiliation:
+        - org: sickkids-research-institute
+          role: affiliate
+          quote: "We help researchers at SickKids navigate commercialization pathways through tailored advice, contract negotiation, intellectual property protection, and more."
     access: institutional
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+  - id: sickkids-research-institute-proof-of-principle
+    name: Proof of Principle Grant Competition
+    aliases:
+      - PoP Grant Competition
+    url: https://ipc.sickkids.ca/proof-of-principle/
+    types:
+      - grant
+      - competition
+    stages:
+      - spark
+      - validate
+    stage_basis: "The proposed project should have fulfilled the requirements for Technology Readiness Level (TRL) 2."
+    audiences:
+      - aspiring
+    eligibility:
+      affiliation:
+        - org: sickkids-research-institute
+          role: affiliate
+          quote: "The Principal Applicant must hold a current SickKids appointment at one of the following levels:"
+      venture:
+        - gate: funding-raised
+          quote: "The proposed project must not already be supported by other PoP-type or industry funding."
+    founder_receives:
+      - grant
+    access: application
+    cadence:
+      - annual
+  - id: sickkids-research-institute-tap
+    name: Technology Advancement Program
+    aliases:
+      - TAP
+    url: https://ipc.sickkids.ca/technology-advancement-program/
+    types:
+      - grant
+      - mentorship
+    stages:
+      - validate
+    stage_basis: "The SickKids Technology Advancement Program (TAP) advances late-stage pre-clinical health care innovations through project funding, structured advice, project governance, and strategic networking opportunities."
+    audiences:
+      - aspiring
+    eligibility:
+      affiliation:
+        - org: sickkids-research-institute
+          role: affiliate
+          quote: "Internal Funding Opportunity"
+    founder_receives:
+      - grant
+    access: application

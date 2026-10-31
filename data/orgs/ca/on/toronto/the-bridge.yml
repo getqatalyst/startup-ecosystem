@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: the-bridge
 name: The BRIDGE
 aliases:
@@ -10,35 +8,43 @@ hosts:
 parent: u-of-t-scarborough
 cats:
   - university
+  - accelerator
 hq:
   city: ca-on-toronto
   area: UTSC
   lat: 43.7847
   lng: -79.1859
   approx: true
-desc: UTSC finance/analytics lab and work-integrated learning hub (Dept. of Management + UTSC Library).
-review:
-  - parent
-  - cats
+desc: U of T Scarborough's business research, data and entrepreneurship hub, run by the Department of Management and the UTSC Library, offering students the New Venture Program, research support and work-integrated learning.
+last_verified: 2026-10
 programs:
-  - id: the-bridge-program
-    name: The BRIDGE
-    url: https://www.utsc.utoronto.ca/thebridge/
+  - id: the-bridge-new-venture-program
+    name: New Venture Program
+    aliases:
+      - NVP
+    url: https://www.utsc.utoronto.ca/thebridge/new-venture-program
     types:
-      - community
+      - course
+      - mentorship
     stages:
       - spark
       - validate
+      - build
+    stage_basis: "Current state of the business: Concept under development, Initial business plan complete, Prototype complete, Initial product complete, or Generating revenue."
     audiences:
       - aspiring
       - founders
-    access: institutional
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: application
+  - id: the-bridge-open-learning-series
+    name: Entrepreneurship Open Learning Series
+    url: https://www.utsc.utoronto.ca/thebridge/entrepreneurship-open-learning-series
+    types:
+      - course
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - global
+    access: open
