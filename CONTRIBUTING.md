@@ -42,7 +42,12 @@ bun install
 bun run validate   # schema and cross-file rules
 bun test
 bun run build      # writes dist/ecosystem.json
+bun run linkcheck  # dead, parked, hijacked and redirected links (fetches every URL)
+bun run freshness  # records not verified in the last 12 months
 ```
+
+On the 1st of each month a workflow runs both and keeps one issue per province or state
+(label `health`) listing the links to fix and that month's verification queue.
 
 ## How the data reaches a site
 

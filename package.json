@@ -6,7 +6,10 @@
 		"validate": "bun scripts/validate.ts",
 		"build": "bun scripts/build.ts",
 		"test": "bun test",
-		"lint": "biome check ."
+		"lint": "biome check .",
+		"linkcheck": "bun scripts/linkcheck.ts",
+		"freshness": "bun scripts/freshness.ts",
+		"health": "bun scripts/health.ts"
 	},
 	"dependencies": {
 		"ajv": "8.20.0",
