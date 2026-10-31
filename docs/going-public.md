@@ -1,12 +1,12 @@
 # Going public: checklist
 
 **Bottom line:** the history has no secrets and no personal data beyond the commit author
-email you already chose to keep. Before flipping visibility, do steps 1–4 below (merge the
-open PRs, decide on 40 descriptions that break the content rules, turn on the `main` ruleset,
-create the labels). Flip in step 5, then do step 6 the same day. Organizations can't claim
-records until the gap in step 8 is closed.
+email you already chose to keep. `main` protection is already on (step 3). Before flipping
+visibility, do steps 1, 2 and 4 (merge the open PRs, decide on 40 descriptions that break the
+content rules, create the labels) and the merge settings in step 3. Flip in step 5, then do
+step 6 the same day. Organizations can't claim records until the gap in step 8 is closed.
 
-Everything here is a proposal: each command changes a repo or org setting, so you run it.
+Except the protection already on (step 3), everything here is a proposal: each command changes a repo or org setting, so you run it.
 Commands assume `gh` logged in as an org owner and `REPO=getqatalyst/startup-ecosystem`.
 
 ```bash
@@ -46,52 +46,34 @@ git grep -nE '^desc:.*([0-9]+ [A-Z][a-z]+( [A-Z][a-z]+)? (St|Ave|Rd)|[0-9]+ (Spa
 A validator warning for digits and `$` in `desc` would stop new ones; that is a
 `contract-change:` PR to `scripts/validate.ts`.
 
-## 3. Protect `main` (works while private; the org is on the Team plan)
+## 3. `main` protection: done 2026-10-31; tighten before outside moderators get write
 
-`main` has no protection today: anyone with write access can push to it or force-push.
-Proposed ruleset: pull requests only, squash merge, 1 approval from a code owner, the
-`validate` check (job `validate` in `.github/workflows/validate.yml`) must pass, no force
-pushes or deletion. Repo admins may bypass through a pull request, so you can merge your own
-PRs while you're the only code owner (GitHub never lets a PR's author approve it).
+Branch protection on `main` is on, applied at David's request:
+
+| Setting | Value |
+| --- | --- |
+| Pull request required | yes, 0 approvals |
+| Required status check | `validate` (job `validate` in `.github/workflows/validate.yml`), not strict: the branch needn't be up to date with `main` |
+| Force pushes | blocked |
+| Deletion | blocked |
+| Enforce for admins | no: admins can bypass |
+
+Check it: `gh api "repos/$REPO/branches/main/protection"`.
+
+**Later, before anyone outside Qatalyst gets write access** (step 4), and once a moderator team
+has 2+ people: require one code-owner approval. With 0 approvals, anyone with write can merge
+any PR that passes `validate`, including changes to `scripts/` and `.github/`. Admins stay
+unenforced, so you can still merge your own PRs (GitHub never lets a PR's author approve it).
 
 ```bash
-gh api -X POST "repos/$REPO/rulesets" --input - <<'EOF'
-{
-  "name": "main",
-  "target": "branch",
-  "enforcement": "active",
-  "conditions": { "ref_name": { "include": ["~DEFAULT_BRANCH"], "exclude": [] } },
-  "bypass_actors": [
-    { "actor_id": 5, "actor_type": "RepositoryRole", "bypass_mode": "pull_request" }
-  ],
-  "rules": [
-    { "type": "deletion" },
-    { "type": "non_fast_forward" },
-    {
-      "type": "pull_request",
-      "parameters": {
-        "required_approving_review_count": 1,
-        "require_code_owner_review": true,
-        "dismiss_stale_reviews_on_push": true,
-        "require_last_push_approval": true,
-        "required_review_thread_resolution": true,
-        "allowed_merge_methods": ["squash"]
-      }
-    },
-    {
-      "type": "required_status_checks",
-      "parameters": {
-        "strict_required_status_checks_policy": false,
-        "required_status_checks": [{ "context": "validate", "integration_id": 15368 }]
-      }
-    }
-  ]
-}
-EOF
+gh api -X PATCH "repos/$REPO/branches/main/protection/required_pull_request_reviews" \
+  -F required_approving_review_count=1 -F require_code_owner_reviews=true -F dismiss_stale_reviews=true
 ```
 
-(`actor_id 5` is the Admin role; `integration_id 15368` is GitHub Actions.) Then the merge
-settings:
+Optional: strict checks (a PR must be up to date with `main` before it merges), at the cost of
+more rebasing: `gh api -X PATCH "repos/$REPO/branches/main/protection/required_status_checks" -F strict=true`.
+
+Merge settings (proposed):
 
 ```bash
 gh repo edit "$REPO" --enable-squash-merge --enable-merge-commit=false \
@@ -122,8 +104,8 @@ Workflow token default is already read-only and Actions can't approve PRs; keep 
    Teams hold org members only, and org members are paid seats on the Team plan. A moderator
    from outside Qatalyst can instead be an outside collaborator with Write on this repo,
    listed by handle in CODEOWNERS; on a public repo that needs no seat (check the billing
-   page before inviting). Write access is safe only with the ruleset from step 3: without it,
-   a moderator can push straight to `main`.
+   page before inviting). Before inviting one, require code-owner approval (step 3, "Later"): today
+   protection blocks direct pushes to `main` but any writer can merge a passing PR.
 3. Then replace `.github/CODEOWNERS` (a PR; core reviews it):
 
    ```text
@@ -245,8 +227,8 @@ At go-public time:
 
 1. **Who reviews what:** replace "the core maintainer" with the team names from step 4, and
    say how to become a regional moderator (who to ask, what they review).
-2. **Merging:** pull requests need one code owner's approval and a passing `validate` check;
-   squash merge only.
+2. **Merging:** pull requests need a passing `validate` check (and one code owner's approval
+   once step 3's later change is on); squash merge only.
 3. **Organizations managing their own records (planned):** add that a claim needs the org's
    host to pass the link check, and that a claim is suspended when the monthly check flags
    the host (step 8). Keep "planned" until step 8 is built.
