@@ -1,211 +1,148 @@
-# TOA judge demo: the four-minute core and five-minute walkthrough
+# Open Startup Ecosystem: five-minute product walkthrough
 
-The official [TOA event brief](https://the-open-accelerator.com/hackathon/upcoming/Chart-the-Common-Wealth/)
-sets a **four-minute hard cut**, followed by two minutes of questions. This walkthrough has a
-complete ending at 4:00 and one optional minute for a longer rehearsal or non-competition
-walkthrough.
+This is a complete five-minute walkthrough of the problem, the working product, the trust model,
+and the next product priority. It uses two verified Boston examples: Harvard Innovation Labs and
+The Open Accelerator's Residency.
 
 ## The one sentence to remember
 
 > Founders do not apply to organizations; they apply to programs. We turned two regional
-> directories into one open, tested dataset of 237 organizations and 350 programs, without
+> directories into one open, tested dataset of 237 organizations and 352 programs, without
 > letting an unverified guess look like a fact.
 
 ## Before presenting
 
-Open these in order and preload every page:
+Open these pages and files in order:
 
-1. [Ecosystem landing page](https://getqatalyst.com/ecosystem/)
-2. [Toronto map](https://getqatalyst.com/ecosystem/ca/on/toronto/)
-3. [DMZ detail page](https://getqatalyst.com/ecosystem/org/dmz/)
-4. [DMZ Validator official source](https://dmz.torontomu.ca/validator)
-5. [MassChallenge detail page](https://getqatalyst.com/ecosystem/org/masschallenge/)
+1. [Massachusetts ecosystem map](https://getqatalyst.com/ecosystem/us/ma/)
+2. [Harvard Innovation Labs record](../data/orgs/us/ma/boston/harvard-innovation-labs.yml)
+3. [Harvard Student i-lab](https://innovationlabs.harvard.edu/labs/student-i-lab)
+4. [The Open Accelerator record](../data/orgs/us/ma/boston/the-open-accelerator.yml)
+5. [The Residency](https://the-open-accelerator.com/residency/)
+6. A large-font terminal in the repository root
 
-In the editor, open:
+Run `bun run build` once before the walkthrough so dependencies and caches are warm. Keep the
+terminal clear, notifications off, and browser zoom near 125%.
 
-- `data/orgs/ca/on/toronto/dmz.yml`
-- `data/orgs/us/ma/boston/masschallenge.yml`
+## 0:00–0:40 — Start with the founder's problem
 
-In a large-font terminal, start in the repository root. Run `bun run build` once before the
-demo so dependencies and caches are warm. Keep the terminal clear, notifications off and browser
-zoom near 125%.
-
-## 0:00–0:30 — Start with the founder, not the schema
-
-**Show:** the ecosystem landing page.
+**Show:** the Massachusetts ecosystem map.
 
 **Say:**
 
 > A founder does not wake up wanting a directory. They want to know: what can I apply to, am I
-> eligible, and can I trust the answer? Existing maps are good at showing organizations. But an
-> organization can run five programs with different stages, audiences and rules. Founders do not
-> apply to organizations; they apply to programs.
+> eligible, and can I trust the answer? Most ecosystem maps show organizations as pins. But one
+> organization can run several programs with different stages, audiences, costs, and rules.
+> Founders do not apply to organizations; they apply to programs.
 
-Do not explain the tech stack yet.
+> We started with two useful but separate regional sources—the Toronto ecosystem directory and
+> the Mass AI Atlas—and turned them into one open, tested program directory.
 
-## 0:30–1:10 — Show the result first
+## 0:40–1:35 — Show why program-level detail matters
 
-**Show:** Toronto map → DMZ detail page.
-
-**Say:**
-
-> This is one live consumer of our data. Toronto and Massachusetts now come from the same open
-> contract. On DMZ, we do not stop at one pin. We can distinguish its Incubator, Pre-Incubator,
-> Validator and Launchpad—and tell a founder which one fits.
-
-Point briefly at the individual programs. Do not read every field.
-
-## 1:10–2:00 — Click a source and expose the trust model
-
-**Show:** `dmz.yml`, around `dmz-validator`.
-
-Point to:
-
-- `last_verified: 2026-10`
-- the program's `stages` and `audiences`
-- the identity eligibility `quote` and `source`
-- `open_to`, which is separate from `hq`
-
-Then click the official DMZ Validator source.
+**Show:** `harvard-innovation-labs.yml`, then the official Student i-lab page.
 
 **Say:**
 
-> Every program links back to its official page. For sensitive identity eligibility, the data
-> contract requires the program's own words and the exact source. We also separate where an
-> organization is based from who can apply. That is why a Toronto program can still be relevant
-> to a founder looking from somewhere else.
+> Harvard Innovation Labs is one organization, but it is not one opportunity. Our record now
+> distinguishes three paths. Student i-lab Membership is for current Harvard students and
+> fellows exploring, testing, or growing an idea. Launch Lab X is for Harvard alumni founders
+> with pre-seed or seed ventures working toward product-market fit. The Pagliuca Harvard Life Lab
+> is an in-person wet-lab and coworking program for Harvard-affiliated life-science ventures.
 
-Pause on the source long enough for a judge to see that the quote is real.
+> Those differences—audience, affiliation, stage, sector, delivery, and access—determine whether
+> a founder should spend time applying. Every program links back to its official source and shows
+> when it was last verified.
 
-## 2:00–2:45 — Show what the system refuses to claim
+Point briefly to `audiences`, `eligibility`, `delivery`, and `last_verified`. Do not read every
+field.
 
-**Show:** `masschallenge.yml`, especially `review:`.
+## 1:35–2:20 — Show a second, very different Boston program
+
+**Show:** `the-open-accelerator.yml`, then the official Residency page.
 
 **Say:**
 
-> This Massachusetts record came from the Mass AI Atlas with attribution. We have not yet
-> verified its program fields to the Toronto standard, so the guesses are explicitly listed
-> under review. The generated program detail does not promote those guesses as facts. Honest
-> incompleteness is better than confident fiction.
+> The Open Accelerator's Residency demonstrates why a generic accelerator label is not enough.
+> It is a 16-week, in-person program in Boston for founders building AI products or AI-native
+> services. Teams can apply globally, but accepted founders commit to a Massachusetts presence.
+> The program is free, takes no equity, and expects in-person participation four days a week.
+
+> That is actionable information. A founder can quickly decide whether the program matches their
+> sector, stage, geography, and availability before leaving for the official application page.
+
+## 2:20–3:05 — Explain how the information stays trustworthy
+
+**Show:** either YAML record and its official source side by side.
+
+**Say:**
+
+> The source of truth is structured YAML in a public repository. The schema gives every program
+> the same vocabulary for stage, audience, eligibility, location, fee, equity, and delivery.
+> `last_verified` records freshness. Anything not confirmed stays under `review` and is not
+> promoted as a fact on generated program details.
+
+> Automated checks reject unknown fields, duplicate ids and hosts, broken references, impossible
+> coordinates, and invalid variants. Automation can propose and check a change, but a maintainer
+> still controls publication.
 
 Run:
 
 ```bash
-bun test tests/validate.test.ts -t "unknown field"
+bun run validate
 ```
 
-**Say:**
+The current result should report 237 organizations, 352 programs, and zero validation errors.
 
-> This is one refusal test: an undeclared field is rejected. The full validator also catches
-> duplicate ids and hosts, broken references, impossible coordinates and invalid program
-> variants. Automation proposes and checks; a maintainer remains the publishing gate.
+## 3:05–4:10 — Present the maintenance model honestly
 
-If a judge asks for a different refusal, use the tests for an unknown category, HTML in a text
-field, a duplicate id or a future verification date.
-
-## 2:45–3:30 — Put the measured result on screen
-
-Run:
-
-```bash
-bun run build
-```
-
-The last line should report:
-
-```text
-237 orgs, 350 programs
-```
+**Show:** a simple claim flow or return to the organization record.
 
 **Say:**
 
-> Our before state was two regional sources with no shared program-level output. The same build
-> now produces 237 organizations and 350 programs under one validator. The repository has 119
-> automated tests and publishes versioned JSON and CSV on every merge.
+> The remaining problem is maintenance. A public directory cannot depend on one central team to
+> notice every new cohort, eligibility change, or expired link. Our next priority is a Wikipedia-
+> style contribution model with stronger accountability for organization operators.
 
-This is the number to repeat if asked which probe moved: **no shared program dataset to 350
-schema-valid program records**.
+> A program owner starts with “Claim this organization.” We verify their identity and relationship
+> to the organization, then authorize them to propose structured edits to the programs they
+> manage. The same schema and validator check those edits. Every change remains attributed,
+> reviewable, and reversible before it is published.
 
-## 3:30–4:00 — Close on the durable value
+> That makes the directory friendly to both people and agents: contributors update a predictable
+> structure, automated tools can suggest changes with sources, and permissions plus human review
+> prevent an agent from silently rewriting the public record.
 
-**Show:** the ecosystem landing page again, with Toronto and Massachusetts together.
+Be explicit that organization claiming and self-service editing are the next product priority,
+not a finished feature.
 
-**Say:**
+## 4:10–5:00 — Close on the durable value
 
-> The unusual part is not another scraper or another map. It is the combination of program-level
-> actionability, geographic reach and explicit uncertainty. Correct a source record once, and
-> the release, maps and organization pages rebuild from it. The data is CC BY, the code is MIT,
-> and the next region does not need to start from another spreadsheet.
-
-> We are building public infrastructure for the question every founder asks: what is my next
-> credible step?
-
-Stop here for the official four-minute demo.
-
-## 4:00–5:00 — Optional deeper walkthrough
-
-Use this minute only when the format actually allows five minutes.
-
-**Show:** Massachusetts map, then search for DMZ or Creative Destruction Lab.
+**Show:** the map and one of the two program records.
 
 **Say:**
 
-> Reach and location are different. The Massachusetts view can include organizations based
-> elsewhere when a real program is open to founders there. That is a small modeling choice with a
-> large product consequence: the map follows the founder's opportunity, not only the office
-> address.
+> The working foundation is already here: 237 organizations, 352 programs, official sources,
+> explicit review state, 119 automated tests, and reproducible JSON and CSV outputs. Harvard
+> Innovation Labs and The Residency show the level of detail a founder actually needs.
 
-Then show the latest GitHub release and its JSON/CSV downloads:
+> The next step is not to add more prose by hand. It is to let verified program operators keep
+> this structured public resource current, with attribution, validation, and review built in.
+> That is how a regional map becomes durable infrastructure for finding a founder's next credible
+> step.
 
-> The website is only one consumer. Anyone can download the same versioned data, audit it, or
-> build a different experience without scraping us.
+## Evidence used in the walkthrough
 
-## Likely judge questions
-
-### “Run it again on this one I picked.”
-
-Open the judge's chosen organization page, find its YAML by id, click its official URL and point
-out either `last_verified` or `review`. Do not pretend an imported Massachusetts program is
-verified. That honesty is part of the demo.
-
-### “Click a source. Any source.”
-
-Use a verified Toronto program. DMZ Validator is the cleanest example because the eligibility
-quote and source are adjacent in the YAML.
-
-### “What is innovative?”
-
-> Most ecosystem data models make the organization the unit and geography the filter. We make the
-> program the actionable unit, model reach separately from headquarters, and carry uncertainty
-> through the build so a consumer cannot accidentally turn a guess into a fact.
-
-### “What did you automate?”
-
-> Imports produce the same YAML contract; validation checks both schema and cross-record rules;
-> the build resolves variants and defaults; export publishes JSON and CSV; the site generator
-> turns the result into regional maps and organization pages.
-
-### “Why are there validator warnings?”
-
-> The current warnings identify programs with broad regional, national or global reach. They are
-> review prompts for a core maintainer, not ignored errors. The build has zero validation errors.
-
-### “What is unfinished?”
-
-> Toronto has deep program verification. The Massachusetts import is intentionally marked for
-> review. Next we verify those programs, add safe organization claims and build a founder intake
-> that matches needs to programs.
-
-### “Could the pipeline publish bad data automatically?”
-
-> No. Validation can refuse a change, but only a maintainer can merge and publish it. The human
-> gate is part of the product, not a temporary limitation.
+- [Harvard Innovation Labs](https://innovationlabs.harvard.edu/)
+- [Student i-lab Membership](https://innovationlabs.harvard.edu/labs/student-i-lab)
+- [Launch Lab X application](https://innovationlabs.harvard.edu/labs/alumni-launch-lab/application)
+- [Pagliuca Harvard Life Lab](https://innovationlabs.harvard.edu/labs/pagliuca-harvard-life-lab)
+- [The Open Accelerator Residency](https://the-open-accelerator.com/residency/)
 
 ## Delivery notes
 
-- Say “official source,” “under review,” and “human gate” at least once.
-- Say **237 organizations, 350 programs, 119 tests** only once each; let the terminal prove them.
-- Never call a Massachusetts program verified unless its record says so.
-- Prefer one complete founder story over a tour of every feature.
-- At 3:30, move to the closing regardless of where you are. A clean ending scores better than one
-  more technical detail.
+- Say “official source,” “under review,” and “human review” at least once.
+- Distinguish clearly between the working data pipeline and the proposed claim workflow.
+- Let the terminal prove the totals; do not spend time reading validation warnings.
+- Prefer one complete founder decision over a tour of every field.
+- At 4:10, move to the close even if an earlier segment ran long.
