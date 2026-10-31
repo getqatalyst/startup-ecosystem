@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: iaifi
+name: IAIFI (NSF AI + Physics Institute)
+url: https://iaifi.org/
+hosts:
+  - iaifi.org
+cats:
+  - university
+hq:
+  city: us-ma-cambridge
+  lat: 42.3601
+  lng: -71.0942
+  approx: true
+desc: NSF AI institute for AI and physics, anchored in MIT's Laboratory for Nuclear Science with Harvard, Northeastern, Tufts and Boston University. Runs a public colloquium series, an application-only PhD summer school and a workshop with open registration.
+review:
+  - desc
+programs:
+  - id: iaifi-program
+    name: IAIFI (NSF AI + Physics Institute)
+    url: https://iaifi.org/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

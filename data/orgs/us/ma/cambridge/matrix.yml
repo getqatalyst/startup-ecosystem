@@ -1,0 +1,38 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: matrix
+name: Matrix (fka Matrix Partners)
+url: https://matrix.vc/
+hosts:
+  - matrix.vc
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+desc: Early-stage VC with deep Boston roots — among the region's most established firms for seed and Series A.
+review:
+  - hq
+programs:
+  - id: matrix-program
+    name: Matrix (fka Matrix Partners)
+    url: https://matrix.vc/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

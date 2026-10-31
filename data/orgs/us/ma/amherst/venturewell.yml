@@ -1,0 +1,44 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: venturewell
+name: VentureWell
+url: https://venturewell.org/
+hosts:
+  - venturewell.org
+cats:
+  - accelerator
+hq:
+  city: us-ma-amherst
+  lat: 42.3811
+  lng: -72.519
+desc: "Nonprofit in Amherst that funds and trains science and engineering founders: E-Team grants for US student invention teams, and Aspire and Ascend investor-readiness programs for pre-seed and seed startups nationwide."
+review:
+  - cats
+  - desc
+programs:
+  - id: venturewell-program
+    name: VentureWell
+    url: https://venturewell.org/
+    types:
+      - accelerator
+      - grant
+      - mentorship
+      - community
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

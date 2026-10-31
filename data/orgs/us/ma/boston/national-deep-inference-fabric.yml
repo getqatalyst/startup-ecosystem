@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: national-deep-inference-fabric
+name: National Deep Inference Fabric (Northeastern)
+url: https://ndif.us
+hosts:
+  - ndif.us
+cats:
+  - university
+hq:
+  city: us-ma-boston
+  lat: 42.3449
+  lng: -71.0854
+  approx: true
+desc: NSF-funded research computing project at Northeastern's Khoury College that gives free remote access to large open-weight models, plus the open-source NNsight library for inspecting and editing model internals.
+review:
+  - desc
+programs:
+  - id: national-deep-inference-fabric-program
+    name: National Deep Inference Fabric (Northeastern)
+    url: https://ndif.us
+    types:
+      - community
+      - service
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

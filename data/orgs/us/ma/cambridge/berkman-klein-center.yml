@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: berkman-klein-center
+name: Berkman Klein Center
+url: https://cyber.harvard.edu
+hosts:
+  - cyber.harvard.edu
+cats:
+  - university
+hq:
+  city: us-ma-cambridge
+  lat: 42.3782
+  lng: -71.1191
+desc: Harvard's center for internet & society — a leading voice on AI governance, ethics and policy.
+programs:
+  - id: berkman-klein-center-program
+    name: Berkman Klein Center
+    url: https://cyber.harvard.edu
+    types:
+      - community
+    stages:
+      - spark
+      - operate
+      - scale
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

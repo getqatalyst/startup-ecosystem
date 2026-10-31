@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: ontario-centre-of-innovation
 name: Ontario Centre of Innovation (OCI)
 aliases:
@@ -8,17 +6,116 @@ url: https://www.oc-innovation.ca/
 hosts:
   - www.oc-innovation.ca
 cats:
-  - government
+  - funder
 hq:
   city: ca-on-toronto
   area: MaRS Centre
   lat: 43.6596
   lng: -79.3886
-desc: Provincial agency funding R&D commercialization and industry-academic collaboration.
+desc: Ontario-government-funded organization that connects Ontario innovators with researchers, industry partners and funding, including pre-seed co-investment funds, to commercialize made-in-Ontario technology.
+last_verified: 2026-10
 programs:
-  - id: ontario-centre-of-innovation-program
-    name: Ontario Centre of Innovation (OCI)
-    url: https://www.oc-innovation.ca/
+  - id: ontario-centre-of-innovation-ready-4-market
+    name: Ready 4 Market
+    aliases:
+      - R4M
+    url: https://www.oc-innovation.ca/programs/ready-4-market/
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    stage_basis: "Ontario-based early-stage technology companies that are raising pre-seed and seed investment rounds."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: An Ontario university, college or research hospital
+          role: affiliate
+          quote: "Intellectual Property from an Ontario-based academic institution or part of a Campus Incubator/accelerator at Academic Institutes (Companies with their team /IP origins at a university (“university spin-out”), college or research hospital are also eligible, even if not campus affiliated.)"
+      place:
+        incorporation:
+          - ca
+        quote: "Incorporated for no more than five years (Ontario or Canadian for-profit incorporation) and have principal operations in Ontario."
+      venture:
+        - gate: business-age
+          quote: "Incorporated for no more than five years (Ontario or Canadian for-profit incorporation) and have principal operations in Ontario."
+        - gate: funding-raised
+          quote: "Companies that have raised less than $1 million in third-party capital are eligible for their first R4M investment."
+      venture_type:
+        - for-profit
+    open_to:
+      - ca-on
+    founder_receives:
+      - investment
+    access: application
+  - id: ontario-centre-of-innovation-life-sciences-innovation-fund
+    name: Life Sciences Innovation Fund
+    aliases:
+      - LSIF
+    url: https://www.oc-innovation.ca/programs/life-sciences-innovation-fund/
+    types:
+      - investment
+    stages:
+      - validate
+      - build
+      - operate
+    stage_basis: "Currently raising a pre-seed or seed investments"
+    audiences:
+      - founders
+    eligibility:
+      place:
+        incorporation:
+          - ca
+        quote: "Are Ontario or Canadian incorporated for-profit companies headquartered in Ontario"
+      venture:
+        - gate: sector
+          quote: "Best suited for life sciences and healthcare technologies companies related to human health that:"
+        - gate: funding-raised
+          quote: "Have raised less than $3 million in third-party capital"
+      venture_type:
+        - for-profit
+    open_to:
+      - ca-on
+    founder_receives:
+      - investment
+    access: application
+  - id: ontario-centre-of-innovation-collaborate-2-commercialize
+    name: Collaborate 2 Commercialize
+    aliases:
+      - C2C
+    url: https://www.oc-innovation.ca/programs/collaborate-2-commercialize/
+    partners:
+      - org_name: Natural Sciences and Engineering Research Council (NSERC)
+        role: funds
+    types:
+      - grant
+    stages:
+      - build
+      - operate
+    stage_basis: "Incorporated in Ontario for a minimum of two years, and five full-time equivalent (FTE) employees in Ontario"
+    audiences:
+      - founders
+    eligibility:
+      place:
+        incorporation:
+          - ca-on
+        quote: "Incorporated in Ontario for a minimum of two years, and five full-time equivalent (FTE) employees in Ontario"
+      venture:
+        - gate: business-age
+          quote: "Incorporated in Ontario for a minimum of two years, and five full-time equivalent (FTE) employees in Ontario"
+        - gate: team
+          quote: "Incorporated in Ontario for a minimum of two years, and five full-time equivalent (FTE) employees in Ontario"
+    open_to:
+      - ca-on
+    access: application
+    review:
+      - founder_receives
+  - id: ontario-vehicle-innovation-network
+    name: Ontario Vehicle Innovation Network (OVIN)
+    aliases:
+      - OVIN
+    url: https://www.oc-innovation.ca/programs/ontario-vehicle-innovation-network-ovin/
     types:
       - grant
     stages:
@@ -26,13 +123,13 @@ programs:
       - operate
     audiences:
       - founders
-    access: membership
-    fee: free
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "Each OVIN program supports the development and demonstration of automotive technologies and mobility solutions such as connected, autonomous, electric, and smart mobility technologies."
+    open_to:
+      - ca-on
+    access: application
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
       - open_to

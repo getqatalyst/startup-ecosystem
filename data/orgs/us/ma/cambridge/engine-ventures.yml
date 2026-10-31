@@ -1,0 +1,38 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: engine-ventures
+name: Engine Ventures
+url: https://engineventures.com
+hosts:
+  - engineventures.com
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  lat: 42.3638
+  lng: -71.0975
+desc: The MIT-spun fund investing in 'tough tech' — fusion, robotics, AI for the physical world.
+programs:
+  - id: engine-ventures-program
+    name: Engine Ventures
+    url: https://engineventures.com
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

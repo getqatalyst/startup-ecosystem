@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: paul-english-applied-ai-institute
+name: Paul English Applied AI Institute (UMass Boston)
+url: https://ai.umb.edu/
+hosts:
+  - ai.umb.edu
+cats:
+  - university
+hq:
+  city: us-ma-boston
+  area: Dorchester
+  lat: 42.3134
+  lng: -71.0354
+  approx: true
+desc: UMass Boston's cross-campus applied-AI institute. Runs a speaker series, student-run AI workshops, a hackathon-and-symposium and a paid summer AI camp through the colleges on the Dorchester campus.
+review:
+  - desc
+programs:
+  - id: paul-english-applied-ai-institute-program
+    name: Paul English Applied AI Institute (UMass Boston)
+    url: https://ai.umb.edu/
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

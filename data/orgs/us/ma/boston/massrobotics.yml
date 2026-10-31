@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: massrobotics
+name: MassRobotics
+url: https://www.massrobotics.org
+hosts:
+  - www.massrobotics.org
+cats:
+  - accelerator
+hq:
+  city: us-ma-boston
+  area: Seaport
+  lat: 42.345
+  lng: -71.0454
+desc: "The world's largest independent robotics innovation hub: shared labs, test space and corporate partners for robotics & physical-AI startups."
+review:
+  - cats
+programs:
+  - id: massrobotics-program
+    name: MassRobotics
+    url: https://www.massrobotics.org
+    types:
+      - accelerator
+      - coworking
+      - service
+      - community
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

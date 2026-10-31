@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: massachusetts-clean-energy-center
+name: Massachusetts Clean Energy Center
+url: https://www.masscec.com
+hosts:
+  - www.masscec.com
+cats:
+  - government
+hq:
+  city: us-ma-boston
+  lat: 42.3573
+  lng: -71.0582
+desc: The Commonwealth's quasi-public climatetech agency — non-dilutive Catalyst grants up to $75K, InnovateMass demonstration grants up to $350K and CriticalMass awards up to $1M, plus equity investments and pilot support.
+review:
+  - desc
+programs:
+  - id: massachusetts-clean-energy-center-program
+    name: Massachusetts Clean Energy Center
+    url: https://www.masscec.com
+    types:
+      - grant
+      - service
+      - investment
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

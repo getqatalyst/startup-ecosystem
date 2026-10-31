@@ -1,0 +1,37 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: mit-media-lab
+name: MIT Media Lab
+url: https://www.media.mit.edu
+hosts:
+  - www.media.mit.edu
+cats:
+  - university
+hq:
+  city: us-ma-cambridge
+  lat: 42.3606
+  lng: -71.0873
+desc: MIT's antidisciplinary lab mixing AI with design, health, music and society. Hosts major AI gatherings including Imagination in Action.
+programs:
+  - id: mit-media-lab-program
+    name: MIT Media Lab
+    url: https://www.media.mit.edu
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

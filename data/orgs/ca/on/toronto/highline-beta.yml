@@ -1,38 +1,36 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: highline-beta
 name: Highline Beta
 aliases:
   - Highline
-url: https://highlinebeta.com/
+url: https://www.highlinebeta.com/
 hosts:
   - highlinebeta.com
+  - www.highlinebeta.com
 cats:
-  - accelerator
+  - vc
+  - service-provider
 hq:
   city: ca-on-toronto
   area: Financial District
   lat: 43.651
   lng: -79.3815
-desc: Venture studio building startups with corporate partners.
+desc: Corporate venture studio and pre-seed VC that builds and funds startups with corporate partners and family offices, investing only in startups built through its studio.
+last_verified: 2026-10
 programs:
-  - id: highline-beta-program
-    name: Highline Beta
-    url: https://highlinebeta.com/
+  - id: highline-beta-venture-capital
+    name: Highline Beta Venture Capital
+    url: https://www.highlinebeta.com/venture-capital
     types:
-      - accelerator
+      - investment
     stages:
       - validate
       - build
+    stage_basis: "We thrive at the earliest stages, writing the first institutional venture capital check."
     audiences:
       - founders
+    founder_receives:
+      - investment
+    equity: true
     access: invite
-    fee: free
     review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
       - open_to

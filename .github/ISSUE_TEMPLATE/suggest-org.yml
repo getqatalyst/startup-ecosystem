@@ -1,0 +1,94 @@
+# Field ids match schema/org.schema.yml. Dropdown options are the labels in
+# data/shared/vocab.yml; tests/forms.test.ts fails when the two drift apart.
+name: Suggest an organization
+description: An org that helps founders and isn't in the dataset yet
+title: "Add org: "
+labels: [suggest-org]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A moderator checks every suggestion against the org's own site, then adds it in a
+        pull request. Comfortable with Git? Edit the YAML and open a pull request yourself;
+        see [CONTRIBUTING.md](https://github.com/getqatalyst/startup-ecosystem/blob/main/CONTRIBUTING.md).
+
+        Only what the org's own site states. No dates, amounts, deadlines or people's names.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: DMZ
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official website
+      description: The org's own homepage, starting with https://
+      placeholder: https://dmz.torontomu.ca/
+    validations:
+      required: true
+  - type: input
+    id: aliases
+    attributes:
+      label: Other or former names
+      placeholder: Ryerson DMZ
+  - type: dropdown
+    id: cats
+    attributes:
+      label: What kind of organization is it?
+      description: Pick every category that fits.
+      multiple: true
+      options:
+        - Accelerator
+        - Incubator
+        - Venture capital
+        - Angel network
+        - University or school
+        - Government
+        - Funder or foundation
+        - Lender
+        - Coworking or workspace
+        - Community
+        - Corporate or corporate lab
+        - Service provider
+        - Research institute
+    validations:
+      required: true
+  - type: input
+    id: hq
+    attributes:
+      label: Where is it based?
+      description: City, province or state, and country of its headquarters. Whom it serves goes in each program.
+      placeholder: Toronto, Ontario, Canada
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: Description
+      description: 1–2 sentences, under 300 characters. What it is and who it's for.
+    validations:
+      required: true
+  - type: input
+    id: parent
+    attributes:
+      label: Part of a bigger organization?
+      description: A school, university or company it belongs to, if any.
+      placeholder: Toronto Metropolitan University
+  - type: textarea
+    id: programs
+    attributes:
+      label: Programs it runs
+      description: >-
+        One per line: name and link. Every org needs at least one (a VC's is its investment).
+        For full detail, also use the "Suggest a program" form.
+      placeholder: Incubator — https://dmz.torontomu.ca/incubator
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Check
+      options:
+        - label: Everything above comes from the org's own site.
+          required: true
+        - label: I work for or represent this organization (that's fine; say so).

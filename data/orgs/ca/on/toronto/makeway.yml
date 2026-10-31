@@ -1,40 +1,39 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: makeway
 name: MakeWay
+aliases:
+  - Tides Canada
 url: https://makeway.org/
 hosts:
   - makeway.org
 cats:
   - funder
+  - service-provider
 hq:
   city: ca-on-toronto
   area: King West
   lat: 43.6411
   lng: -79.4017
   approx: true
-desc: National public foundation (formerly Tides Canada, founded 2000, renamed 2020) funding environmental and social-justice projects. HQ Vancouver; Toronto office at 28 Bathurst St.
-review:
-  - desc
-  - hq
+desc: A national charity and public foundation that backs community-led environmental and social change through grants, a shared charitable platform for projects, and advisory services.
+last_verified: 2026-10
 programs:
-  - id: makeway-program
-    name: MakeWay
-    url: https://makeway.org/
+  - id: makeway-shared-platform
+    name: Shared Platform
+    url: https://makeway.org/solutions/shared-platform/
+    status: paused
     types:
-      - grant
+      - service
     stages:
       - validate
       - build
     audiences:
       - founders
-    access: institutional
-    fee: free
+    eligibility:
+      venture_type:
+        - nonprofit
+    open_to:
+      - ca
+    fee: fee
+    access: application
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
-      - open_to

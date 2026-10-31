@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: centre-for-social-innovation
 name: Centre for Social Innovation (CSI)
 aliases:
@@ -9,32 +7,58 @@ hosts:
   - socialinnovation.org
 cats:
   - coworking
+  - community
 hq:
   city: ca-on-toronto
   area: King West / Spadina
   lat: 43.6484
   lng: -79.3956
   approx: true
-desc: Coworking hub and community for social entrepreneurs and nonprofits, based at 192 Spadina Ave. Founded 2004 by Tonya Surman; long-running anchor of Toronto's social-innovation sector.
-review:
-  - desc
+desc: Nonprofit coworking space and member community in downtown Toronto for social entrepreneurs, nonprofits and organizations that put people and planet first.
+last_verified: 2026-10
 programs:
-  - id: centre-for-social-innovation-program
-    name: Centre for Social Innovation (CSI)
-    url: https://socialinnovation.org/
+  - id: centre-for-social-innovation-coworking
+    name: CSI Coworking Space Membership
+    url: https://socialinnovation.org/space/coworking/
     types:
       - coworking
+      - community
     stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - ca-on-toronto
+    delivery: in-person
+    where:
+      - ca-on-toronto
+    fee: fee
+    access: membership
+    cadence:
+      - ongoing
+    review:
+      - stages
+  - id: centre-for-social-innovation-community-membership
+    name: CSI Community Membership
+    url: https://socialinnovation.org/join-us/membership/
+    types:
+      - community
+    stages:
+      - spark
+      - validate
       - build
     audiences:
       - founders
-    access: membership
+      - aspiring
+    open_to:
+      - ca-on-toronto
+    delivery: in-person
+    where:
+      - ca-on-toronto
     fee: fee
+    access: membership
+    cadence:
+      - ongoing
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
-      - open_to

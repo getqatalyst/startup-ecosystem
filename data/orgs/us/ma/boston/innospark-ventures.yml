@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: innospark-ventures
+name: Innospark Ventures
+url: https://innospark.vc
+hosts:
+  - innospark.vc
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  lat: 42.3509
+  lng: -71.0718
+  approx: true
+desc: Boston seed fund investing only where AI is the core product — applied AI and deep tech across healthcare, life sciences and enterprise; checks typically $1M–$3M.
+review:
+  - desc
+programs:
+  - id: innospark-ventures-program
+    name: Innospark Ventures
+    url: https://innospark.vc
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

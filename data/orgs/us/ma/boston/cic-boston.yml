@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: cic-boston
+name: CIC Boston
+url: https://cic.com/boston
+hosts:
+  - cic.com/boston
+parent: cic-cambridge
+cats:
+  - coworking
+hq:
+  city: us-ma-boston
+  lat: 42.3571
+  lng: -71.0576
+desc: Downtown sibling of CIC Cambridge — four floors of coworking, dedicated desks and private offices for teams up to 80, with 30+ conference rooms in the Financial District.
+review:
+  - parent
+  - cats
+  - desc
+programs:
+  - id: cic-boston-program
+    name: CIC Boston
+    url: https://cic.com/boston
+    types:
+      - coworking
+      - community
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

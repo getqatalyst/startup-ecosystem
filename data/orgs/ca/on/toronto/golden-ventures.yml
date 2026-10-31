@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: golden-ventures
 name: Golden Ventures
 aliases:
@@ -14,27 +12,29 @@ hq:
   area: Queen West
   lat: 43.6465
   lng: -79.4
-desc: Seed fund; $500K-$3M cheques. Backed SkipTheDishes, Inkbox, Hopper, Wealthsimple. Office at 20 Maud St.
-review:
-  - desc
+desc: Toronto-headquartered, sector-agnostic seed-stage venture capital fund investing in technology startups across Canada and the US.
+last_verified: 2026-10
 programs:
-  - id: golden-ventures-program
-    name: Golden Ventures
-    url: https://golden.ventures/
+  - id: golden-ventures-seed
+    name: Seed investment
+    url: https://faq.golden.ventures/
     types:
       - investment
     stages:
+      - validate
       - build
       - operate
+    stage_basis: "Our core investments are in seed stage companies. This includes pre-seed, seed, seed extensions, seed plus."
     audiences:
       - founders
-    access: invite
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "We do not invest in real estate, restaurants, films, medical devices, life sciences products where FDA Approval is still required, firearms, and/or anything considered illegal."
+    open_to:
+      - ca
+      - us
+    equity: true
+    founder_receives:
+      - investment
+    access: application

@@ -1,36 +1,112 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: dmz
 name: DMZ
 url: https://dmz.torontomu.ca/
 hosts:
   - dmz.torontomu.ca
+parent: toronto-metropolitan-university
 cats:
-  - accelerator
+  - incubator
 hq:
   city: ca-on-toronto
   area: TMU Downtown
   lat: 43.6562
   lng: -79.3804
-desc: Toronto Metropolitan University's startup incubator, repeatedly ranked among the top university-affiliated incubators globally.
+desc: Toronto Metropolitan University's tech incubator, running programs from first customers to raising capital for founders in Toronto and abroad.
+last_verified: 2026-10
 programs:
-  - id: dmz-program
-    name: DMZ
-    url: https://dmz.torontomu.ca/
+  - id: dmz-incubator
+    name: DMZ Incubator
+    url: https://dmz.torontomu.ca/incubator
+    types:
+      - incubator
+      - coworking
+    stages:
+      - build
+      - operate
+    stage_basis: "Seed stage with monthly recurring revenue."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: revenue
+          quote: "Revenue-generating • Seed stage with monthly recurring revenue."
+        - gate: team
+          quote: "Team size • At least one full-time founder and an in-house technical lead."
+    open_to:
+      - global
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    fee: free
+    equity: true
+    access: application
+    cadence:
+      - cohort
+      - rolling
+    duration: 18 months
+  - id: dmz-pre-incubator
+    name: DMZ Pre-Incubator
+    url: https://dmz.torontomu.ca/pre-incubator
+    types:
+      - incubator
+      - coworking
+    stages:
+      - build
+    stage_basis: "An MVP, ideally in market and ready for customer use; traction via pilots, partnerships, and/or LOIs."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: revenue
+          quote: "Revenue-generating • Proven traction via pilots, partnerships, and/or LOIs."
+        - gate: team
+          quote: "Growth-focused team • At least one full-time founder and an in-house technical lead."
+    open_to:
+      - global
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    fee: free
+    equity: true
+    access: application
+    cadence:
+      - cohort
+    duration: 9 months
+  - id: dmz-validator
+    name: Validator
+    url: https://dmz.torontomu.ca/validator
     types:
       - accelerator
     stages:
+      - spark
       - validate
-      - build
+    stage_basis: "Helping Black founders move from idea to market validation."
     audiences:
       - founders
+      - aspiring
+    eligibility:
+      who:
+        - group: black
+          requirement: required
+          quote: "Founder : Identifies as Black and is ready to actively build a startup."
+          source: https://dmz.torontomu.ca/validator
+    open_to:
+      - ca-on
     access: application
+    cadence:
+      - cohort
+    duration: 10 weeks
+  - id: dmz-launchpad
+    name: Launchpad
+    url: https://www.dmzlaunchpad.ca/
+    types:
+      - course
+    stages:
+      - spark
+    audiences:
+      - aspiring
+    open_to:
+      - global
+    delivery: remote
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: open

@@ -1,12 +1,14 @@
 # Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
 # first guesses; confirm them against the org's own site, then remove them from the list.
 id: schwartz-reisman-institute
-name: Schwartz Reisman Institute
+name: Schwartz Reisman Institute for Technology and Society
 aliases:
   - SRI
+  - Schwartz Reisman Institute
 url: https://srinstitute.utoronto.ca/
 hosts:
   - srinstitute.utoronto.ca
+parent: university-of-toronto
 cats:
   - research-institute
 hq:
@@ -14,10 +16,7 @@ hq:
   area: Schwartz Reisman Campus
   lat: 43.6604
   lng: -79.3893
-desc: U of T institute on AI, ethics, and society. West Tower opened 2024.
-review:
-  - cats
-  - desc
+desc: University of Toronto research and solutions hub studying the social, political and economic effects of AI and other advanced technologies, through research, public policy work, workshops, seminars and fellowships for scholars.
 programs:
   - id: schwartz-reisman-institute-program
     name: Schwartz Reisman Institute

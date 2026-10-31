@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: uhn-techna-institute
 name: UHN / Techna Institute
 aliases:
@@ -7,6 +5,7 @@ aliases:
 url: https://www.uhn.ca/research
 hosts:
   - www.uhn.ca
+  - technauhn.ca
 cats:
   - research-institute
 hq:
@@ -14,26 +13,23 @@ hq:
   area: Discovery District
   lat: 43.6596
   lng: -79.3886
-desc: Research arm of University Health Network. Techna develops AI and medical-imaging technology.
-review:
-  - cats
+desc: University Health Network's research enterprise, whose Techna core provides medical-technology development and productization services, in surgery, imaging and data, to industry, hospitals and academia.
+last_verified: 2026-10
 programs:
-  - id: uhn-techna-institute-program
-    name: UHN / Techna Institute
-    url: https://www.uhn.ca/research
+  - id: uhn-techna-institute-productization
+    name: Medical Innovation Productization Services
+    url: https://technauhn.ca/
     types:
       - service
     stages:
+      - validate
       - build
+    stage_basis: "We shorten the time interval from ideation and development to application for the benefit of patients and the health care system."
     audiences:
       - founders
-    access: institutional
-    fee: free
+      - partners
+    delivery: in-person
+    where:
+      - ca-on-toronto
     review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
       - open_to

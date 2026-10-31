@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: hbs-alumni-angels-of-boston
+name: HBS Alumni Angels of Boston
+url: https://angels-hbsab.org/
+hosts:
+  - angels-hbsab.org
+cats:
+  - angel-network
+hq:
+  city: us-ma-boston
+  area: Allston
+  lat: 42.366
+  lng: -71.123
+  approx: true
+desc: Angel network of Harvard Business School alumni.
+programs:
+  - id: hbs-alumni-angels-of-boston-program
+    name: HBS Alumni Angels of Boston
+    url: https://angels-hbsab.org/
+    types:
+      - investment
+      - community
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

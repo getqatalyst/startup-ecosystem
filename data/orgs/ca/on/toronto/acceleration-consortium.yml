@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: acceleration-consortium
 name: Acceleration Consortium
 aliases:
@@ -14,26 +12,27 @@ hq:
   area: U of T
   lat: 43.6615
   lng: -79.398
-desc: Self-driving labs and AI-for-materials at U of T; funded by the Canada First Research Excellence Fund.
-review:
-  - cats
+desc: A University of Toronto-based global consortium that uses AI and automation in self-driving labs to speed the discovery of new materials and molecules. Startups, companies and researchers can join as members.
+last_verified: 2026-10
 programs:
-  - id: acceleration-consortium-program
-    name: Acceleration Consortium
-    url: https://acceleration.utoronto.ca/
+  - id: acceleration-consortium-membership
+    name: Consortium Membership
+    url: https://acceleration.utoronto.ca/join-consortium
     types:
       - service
+      - community
     stages:
       - build
     audiences:
       - founders
-    access: institutional
-    fee: free
+      - partners
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "Government, industry, and startups looking to apply AI and automation to accelerate the discovery and design of new materials"
+    open_to:
+      - global
+    fee: fee
+    access: membership
     review:
-      - name
-      - types
       - stages
-      - audiences
-      - access
-      - fee
-      - open_to

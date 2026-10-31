@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: boston-harbor-angels
+name: Boston Harbor Angels
+url: https://www.bostonharborangels.com
+hosts:
+  - www.bostonharborangels.com
+cats:
+  - angel-network
+hq:
+  city: us-ma-boston
+  lat: 42.3565
+  lng: -71.055
+  approx: true
+desc: One of Boston's most active angel groups, investing across tech and life sciences.
+programs:
+  - id: boston-harbor-angels-program
+    name: Boston Harbor Angels
+    url: https://www.bostonharborangels.com
+    types:
+      - investment
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

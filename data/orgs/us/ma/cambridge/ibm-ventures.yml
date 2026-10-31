@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: ibm-ventures
+name: IBM Ventures
+url: https://www.ibm.com/ventures
+hosts:
+  - www.ibm.com/ventures
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  area: Kendall Square
+  lat: 42.3625
+  lng: -71.0843
+  approx: true
+desc: IBM's strategic investment arm — invests in AI, hybrid cloud, quantum, and enterprise tech startups.
+review:
+  - hq
+programs:
+  - id: ibm-ventures-program
+    name: IBM Ventures
+    url: https://www.ibm.com/ventures
+    types:
+      - investment
+      - service
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

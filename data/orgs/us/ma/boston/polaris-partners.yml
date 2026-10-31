@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: polaris-partners
+name: Polaris Partners
+url: https://www.polarispartners.com
+hosts:
+  - www.polarispartners.com
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  area: Seaport
+  lat: 42.353
+  lng: -71.045
+  approx: true
+desc: Long-standing Boston firm investing across healthcare and technology.
+programs:
+  - id: polaris-partners-program
+    name: Polaris Partners
+    url: https://www.polarispartners.com
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

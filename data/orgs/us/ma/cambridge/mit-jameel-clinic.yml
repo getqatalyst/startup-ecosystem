@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: mit-jameel-clinic
+name: MIT Jameel Clinic
+url: https://jclinic.mit.edu
+hosts:
+  - jclinic.mit.edu
+cats:
+  - university
+hq:
+  city: us-ma-cambridge
+  lat: 42.3621
+  lng: -71.0898
+  approx: true
+desc: MIT's epicenter for AI in health — machine learning for drug discovery, diagnostics and clinical care.
+programs:
+  - id: mit-jameel-clinic-program
+    name: MIT Jameel Clinic
+    url: https://jclinic.mit.edu
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to
