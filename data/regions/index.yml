@@ -12,6 +12,7 @@ subdivisions:
   us-ma: { name: Massachusetts }
   ca-qc: { name: Quebec }
   us-ct: { name: Connecticut }
+  ca-bc: { name: British Columbia }
 
 cities:
   ca-on-toronto:
@@ -54,5 +55,12 @@ cities:
     center: [41.0787, -73.4693]
     zoom: 13
     bounds: [[40.98, -73.57], [41.18, -73.37]]
+    status: draft
+    moderators: []
+  ca-bc-vancouver:
+    name: Vancouver
+    center: [49.2827, -123.1207]
+    zoom: 12
+    bounds: [[49.13, -123.27], [49.43, -122.97]]
     status: draft
     moderators: []

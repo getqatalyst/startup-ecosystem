@@ -389,6 +389,26 @@ exports[`output shape (snapshot of the fixtures) 1`] = `
   ],
   "regions": {
     "cities": {
+      "ca-bc-vancouver": {
+        "bounds": [
+          [
+            49.13,
+            -123.27,
+          ],
+          [
+            49.43,
+            -122.97,
+          ],
+        ],
+        "center": [
+          49.2827,
+          -123.1207,
+        ],
+        "moderators": [],
+        "name": "Vancouver",
+        "status": "draft",
+        "zoom": 12,
+      },
       "ca-on-toronto": {
         "bounds": [
           [
@@ -499,6 +519,9 @@ exports[`output shape (snapshot of the fixtures) 1`] = `
       },
     },
     "subdivisions": {
+      "ca-bc": {
+        "name": "British Columbia",
+      },
       "ca-on": {
         "name": "Ontario",
       },
