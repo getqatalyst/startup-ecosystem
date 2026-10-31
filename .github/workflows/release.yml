@@ -1,0 +1,48 @@
+# On each merge to main: build the downloads (scripts/export.ts) and attach them to a new
+# GitHub release, marked latest, so
+#   https://github.com/<owner>/<repo>/releases/latest/download/ecosystem.csv
+# always serves the current data. Skipped when ecosystem.json is the same as the latest
+# release's (a docs-only merge).
+
+name: Release data
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.1
+      - run: bun install --frozen-lockfile
+      - run: bun run validate
+      - run: bun scripts/export.ts dist
+      - name: Release unless the data is unchanged
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release download --pattern ecosystem.json --dir previous 2>/dev/null \
+            && cmp -s previous/ecosystem.json dist/ecosystem.json; then
+            echo "ecosystem.json matches the latest release; nothing to publish"
+            exit 0
+          fi
+          tag="data-$(date -u +%Y-%m-%d)-${GITHUB_SHA::7}"
+          gh release create "$tag" \
+            dist/ecosystem.json dist/ecosystem.csv dist/LICENSE.md \
+            --target "$GITHUB_SHA" \
+            --title "Data $(date -u +%Y-%m-%d) (${GITHUB_SHA::7})" \
+            --notes-file dist/RELEASE.md \
+            --latest
