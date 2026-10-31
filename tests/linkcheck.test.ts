@@ -40,10 +40,14 @@ describe("classify", () => {
 		expect(kind(ok(page(prose)))).toBe("ok");
 	});
 
-	test("network errors and 4xx/5xx are dead", () => {
+	test("network errors and 4xx/5xx are dead, but a timeout needs a person", () => {
 		expect(classify(target, { error: "ENOTFOUND" })).toEqual({
 			kind: "dead",
 			note: "ENOTFOUND",
+		});
+		expect(classify(target, { error: "timeout" })).toEqual({
+			kind: "blocked",
+			note: "timeout; open it in a browser",
 		});
 		expect(kind(ok("", { status: 404 }))).toBe("dead");
 		expect(kind(ok("", { status: 500 }))).toBe("dead");
