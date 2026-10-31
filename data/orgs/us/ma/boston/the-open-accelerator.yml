@@ -1,0 +1,48 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: the-open-accelerator
+name: The Open Accelerator (TOA)
+url: https://the-open-accelerator.com
+hosts:
+  - the-open-accelerator.com
+cats:
+  - accelerator
+hq:
+  city: us-ma-boston
+  area: Fort Point
+  lat: 42.3486
+  lng: -71.0502
+desc: Boston's open-source AI innovation hub — an initiative between the MA AI Hub, Red Hat and IBM Ventures, launched at Boston Tech Week 2026. Runs a founder residency (workspace, mentorship, GPU access), a community membership program, and a hands-on hackathon series.
+review:
+  - cats
+  - desc
+programs:
+  - id: the-open-accelerator-program
+    name: The Open Accelerator (TOA)
+    url: https://the-open-accelerator.com
+    types:
+      - accelerator
+      - coworking
+      - mentorship
+      - service
+      - community
+    stages:
+      - spark
+      - validate
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

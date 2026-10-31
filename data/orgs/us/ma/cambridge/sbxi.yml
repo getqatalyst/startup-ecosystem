@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: sbxi
+name: SBXi
+url: https://www.sbxi.com
+hosts:
+  - www.sbxi.com
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  area: Kendall Square
+  lat: 42.3601
+  lng: -71.09
+  approx: true
+desc: Sponsor-backed syndicate writing fast first checks exclusively for MIT-alumni founders — $10K–$100K on SAFEs, up to $1M matching a qualifying term sheet; grew out of the MIT Sandbox program.
+review:
+  - desc
+programs:
+  - id: sbxi-program
+    name: SBXi
+    url: https://www.sbxi.com
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

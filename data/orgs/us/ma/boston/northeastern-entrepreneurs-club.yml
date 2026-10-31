@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: northeastern-entrepreneurs-club
+name: Northeastern Entrepreneurs Club
+url: https://www.nuentrepreneursclub.com
+hosts:
+  - www.nuentrepreneursclub.com
+cats:
+  - community
+hq:
+  city: us-ma-boston
+  lat: 42.3395
+  lng: -71.0879
+desc: Northeastern's largest student-led organization — 2,000+ members, 30+ events a semester, and the Husky Startup Challenge incubator with $10K in prizes.
+review:
+  - cats
+  - desc
+programs:
+  - id: northeastern-entrepreneurs-club-program
+    name: Northeastern Entrepreneurs Club
+    url: https://www.nuentrepreneursclub.com
+    types:
+      - community
+      - grant
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: tie-boston-angels
+name: TiE Boston Angels
+url: https://www.tieboston.org/
+hosts:
+  - www.tieboston.org
+cats:
+  - angel-network
+hq:
+  city: us-ma-cambridge
+  lat: 42.365
+  lng: -71.09
+  approx: true
+desc: Angel arm of TiE Boston, one of the region's largest entrepreneur networks.
+programs:
+  - id: tie-boston-angels-program
+    name: TiE Boston Angels
+    url: https://www.tieboston.org/
+    types:
+      - investment
+      - mentorship
+      - community
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

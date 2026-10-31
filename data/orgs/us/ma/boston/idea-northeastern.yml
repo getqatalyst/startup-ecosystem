@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: idea-northeastern
+name: IDEA (Northeastern)
+url: https://www.ideaneu.com/
+hosts:
+  - www.ideaneu.com
+cats:
+  - accelerator
+hq:
+  city: us-ma-boston
+  lat: 42.3398
+  lng: -71.0892
+  approx: true
+desc: Northeastern's student-led venture accelerator with gap funding up to $10K.
+review:
+  - cats
+  - desc
+programs:
+  - id: idea-northeastern-program
+    name: IDEA (Northeastern)
+    url: https://www.ideaneu.com/
+    types:
+      - accelerator
+      - grant
+      - mentorship
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

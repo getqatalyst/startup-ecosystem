@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: artisans-asylum
+name: Artisan's Asylum
+url: https://www.artisansasylum.com
+hosts:
+  - www.artisansasylum.com
+cats:
+  - coworking
+hq:
+  city: us-ma-boston
+  area: Allston
+  lat: 42.3596
+  lng: -71.1395
+desc: Nonprofit 52,000 sq ft makerspace with 16+ shops including dedicated electronics and robotics facilities, 30–40 public classes a month, and rentable private studios.
+review:
+  - cats
+  - desc
+programs:
+  - id: artisans-asylum-program
+    name: Artisan's Asylum
+    url: https://www.artisansasylum.com
+    types:
+      - coworking
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: membership
+    fee: fee
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

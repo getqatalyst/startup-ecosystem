@@ -1,0 +1,37 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: xfund
+name: Xfund
+url: https://www.xfund.com
+hosts:
+  - www.xfund.com
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  lat: 42.3718
+  lng: -71.1183
+desc: Seed fund purpose-built for research-university founders, with offices in Harvard Square and Palo Alto; recent investments lean heavily AI.
+programs:
+  - id: xfund-program
+    name: Xfund
+    url: https://www.xfund.com
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

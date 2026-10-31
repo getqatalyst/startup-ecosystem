@@ -1,0 +1,46 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: boston-ai-week
+name: Boston AI Week
+url: https://aiweek.boston
+hosts:
+  - aiweek.boston
+cats:
+  - community
+hq:
+  city: us-ma-boston
+  lat: 42.3554
+  lng: -71.0603
+  approx: true
+desc: Statewide AI festival built from independently hosted events — talks, workshops, demo nights and hackathons — with Boston's Seaport as the hub neighborhood. Free to attend, and most individual events are free.
+review:
+  - cats
+  - desc
+  - hq
+programs:
+  - id: boston-ai-week-program
+    name: Boston AI Week
+    url: https://aiweek.boston
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+      - build
+      - operate
+      - scale
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

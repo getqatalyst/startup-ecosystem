@@ -1,0 +1,45 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: mit-sandbox
+name: MIT Sandbox
+url: https://sandbox.mit.edu
+hosts:
+  - sandbox.mit.edu
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.362
+  lng: -71.0858
+desc: MIT's university-run venture program — up to $25K in non-dilutive funding, mentorship and startup education for any MIT student team, across every discipline.
+review:
+  - cats
+  - desc
+programs:
+  - id: mit-sandbox-program
+    name: MIT Sandbox
+    url: https://sandbox.mit.edu
+    types:
+      - community
+      - grant
+      - mentorship
+    stages:
+      - spark
+      - validate
+      - build
+      - operate
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

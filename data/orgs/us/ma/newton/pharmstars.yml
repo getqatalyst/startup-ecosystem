@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: pharmstars
+name: PharmStars
+url: https://pharmstars.com
+hosts:
+  - pharmstars.com
+cats:
+  - accelerator
+hq:
+  city: us-ma-newton
+desc: Digital health accelerator creating direct pathways between AI/health startups and pharmaceutical companies.
+review:
+  - cats
+programs:
+  - id: pharmstars-program
+    name: PharmStars
+    url: https://pharmstars.com
+    types:
+      - accelerator
+      - service
+      - mentorship
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

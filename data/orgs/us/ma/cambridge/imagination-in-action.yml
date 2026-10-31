@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: imagination-in-action
+name: Imagination in Action
+url: https://www.imaginationinaction.co
+hosts:
+  - www.imaginationinaction.co
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.3608
+  lng: -71.0875
+desc: High-wattage AI summit at the MIT Media Lab drawing global AI leaders to Cambridge.
+review:
+  - cats
+programs:
+  - id: imagination-in-action-program
+    name: Imagination in Action
+    url: https://www.imaginationinaction.co
+    types:
+      - community
+    stages:
+      - spark
+      - operate
+      - scale
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

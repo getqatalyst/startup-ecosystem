@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: foundersedge
+name: FoundersEdge
+url: https://www.foundersedge.com
+hosts:
+  - www.foundersedge.com
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  lat: 42.3538
+  lng: -71.0574
+  approx: true
+desc: Pre-seed fund writing $100–$200K first checks into AI-native, software-first B2B startups, run by post-exit operators Greg Raiz (Raizlabs, Techstars Boston) and Jess Lynch (Wishroute).
+review:
+  - desc
+programs:
+  - id: foundersedge-program
+    name: FoundersEdge
+    url: https://www.foundersedge.com
+    types:
+      - investment
+      - mentorship
+      - community
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

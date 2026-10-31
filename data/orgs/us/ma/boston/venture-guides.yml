@@ -1,0 +1,39 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: venture-guides
+name: Venture Guides
+url: https://www.ventureguides.com
+hosts:
+  - www.ventureguides.com
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  lat: 42.3656
+  lng: -71.0614
+desc: Boston operator-led fund investing pre-seed through Series A in infrastructure software — cloud infrastructure, security, AI and data; closed a $262.5M Fund II in 2025.
+review:
+  - desc
+programs:
+  - id: venture-guides-program
+    name: Venture Guides
+    url: https://www.ventureguides.com
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

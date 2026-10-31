@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: general-catalyst
+name: General Catalyst
+url: https://www.generalcatalyst.com
+hosts:
+  - www.generalcatalyst.com
+cats:
+  - vc
+hq:
+  city: us-ma-cambridge
+  lat: 42.3722
+  lng: -71.1183
+desc: Global venture firm with deep Cambridge roots — among the most active AI investors anywhere.
+review:
+  - hq
+programs:
+  - id: general-catalyst-program
+    name: General Catalyst
+    url: https://www.generalcatalyst.com
+    types:
+      - investment
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

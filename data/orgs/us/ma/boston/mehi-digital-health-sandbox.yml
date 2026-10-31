@@ -1,0 +1,43 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: mehi-digital-health-sandbox
+name: MeHI Digital Health Sandbox
+url: https://mehi.masstech.org/digital-health-sandbox-program
+hosts:
+  - mehi.masstech.org/digital-health-sandbox-program
+parent: masstech-collaborative
+cats:
+  - government
+hq:
+  city: us-ma-boston
+  lat: 42.3597
+  lng: -71.0602
+desc: State program at the Massachusetts eHealth Institute (a MassTech division) granting up to $60K per company to test digital-health and AI products across a network of 11 hospital and lab sandboxes.
+review:
+  - parent
+  - desc
+programs:
+  - id: mehi-digital-health-sandbox-program
+    name: MeHI Digital Health Sandbox
+    url: https://mehi.masstech.org/digital-health-sandbox-program
+    types:
+      - grant
+      - service
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

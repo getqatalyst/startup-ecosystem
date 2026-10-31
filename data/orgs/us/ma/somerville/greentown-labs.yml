@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: greentown-labs
+name: Greentown Labs
+url: https://greentown.org
+hosts:
+  - greentown.org
+cats:
+  - accelerator
+hq:
+  city: us-ma-somerville
+  lat: 42.3818
+  lng: -71.1057
+desc: North America's largest climatetech incubator — increasingly home to AI-for-energy and AI-for-climate startups.
+review:
+  - cats
+programs:
+  - id: greentown-labs-program
+    name: Greentown Labs
+    url: https://greentown.org
+    types:
+      - accelerator
+      - coworking
+      - community
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

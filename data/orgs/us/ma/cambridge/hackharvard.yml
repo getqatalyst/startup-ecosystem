@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: hackharvard
+name: HackHarvard
+url: https://hhuh.io/
+hosts:
+  - hhuh.io
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.3772
+  lng: -71.117
+desc: Harvard's international collegiate hackathon each October.
+review:
+  - cats
+programs:
+  - id: hackharvard-program
+    name: HackHarvard
+    url: https://hhuh.io/
+    types:
+      - community
+    stages:
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

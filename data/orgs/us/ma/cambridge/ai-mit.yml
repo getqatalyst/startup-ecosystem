@@ -1,0 +1,40 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: ai-mit
+name: AI@MIT
+url: https://aiatmit.com/
+hosts:
+  - aiatmit.com
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.3592
+  lng: -71.0935
+  approx: true
+desc: MIT's undergraduate AI club — reading groups, hackathons and industry collaboration.
+review:
+  - cats
+programs:
+  - id: ai-mit-program
+    name: AI@MIT
+    url: https://aiatmit.com/
+    types:
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: institutional
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

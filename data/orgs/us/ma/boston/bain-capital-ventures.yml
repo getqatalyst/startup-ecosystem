@@ -1,0 +1,41 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: bain-capital-ventures
+name: Bain Capital Ventures
+url: https://www.baincapitalventures.com
+hosts:
+  - www.baincapitalventures.com
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  lat: 42.3492
+  lng: -71.0751
+desc: Boston-founded multi-stage firm with named AI-apps and AI-infrastructure practices — $1–5M seed checks through $100M growth rounds, plus the BCV Labs AI incubator.
+review:
+  - desc
+programs:
+  - id: bain-capital-ventures-program
+    name: Bain Capital Ventures
+    url: https://www.baincapitalventures.com
+    types:
+      - investment
+      - mentorship
+    stages:
+      - build
+      - operate
+      - scale
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

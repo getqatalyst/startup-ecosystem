@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: ai-tinkerers-boston
+name: AI Tinkerers Boston
+url: https://boston.aitinkerers.org
+hosts:
+  - boston.aitinkerers.org
+cats:
+  - community
+hq:
+  city: us-ma-cambridge
+  lat: 42.3625
+  lng: -71.0862
+  approx: true
+desc: Hands-on meetup for people building with LLMs and agents — live demos, technical Q&A, zero fluff. Part of the global AI Tinkerers network.
+review:
+  - hq
+programs:
+  - id: ai-tinkerers-boston-program
+    name: AI Tinkerers Boston
+    url: https://boston.aitinkerers.org
+    types:
+      - community
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us-ma
+    access: open
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to

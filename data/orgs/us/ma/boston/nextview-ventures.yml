@@ -1,0 +1,42 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
+# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+id: nextview-ventures
+name: NextView Ventures
+url: https://nextview.vc
+hosts:
+  - nextview.vc
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+  area: Seaport
+  lat: 42.3519
+  lng: -71.0444
+  approx: true
+desc: Seed-stage fund focused on 'redesigning the everyday economy' — backing founders using software and AI to solve mass-market problems.
+review:
+  - hq
+programs:
+  - id: nextview-ventures-program
+    name: NextView Ventures
+    url: https://nextview.vc
+    types:
+      - investment
+    stages:
+      - validate
+      - build
+      - operate
+    audiences:
+      - founders
+    open_to:
+      - us-ma
+    access: application
+    fee: free
+    review:
+      - name
+      - types
+      - stages
+      - audiences
+      - access
+      - fee
+      - open_to
