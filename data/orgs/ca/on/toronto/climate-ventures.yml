@@ -1,9 +1,5 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: climate-ventures
-name: Climate Ventures (Earth Tech)
-aliases:
-  - Earth Tech
+name: Climate Ventures
 url: https://climateventures.org/earthtech/
 hosts:
   - climateventures.org
@@ -15,27 +11,34 @@ hq:
   lat: 43.6484
   lng: -79.3956
   approx: true
-desc: Six-month accelerator for TRL3+ climate and water technology ventures, run jointly by Social Innovation Canada and Foresight Canada out of 192 Spadina.
-review:
-  - desc
+desc: Former climate accelerator and community started by the Centre for Social Innovation. Its work continues through Foresight Canada, as cleantech lead, and Social Innovation Canada.
+status: merged
+status_since: 2022-09
+replaced_by: foresight-canada
+last_verified: 2026-10
 programs:
-  - id: climate-ventures-program
-    name: Climate Ventures (Earth Tech)
+  - id: climate-ventures-earth-tech
+    name: Earth Tech
     url: https://climateventures.org/earthtech/
     types:
       - accelerator
     stages:
       - validate
       - build
+    stage_basis: "Pre-Series A, Validation or Efficiency-stage ventures with Technology Readiness level 3 or higher."
     audiences:
       - founders
+    eligibility:
+      venture_type:
+        - for-profit
+        - nonprofit
+      venture:
+        - gate: sector
+          quote: "Earth Tech is for early-stage Canadian startups and nonprofit social enterprises developing technologies that addresses a range of climate change or water outcomes."
+    open_to:
+      - ca
     access: application
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    duration: 6 months
+    status: merged
+    status_since: 2022-09
+    replaced_by: foresight-canada-earth-tech

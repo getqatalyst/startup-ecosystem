@@ -1,9 +1,8 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: biolabs-toronto
-name: Biolabs Toronto
+name: BioLabs Toronto
 aliases:
   - Biolabs
+  - BioLabs University of Toronto
 url: https://www.biolabs.io/toronto-canada
 hosts:
   - www.biolabs.io
@@ -14,27 +13,54 @@ hq:
   area: MaRS Centre
   lat: 43.6595
   lng: -79.3899
-desc: 40,000-sq-ft wet-lab incubator and co-working for early-stage life-sciences companies, located in MaRS.
-review:
-  - cats
-  - desc
+desc: Shared wet-lab and office coworking for life-science startups at the MaRS Centre, run in partnership with the University of Toronto as part of the global BioLabs network.
+last_verified: 2026-10
 programs:
-  - id: biolabs-toronto-program
-    name: Biolabs Toronto
+  - id: biolabs-toronto-membership
+    name: BioLabs Membership
     url: https://www.biolabs.io/toronto-canada
+    partners:
+      - org: university-of-toronto
+        role: co-runs
     types:
       - coworking
     stages:
+      - validate
       - build
+      - operate
+    stage_basis: "From early-stage founders to established R&D teams."
     audiences:
       - founders
-    access: membership
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "BioLabs are the premier co-working spaces for life science startups"
     fee: fee
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    access: membership
+  - id: biolabs-toronto-abbvie-biotech-innovators-award
+    name: AbbVie Biotech Innovators Award
+    url: https://www.biolabs.io/abbvie-2026-biotechinnovatorsaward
+    partners:
+      - org_name: AbbVie
+        role: funds
+    types:
+      - competition
+      - coworking
+      - mentorship
+    stages:
+      - validate
+      - build
+    stage_basis: "Emerging biotech startups."
+    audiences:
+      - founders
+    eligibility:
+      place:
+        incorporation:
+          - ca
+        quote: "An Award is open to life science startup located in,and formed under the laws of, Canada"
+      venture:
+        - gate: sector
+          quote: "a life science startup company (“Award Recipients”) working on research and development in the fields of Oncology, immunology, neurosciences, aesthetics, Therapeutic Modalities and Platform technologies and obesity"
+    open_to:
+      - ca
+    access: application

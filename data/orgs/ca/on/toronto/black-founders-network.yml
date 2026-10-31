@@ -1,41 +1,158 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: black-founders-network
 name: Black Founders Network
 aliases:
   - BFN
-url: https://entrepreneurs.utoronto.ca/accelerator/bfn-accelerate/
+url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/black-founders-network/
 hosts:
-  - entrepreneurs.utoronto.ca/accelerator/bfn-accelerate
+  - entrepreneurs.utoronto.ca/for-entrepreneurs/black-founders-network
 cats:
   - accelerator
+  - community
 hq:
   city: ca-on-toronto
   area: Schwartz Reisman Campus
   lat: 43.6604
   lng: -79.3893
   approx: true
-desc: Community and cohort accelerator (BFN Accelerate) providing Black founders capital, capacity-building, and network.
-review:
-  - desc
+desc: U of T Entrepreneurship's community for Black entrepreneurs at every stage, with programs from idea-stage learning to an accelerator and growth support, plus mentorship, funding and a network.
+last_verified: 2026-10
 programs:
-  - id: black-founders-network-program
-    name: Black Founders Network
-    url: https://entrepreneurs.utoronto.ca/accelerator/bfn-accelerate/
+  - id: black-founders-network-accelerate
+    name: BFN Accelerate
+    url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/bfn-accelerate/
     types:
       - accelerator
     stages:
       - validate
       - build
+    stage_basis: "Early traction and evidence of demand: a prototype, MVP, early revenue, or initial funding through grants and pitch competitions."
     audiences:
       - founders
+    eligibility:
+      who:
+        - group: black
+          requirement: required
+          quote: "Lead applicant must self-identify as Black and be based in Canada."
+          source: https://entrepreneurs.utoronto.ca/for-entrepreneurs/bfn-accelerate/
+      place:
+        residence:
+          - ca
+        quote: "Lead applicant must self-identify as Black and be based in Canada."
+      venture:
+        - gate: revenue
+          quote: "The company should have some early traction with evidence of need and potential demand for the product or service."
+        - gate: team
+          quote: "Lead applicant must hold a significant equity stake in the company."
+    open_to:
+      - ca
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    founder_receives:
+      - grant
+      - prize
     access: application
+    cadence:
+      - cohort
+    duration: 4 months
+  - id: black-founders-network-core
+    name: BFN Core
+    url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/bfn-core/
+    types:
+      - community
+      - course
+    stages:
+      - spark
+    stage_basis: "Black aspiring entrepreneurs with an idea or interest in entrepreneurship, but unsure where to begin."
+    audiences:
+      - aspiring
+    eligibility:
+      who:
+        - group: black
+          requirement: priority
+          quote: "This is the starting point for Black-identifying individuals with an interest in entrepreneurship who are looking to learn more and begin their journey."
+          source: https://entrepreneurs.utoronto.ca/for-entrepreneurs/bfn-core/
+    access: open
+  - id: black-founders-network-smart-start-awards
+    name: BFN Smart Start Awards
+    url: https://entrepreneurs.utoronto.ca/resource/black-founders-network-smart-start-awards/
+    partners:
+      - org_name: KPMG
+        role: funds
+    types:
+      - grant
+      - mentorship
+    stages:
+      - spark
+      - validate
+    stage_basis: "An idea or innovation in the idea stage or pre-revenue phase."
+    audiences:
+      - founders
+      - aspiring
+    eligibility:
+      who:
+        - group: black
+          requirement: required
+          quote: "Self-identify as Black and be based in Canada."
+          source: https://entrepreneurs.utoronto.ca/resource/black-founders-network-smart-start-awards/
+      place:
+        residence:
+          - ca
+        quote: "Self-identify as Black and be based in Canada."
+    open_to:
+      - ca
+    founder_receives:
+      - grant
+    access: application
+  - id: black-founders-network-scale
+    name: BFN Scale
+    url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/bfn-scale/
+    types:
+      - accelerator
+      - mentorship
+    stages:
+      - operate
+    stage_basis: "Growth stage, usually evidenced by growing customers and recurring revenues."
+    audiences:
+      - founders
+    eligibility:
+      who:
+        - group: black
+          requirement: required
+          quote: "BFN Scale is designed for Black-led companies at the growth stage"
+          source: https://entrepreneurs.utoronto.ca/for-entrepreneurs/bfn-scale/
+  - id: black-founders-network-career-advancement
+    name: Career Advancement Program
+    aliases:
+      - BCAP
+      - Black Career Advancement Program
+    url: https://entrepreneurs.utoronto.ca/bfn-career-advancement-program/
+    partners:
+      - org_name: Federation of Black Canadians
+        role: co-runs
+      - org_name: Ministry of Citizenship & Multiculturalism
+        role: funds
+    types:
+      - grant
+      - jobs
+    stages:
+      - build
+    stage_basis: "Priority to small and early-stage startups that are registered and run payroll."
+    audiences:
+      - founders
+      - talent
+    eligibility:
+      who:
+        - group: black
+          requirement: required
+          quote: "Black-led Startups: Companies must be Black-led, meaning they have Black founders or executives in significant leadership roles within the organization."
+          source: https://entrepreneurs.utoronto.ca/bfn-career-advancement-program/
+      venture:
+        - gate: incorporated
+          quote: "Legitimate Businesses: Companies must be registered (sole proprietorship or incorporated)."
+    open_to:
+      - ca-on
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    founder_receives:
+      - grant
+    access: application

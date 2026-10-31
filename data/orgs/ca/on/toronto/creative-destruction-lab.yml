@@ -1,5 +1,3 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: creative-destruction-lab
 name: Creative Destruction Lab (CDL)
 aliases:
@@ -14,27 +12,74 @@ hq:
   area: Rotman / U of T
   lat: 43.6677
   lng: -79.3997
-desc: Equity-free, mentor-driven seed program for science- and tech-based ventures. Streams in AI, Climate, Health, Space, Quantum. Founded 2012 at Rotman (U of T).
-review:
-  - desc
+desc: Nonprofit, objectives-based mentorship program for seed-stage science- and technology-based startups, at the Rotman School of Management. Founders work with mentors and investors in focused streams; no fees and no equity.
+last_verified: 2026-10
 programs:
-  - id: creative-destruction-lab-program
-    name: Creative Destruction Lab (CDL)
+  - id: creative-destruction-lab-toronto
+    name: CDL-Toronto
     url: https://creativedestructionlab.com/locations/toronto/
     types:
       - accelerator
+      - mentorship
     stages:
       - validate
       - build
+      - operate
+    stage_basis: "Pre-seed to seed stage deep tech startups that have advanced beyond the concept stage and have developed or are working on a prototype."
     audiences:
       - founders
-    access: application
+    open_to:
+      - global
+    delivery: hybrid
+    where:
+      - ca-on-toronto
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    equity: false
+    founder_receives:
+      - none
+    access: application
+    cadence:
+      - annual
+  - id: creative-destruction-lab-toronto-ai
+    name: Artificial Intelligence Stream
+    url: https://creativedestructionlab.com/streams/ai/
+    variant_of: creative-destruction-lab-toronto
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "For founders pursuing commercial opportunities predicated on the application of machine learning and artificial intelligence."
+  - id: creative-destruction-lab-toronto-quantum
+    name: CDL Quantum Stream
+    url: https://creativedestructionlab.com/streams/quantum/
+    variant_of: creative-destruction-lab-toronto
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "For founders pursuing practical, commercially valuable quantum technologies."
+    duration: 10 months
+  - id: creative-destruction-lab-toronto-space
+    name: CDL Space
+    url: https://creativedestructionlab.com/streams/space/
+    variant_of: creative-destruction-lab-toronto
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "For founders pursuing commercial space opportunities, addressing the inherent challenges of accessing and utilizing space sustainably"
+    duration: 9 months
+  - id: creative-destruction-lab-toronto-cancer
+    name: CDL Cancer
+    url: https://creativedestructionlab.com/streams/health/cancer/
+    variant_of: creative-destruction-lab-toronto
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "CDL Cancer is a program for founders commercializing technologies that will change the standard of cancer care and improve patient outcomes."
+    duration: 9 months
+  - id: creative-destruction-lab-toronto-neuro
+    name: Neuro Stream
+    url: https://creativedestructionlab.com/streams/health/neuro/
+    variant_of: creative-destruction-lab-toronto
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "For founders pursuing commercial opportunities in the neuroscience space."

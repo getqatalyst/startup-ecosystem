@@ -1,9 +1,8 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: feddev-ontario
 name: FedDev Ontario
 aliases:
   - FedDev
+  - Federal Economic Development Agency for Southern Ontario
 url: https://feddev-ontario.canada.ca/
 hosts:
   - feddev-ontario.canada.ca
@@ -14,27 +13,70 @@ hq:
   area: Downtown
   lat: 43.6515
   lng: -79.3785
-desc: Federal regional development agency for Southern Ontario; grants and scale-up funding. 151 Yonge St.
+desc: Federal regional development agency that funds businesses and not-for-profit organizations across southern Ontario to innovate, grow and compete.
 review:
-  - desc
+  - hq
+last_verified: 2026-10
 programs:
-  - id: feddev-ontario-program
-    name: FedDev Ontario
-    url: https://feddev-ontario.canada.ca/
+  - id: feddev-ontario-business-funding
+    name: Funding for businesses in southern Ontario
+    url: https://feddev-ontario.canada.ca/en/funding-southern-ontario/funding-businesses-southern-ontario-what-we-support
     types:
-      - grant
+      - loan
+    stages:
+      - operate
+      - scale
+    stage_basis: "Growing and established businesses with a minimum of 5 full-time employees, incorporated for at least the past 3 years."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: incorporated
+          quote: "are incorporated and registered to do business in Canada or Ontario for at least the past 3 years"
+        - gate: business-age
+          quote: "are incorporated and registered to do business in Canada or Ontario for at least the past 3 years"
+        - gate: team
+          quote: "have a minimum of 5 full-time employees and no more than 500 FTEs"
+      venture_type:
+        - for-profit
+    open_to:
+      - ca-on
+    founder_receives:
+      - loan
+    access: application
+    review:
+      - open_to
+  - id: feddev-ontario-raii-commercialization
+    name: AI Commercialization and Scale-Up stream
+    aliases:
+      - Regional Artificial Intelligence Initiative
+      - RAII
+    url: https://feddev-ontario.canada.ca/en/funding-southern-ontario/regional-artificial-intelligence-initiative-businesses-who-can-apply
+    types:
+      - loan
     stages:
       - build
       - operate
+      - scale
+    stage_basis: "At least 1 year of business operations; bringing to market AI/AI-driven solutions at TRL 6 and above, or scaling them."
     audiences:
       - founders
-    access: membership
-    fee: free
+    eligibility:
+      venture:
+        - gate: incorporated
+          quote: "incorporated and registered to do business in Canada or Ontario"
+        - gate: business-age
+          quote: "have at least 1 year of business operations, as demonstrated by your financial statements"
+        - gate: team
+          quote: "employ a minimum of 1 full-time equivalent employee in southern Ontario and fewer than 500 full-time equivalent employees overall"
+        - gate: sector
+          quote: "bringing to market AI/AI-driven solutions (at technology readiness levels (TRL) 6 and above)"
+      venture_type:
+        - for-profit
+    open_to:
+      - ca-on
+    founder_receives:
+      - loan
+    access: application
     review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
       - open_to

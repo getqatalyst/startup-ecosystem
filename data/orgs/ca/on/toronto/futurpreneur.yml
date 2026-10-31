@@ -1,38 +1,114 @@
-# Imported from the getqatalyst.com Toronto map (Oct 2026). Fields under `review:` are
-# first guesses; confirm them against the org's own site, then remove them from the list.
 id: futurpreneur
 name: Futurpreneur
-url: https://www.futurpreneur.ca/
+url: https://futurpreneur.ca/en/
 hosts:
+  - futurpreneur.ca
   - www.futurpreneur.ca
 cats:
-  - accelerator
+  - lender
 hq:
   city: ca-on-toronto
-desc: National non-profit offering startup financing and mentorship to entrepreneurs aged 18-39.
+desc: National non-profit that gives young entrepreneurs across Canada startup loans, one-on-one mentorship and resources to start or buy a business.
+last_verified: 2026-10
 review:
-  - desc
   - hq
 programs:
-  - id: futurpreneur-program
-    name: Futurpreneur
-    url: https://www.futurpreneur.ca/
+  - id: futurpreneur-startup-program
+    name: Startup Program
+    url: https://futurpreneur.ca/en/offering/core-startup/
+    partners:
+      - org_name: BDC
+        role: funds
     types:
-      - accelerator
+      - loan
+      - mentorship
     stages:
       - validate
       - build
+    stage_basis: "Your business is not yet operational or has been operating full time for 24 months or less."
     audiences:
       - founders
+      - aspiring
+    eligibility:
+      place:
+        residence:
+          - ca
+        quote: "You are a Canadian citizen or permanent resident of Canada and you physically reside in Canada."
+      venture:
+        - gate: business-age
+          quote: "Your business is not yet operational or has been operating full time for 24 months or less (except Side Hustle)."
+      age:
+        min: 18
+        max: 39
+        quote: "You must be between 18 and 39 years old when you submit your application."
     open_to:
       - ca
-    access: open
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    equity: false
+    founder_receives:
+      - loan
+    access: application
+  - id: futurpreneur-under-30-startup
+    name: Under 30 Startup Program
+    url: https://futurpreneur.ca/en/under-30/
+    variant_of: futurpreneur-startup-program
+    partners:
+      - org_name: RBC
+        role: funds
+      - org_name: BDC
+        role: funds
+    eligibility:
+      age:
+        min: 18
+        max: 29
+        quote: "To qualify for U30 financing, you must be between 18 and 29 years old when you submit your application."
+  - id: futurpreneur-black-entrepreneur-startup
+    name: Black Entrepreneur Startup Program
+    url: https://futurpreneur.ca/en/offering/black-entrepreneur-startup/
+    variant_of: futurpreneur-startup-program
+    eligibility:
+      who:
+        - group: black
+          requirement: required
+          quote: "You must self-identify as Black"
+          source: https://futurpreneur.ca/en/offering/black-entrepreneur-startup/
+  - id: futurpreneur-indigenous-entrepreneur-startup
+    name: Indigenous Entrepreneur Startup Program
+    url: https://futurpreneur.ca/en/offering/indigenous-entrepreneur-startup/
+    variant_of: futurpreneur-startup-program
+    partners:
+      - org_name: RBC Origins
+        role: funds
+    eligibility:
+      who:
+        - group: indigenous
+          requirement: required
+          quote: "You must self-identify as a member of a Canadian Indigenous community (First Nations, Métis, or Inuit)"
+          source: https://futurpreneur.ca/en/offering/indigenous-entrepreneur-startup/
+  - id: futurpreneur-side-hustle
+    name: Side Hustle Program
+    url: https://futurpreneur.ca/en/offering/side-hustle/
+    types:
+      - loan
+      - mentorship
+    stages:
+      - validate
+      - build
+    stage_basis: "Launch or grow your side business and keep your full-time job."
+    audiences:
+      - founders
+      - aspiring
+    eligibility:
+      place:
+        residence:
+          - ca
+        quote: "You must be a Canadian citizen or permanent resident of Canada"
+      age:
+        min: 18
+        max: 39
+        quote: "You are between the ages of 18-39"
+    open_to:
+      - ca
+    equity: false
+    founder_receives:
+      - loan
+    access: application
