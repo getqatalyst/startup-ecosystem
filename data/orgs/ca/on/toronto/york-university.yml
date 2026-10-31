@@ -34,6 +34,9 @@ programs:
     cadence:
       - cohort
     duration: 4 months
+    review:
+      - open_to
+      - where
   - id: york-university-yspace-tech-incubator
     name: YSpace Tech Incubator
     url: https://www.yorku.ca/yspace/programs-streams/technology-tech-incubator/
@@ -49,6 +52,9 @@ programs:
     access: application
     cadence:
       - rolling
+    duration: 2 years
+    review:
+      - open_to
   - id: york-university-yspace-venture-catalyst
     name: Venture Catalyst
     url: https://www.yorku.ca/yspace/programs-streams/technology-venture-catalyst/
@@ -70,6 +76,8 @@ programs:
     cadence:
       - cohort
     duration: 2 months
+    review:
+      - open_to
   - id: york-university-yspace-food-beverage-accelerator
     name: Food & Beverage Accelerator
     url: https://www.yorku.ca/yspace/programs-streams/food-bev-accelerator/
@@ -99,6 +107,8 @@ programs:
     cadence:
       - cohort
     duration: 5 months
+    review:
+      - where
   - id: york-university-yspace-ella-ascend
     name: ELLA Ascend
     url: https://www.yorku.ca/yspace/programs-streams/ella/ella-ascend/

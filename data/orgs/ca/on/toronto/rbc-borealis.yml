@@ -17,8 +17,6 @@ hq:
   lat: 43.6592
   lng: -79.3897
 desc: RBC's AI research institute, combining AI research and data engineering to build solutions for the bank and the financial industry.
-review:
-  - hq
 programs:
   - id: rbc-borealis-program
     name: RBC Borealis

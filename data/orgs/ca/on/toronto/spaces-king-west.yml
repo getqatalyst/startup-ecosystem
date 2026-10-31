@@ -17,7 +17,6 @@ desc: Spaces coworking in Toronto, offering hot desks, dedicated desks, private 
 last_verified: 2026-10
 review:
   - name
-  - hq
 programs:
   - id: spaces-king-west-coworking
     name: Spaces coworking
@@ -33,5 +32,8 @@ programs:
       - ca-on-toronto
     fee: fee
     access: membership
+    cadence:
+      - ongoing
     review:
       - stages
+      - open_to

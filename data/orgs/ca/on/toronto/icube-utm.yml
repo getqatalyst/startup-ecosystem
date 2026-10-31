@@ -16,8 +16,6 @@ hq:
   approx: true
 desc: U of T Mississauga's incubator for social entrepreneurs and early-stage startups, offering programs, mentorship, co-working and pitch competitions to the U of T community and founders across Canada.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: icube-utm-ideation-lab
     name: Ideation Lab
@@ -37,6 +35,8 @@ programs:
       - ca
     delivery: hybrid
     equity: false
+    founder_receives:
+      - prize
     access: application
     cadence:
       - cohort
@@ -59,6 +59,7 @@ programs:
           quote: "Must have a launched initiative or MVP with demonstrated market fit and some traction"
     open_to:
       - ca
+    delivery: remote
     equity: false
     access: application
     cadence:
@@ -91,6 +92,8 @@ programs:
       age:
         min: 16
         quote: "Minimum age of 16 years old"
+    open_to:
+      - ca-on-toronto
     delivery: remote
     access: application
     duration: 14 weeks
@@ -139,6 +142,8 @@ programs:
           quote: "Applicants must have less than $150,000 cumulative funding or investment, and less than $50,000 cumulative revenue as of the application date."
         - gate: revenue
           quote: "Applicants must have less than $150,000 cumulative funding or investment, and less than $50,000 cumulative revenue as of the application date."
+    open_to:
+      - ca-on-toronto
     delivery: in-person
     where:
       - ca-on-toronto
@@ -181,6 +186,8 @@ programs:
           quote: "Less than $25k in investments (Angels, VCs, grants) as of February 17th, 2026"
         - gate: revenue
           quote: "Less than $50k in revenue earned as of February 17th, 2026"
+    open_to:
+      - ca
     founder_receives:
       - prize
     access: application

@@ -28,3 +28,8 @@ programs:
     audiences:
       - founders
       - partners
+    delivery: in-person
+    where:
+      - ca-on-toronto
+    review:
+      - open_to

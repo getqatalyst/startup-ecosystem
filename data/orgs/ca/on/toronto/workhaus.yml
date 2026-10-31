@@ -12,8 +12,6 @@ hq:
   lng: -79.3711
 desc: Canadian-owned coworking operator with flexible workspaces in Toronto, Kitchener-Waterloo and Calgary, offering hot desks, dedicated desks, private offices and virtual offices for freelancers, startups and growing teams.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: workhaus-coworking
     name: Coworking memberships
@@ -27,8 +25,12 @@ programs:
     stage_basis: "Hot desks for freelancers, remote workers, early stage startups; dedicated desks and private offices for growing startups."
     audiences:
       - founders
+    open_to:
+      - ca-on-toronto
     delivery: in-person
     where:
       - ca-on-toronto
     fee: fee
     access: membership
+    cadence:
+      - ongoing

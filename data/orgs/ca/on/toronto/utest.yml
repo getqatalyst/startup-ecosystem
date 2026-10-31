@@ -43,6 +43,8 @@ programs:
         role: co-runs
       - org_name: Connaught Fund
         role: funds
+    open_to:
+      - ca-on-toronto
     delivery: hybrid
     where:
       - ca-on-toronto

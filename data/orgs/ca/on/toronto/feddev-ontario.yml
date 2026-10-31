@@ -14,8 +14,6 @@ hq:
   lat: 43.6515
   lng: -79.3785
 desc: Federal regional development agency that funds businesses and not-for-profit organizations across southern Ontario to innovate, grow and compete.
-review:
-  - hq
 last_verified: 2026-10
 programs:
   - id: feddev-ontario-business-funding
@@ -41,6 +39,7 @@ programs:
         - for-profit
     open_to:
       - ca-on
+    fee: free
     founder_receives:
       - loan
     access: application
@@ -75,6 +74,7 @@ programs:
         - for-profit
     open_to:
       - ca-on
+    fee: free
     founder_receives:
       - loan
     access: application

@@ -16,8 +16,6 @@ hq:
   approx: true
 desc: A national charity and public foundation that backs community-led environmental and social change through grants, a shared charitable platform for projects, and advisory services.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: makeway-shared-platform
     name: Shared Platform

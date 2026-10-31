@@ -34,6 +34,11 @@ programs:
     audiences:
       - aspiring
       - founders
+    open_to:
+      - ca-on-toronto
+    delivery: hybrid
+    where:
+      - ca-on-toronto
     access: application
   - id: the-bridge-open-learning-series
     name: Entrepreneurship Open Learning Series
@@ -47,4 +52,5 @@ programs:
       - founders
     open_to:
       - global
+    delivery: remote
     access: open

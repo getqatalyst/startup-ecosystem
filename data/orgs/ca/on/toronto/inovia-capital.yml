@@ -14,8 +14,6 @@ hq:
   lng: -79.3928
 desc: Canada-anchored, multi-stage venture capital firm backing North American and European tech companies from pre-seed to pre-IPO.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: inovia-capital-investment
     name: Inovia Capital

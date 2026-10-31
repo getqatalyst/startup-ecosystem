@@ -11,8 +11,6 @@ hq:
   city: ca-on-toronto
 desc: National charity offering mentorship, education programs, a pitch program and a peer community to self-identifying women, non-binary and trans-femme entrepreneurs across Canada.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: the-forum-mentor-program
     name: The Forum Mentor Program
@@ -40,6 +38,8 @@ programs:
     open_to:
       - ca
     delivery: hybrid
+    where:
+      - ca
     fee: fee
     access: application
     cadence:
@@ -70,9 +70,14 @@ programs:
           source: https://www.theforum.ca/programs
     open_to:
       - ca
+    delivery: in-person
+    where:
+      - ca-on-toronto
     founder_receives:
       - prize
     access: application
+    cadence:
+      - annual
     languages:
       - en
       - fr
@@ -96,6 +101,8 @@ programs:
     open_to:
       - ca
     delivery: hybrid
+    where:
+      - ca-on-toronto
     fee: fee
     access: application
     cadence:
@@ -152,6 +159,7 @@ programs:
     access: application
     cadence:
       - cohort
+    duration: 8 weeks
   - id: the-forum-financial-fundamentals
     name: Financial Fundamentals
     url: https://www.theforum.ca/financial-fundamentals
@@ -175,3 +183,5 @@ programs:
     delivery: remote
     fee: free
     access: open
+    cadence:
+      - ongoing

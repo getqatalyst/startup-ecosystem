@@ -9,8 +9,6 @@ hq:
   city: ca-on-toronto
 desc: Canadian tech and startup news publication covering the companies, funding and trends in Canada's digital economy, with a weekly newsletter and podcast. Founders can pitch their company news.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: betakit-pitch
     name: Pitch your story to BetaKit

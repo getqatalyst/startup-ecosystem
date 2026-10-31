@@ -12,8 +12,6 @@ hq:
   city: ca-on-toronto
 desc: A charity running free, equity-free online accelerator programs and a national community for young founders across Canada.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: league-of-innovators-labs
     name: Labs
@@ -135,6 +133,8 @@ programs:
     delivery: remote
     fee: free
     access: membership
+    cadence:
+      - cohort
     duration: 2 weeks
   - id: league-of-innovators-community
     name: LOI community
@@ -156,6 +156,11 @@ programs:
         quote: "You’re 30 or younger"
     open_to:
       - ca
+    delivery: hybrid
+    where:
+      - ca
     fee: free
     equity: false
     access: membership
+    cadence:
+      - ongoing

@@ -12,8 +12,6 @@ hq:
   lng: -79.334
 desc: Markham-based innovation hub for hardtech and deeptech founders, helping Canadian ventures raise capital, commercialize technology and IP, hire talent and win customers, with prototyping and testing labs and coworking space.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: venturelab-hardware-catalyst-initiative
     name: Hardware Catalyst Initiative
@@ -83,6 +81,8 @@ programs:
     fee: free
     equity: false
     access: application
+    cadence:
+      - rolling
     duration: 6 months
   - id: venturelab-investment-readiness
     name: Investment Readiness
@@ -103,6 +103,9 @@ programs:
     fee: free
     equity: false
     access: application
+    cadence:
+      - cohort
+    duration: 3 months
   - id: venturelab-hardtech-investor-network
     name: HardTech Investor Network
     url: https://www.venturelab.ca/hardtech-investor-network
@@ -148,6 +151,8 @@ programs:
     delivery: hybrid
     fee: fee
     access: application
+    cadence:
+      - rolling
     duration: 3 months
   - id: venturelab-start-up-visa
     name: Start-up Visa Program

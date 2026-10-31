@@ -44,6 +44,10 @@ programs:
     founder_receives:
       - none
     access: application
+    cadence:
+      - ongoing
+    review:
+      - where
   - id: vector-institute-darmod
     name: DaRMoD
     aliases:

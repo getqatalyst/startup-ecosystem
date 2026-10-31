@@ -45,6 +45,9 @@ programs:
       - ca
     fee: free
     access: application
+    cadence:
+      - rolling
+      - ongoing
   - id: mars-discovery-district-capital-program
     name: MaRS Capital Program
     url: https://www.marsdd.com/startups/capital-program/
@@ -61,6 +64,8 @@ programs:
     fee: free
     equity: false
     access: application
+    cadence:
+      - rolling
   - id: mars-discovery-district-momentum
     name: Momentum at MaRS
     url: https://www.marsdd.com/service/momentum/
@@ -74,6 +79,11 @@ programs:
       - founders
     open_to:
       - ca
+    fee: free
+    equity: false
+    access: application
+    cadence:
+      - rolling
   - id: mars-discovery-district-women-in-cleantech
     name: RBC Women in Cleantech Accelerator
     url: https://www.marsdd.com/service/women-in-cleantech-accelerator/
@@ -134,12 +144,18 @@ programs:
           quote: "This cohort-based program helps pre-growth stage active mobility companies scale their solutions to help people with disabilities live fuller lives."
     open_to:
       - ca
+    delivery: hybrid
     where:
       - ca-on-toronto
+    founder_receives:
+      - grant
     access: application
     cadence:
       - cohort
     duration: 2 years
+    review:
+      - delivery
+      - founder_receives
   - id: mars-discovery-district-better-buildings
     name: Better Buildings Adoption Accelerator
     url: https://missionfrommars.ca/better-buildings/better-buildings-adoption-accelerator/

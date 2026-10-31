@@ -25,6 +25,8 @@ programs:
       - build
     audiences:
       - founders
+    open_to:
+      - ca-on-toronto
     delivery: in-person
     where:
       - ca-on-toronto

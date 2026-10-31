@@ -12,8 +12,6 @@ hq:
   city: us-ct-darien
 desc: Growth equity firm with offices in Darien, Connecticut and New York, backing high-growth fintech companies in payments, banking, lending, insurance and capital markets.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: ten-coves-capital-growth-equity
     name: Growth Equity
@@ -34,3 +32,5 @@ programs:
     founder_receives:
       - investment
     access: invite
+    review:
+      - open_to

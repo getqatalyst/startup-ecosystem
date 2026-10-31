@@ -25,8 +25,16 @@ programs:
       - founders
       - aspiring
       - talent
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+      - ca-qc-montreal
     fee: fee
     access: membership
+    cadence:
+      - ongoing
+    review:
+      - open_to
   - id: techto-peerscale
     name: Peerscale
     url: https://www.peerscale.com/
@@ -40,5 +48,10 @@ programs:
       - founders
     open_to:
       - ca
+    delivery: in-person
     fee: fee
     access: application
+    cadence:
+      - ongoing
+    review:
+      - where

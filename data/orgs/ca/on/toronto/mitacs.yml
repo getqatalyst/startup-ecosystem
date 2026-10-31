@@ -12,8 +12,6 @@ hq:
   lng: -79.3886
 desc: National not-for-profit that co-funds research internships, matching post-secondary students and postdoctoral fellows with companies and other organizations on innovation projects.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: mitacs-accelerate-entrepreneur
     name: Accelerate Entrepreneur
@@ -39,6 +37,7 @@ programs:
           quote: "Note that your start up will need to be incorporated to receive any funding"
     open_to:
       - ca
+    fee: fee
     founder_receives:
       - stipend
     access: application
@@ -61,6 +60,7 @@ programs:
         - nonprofit
     open_to:
       - ca
+    fee: fee
     access: application
     review:
       - stages
@@ -81,6 +81,8 @@ programs:
         - nonprofit
     open_to:
       - ca
+    fee: fee
     access: application
+    duration: 4 months
     review:
       - stages

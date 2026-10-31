@@ -32,6 +32,8 @@ programs:
       venture:
         - gate: sector
           quote: "H2i supports early-stage entrepreneurs working on innovative health and medical solutions – spanning medical devices, software and therapeutic interventions."
+    open_to:
+      - ca
     access: application
     cadence:
       - rolling

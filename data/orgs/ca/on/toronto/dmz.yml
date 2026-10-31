@@ -69,6 +69,8 @@ programs:
     fee: free
     equity: true
     access: application
+    cadence:
+      - cohort
     duration: 9 months
   - id: dmz-validator
     name: Validator
@@ -91,6 +93,8 @@ programs:
     open_to:
       - ca-on
     access: application
+    cadence:
+      - cohort
     duration: 10 weeks
   - id: dmz-launchpad
     name: Launchpad

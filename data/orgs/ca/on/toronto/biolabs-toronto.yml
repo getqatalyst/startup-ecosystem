@@ -35,8 +35,15 @@ programs:
       venture:
         - gate: sector
           quote: "BioLabs are the premier co-working spaces for life science startups"
+    open_to:
+      - ca-on-toronto
+    delivery: in-person
+    where:
+      - ca-on-toronto
     fee: fee
     access: membership
+    cadence:
+      - ongoing
   - id: biolabs-toronto-abbvie-biotech-innovators-award
     name: AbbVie Biotech Innovators Award
     url: https://www.biolabs.io/abbvie-2026-biotechinnovatorsaward
@@ -63,4 +70,9 @@ programs:
           quote: "a life science startup company (“Award Recipients”) working on research and development in the fields of Oncology, immunology, neurosciences, aesthetics, Therapeutic Modalities and Platform technologies and obesity"
     open_to:
       - ca
+    delivery: hybrid
+    where:
+      - ca-on-toronto
+    fee: free
     access: application
+    duration: 12 months

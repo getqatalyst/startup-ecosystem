@@ -10,8 +10,6 @@ hq:
   city: ca-on-toronto
 desc: National non-profit that gives young entrepreneurs across Canada startup loans, one-on-one mentorship and resources to start or buy a business.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: futurpreneur-startup-program
     name: Startup Program
@@ -43,10 +41,12 @@ programs:
         quote: "You must be between 18 and 39 years old when you submit your application."
     open_to:
       - ca
+    fee: fee
     equity: false
     founder_receives:
       - loan
     access: application
+    duration: 2 years
   - id: futurpreneur-under-30-startup
     name: Under 30 Startup Program
     url: https://futurpreneur.ca/en/under-30/
@@ -111,7 +111,9 @@ programs:
         quote: "You are between the ages of 18-39"
     open_to:
       - ca
+    fee: fee
     equity: false
     founder_receives:
       - loan
     access: application
+    duration: 2 years

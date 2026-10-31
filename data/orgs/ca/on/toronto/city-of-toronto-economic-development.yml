@@ -31,7 +31,11 @@ programs:
     partners:
       - org_name: Government of Ontario
         role: funds
+    open_to:
+      - ca-on-toronto
     delivery: hybrid
+    where:
+      - ca-on-toronto
     fee: free
     access: open
     cadence:
@@ -51,6 +55,9 @@ programs:
       venture:
         - gate: incorporated
           quote: "Have a registered business"
+    open_to:
+      - ca-on-toronto
+    fee: free
     access: application
   - id: city-of-toronto-economic-development-starter-company-plus
     name: Starter Company Plus
@@ -84,10 +91,17 @@ programs:
     partners:
       - org_name: Government of Ontario
         role: funds
+    open_to:
+      - ca-on-toronto
     delivery: hybrid
+    where:
+      - ca-on-toronto
     founder_receives:
       - grant
     access: application
+    cadence:
+      - cohort
+    duration: 3 months
   - id: city-of-toronto-economic-development-summer-company
     name: Summer Company
     url: https://www.toronto.ca/business-economy/business-operation-growth/business-incentives/summer-company-grant/
@@ -115,8 +129,11 @@ programs:
     partners:
       - org_name: Government of Ontario
         role: funds
+    open_to:
+      - ca-on
     founder_receives:
       - grant
     access: application
     cadence:
       - annual
+    duration: 12 weeks

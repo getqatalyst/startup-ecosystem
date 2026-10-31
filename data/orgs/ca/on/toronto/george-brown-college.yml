@@ -38,6 +38,8 @@ programs:
     delivery: hybrid
     where:
       - ca-on-toronto
+    review:
+      - open_to
   - id: george-brown-college-entrepreneurship-bootcamp
     name: Entrepreneurship Fundamentals Bootcamp
     aliases:
@@ -55,9 +57,12 @@ programs:
     delivery: in-person
     where:
       - ca-on-toronto
+    access: open
     cadence:
       - cohort
     duration: 6 weeks
+    review:
+      - open_to
   - id: george-brown-college-pitch-it
     name: Pitch It GBP!
     url: https://www.georgebrown.ca/startgbc/programs-workshops/pitch-it
@@ -79,9 +84,16 @@ programs:
         - org: george-brown-college
           role: alumni
           quote: "Open to any GBP students and recent grads from 2025/2026 programs with an active georgebrown.ca email address."
+    delivery: in-person
+    where:
+      - ca-on-toronto
     founder_receives:
       - prize
     access: application
+    cadence:
+      - annual
+    review:
+      - open_to
   - id: george-brown-college-ip-commercialization
     name: Commercialization & IP Mobilization
     url: https://www.georgebrown.ca/research-innovation/work-with-us/commercialization-ip-mobilization
@@ -96,6 +108,9 @@ programs:
       - operate
     audiences:
       - founders
+    founder_receives:
+      - grant
     access: application
     review:
       - stages
+      - open_to

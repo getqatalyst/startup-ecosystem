@@ -14,8 +14,6 @@ hq:
   lng: -79.3956
   approx: true
 desc: Canada's cleantech innovation and adoption accelerator, with programs from ideation to scale and investor connections for cleantech ventures. This record is its Toronto office.
-review:
-  - hq
 last_verified: 2026-10
 programs:
   - id: foresight-canada-acceleration
@@ -39,6 +37,7 @@ programs:
           quote: "Cleantech ventures gain tailored support, mentorship, and industry connections to scale globally competitive and commercially viable technologies."
     open_to:
       - global
+    delivery: remote
     fee: fee
     equity: false
     access: application
@@ -88,6 +87,7 @@ programs:
           quote: "Companies across all cleantech sectors"
     open_to:
       - ca
+    delivery: in-person
     access: application
     cadence:
       - annual
