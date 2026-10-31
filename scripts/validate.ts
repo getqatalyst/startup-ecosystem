@@ -259,17 +259,30 @@ export function validate({
 			err(file, `file name must be ${org.id}.yml`);
 		}
 
-		const city = regions.cities[org.hq.city];
-		if (!city) {
-			err(file, `hq.city ${org.hq.city} is not in data/regions/index.yml`);
-		} else if (org.hq.lat !== undefined) {
-			const [[south, west], [north, east]] = city.bounds;
-			const { lat, lng } = org.hq;
-			if (lat < south || lat > north || lng < west || lng > east) {
+		// hq and every office: the city is listed and coordinates fall inside its bounds
+		const sites: [string, any][] = [
+			["hq", org.hq],
+			...(org.locations ?? []).map((s: any, i: number): [string, any] => [
+				`locations[${i}]`,
+				s,
+			]),
+		];
+		for (const [label, site] of sites) {
+			const city = regions.cities[site.city];
+			if (!city) {
 				err(
 					file,
-					`hq lat/lng (${lat}, ${lng}) is outside ${city.name}'s bounds; check for a typo`,
+					`${label}.city ${site.city} is not in data/regions/index.yml`,
 				);
+			} else if (site.lat !== undefined) {
+				const [[south, west], [north, east]] = city.bounds;
+				const { lat, lng } = site;
+				if (lat < south || lat > north || lng < west || lng > east) {
+					err(
+						file,
+						`${label} lat/lng (${lat}, ${lng}) is outside ${city.name}'s bounds; check for a typo`,
+					);
+				}
 			}
 		}
 
