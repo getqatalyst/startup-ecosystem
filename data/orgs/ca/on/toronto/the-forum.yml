@@ -11,8 +11,6 @@ hq:
   city: ca-on-toronto
 desc: National charity offering mentorship, education programs, a pitch program and a peer community to self-identifying women, non-binary and trans-femme entrepreneurs across Canada.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: the-forum-mentor-program
     name: The Forum Mentor Program

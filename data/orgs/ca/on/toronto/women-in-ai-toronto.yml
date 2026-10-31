@@ -11,8 +11,6 @@ hq:
   city: ca-on-toronto
 desc: Toronto team of Women in AI Canada, the Canadian chapter of the global Women in AI network, offering community, events and mentorship for women building careers or startups in AI.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: wai-mentorship-canada
     name: WaiMentorship Canada

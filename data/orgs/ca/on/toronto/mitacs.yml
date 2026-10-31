@@ -12,8 +12,6 @@ hq:
   lng: -79.3886
 desc: National not-for-profit that co-funds research internships, matching post-secondary students and postdoctoral fellows with companies and other organizations on innovation projects.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: mitacs-accelerate-entrepreneur
     name: Accelerate Entrepreneur

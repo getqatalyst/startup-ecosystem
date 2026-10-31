@@ -16,8 +16,6 @@ hq:
   approx: true
 desc: U of T Mississauga's incubator for social entrepreneurs and early-stage startups, offering programs, mentorship, co-working and pitch competitions to the U of T community and founders across Canada.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: icube-utm-ideation-lab
     name: Ideation Lab

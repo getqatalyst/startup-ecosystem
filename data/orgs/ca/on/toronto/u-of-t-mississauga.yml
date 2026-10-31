@@ -14,7 +14,5 @@ hq:
   lat: 43.5446
   lng: -79.6604
 desc: University of Toronto's Mississauga campus, home to the ICUBE incubator for social and early-stage ventures and the SpinUp wet-lab incubator for life-science startups.
-review:
-  - hq
 last_verified: 2026-10
 programs: []

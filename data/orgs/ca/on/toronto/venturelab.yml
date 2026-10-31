@@ -12,8 +12,6 @@ hq:
   lng: -79.334
 desc: Markham-based innovation hub for hardtech and deeptech founders, helping Canadian ventures raise capital, commercialize technology and IP, hire talent and win customers, with prototyping and testing labs and coworking space.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: venturelab-hardware-catalyst-initiative
     name: Hardware Catalyst Initiative

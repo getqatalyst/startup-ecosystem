@@ -11,8 +11,6 @@ hq:
   city: ca-on-toronto
 desc: National charity that builds the entrepreneurial skills of young Canadians through internships, project work and training, funds student talent for startups and small businesses, and runs courses on starting or buying a business.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: venture-for-canada-internship
     name: Internship Program

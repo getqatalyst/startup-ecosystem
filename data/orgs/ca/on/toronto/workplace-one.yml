@@ -14,8 +14,6 @@ hq:
   lng: -79.42
 desc: Toronto operator of fully serviced flexible workspaces, offering private offices, team and HQ suites, dedicated desks, coworking and virtual offices for teams of any size.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: workplace-one-membership
     name: Membership Solutions

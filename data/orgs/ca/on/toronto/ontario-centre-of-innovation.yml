@@ -14,8 +14,6 @@ hq:
   lng: -79.3886
 desc: Ontario-government-funded organization that connects Ontario innovators with researchers, industry partners and funding, including pre-seed co-investment funds, to commercialize made-in-Ontario technology.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: ontario-centre-of-innovation-ready-4-market
     name: Ready 4 Market

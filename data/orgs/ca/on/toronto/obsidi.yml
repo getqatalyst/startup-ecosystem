@@ -16,8 +16,6 @@ hq:
   lat: 43.6508
   lng: -79.3966
 desc: An inclusive community and career platform connecting tech professionals, with a focus on Black professionals, to networks, mentorship, jobs and training.
-review:
-  - hq
 programs:
   - id: obsidi-program
     name: Obsidi

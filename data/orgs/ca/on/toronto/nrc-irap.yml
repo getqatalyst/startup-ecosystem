@@ -16,8 +16,6 @@ hq:
   lng: -79.3921
 desc: The National Research Council of Canada's program giving Canadian small and medium-sized businesses advice, connections and funding to build innovation capacity and take ideas to market.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: nrc-irap-funding
     name: Financial support for technology innovation

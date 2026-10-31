@@ -10,8 +10,6 @@ hq:
   city: ca-on-toronto
 desc: National non-profit that gives young entrepreneurs across Canada startup loans, one-on-one mentorship and resources to start or buy a business.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: futurpreneur-startup-program
     name: Startup Program

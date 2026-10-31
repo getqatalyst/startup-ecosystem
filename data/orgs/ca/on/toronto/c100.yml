@@ -9,8 +9,6 @@ hq:
   city: ca-on-toronto
 desc: Member-driven nonprofit of Canadian tech veterans that runs mentoring programs for early-stage and scaling Canadian-based tech founders, with access to a Silicon Valley network.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: c100-fellows
     name: C100 Fellows | 48Hrs

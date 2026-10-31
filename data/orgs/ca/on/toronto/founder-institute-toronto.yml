@@ -10,8 +10,6 @@ cats:
 hq:
   city: ca-on-toronto
 desc: Toronto chapter of the Founder Institute, a global pre-seed accelerator that takes idea-stage founders through a structured, mentor-rated program toward a fundable company.
-review:
-  - hq
 last_verified: 2026-10
 programs:
   - id: founder-institute-toronto-accelerator

@@ -12,8 +12,6 @@ hq:
   city: ca-on-toronto
 desc: A charity running free, equity-free online accelerator programs and a national community for young founders across Canada.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: league-of-innovators-labs
     name: Labs

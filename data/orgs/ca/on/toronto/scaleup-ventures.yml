@@ -15,8 +15,6 @@ hq:
   lng: -79.3643
 desc: Venture capital firm investing in companies that deliver value for citizens and society, focused on dual-use (commercial and government) technology in fintech, developer tools, infrastructure automation and the future of work.
 last_verified: 2026-10
-review:
-  - hq
 programs:
   - id: scaleup-ventures-investment
     name: Scale Up Ventures
