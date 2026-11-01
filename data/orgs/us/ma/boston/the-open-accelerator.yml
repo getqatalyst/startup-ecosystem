@@ -1,5 +1,5 @@
-# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
-# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026,
+# then verified against The Open Accelerator's official Residency page.
 id: the-open-accelerator
 name: The Open Accelerator (TOA)
 url: https://the-open-accelerator.com
@@ -7,42 +7,49 @@ hosts:
   - the-open-accelerator.com
 cats:
   - accelerator
+  - coworking
+  - community
 hq:
   city: us-ma-boston
   area: Fort Point
   lat: 42.3486
   lng: -71.0502
-desc: Boston's open-source AI innovation hub — an initiative between the MA AI Hub, Red Hat and IBM Ventures, launched at Boston Tech Week 2026. Runs a founder residency (workspace, mentorship, GPU access), a community membership program, and a hands-on hackathon series.
-review:
-  - cats
-  - desc
+desc: Boston AI hub backed by Red Hat, IBM Ventures, and the Massachusetts AI Hub. Its Residency helps early-stage teams prepare AI products for enterprise customers.
+last_verified: 2026-10
 programs:
-  - id: the-open-accelerator-program
-    name: The Open Accelerator (TOA)
-    url: https://the-open-accelerator.com
+  - id: the-open-accelerator-residency
+    name: The Residency
+    url: https://the-open-accelerator.com/residency/
     types:
       - accelerator
       - coworking
       - mentorship
       - service
-      - community
     stages:
-      - spark
       - validate
       - build
-      - operate
-      - scale
+    stage_basis: "Teams are past a working prototype and before repeatable revenue; pre-customer and pre-revenue companies can apply."
     audiences:
       - founders
+    eligibility:
+      place:
+        residence:
+          - us-ma
+        quote: "You can apply from anywhere — but if you're accepted, you'll commit to a Massachusetts presence for one year."
+      venture:
+        - gate: sector
+          quote: "AI products or AI-native services — hardware, infrastructure, vertical applications, or physical AI. Consumer products are outside the residency's scope."
+        - gate: team
+          quote: "Founder(s) must be available to participate in person, 4 days a week, at our knowledge center in the Fort Point district for the full 16 weeks."
     open_to:
-      - us-ma
-    access: application
+      - global
+    delivery: in-person
+    where:
+      - us-ma-boston
     fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    equity: false
+    access: application
+    cadence:
+      - cohort
+    duration: 16 weeks
+    last_verified: 2026-10
