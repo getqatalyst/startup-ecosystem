@@ -5,6 +5,7 @@ aliases:
 url: https://creativedestructionlab.com/locations/toronto/
 hosts:
   - creativedestructionlab.com
+parent: university-of-toronto
 cats:
   - accelerator
 hq:
@@ -14,6 +15,8 @@ hq:
   lng: -79.3997
 desc: Nonprofit, objectives-based mentorship program for seed-stage science- and technology-based startups, at the Rotman School of Management. Founders work with mentors and investors in focused streams; no fees and no equity.
 last_verified: 2026-10
+review:
+  - parent
 programs:
   - id: creative-destruction-lab-toronto
     name: CDL-Toronto

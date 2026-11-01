@@ -1,6 +1,7 @@
 id: spaces-king-west
-name: Spaces King West
+name: Spaces Toronto
 aliases:
+  - Spaces King West
   - Spaces KW
 url: https://www.spacesworks.com/en/ca/toronto
 hosts:
@@ -15,8 +16,6 @@ hq:
   approx: true
 desc: Spaces coworking in Toronto, offering hot desks, dedicated desks, private offices and meeting rooms to individuals and teams, with community events and workshops.
 last_verified: 2026-10
-review:
-  - name
 programs:
   - id: spaces-king-west-coworking
     name: Spaces coworking

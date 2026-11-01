@@ -1,6 +1,7 @@
 id: university-of-toronto
-name: University of Toronto (St. George)
+name: University of Toronto
 aliases:
+  - University of Toronto (St. George)
   - U of T
 url: https://www.utoronto.ca/
 hosts:
