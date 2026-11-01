@@ -1,0 +1,91 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: hbs-rock-center
+name: Arthur Rock Center for Entrepreneurship
+aliases:
+  - Rock Center
+  - HBS Rock Center
+url: https://www.hbs.edu/entrepreneurship/
+hosts:
+  - www.hbs.edu/entrepreneurship
+  - www.hbs.edu/newventurecompetition
+cats:
+  - university
+hq:
+  city: us-ma-boston
+  area: Allston
+  lat: 42.366
+  lng: -71.123
+  approx: true
+desc: Harvard Business School's entrepreneurship center. Runs a venture competition, summer funding and coaching for HBS MBA students, and an invitation-only network for HBS alumni founders.
+programs:
+  - id: hbs-rock-center-new-venture-competition
+    name: New Venture Competition
+    url: https://www.hbs.edu/newventurecompetition
+    types:
+      - competition
+    stages:
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Harvard Business School
+          role: student
+          degree: MBA
+          quote: "Participating teams require at least one Harvard Business School MBA student who plays a primary role in the business and will participate in all round of coaching and judging."
+    access: application
+    review:
+      - stages
+  - id: hbs-rock-center-venture-catalyst
+    name: Rock Venture Catalyst
+    aliases:
+      - Rock Summer Fellows
+    url: https://www.hbs.edu/entrepreneurship/mba/rock-venture-catalyst
+    types:
+      - fellowship
+      - grant
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Harvard Business School
+          role: student
+          degree: MBA
+    founder_receives:
+      - grant
+    delivery: hybrid
+    where:
+      - us-ma-boston
+    access: application
+    cadence:
+      - annual
+    review:
+      - stages
+  - id: hbs-rock-center-rock-100
+    name: Rock 100
+    url: https://www.hbs.edu/entrepreneurship/alumni/rock-100
+    types:
+      - community
+    stages:
+      - build
+      - operate
+      - scale
+    stage_basis: "The Rock 100 is a global, invitation-only network for Harvard Business School alumni who are building early-stage, high-growth ventures."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Harvard Business School
+          role: alumni
+          quote: "The Rock 100 is a global, invitation-only network for Harvard Business School alumni who are building early-stage, high-growth ventures."
+    open_to:
+      - global
+    access: invite
+    review:
+      - stages

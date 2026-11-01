@@ -1,0 +1,95 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: innovate-at-bu
+name: Innovate@BU
+url: https://www.bu.edu/innovate/
+hosts:
+  - www.bu.edu/innovate
+cats:
+  - university
+  - accelerator
+  - community
+hq:
+  city: us-ma-boston
+  address: 730 Commonwealth Ave., Boston, MA 02215
+  area: Boston University
+  lat: 42.3497
+  lng: -71.1031
+  approx: true
+desc: Boston University's innovation and entrepreneurship hub for students of every major. Offers mentorship, funding, a summer accelerator and a venture competition to current BU students and recent alumni.
+programs:
+  - id: innovate-at-bu-innovation-pathway
+    name: Innovation Pathway
+    url: https://www.bu.edu/innovate/programs-competitions/innovation-pathway/
+    types:
+      - mentorship
+      - grant
+    stages:
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Boston University
+          role: student
+          quote: "The Innovation Pathway gives current BU students and alumni who graduated within the past year mentorship and funding to take their ventures to the next level."
+        - org_name: Boston University
+          role: alumni
+          quote: "The Innovation Pathway gives current BU students and alumni who graduated within the past year mentorship and funding to take their ventures to the next level."
+    access: application
+    cadence:
+      - rolling
+    review:
+      - stages
+      - types
+  - id: innovate-at-bu-summer-accelerator
+    name: Summer Accelerator
+    url: https://www.bu.edu/innovate/programs-competitions/summer-accelerator/
+    types:
+      - accelerator
+    stages:
+      - validate
+      - build
+    stage_basis: "The Summer Accelerator is a 10-week intensive program that guides current BU students and alumni who graduated within the past year as they build an early-stage venture."
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Boston University
+          role: student
+          quote: "Open to all current BU students and alumni who graduated within the past year."
+        - org_name: Boston University
+          role: alumni
+          quote: "Open to all current BU students and alumni who graduated within the past year."
+    access: application
+    cadence:
+      - cohort
+    duration: 10 weeks
+    review:
+      - stages
+  - id: innovate-at-bu-new-venture-competition
+    name: New Venture Competition
+    url: https://www.bu.edu/innovate/programs-competitions/new-venture-competition/
+    types:
+      - competition
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Boston University
+          role: student
+          quote: "It is open to all current BU students and alumni who graduated within the past year."
+        - org_name: Boston University
+          role: alumni
+          quote: "It is open to all current BU students and alumni who graduated within the past year."
+    access: application
+    review:
+      - stages

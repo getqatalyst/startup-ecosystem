@@ -1,0 +1,58 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: mathworks
+name: MathWorks
+url: https://www.mathworks.com/
+hosts:
+  - www.mathworks.com
+cats:
+  - corporate
+hq:
+  city: us-ma-natick
+  address: 1 Apple Hill Drive, Natick, MA 01760
+  lat: 42.2996
+  lng: -71.3505
+  approx: true
+desc: Maker of MATLAB and Simulink technical-computing software. Gives early-stage startups discounted licenses and support, and free software to startups at its partner accelerators.
+programs:
+  - id: mathworks-startup-program
+    name: MATLAB and Simulink for Startups
+    url: https://www.mathworks.com/products/startups.html
+    types:
+      - service
+    stages:
+      - build
+      - operate
+    stage_basis: "Most startups in the program meet the following criteria: Founded within the last 5 years; Fewer than 15 engineers."
+    audiences:
+      - founders
+    open_to:
+      - global
+    delivery: remote
+    fee: fee
+    access: application
+    review:
+      - stages
+      - open_to
+  - id: mathworks-accelerator-program
+    name: MathWorks Accelerator Program
+    url: https://www.mathworks.com/startups
+    types:
+      - service
+      - mentorship
+    stages:
+      - validate
+      - build
+    stage_basis: "This is available for all startups incubated at a partner organization regardless of size or funding."
+    audiences:
+      - founders
+    open_to:
+      - global
+    delivery: remote
+    fee: free
+    access: institutional
+    cadence:
+      - ongoing
+    review:
+      - stages
+      - open_to

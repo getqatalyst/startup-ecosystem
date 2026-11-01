@@ -1,0 +1,59 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: hbs-foundry
+name: Harvard Business School Foundry
+aliases:
+  - HBS Foundry
+url: https://www.hbs.edu/foundry
+hosts:
+  - www.hbs.edu/foundry
+  - hbsfoundry.org
+cats:
+  - accelerator
+  - university
+hq:
+  city: us-ma-boston
+  address: Soldiers Field, Boston, MA 02163
+  area: Allston
+  lat: 42.366
+  lng: -71.123
+  approx: true
+desc: Harvard Business School's online workspace for early-stage founders. Its bootcamps take founders from Harvard and other institutions from a raw idea or research insight to a funding-ready pitch.
+programs:
+  - id: hbs-foundry-startup-bootcamp
+    name: Startup Bootcamp
+    url: https://www.hbs.edu/foundry/bootcamps/startup-bootcamp
+    types:
+      - accelerator
+      - course
+    stages:
+      - spark
+      - validate
+    stage_basis: "No pitch deck, technical background, or prior startup experience required."
+    audiences:
+      - aspiring
+      - founders
+    open_to:
+      - us
+    delivery: remote
+    fee: fee
+    equity: false
+    access: application
+    cadence:
+      - cohort
+    duration: 8 weeks
+    review:
+      - open_to
+  - id: hbs-foundry-deep-tech-bootcamp
+    name: Deep Tech Bootcamp
+    variant_of: hbs-foundry-startup-bootcamp
+    url: https://www.hbs.edu/foundry/bootcamps/deep-tech
+    stage_basis: "Just a technical insight and the curiosity to explore it."
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "A 4-week virtual program for deep tech founders ready to move from raw idea to funding-ready pitch."
+    duration: 4 weeks
+    review:
+      - open_to
+      - fee

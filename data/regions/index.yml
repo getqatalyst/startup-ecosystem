@@ -15,6 +15,7 @@ subdivisions:
   us-ct: { name: Connecticut }
   us-ca: { name: California }
   de-bw: { name: Baden-Württemberg }
+  us-tx: { name: Texas }
 
 cities:
   ca-on-toronto:
@@ -129,6 +130,20 @@ cities:
     bounds: [[42.15, -72.66], [42.25, -72.56]]
     status: draft
     moderators: []
+  us-ma-natick:
+    name: Natick
+    center: [42.2996, -71.3505]
+    zoom: 13
+    bounds: [[42.25, -71.40], [42.35, -71.30]]
+    status: draft
+    moderators: []
+  us-ma-dedham:
+    name: Dedham
+    center: [42.2387, -71.1786]
+    zoom: 13
+    bounds: [[42.19, -71.23], [42.29, -71.13]]
+    status: draft
+    moderators: []
   # Cities with no page yet: HQs of orgs that serve founders in a city that has one.
   # centre = the city centre; bounds = a typo guard of about 0.15 degrees around it
   ca-qc-montreal:
@@ -157,5 +172,12 @@ cities:
     center: [48.7758, 9.1829]
     zoom: 12
     bounds: [[48.68, 9.04], [48.87, 9.32]]
+    status: draft
+    moderators: []
+  us-tx-houston:
+    name: Houston
+    center: [29.7604, -95.3698]
+    zoom: 12
+    bounds: [[29.61, -95.52], [29.91, -95.22]]
     status: draft
     moderators: []
