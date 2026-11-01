@@ -1,0 +1,40 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: wyss-institute
+name: Wyss Institute for Biologically Inspired Engineering
+aliases:
+  - Wyss Institute
+url: https://wyss.harvard.edu/
+hosts:
+  - wyss.harvard.edu
+cats:
+  - research-institute
+  - university
+hq:
+  city: us-ma-boston
+  address: 201 Brookline Ave., Boston, MA 02215
+  area: Longwood
+  lat: 42.3440
+  lng: -71.1010
+  approx: true
+desc: Harvard research institute that turns biologically inspired engineering into products. Its Validation Projects de-risk lab technologies against fixed milestones, toward licenses and startups.
+programs:
+  - id: wyss-institute-validation-projects
+    name: Validation Projects
+    url: https://wyss.harvard.edu/how-we-work/
+    types:
+      - incubator
+      - service
+    stages:
+      - validate
+      - build
+    stage_basis: "Validation Projects identify technologies with potential high-impact applications that have successfully progressed through significant concept refinement and meet predefined technical, product development and intellectual property criteria."
+    audiences:
+      - aspiring
+    eligibility:
+      affiliation:
+        - org: wyss-institute
+          role: affiliate
+    access: invite
+    review:
+      - stages

@@ -1,0 +1,45 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: hbs-health-care-initiative
+name: Harvard Business School Health Care Initiative
+aliases:
+  - HBS Health Care Initiative
+url: https://www.hbs.edu/healthcare/
+hosts:
+  - www.hbs.edu/healthcare
+cats:
+  - university
+hq:
+  city: us-ma-boston
+  area: Allston
+  lat: 42.366
+  lng: -71.123
+  approx: true
+desc: Harvard Business School's health care program. Runs the Blavatnik Fellowship, in which HBS alumni and Harvard postdocs build ventures around Harvard life science technologies.
+programs:
+  - id: hbs-blavatnik-fellowship
+    name: Blavatnik Fellowship in Life Science Entrepreneurship
+    url: https://www.hbs.edu/healthcare/for-alumni/blavatnik-fellowship
+    types:
+      - fellowship
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Harvard Business School
+          role: alumni
+          quote: "The Blavatnik Fellowship in Life Science Entrepreneurship offers Harvard Business School (HBS) alumni and Harvard-affiliated postdoctoral researchers the opportunity to advance new ventures around promising life science technologies and develop their leadership talents during a 12-month fellowship year."
+        - org_name: Harvard University
+          role: affiliate
+          quote: "The Blavatnik Fellowship in Life Science Entrepreneurship offers Harvard Business School (HBS) alumni and Harvard-affiliated postdoctoral researchers the opportunity to advance new ventures around promising life science technologies and develop their leadership talents during a 12-month fellowship year."
+      venture:
+        - gate: sector
+          quote: "This innovative program provides a select group of HBS alumni with the opportunity to work with Harvard inventors to promote the commercialization of life science technologies."
+    access: application
+    duration: 12 months
+    review:
+      - stages

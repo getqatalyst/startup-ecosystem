@@ -1,0 +1,105 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: harvard-office-of-technology-development
+name: Harvard Office of Technology Development
+aliases:
+  - Harvard OTD
+url: https://otd.harvard.edu/
+hosts:
+  - otd.harvard.edu
+cats:
+  - university
+hq:
+  city: us-ma-cambridge
+  address: Smith Campus Center, Suite 727E, 1350 Massachusetts Avenue, Cambridge, MA 02138
+  area: Harvard Square
+  lat: 42.3730
+  lng: -71.1180
+  approx: true
+locations:
+  - city: us-ma-boston
+    address: Harvard Medical School, Gordon Hall, 25 Shattuck Street, Boston, MA 02115
+    area: Longwood
+desc: Harvard's technology-transfer office. Its accelerators fund Harvard research projects toward proof of concept, licensing and startup formation.
+programs:
+  - id: harvard-otd-blavatnik-biomedical-accelerator
+    name: Blavatnik Biomedical Accelerator
+    url: https://otd.harvard.edu/accelerators/blavatnik-biomedical-accelerator/
+    types:
+      - grant
+      - mentorship
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+    eligibility:
+      affiliation:
+        - org_name: Harvard University
+          role: affiliate
+      venture:
+        - gate: sector
+          quote: "Supports early-stage biomedical research projects toward commercialization opportunities and translational impact."
+    founder_receives:
+      - grant
+    access: application
+    review:
+      - stages
+      - eligibility
+  - id: harvard-otd-grid-accelerator
+    name: Harvard Grid Accelerator
+    url: https://otd.harvard.edu/accelerators/harvard-grid-accelerator/
+    partners:
+      - org_name: Harvard John A. Paulson School of Engineering and Applied Sciences
+        role: co-runs
+    types:
+      - grant
+    stages:
+      - spark
+      - validate
+    audiences:
+      - aspiring
+    eligibility:
+      affiliation:
+        - org_name: Harvard University
+          role: affiliate
+          quote: "the Harvard Grid supports students and researchers across engineering and the physical sciences."
+        - org_name: Harvard University
+          role: student
+          quote: "the Harvard Grid supports students and researchers across engineering and the physical sciences."
+      venture:
+        - gate: sector
+          quote: "Advances innovations in the engineering and physical sciences toward startup formation."
+    founder_receives:
+      - grant
+    access: application
+    review:
+      - stages
+  - id: harvard-otd-climate-and-sustainability-translational-fund
+    name: Climate and Sustainability Translational Fund
+    url: https://otd.harvard.edu/accelerators/climate-and-sustainability-translational-fund/
+    partners:
+      - org_name: Salata Institute for Climate and Sustainability
+        role: co-runs
+    types:
+      - grant
+      - mentorship
+    stages:
+      - spark
+      - validate
+    stage_basis: "projects that are aimed at extending preliminary results, establishing proof-of-concept, scaling-up a product or process, and enhancing (or generating) intellectual property positions are welcomed."
+    audiences:
+      - aspiring
+    eligibility:
+      affiliation:
+        - org_name: Harvard University
+          role: affiliate
+          quote: "Principal Investigators whose employer is Harvard University are eligible to apply"
+      venture:
+        - gate: sector
+          quote: "projects are welcomed in any area of applied sciences, physical sciences, environmental sciences, computer sciences, or engineering with a focus on climate and sustainability solutions."
+    founder_receives:
+      - grant
+    access: application
+    review:
+      - stages
