@@ -1,10 +1,10 @@
 # Going public: checklist
 
 **Bottom line:** the history has no secrets and no personal data beyond the commit author
-email you already chose to keep. Done 2026-10-31: `main` protection (step 3), the visibility
-flip (step 5) and the security settings in step 6 (items 1–3). Still to do: steps 1, 2 and 4
-(merge the open PRs, decide on the descriptions that break the content rules, create the
-labels), the merge settings in step 3 once the stacked PRs are in, and step 6 items 4–6.
+email you already chose to keep. Done 2026-10-31: the open PRs merged (step 1), the
+descriptions decided (step 2), `main` protection and merge settings (step 3), the labels
+(step 4, item 1), the visibility flip (step 5) and step 6 items 1–5. Still to do: teams,
+CODEOWNERS and moderators (step 4, items 2–5) before outside moderators get write access.
 Organizations can't claim records until the gap in step 8 is closed.
 
 Except the steps marked done, everything here is a proposal: each command changes a repo or org setting, so you run it.
@@ -14,7 +14,7 @@ Commands assume `gh` logged in as an org owner and `REPO=getqatalyst/startup-eco
 REPO=getqatalyst/startup-ecosystem
 ```
 
-## 1. Merge the open PRs
+## 1. Merge the open PRs: done 2026-10-31
 
 1. #2 (`toronto-import`) into `main`.
 2. Retarget the PRs based on it to `main`, then merge: #3 issue forms and labels, #4 link
@@ -22,7 +22,9 @@ REPO=getqatalyst/startup-ecosystem
 3. The Massachusetts import and the Toronto research fixes are in their own sessions; merge
    them when ready. Rerun the history scan (section 7) after any branch is pushed.
 
-## 2. Decide on descriptions that break the content rules
+## 2. Decide on descriptions that break the content rules: decided 2026-10-31
+
+David's call: keep these descriptions as they are. Nothing below needs doing.
 
 CONTRIBUTING.md rule 2 says descriptions carry no dates, amounts, street addresses or
 people's names. CI checks only length and HTML, so 40 of the 94 imported descriptions
@@ -74,7 +76,7 @@ gh api -X PATCH "repos/$REPO/branches/main/protection/required_pull_request_revi
 Optional: strict checks (a PR must be up to date with `main` before it merges), at the cost of
 more rebasing: `gh api -X PATCH "repos/$REPO/branches/main/protection/required_status_checks" -F strict=true`.
 
-Merge settings (proposed):
+Merge settings: done 2026-10-31 (squash only, branches deleted on merge).
 
 ```bash
 gh repo edit "$REPO" --enable-squash-merge --enable-merge-commit=false \
@@ -85,7 +87,7 @@ Workflow token default is already read-only and Actions can't approve PRs; keep 
 
 ## 4. Labels and moderators
 
-1. `bun run labels getqatalyst/startup-ecosystem`. Until then, issues from the forms arrive
+1. Done 2026-10-31: `bun run labels getqatalyst/startup-ecosystem`. Until then, issues from the forms arrive
    unlabelled (GitHub drops labels that don't exist).
 2. Code owners must have write access to the repo. Proposed: one team per province or state
    once it has a moderator, plus a core team:
@@ -160,9 +162,9 @@ Items 1–3 are done: applied at David's request and read back 2026-10-31.
 
    Fork PRs run `validate.yml` with a read-only token. Never add a `pull_request_target`
    workflow that checks out PR code; core reviews `.github/` for that.
-4. Run the health check once by hand: Actions → Monthly health check → Run workflow. It
+4. Done 2026-10-31. Run the health check once by hand: Actions → Monthly health check → Run workflow. It
    opens one issue per province or state (today: Ontario, Quebec, Connecticut). Check them.
-5. Confirm the release: after the first merge to `main`,
+5. Done 2026-10-31 (downloads logged out). Confirm the release: after the first merge to `main`,
    `https://github.com/getqatalyst/startup-ecosystem/releases/latest/download/ecosystem.csv`
    downloads without logging in.
 6. GitHub turns off scheduled workflows after 60 days with no commits. If the repo goes quiet,
