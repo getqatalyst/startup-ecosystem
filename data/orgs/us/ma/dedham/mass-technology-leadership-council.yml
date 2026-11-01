@@ -1,0 +1,46 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: mass-technology-leadership-council
+name: Mass Technology Leadership Council
+aliases:
+  - MTLC
+url: https://www.mtlc.co/
+hosts:
+  - www.mtlc.co
+cats:
+  - community
+hq:
+  city: us-ma-dedham
+  address: 770 Legacy Place, Dedham, MA 02026
+  lat: 42.2387
+  lng: -71.1786
+  approx: true
+desc: Industry council for technology companies in New England. Runs The Founder Lab, a no-fee cohort for founders building technology companies in Massachusetts.
+programs:
+  - id: mass-technology-leadership-council-founder-lab
+    name: The Founder Lab
+    url: https://www.mtlc.co/thefounderlab/
+    types:
+      - mentorship
+      - community
+    stages:
+      - validate
+      - build
+    stage_basis: "A strong fit is past the idea stage, actively building"
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "The Founder Lab is a 10-week cohort for selected founders building technology companies in Massachusetts."
+    open_to:
+      - us-ma
+    delivery: in-person
+    where:
+      - us-ma-cambridge
+    fee: free
+    equity: false
+    access: application
+    cadence:
+      - cohort
+    duration: 10 weeks

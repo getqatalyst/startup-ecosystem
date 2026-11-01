@@ -115,3 +115,84 @@ programs:
     cadence:
       - rolling
     last_verified: 2026-10
+  - id: harvard-innovation-labs-venture-incubation-program
+    name: Venture Incubation Program
+    url: https://innovationlabs.harvard.edu/articles/harvard-innovation-labs-fall-membership-2026
+    types:
+      - incubator
+      - mentorship
+    stages:
+      - validate
+      - build
+    stage_basis: "The program provides dedicated coaching and clear milestones to help teams progress from validating a problem and solution to demonstrating early traction and preparing for investment."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Harvard University
+          role: student
+          quote: "Additionally, for high-potential student founders committed to making meaningful progress on their ventures, the Harvard Innovation Labs is also introducing a new Venture Incubation Program."
+    access: application
+    review:
+      - access
+  - id: harvard-innovation-labs-climate-circle-accelerator
+    name: Climate Circle Accelerator
+    url: https://innovationlabs.harvard.edu/climate/climate-circle
+    types:
+      - accelerator
+      - mentorship
+      - service
+    stages:
+      - build
+      - operate
+    stage_basis: "To be accepted into the Climate Circle, ventures must have moved beyond the idea stage."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Harvard University
+          role: student
+          quote: "Applicants must be enrolled in a Harvard degree-granting program or have Harvard alumni or faculty or staff status"
+        - org_name: Harvard University
+          role: alumni
+          quote: "Applicants must be enrolled in a Harvard degree-granting program or have Harvard alumni or faculty or staff status"
+        - org_name: Harvard University
+          role: affiliate
+          quote: "Applicants must be enrolled in a Harvard degree-granting program or have Harvard alumni or faculty or staff status"
+      venture:
+        - gate: sector
+          quote: "The Climate Circle Accelerator offers world-class coaching, legal counsel, warm connections to industry leaders, and a peer group of Harvard founders who are all working on innovative solutions to tackle climate change."
+      venture_type:
+        - for-profit
+        - nonprofit
+    access: application
+    cadence:
+      - cohort
+    review:
+      - stages
+  - id: harvard-innovation-labs-presidents-innovation-challenge
+    name: President's Innovation Challenge
+    aliases:
+      - PIC
+    url: https://innovationlabs.harvard.edu/presidents-innovation-challenge
+    types:
+      - competition
+    stages:
+      - validate
+      - build
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Harvard University
+          role: student
+          quote: "Students from all 13 Harvard schools are invited to submit their boldest solutions to the world’s toughest challenges."
+    founder_receives:
+      - prize
+    access: application
+    cadence:
+      - annual
+    review:
+      - stages
+      - cadence

@@ -1,0 +1,74 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: umass-boston-venture-development-center
+name: Venture Development Center (UMass Boston)
+aliases:
+  - VDC
+  - UMass Boston VDC
+url: https://vdc.umb.edu/
+hosts:
+  - vdc.umb.edu
+cats:
+  - incubator
+  - university
+hq:
+  city: us-ma-boston
+  address: Wheatley Hall, 100 Morrissey Blvd, Boston, MA 02125
+  area: Columbia Point
+  lat: 42.3138
+  lng: -71.0377
+  approx: true
+desc: UMass Boston's incubator for early-stage life sciences and technology startups, with or without a UMass connection. Also runs a visa-support residency for international founders expanding in Massachusetts.
+programs:
+  - id: umass-boston-vdc-membership
+    name: VDC Membership
+    url: https://vdc.umb.edu/apply/
+    types:
+      - incubator
+      - coworking
+      - community
+      - mentorship
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "Our member companies are early-stage startups specializing in life sciences and technology."
+    delivery: in-person
+    where:
+      - us-ma-boston
+    access: application
+    cadence:
+      - rolling
+    review:
+      - stages
+  - id: umass-boston-vdc-global-entrepreneur-in-residence
+    name: Global Entrepreneur in Residence
+    aliases:
+      - GEIR
+    url: https://vdc.umb.edu/globalentrepreneurs/
+    types:
+      - fellowship
+      - service
+    stages:
+      - build
+      - operate
+    stage_basis: "Founders building a new or growing venture with plans to expand in Massachusetts may seek admission to the VDC GEIR program."
+    audiences:
+      - founders
+    eligibility:
+      who:
+        - group: newcomers
+          requirement: required
+          quote: "The Global Entrepreneur in Residence program helps qualified international founders grow ventures in Massachusetts through visa support, a welcoming university community, and practical resources."
+          source: https://vdc.umb.edu/globalentrepreneurs/
+    open_to:
+      - global
+    where:
+      - us-ma-boston
+    access: application
+    review:
+      - stages

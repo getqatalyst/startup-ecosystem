@@ -1,0 +1,53 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: rice-alliance
+name: Rice Alliance for Technology and Entrepreneurship
+aliases:
+  - Rice Alliance
+url: https://alliance.rice.edu/
+hosts:
+  - alliance.rice.edu
+  - rbpc.rice.edu
+cats:
+  - university
+  - community
+hq:
+  city: us-tx-houston
+  area: Rice University
+  lat: 29.7174
+  lng: -95.4018
+  approx: true
+desc: Rice University's startup and commercialization initiative in Houston. Runs investor forums and the Rice Business Plan Competition, which is open to student teams from any university.
+programs:
+  - id: rice-alliance-business-plan-competition
+    name: Rice Business Plan Competition
+    aliases:
+      - RBPC
+    url: https://rbpc.rice.edu/
+    types:
+      - competition
+    stages:
+      - validate
+      - build
+    stage_basis: "is seeking funding or capital"
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Any college or university
+          role: student
+          quote: "has at least two current student founders or management team members"
+      venture:
+        - gate: team
+          quote: "is student-driven, student-created and/or student-managed"
+    open_to:
+      - global
+    delivery: in-person
+    where:
+      - us-tx-houston
+    access: application
+    cadence:
+      - annual
+    review:
+      - stages

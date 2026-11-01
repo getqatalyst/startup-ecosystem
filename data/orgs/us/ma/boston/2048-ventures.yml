@@ -1,0 +1,40 @@
+# Added Nov 2026 from the org's official pages. Fields under `review:` are first guesses;
+# confirm them against the org's own site, then remove them.
+id: 2048-ventures
+name: 2048 Ventures
+url: https://2048.vc/
+hosts:
+  - 2048.vc
+  - www.2048.vc
+cats:
+  - vc
+hq:
+  city: us-ma-boston
+desc: Pre-seed and seed venture firm based in Boston and New York. Leads or follows early rounds in AI, deep tech, health and bio companies across the US.
+review:
+  - hq
+programs:
+  - id: 2048-ventures-pre-seed-and-seed
+    name: Pre-seed and Seed
+    url: https://2048.vc/about.html
+    types:
+      - investment
+    stages:
+      - validate
+      - build
+      - operate
+    stage_basis: "We will lead your pre-seed or seed round. We can also follow."
+    audiences:
+      - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "We invest across AI, Deep Tech, Health, and Bio."
+    open_to:
+      - us
+    equity: true
+    founder_receives:
+      - investment
+    access: application
+    review:
+      - access

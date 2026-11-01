@@ -569,6 +569,26 @@ exports[`output shape (snapshot of the fixtures) 1`] = `
         "status": "draft",
         "zoom": 14,
       },
+      "us-ma-dedham": {
+        "bounds": [
+          [
+            42.19,
+            -71.23,
+          ],
+          [
+            42.29,
+            -71.13,
+          ],
+        ],
+        "center": [
+          42.2387,
+          -71.1786,
+        ],
+        "moderators": [],
+        "name": "Dedham",
+        "status": "draft",
+        "zoom": 13,
+      },
       "us-ma-fall-river": {
         "bounds": [
           [
@@ -626,6 +646,26 @@ exports[`output shape (snapshot of the fixtures) 1`] = `
         ],
         "moderators": [],
         "name": "Medford",
+        "status": "draft",
+        "zoom": 13,
+      },
+      "us-ma-natick": {
+        "bounds": [
+          [
+            42.25,
+            -71.4,
+          ],
+          [
+            42.35,
+            -71.3,
+          ],
+        ],
+        "center": [
+          42.2996,
+          -71.3505,
+        ],
+        "moderators": [],
+        "name": "Natick",
         "status": "draft",
         "zoom": 13,
       },
@@ -769,6 +809,26 @@ exports[`output shape (snapshot of the fixtures) 1`] = `
         "status": "draft",
         "zoom": 13,
       },
+      "us-tx-houston": {
+        "bounds": [
+          [
+            29.61,
+            -95.52,
+          ],
+          [
+            29.91,
+            -95.22,
+          ],
+        ],
+        "center": [
+          29.7604,
+          -95.3698,
+        ],
+        "moderators": [],
+        "name": "Houston",
+        "status": "draft",
+        "zoom": 12,
+      },
     },
     "countries": {
       "ca": {
@@ -799,6 +859,9 @@ exports[`output shape (snapshot of the fixtures) 1`] = `
       },
       "us-ma": {
         "name": "Massachusetts",
+      },
+      "us-tx": {
+        "name": "Texas",
       },
     },
   },
