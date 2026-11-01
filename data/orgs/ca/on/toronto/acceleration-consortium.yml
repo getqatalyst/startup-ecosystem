@@ -5,6 +5,7 @@ aliases:
 url: https://acceleration.utoronto.ca/
 hosts:
   - acceleration.utoronto.ca
+parent: university-of-toronto
 cats:
   - research-institute
 hq:
@@ -14,6 +15,8 @@ hq:
   lng: -79.398
 desc: A University of Toronto-based global consortium that uses AI and automation in self-driving labs to speed the discovery of new materials and molecules. Startups, companies and researchers can join as members.
 last_verified: 2026-10
+review:
+  - parent
 programs:
   - id: acceleration-consortium-membership
     name: Consortium Membership

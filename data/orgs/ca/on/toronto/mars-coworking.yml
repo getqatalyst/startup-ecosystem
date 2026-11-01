@@ -1,8 +1,8 @@
 id: mars-coworking
-name: MaRS Coworking
+name: MaRS Innovation Hubs
 aliases:
+  - MaRS Coworking
   - MaRS Cowork
-  - MaRS Innovation Hubs
 url: https://hubs.marsdd.com/workspaces/
 hosts:
   - hubs.marsdd.com

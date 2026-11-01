@@ -5,6 +5,7 @@ aliases:
 url: https://entrepreneurs.utoronto.ca/for-entrepreneurs/black-founders-network/
 hosts:
   - entrepreneurs.utoronto.ca/for-entrepreneurs/black-founders-network
+parent: university-of-toronto
 cats:
   - accelerator
   - community
@@ -16,6 +17,8 @@ hq:
   approx: true
 desc: U of T Entrepreneurship's community for Black entrepreneurs at every stage, with programs from idea-stage learning to an accelerator and growth support, plus mentorship, funding and a network.
 last_verified: 2026-10
+review:
+  - parent
 programs:
   - id: black-founders-network-accelerate
     name: BFN Accelerate
