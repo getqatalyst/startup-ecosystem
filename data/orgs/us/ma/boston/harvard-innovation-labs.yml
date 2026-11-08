@@ -1,44 +1,261 @@
-# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
-# under `review:` are first guesses; confirm them against the org's own site, then remove them.
 id: harvard-innovation-labs
 name: Harvard Innovation Labs
-url: https://innovationlabs.harvard.edu
+aliases:
+  - i-lab
+  - Harvard i-lab
+url: https://innovationlabs.harvard.edu/
 hosts:
   - innovationlabs.harvard.edu
+parent: harvard-university
 cats:
+  - incubator
   - accelerator
+  - coworking
 hq:
   city: us-ma-boston
+  address: 125 Western Ave, Allston, MA 02163
   area: Allston
   lat: 42.3637
   lng: -71.1252
-desc: Harvard's venture launchpad — programming, space and accelerator tracks for student and alumni founders.
-review:
-  - cats
+same_as:
+  - https://www.linkedin.com/school/harvard-innovation-labs/
+  - https://www.instagram.com/harvardinnovationlabs/
+  - https://www.youtube.com/@Harvardilab
+desc: Harvard University's hub for student and alumni founders from all 13 schools. Runs the Student i-lab, the President's Innovation Challenge, alumni and climate accelerators, and a life-science wet lab.
 programs:
-  - id: harvard-innovation-labs-program
-    name: Harvard Innovation Labs
-    url: https://innovationlabs.harvard.edu
+  - id: harvard-innovation-labs-student-i-lab
+    name: Student i-lab
+    url: https://innovationlabs.harvard.edu/labs/student-i-lab
+    types:
+      - incubator
+      - community
+      - mentorship
+      - coworking
+    stages:
+      - spark
+      - validate
+      - build
+    stage_basis: "designed to meet you wherever you are in your entrepreneurial journey, from early ideas onward"
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org: harvard-university
+          role: student
+          quote: "All matriculated, degree-seeking students from all 13 Harvard schools, including undergraduates, graduate students, postdoctoral fellows, and clinical fellows, are welcome to participate in the i-lab community."
+        - org: harvard-university
+          role: affiliate
+          quote: "All matriculated, degree-seeking students from all 13 Harvard schools, including undergraduates, graduate students, postdoctoral fellows, and clinical fellows, are welcome to participate in the i-lab community."
+    delivery: in-person
+    where:
+      - us-ma-boston
+    access: institutional
+    cadence:
+      - rolling
+  - id: harvard-innovation-labs-presidents-innovation-challenge
+    name: Harvard President's Innovation Challenge
+    aliases:
+      - PIC
+    url: https://innovationlabs.harvard.edu/presidents-innovation-challenge
+    partners:
+      - org_name: Bertarelli Foundation
+        role: funds
+    types:
+      - competition
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: harvard-university
+          role: student
+          quote: "Ventures led by at least one fully matriculated, degree-seeking Harvard student, from any Harvard school (including undergraduate or graduate students); postdoctoral fellow; or clinical trainee are eligible to apply for the PIC."
+        - org: harvard-university
+          role: affiliate
+          quote: "Ventures led by at least one fully matriculated, degree-seeking Harvard student, from any Harvard school (including undergraduate or graduate students); postdoctoral fellow; or clinical trainee are eligible to apply for the PIC."
+      venture:
+        - gate: funding-raised
+          quote: "Student ventures that have raised more than $750,000 by the stated application deadline are ineligible to participate."
+    founder_receives:
+      - prize
+    access: application
+    cadence:
+      - annual
+    review:
+      - stages
+  - id: harvard-innovation-labs-launch-lab-x
+    name: Launch Lab X
+    aliases:
+      - LLX
+      - Alumni Launch Lab
+    url: https://innovationlabs.harvard.edu/labs/alumni-launch-lab/application
+    types:
+      - accelerator
+    stages:
+      - build
+    stage_basis: "Your pre-seed to seed-stage venture should be working towards product-market fit."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: harvard-university
+          role: alumni
+          quote: "Applicants must have graduated from a degree-granting program and have Harvard alumni status, which is confirmed before acceptance letters are sent."
+      venture:
+        - gate: team
+          quote: "Teams must have at least one Harvard alum as a full-time founder; the Harvard founder cannot be working in another role or capacity."
+        - gate: revenue
+          quote: "Ventures must have less than $2 million in revenue."
+        - gate: funding-raised
+          quote: "they may not have raised more than $2.5 million (not including grants) in total debt/invested equity capital."
+      venture_type:
+        - for-profit
+        - nonprofit
+    open_to:
+      - global
+    delivery: remote
+    access: application
+    cadence:
+      - annual
+    duration: 8 months
+  - id: harvard-innovation-labs-llx-summer-accelerator
+    variant_of: harvard-innovation-labs-launch-lab-x
+    name: Launch Lab X Summer Accelerator
+    stages:
+      - validate
+    stage_basis: "Earlier stage teams may be invited to participate in the Summer Accelerator with the goal of being admitted into LLX at the end of the summer."
+    access: invite
+    duration: 10 weeks
+  - id: harvard-innovation-labs-climate-circle
+    name: Climate Circle Accelerator
+    aliases:
+      - Harvard Climate Entrepreneurs Circle
+    url: https://innovationlabs.harvard.edu/climate/climate-circle
     types:
       - accelerator
       - mentorship
+    stages:
+      - validate
+      - build
+    stage_basis: "To be accepted into the Climate Circle, ventures must have moved beyond the idea stage."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: harvard-university
+          role: student
+          quote: "Applicants must be enrolled in a Harvard degree-granting program or have Harvard alumni or faculty or staff status, which is confirmed before acceptance letters are sent."
+        - org: harvard-university
+          role: alumni
+          quote: "Applicants must be enrolled in a Harvard degree-granting program or have Harvard alumni or faculty or staff status, which is confirmed before acceptance letters are sent."
+        - org: harvard-university
+          role: affiliate
+          quote: "Applicants must be enrolled in a Harvard degree-granting program or have Harvard alumni or faculty or staff status, which is confirmed before acceptance letters are sent."
+      venture:
+        - gate: sector
+          quote: "a peer group of Harvard founders who are all working on innovative solutions to tackle climate change"
+        - gate: revenue
+          quote: "ventures must have active users, established intellectual property, or written agreements with partners or funders to be eligible for Climate Circle participation"
+      venture_type:
+        - for-profit
+        - nonprofit
+    open_to:
+      - global
+    delivery: remote
+    access: application
+    cadence:
+      - annual
+  - id: harvard-innovation-labs-climate-venture-bootcamp
+    name: How to Create a Climate Venture
+    url: https://innovationlabs.harvard.edu/climate/climate-class
+    types:
+      - course
+    stages:
+      - spark
+    stage_basis: "designed for aspiring climate entrepreneurs who do not yet have an idea"
+    audiences:
+      - aspiring
+    eligibility:
+      affiliation:
+        - org: harvard-university
+          role: student
+          quote: "\"How to Create a Climate Venture\" is open to Harvard students, alumni, faculty, and staff."
+        - org: harvard-university
+          role: alumni
+          quote: "\"How to Create a Climate Venture\" is open to Harvard students, alumni, faculty, and staff."
+        - org: harvard-university
+          role: affiliate
+          quote: "\"How to Create a Climate Venture\" is open to Harvard students, alumni, faculty, and staff."
+        - org_name: Stanford, MIT, Dartmouth, ClimateCAP network schools, Greentown Labs TEX-E Consortium schools
+          role: affiliate
+          quote: "The bootcamp is also open to affiliates of the following universities: Stanford, MIT, Dartmouth, schools in the ClimateCAP network , and schools in the Greentown Labs TEX-E Consortium"
+      venture:
+        - gate: sector
+          quote: "help you come up with an idea, test the viability of your idea, and connect with fellow climate entrepreneurs"
+    open_to:
+      - global
+    delivery: remote
+    access: application
+    cadence:
+      - annual
+  - id: harvard-innovation-labs-pagliuca-life-lab
+    name: Pagliuca Harvard Life Lab
+    url: https://innovationlabs.harvard.edu/labs/pagliuca-harvard-life-lab
+    types:
       - coworking
+      - incubator
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: harvard-university
+          role: affiliate
+          quote: "wet lab and co-working space for biotech and life science ventures led by Harvard affiliates"
+      venture:
+        - gate: sector
+          quote: "a state-of-the-art wet laboratory and co-working space for high-potential biotech and life science ventures at Harvard"
+    delivery: in-person
+    where:
+      - us-ma-boston
+    fee: fee
+    access: application
+    cadence:
+      - rolling
+    review:
+      - stages
+      - eligibility.affiliation
+  - id: harvard-innovation-labs-navab-social-impact-fellowship
+    name: Navab Social Impact Fellowship Fund
+    aliases:
+      - SIFF
+    url: https://innovationlabs.harvard.edu/funding-opportunities/social-impact
+    types:
       - grant
     stages:
       - validate
       - build
-      - operate
+    stage_basis: "A good number of active users (e.g. 300+ individuals, or 2+ organizations)"
     audiences:
       - founders
-    open_to:
-      - us-ma
+    eligibility:
+      affiliation:
+        - org: harvard-university
+          role: student
+          quote: "The venture has an active founder or co-founder who is a matriculated, degree-seeking Harvard undergraduate or graduate Harvard student, Harvard postdoctoral fellow or clinical fellow."
+        - org: harvard-university
+          role: affiliate
+          quote: "The venture has an active founder or co-founder who is a matriculated, degree-seeking Harvard undergraduate or graduate Harvard student, Harvard postdoctoral fellow or clinical fellow."
+      venture:
+        - gate: funding-raised
+          quote: "The venture has not raised more than $750K"
+    founder_receives:
+      - grant
     access: application
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    cadence:
+      - cohort

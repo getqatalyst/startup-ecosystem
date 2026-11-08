@@ -1,0 +1,121 @@
+id: hbs-foundry
+name: HBS Foundry
+aliases:
+  - Foundry
+  - Harvard Business School Foundry
+url: https://www.hbs.edu/foundry/
+hosts:
+  - www.hbs.edu/foundry
+  - hbsfoundry.org
+parent: harvard-business-school
+cats:
+  - accelerator
+hq:
+  city: us-ma-boston
+  area: Allston
+  lat: 42.3663
+  lng: -71.1227
+  approx: true
+desc: Harvard Business School's online, AI-powered startup program for founders beyond Harvard. An 8-week bootcamp leads to a selective Catalyst program and a pitch event at HBS.
+programs:
+  - id: hbs-foundry-bootcamp
+    name: Foundry Bootcamp
+    aliases:
+      - Foundry Startup Bootcamp
+    url: https://www.hbs.edu/foundry/bootcamps/startup-bootcamp/
+    types:
+      - accelerator
+      - course
+    stages:
+      - spark
+      - validate
+    stage_basis: "Have breakthrough research you want to commercialize Have a technical prototype but no traction Are refining problem/market clarity"
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      venture:
+        - gate: sector
+          quote: "Bootcamp is our foundational program for deep tech founders ready to move from raw idea to funding-ready pitch."
+    open_to:
+      - us
+    delivery: remote
+    fee: fee
+    equity: false
+    founder_receives:
+      - none
+    access: application
+    cadence:
+      - cohort
+    duration: 8 weeks
+    review:
+      - open_to
+      - eligibility.venture
+  - id: hbs-foundry-catalyst
+    name: Foundry Catalyst
+    aliases:
+      - Foundry Venture Catalyst Program
+    url: https://hbsfoundry.org/
+    types:
+      - accelerator
+      - mentorship
+    stages:
+      - validate
+      - build
+    stage_basis: "designed for committed founders ready to move from first pitch to first check"
+    audiences:
+      - founders
+    open_to:
+      - us
+    delivery: remote
+    equity: false
+    access: invite
+    cadence:
+      - cohort
+    duration: 4 weeks
+    review:
+      - open_to
+  - id: hbs-foundry-pitch-event
+    name: Foundry Pitch Event
+    url: https://hbsfoundry.org/
+    types:
+      - competition
+    stages:
+      - validate
+      - build
+    audiences:
+      - founders
+    open_to:
+      - us
+    delivery: in-person
+    where:
+      - us-ma-boston
+    founder_receives:
+      - investment
+    access: invite
+    cadence:
+      - annual
+    review:
+      - open_to
+      - founder_receives
+      - cadence
+  - id: hbs-foundry-for-organizations
+    name: Foundry for Organizations
+    url: https://www.hbs.edu/foundry/organizations/
+    types:
+      - service
+    stages:
+      - spark
+      - validate
+    audiences:
+      - builders
+      - partners
+    open_to:
+      - us
+    delivery: remote
+    access: application
+    cadence:
+      - rolling
+    review:
+      - open_to
+      - stages

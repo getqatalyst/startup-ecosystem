@@ -1,0 +1,214 @@
+id: hbs-rock-center
+name: Arthur Rock Center for Entrepreneurship
+aliases:
+  - Rock Center
+  - HBS Rock Center
+url: https://www.hbs.edu/entrepreneurship/
+hosts:
+  - www.hbs.edu/entrepreneurship
+parent: harvard-business-school
+cats:
+  - university
+hq:
+  city: us-ma-boston
+  area: Allston
+  lat: 42.3663
+  lng: -71.1227
+  approx: true
+same_as:
+  - https://twitter.com/HBSRock
+desc: Harvard Business School's center for entrepreneurship. Runs courses, competitions, summer funding, expert advising and alumni founder networks for HBS students and alumni.
+programs:
+  - id: hbs-rock-venture-catalyst
+    name: Rock Venture Catalyst
+    aliases:
+      - Rock Summer Fellows
+    url: https://www.hbs.edu/entrepreneurship/mba/rock-venture-catalyst/
+    types:
+      - fellowship
+    stages:
+      - validate
+      - build
+    stage_basis: "a select group of founders set aside internships and distractions to build their ventures full time"
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: harvard-business-school
+          role: student
+          degree: MBA
+          class: 2028
+          quote: "Please note that only MBA students who graduate in 2028 are eligible."
+    delivery: hybrid
+    where:
+      - us-ma-boston
+    founder_receives:
+      - stipend
+    access: application
+    cadence:
+      - annual
+    review:
+      - stages
+  - id: hbs-new-venture-competition
+    name: New Venture Competition
+    aliases:
+      - NVC
+      - Rock Business Track
+    url: https://www.hbs.edu/newventurecompetition/
+    types:
+      - competition
+    stages:
+      - spark
+      - validate
+    stage_basis: "First, you must form a team around an idea for a business."
+    audiences:
+      - founders
+      - aspiring
+    eligibility:
+      affiliation:
+        - org: harvard-business-school
+          role: student
+          degree: MBA
+          quote: "Participating teams require at least one Harvard Business School MBA student who plays a primary role in the business and will participate in all round of coaching and judging."
+    founder_receives:
+      - prize
+    access: application
+    cadence:
+      - annual
+  - id: hbs-nvc-social-enterprise
+    variant_of: hbs-new-venture-competition
+    name: New Venture Competition, Social Enterprise Track
+    eligibility:
+      affiliation:
+        - org: harvard-business-school
+          role: student
+          degree: MBA
+      venture_type:
+        - nonprofit
+        - for-profit
+        - hybrid
+    review:
+      - eligibility.affiliation
+  - id: hbs-rock-expert-network
+    name: Rock Expert Network
+    url: https://www.hbs.edu/entrepreneurship/mba/rock-expert-network/
+    types:
+      - mentorship
+    stages:
+      - spark
+      - validate
+      - build
+    audiences:
+      - founders
+      - aspiring
+    eligibility:
+      affiliation:
+        - org: harvard-business-school
+          role: student
+          quote: "Current HBS students can meet 1:1 with expert founders, investors, legal specialists, and operators in the Rock Expert Network."
+    access: institutional
+    cadence:
+      - ongoing
+    review:
+      - stages
+  - id: hbs-rc-startup-bootcamp
+    name: Startup Bootcamp (MBA)
+    url: https://www.hbs.edu/entrepreneurship/mba/courses/startup-bootcamp/
+    types:
+      - course
+    stages:
+      - spark
+      - validate
+    stage_basis: "work on an actual startup concept, from problem identification to solution testing to business model design"
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org: harvard-business-school
+          role: student
+          degree: MBA
+          quote: "Startup Bootcamp is an immersive, practical, in-person experience intended for entrepreneurially-interested RC students"
+      venture:
+        - gate: team
+          quote: "HBS Startup Bootcamp requires students to work in teams of 3-4 RC students."
+    delivery: in-person
+    access: application
+    cadence:
+      - annual
+  - id: hbs-founder-pathways
+    name: Founder Pathways
+    url: https://www.hbs.edu/entrepreneurship/mba/founder-pathways/
+    types:
+      - course
+      - community
+    stages:
+      - spark
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org: harvard-business-school
+          role: student
+          degree: MBA
+          quote: "The Rock Center’s Founder Pathway Sessions bring together MBA students and Harvard-wide founders to explore key industries with guidance from leading experts."
+        - org: harvard-university
+          role: student
+          quote: "The Rock Center’s Founder Pathway Sessions bring together MBA students and Harvard-wide founders to explore key industries with guidance from leading experts."
+    delivery: in-person
+    cadence:
+      - annual
+    review:
+      - stages
+      - delivery
+      - eligibility.affiliation
+  - id: hbs-rock-loan-reduction
+    name: Rock Loan Reduction Program
+    url: https://www.hbs.edu/entrepreneurship/mba/loan-reduction/
+    types:
+      - grant
+    stages:
+      - validate
+      - build
+    stage_basis: "committed to its full-time pursuit for at least one year following graduation"
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: harvard-business-school
+          role: student
+          degree: MBA
+          quote: "The Rock Loan Reduction Program supports graduating MBA students who are founding or co-founding a product- or service-based for-profit venture and are committed to its full-time pursuit for at least one year following graduation."
+      venture_type:
+        - for-profit
+    founder_receives:
+      - grant
+    access: application
+    cadence:
+      - annual
+    review:
+      - stages
+  - id: hbs-rock-100
+    name: Rock 100
+    url: https://www.hbs.edu/entrepreneurship/alumni/rock-100/
+    types:
+      - community
+    stages:
+      - build
+      - operate
+      - scale
+    stage_basis: "Funded Seed–Series C or growing revenue at a fast pace"
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org: harvard-business-school
+          role: alumni
+          quote: "The Rock 100 is a global, invitation-only network for Harvard Business School alumni who are building early-stage, high-growth ventures."
+      venture:
+        - gate: funding-raised
+          quote: "Funded Seed–Series C or growing revenue at a fast pace"
+    access: invite
+    review:
+      - open_to
