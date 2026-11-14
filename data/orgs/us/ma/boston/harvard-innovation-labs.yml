@@ -1,5 +1,5 @@
-# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026. Fields
-# under `review:` are first guesses; confirm them against the org's own site, then remove them.
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026,
+# then verified against Harvard Innovation Labs' official program pages.
 id: harvard-innovation-labs
 name: Harvard Innovation Labs
 url: https://innovationlabs.harvard.edu
@@ -7,38 +7,111 @@ hosts:
   - innovationlabs.harvard.edu
 cats:
   - accelerator
+  - university
+  - coworking
+  - community
 hq:
   city: us-ma-boston
+  address: 125 Western Ave, Allston, MA 02134
   area: Allston
   lat: 42.3637
   lng: -71.1252
-desc: Harvard's venture launchpad — programming, space and accelerator tracks for student and alumni founders.
-review:
-  - cats
+desc: Harvard's entrepreneurship hub in Allston, with distinct support for current students, alumni founders, and Harvard-affiliated biotech and life science ventures.
+last_verified: 2026-10
 programs:
-  - id: harvard-innovation-labs-program
-    name: Harvard Innovation Labs
-    url: https://innovationlabs.harvard.edu
+  - id: harvard-innovation-labs-student-membership
+    name: Student i-lab Membership
+    url: https://innovationlabs.harvard.edu/labs/student-i-lab
+    types:
+      - community
+      - coworking
+      - mentorship
+      - course
+    stages:
+      - spark
+      - validate
+      - build
+    stage_basis: "Membership has Explore, Test, and Propel stages, ranging from exploring entrepreneurship to accelerating a venture's growth."
+    audiences:
+      - aspiring
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Harvard University
+          role: student
+          quote: "All matriculated, degree-seeking students from all 13 Harvard schools, including undergraduates, graduate students, postdoctoral fellows, and clinical fellows, are welcome to participate in the i-lab community."
+        - org_name: Harvard University
+          role: affiliate
+          quote: "All matriculated, degree-seeking students from all 13 Harvard schools, including undergraduates, graduate students, postdoctoral fellows, and clinical fellows, are welcome to participate in the i-lab community."
+    delivery: in-person
+    where:
+      - us-ma-boston
+    access: institutional
+    cadence:
+      - ongoing
+    last_verified: 2026-10
+  - id: harvard-innovation-labs-launch-lab-x
+    name: Launch Lab X
+    url: https://innovationlabs.harvard.edu/labs/alumni-launch-lab/application
     types:
       - accelerator
       - mentorship
+    stages:
+      - build
+      - operate
+    stage_basis: "Launch Lab X is for pre-seed and seed-stage ventures that are working toward product-market fit."
+    audiences:
+      - founders
+    eligibility:
+      affiliation:
+        - org_name: Harvard University
+          role: alumni
+          quote: "Applicants must have graduated from a degree-granting program and have Harvard alumni status, which is confirmed before acceptance letters are sent."
+      venture:
+        - gate: team
+          quote: "Teams must have at least one Harvard alum as a full-time founder; the Harvard founder cannot be working in another role or capacity."
+    open_to:
+      - global
+    delivery: remote
+    access: application
+    cadence:
+      - cohort
+    last_verified: 2026-10
+  - id: harvard-innovation-labs-pagliuca-life-lab
+    name: Pagliuca Harvard Life Lab
+    url: https://innovationlabs.harvard.edu/labs/pagliuca-harvard-life-lab
+    types:
+      - incubator
       - coworking
-      - grant
+      - mentorship
     stages:
       - validate
       - build
       - operate
+    stage_basis: "A wet laboratory and co-working space for high-potential biotech and life science ventures at Harvard."
     audiences:
       - founders
-    open_to:
-      - us-ma
+    eligibility:
+      affiliation:
+        - org_name: Harvard University or an affiliate institution
+          role: student
+          quote: "Students, alumni, faculty, or postdocs of Harvard University or an affiliate institution that are a c-suite member or co-founder are all encouraged to apply."
+        - org_name: Harvard University or an affiliate institution
+          role: alumni
+          quote: "Students, alumni, faculty, or postdocs of Harvard University or an affiliate institution that are a c-suite member or co-founder are all encouraged to apply."
+        - org_name: Harvard University or an affiliate institution
+          role: affiliate
+          quote: "Students, alumni, faculty, or postdocs of Harvard University or an affiliate institution that are a c-suite member or co-founder are all encouraged to apply."
+      venture:
+        - gate: sector
+          quote: "The Pagliuca Harvard Life Lab is a state-of-the-art wet laboratory and co-working space for high-potential biotech and life science ventures at Harvard."
+        - gate: team
+          quote: "Students, alumni, faculty, or postdocs of Harvard University or an affiliate institution that are a c-suite member or co-founder are all encouraged to apply."
+    delivery: in-person
+    where:
+      - us-ma-boston
+    fee: fee
     access: application
-    fee: free
-    review:
-      - name
-      - types
-      - stages
-      - audiences
-      - access
-      - fee
-      - open_to
+    cadence:
+      - rolling
+    last_verified: 2026-10
