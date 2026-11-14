@@ -1,0 +1,19 @@
+# Parent record only: Harvard's founder programs sit in its units (Harvard Innovation Labs,
+# Harvard Business School and its centres), which list this org as their parent.
+id: harvard-university
+name: Harvard University
+aliases:
+  - Harvard
+url: https://www.harvard.edu/
+hosts:
+  - www.harvard.edu
+cats:
+  - university
+hq:
+  city: us-ma-cambridge
+  area: Harvard Square
+  lat: 42.3744
+  lng: -71.1169
+  approx: true
+desc: Private research university in Cambridge, Massachusetts, with 13 schools. Its startup programs run through its innovation labs and schools.
+programs: []

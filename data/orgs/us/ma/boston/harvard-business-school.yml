@@ -1,0 +1,20 @@
+# Parent record only: HBS's founder programs sit in the Arthur Rock Center for
+# Entrepreneurship and HBS Foundry, which list this org as their parent.
+id: harvard-business-school
+name: Harvard Business School
+aliases:
+  - HBS
+url: https://www.hbs.edu/
+hosts:
+  - www.hbs.edu
+parent: harvard-university
+cats:
+  - university
+hq:
+  city: us-ma-boston
+  area: Allston
+  lat: 42.3663
+  lng: -71.1227
+  approx: true
+desc: Harvard University's business school, on its Allston campus in Boston. Its founder programs run through the Rock Center and HBS Foundry.
+programs: []
