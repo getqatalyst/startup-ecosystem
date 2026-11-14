@@ -108,8 +108,9 @@ describe("valid data", () => {
 		expect(messages).toContain("dmz-incubator is open to global");
 	});
 
+	// real clock: a pinned date would reject records verified after it
 	test("the repo's own data passes", () => {
-		expect(validate({ today }).errors).toEqual([]);
+		expect(validate().errors).toEqual([]);
 	});
 
 	test("an empty folder passes", () => {

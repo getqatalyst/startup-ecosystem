@@ -149,8 +149,9 @@ describe("defaults", () => {
 	});
 });
 
+// real clock: a pinned date would reject records verified after it
 test("the repo's own data builds", () => {
-	const real = build(validate({ today }));
+	const real = build(validate());
 	expect(real.orgs.length).toBeGreaterThan(0);
 });
 

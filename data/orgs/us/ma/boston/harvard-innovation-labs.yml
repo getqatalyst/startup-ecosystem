@@ -1,3 +1,5 @@
+# Imported from the Mass AI Atlas by The Open Accelerator (CC BY 4.0), Oct 2026,
+# then verified against Harvard Innovation Labs' official program pages.
 id: harvard-innovation-labs
 name: Harvard Innovation Labs
 aliases:
@@ -22,6 +24,7 @@ same_as:
   - https://www.instagram.com/harvardinnovationlabs/
   - https://www.youtube.com/@Harvardilab
 desc: Harvard University's hub for student and alumni founders from all 13 schools. Runs the Student i-lab, the President's Innovation Challenge, alumni and climate accelerators, and a life-science wet lab.
+last_verified: 2026-10
 programs:
   - id: harvard-innovation-labs-student-i-lab
     name: Student i-lab
@@ -205,21 +208,32 @@ programs:
     name: Pagliuca Harvard Life Lab
     url: https://innovationlabs.harvard.edu/labs/pagliuca-harvard-life-lab
     types:
-      - coworking
       - incubator
+      - coworking
+      - mentorship
     stages:
       - validate
       - build
+      - operate
+    stage_basis: "A wet laboratory and co-working space for high-potential biotech and life science ventures at Harvard."
     audiences:
       - founders
     eligibility:
       affiliation:
-        - org: harvard-university
+        - org_name: Harvard University or an affiliate institution
+          role: student
+          quote: "Students, alumni, faculty, or postdocs of Harvard University or an affiliate institution that are a c-suite member or co-founder are all encouraged to apply."
+        - org_name: Harvard University or an affiliate institution
+          role: alumni
+          quote: "Students, alumni, faculty, or postdocs of Harvard University or an affiliate institution that are a c-suite member or co-founder are all encouraged to apply."
+        - org_name: Harvard University or an affiliate institution
           role: affiliate
-          quote: "wet lab and co-working space for biotech and life science ventures led by Harvard affiliates"
+          quote: "Students, alumni, faculty, or postdocs of Harvard University or an affiliate institution that are a c-suite member or co-founder are all encouraged to apply."
       venture:
         - gate: sector
-          quote: "a state-of-the-art wet laboratory and co-working space for high-potential biotech and life science ventures at Harvard"
+          quote: "The Pagliuca Harvard Life Lab is a state-of-the-art wet laboratory and co-working space for high-potential biotech and life science ventures at Harvard."
+        - gate: team
+          quote: "Students, alumni, faculty, or postdocs of Harvard University or an affiliate institution that are a c-suite member or co-founder are all encouraged to apply."
     delivery: in-person
     where:
       - us-ma-boston
@@ -227,9 +241,7 @@ programs:
     access: application
     cadence:
       - rolling
-    review:
-      - stages
-      - eligibility.affiliation
+    last_verified: 2026-10
   - id: harvard-innovation-labs-navab-social-impact-fellowship
     name: Navab Social Impact Fellowship Fund
     aliases:
